@@ -1,0 +1,13 @@
+{
+  "name": "@careerproof/db",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Database types generated from Supabase. Regenerate with `npm run db:types` at the repo root.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  }
+}

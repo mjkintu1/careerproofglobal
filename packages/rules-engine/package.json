@@ -1,0 +1,14 @@
+{
+  "name": "@careerproof/rules-engine",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Country-agnostic admission rules evaluator. Pure functions, no I/O.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  }
+}

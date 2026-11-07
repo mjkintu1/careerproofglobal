@@ -1,0 +1,42 @@
+{
+  "framework": "KE-KCSE",
+  "region": "KE",
+  "version": "2026.0-demo",
+  "status": "illustrative",
+  "label": "Kenya university placement (KUCCPS-style cluster points)",
+  "pointsLabel": "cluster points",
+  "grades": {
+    "kcse": { "A": 12, "A-": 11, "B+": 10, "B": 9, "B-": 8, "C+": 7, "C": 6, "C-": 5, "D+": 4, "D": 3, "D-": 2, "E": 1 }
+  },
+  "subjects": {
+    "ENG": { "name": "English", "scale": "kcse" },
+    "KIS": { "name": "Kiswahili", "scale": "kcse" },
+    "MAT": { "name": "Mathematics", "scale": "kcse" },
+    "BIO": { "name": "Biology", "scale": "kcse" },
+    "CHE": { "name": "Chemistry", "scale": "kcse" },
+    "PHY": { "name": "Physics", "scale": "kcse" },
+    "GEO": { "name": "Geography", "scale": "kcse" },
+    "HIS": { "name": "History and Government", "scale": "kcse" },
+    "CRE": { "name": "Christian Religious Education", "scale": "kcse" },
+    "BST": { "name": "Business Studies", "scale": "kcse" },
+    "AGR": { "name": "Agriculture", "scale": "kcse" },
+    "CSC": { "name": "Computer Studies", "scale": "kcse" }
+  },
+  "scoring": {
+    "method": "cluster_geometric",
+    "clusterSize": 4,
+    "maxClusterPoints": 48,
+    "aggregateSubjects": 7,
+    "maxAggregatePoints": 84,
+    "multiplier": 48
+  },
+  "eligibility": {
+    "minMean": {
+      "subjects": 7,
+      "minMean": 7,
+      "label": "Needs a mean grade of C+ or better across 7 KCSE subjects for degree entry"
+    }
+  },
+  "adjustments": [],
+  "zones": { "window": 5, "minYears": 2, "safeMargin": 1 }
+}

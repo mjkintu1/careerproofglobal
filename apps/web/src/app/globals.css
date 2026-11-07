@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+/*
+ * Career Proof design tokens.
+ * Contrast notes (WCAG 2.2): see docs/IMPLEMENTATION_PLAN.md section 6.
+ * - Brand teal (#00B4D8) and brand gold (#FDC500) are fills only: put ink text on them, never white.
+ * - Text and interactive colours below all reach >= 4.5:1 on white.
+ */
+@theme {
+  /* Brand */
+  --color-teal-500: #00b4d8; /* brand fill, ink text on top */
+  --color-teal-700: #0077b6; /* primary buttons (white text), links */
+  --color-teal-800: #005a8c; /* hover / pressed */
+  --color-gold-400: #fdc500; /* highlight fill, ink text on top; also focus fill */
+  --color-gold-800: #8a6a00; /* gold-family text on white */
+
+  /* Neutrals */
+  --color-ink: #1a1a1a;
+  --color-ink-muted: #4a4a4a;
+  --color-border: #6f777b; /* >= 3:1 for component boundaries */
+  --color-surface: #ffffff;
+  --color-surface-muted: #f3f4f5;
+
+  /* Admission zones: always paired with an icon and a text label */
+  --color-zone-safe: #00703c;
+  --color-zone-borderline: #8a6a00;
+  --color-zone-danger: #b3261e;
+
+  /* Type: 16px base, 1.25 (major third) scale */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --text-sm: 0.8rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5625rem;
+  --text-2xl: 1.953rem;
+  --text-3xl: 2.441rem;
+}
+
+@layer base {
+  html {
+    color: var(--color-ink);
+    background: var(--color-surface);
+    font-family: var(--font-sans);
+    font-size: 100%;
+    line-height: 1.5;
+  }
+
+  a {
+    color: var(--color-teal-700);
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  a:hover {
+    color: var(--color-teal-800);
+    text-decoration-thickness: 2px;
+  }
+}
+
+/* Unlayered on purpose: focus styles must beat utility classes (e.g. text-white). */
+/* High-contrast focus: gold fill + ink underline, visible on any background */
+:focus-visible {
+  outline: 3px solid var(--color-gold-400);
+  outline-offset: 0;
+  box-shadow: 0 4px 0 0 var(--color-ink);
+}
+
+a:focus-visible {
+  background: var(--color-gold-400);
+  color: var(--color-ink);
+  text-decoration: none;
+}

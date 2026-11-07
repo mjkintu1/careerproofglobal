@@ -1,0 +1,63 @@
+{
+  "framework": "UG-UACE",
+  "region": "UG",
+  "version": "2026.0-demo",
+  "status": "illustrative",
+  "label": "Uganda public university admission (PUJAB-style weighting)",
+  "pointsLabel": "weighted points",
+  "grades": {
+    "principal": { "A": 6, "B": 5, "C": 4, "D": 3, "E": 2, "O": 1, "F": 0 },
+    "subsidiary": { "Pass": 1, "Fail": 0 }
+  },
+  "subjects": {
+    "PHY": { "name": "Physics", "scale": "principal" },
+    "CHE": { "name": "Chemistry", "scale": "principal" },
+    "BIO": { "name": "Biology", "scale": "principal" },
+    "MAT": { "name": "Mathematics", "scale": "principal" },
+    "ECO": { "name": "Economics", "scale": "principal" },
+    "ENT": { "name": "Entrepreneurship", "scale": "principal" },
+    "GEO": { "name": "Geography", "scale": "principal" },
+    "HIS": { "name": "History", "scale": "principal" },
+    "LIT": { "name": "Literature in English", "scale": "principal" },
+    "DIV": { "name": "Divinity", "scale": "principal" },
+    "AGR": { "name": "Agriculture", "scale": "principal" },
+    "ART": { "name": "Fine Art", "scale": "principal" },
+    "GP": { "name": "General Paper", "scale": "subsidiary" },
+    "SMAT": { "name": "Subsidiary Mathematics", "scale": "subsidiary" },
+    "SICT": { "name": "Subsidiary ICT", "scale": "subsidiary" }
+  },
+  "scoring": {
+    "method": "weighted_categories",
+    "categories": [
+      { "role": "essential", "pick": 2, "weight": 3, "required": true },
+      { "role": "relevant", "pick": 1, "weight": 2, "required": false },
+      { "role": "desirable", "pick": 1, "weight": 1, "required": false }
+    ],
+    "secondaryBonus": {
+      "label": "UCE (O-level) bonus",
+      "bands": [
+        { "id": "distinction", "label": "Distinctions", "points": 0.3 },
+        { "id": "credit", "label": "Credits", "points": 0.2 },
+        { "id": "pass", "label": "Passes", "points": 0.1 }
+      ],
+      "maxSubjects": 10
+    }
+  },
+  "eligibility": {
+    "minPasses": {
+      "scale": "principal",
+      "count": 2,
+      "minPoints": 2,
+      "label": "Needs at least 2 principal passes (grade E or better) at UACE"
+    }
+  },
+  "adjustments": [
+    {
+      "id": "female_bonus",
+      "label": "Female applicant bonus (public universities)",
+      "points": 1.5,
+      "when": { "sex": "F", "institutionType": "public" }
+    }
+  ],
+  "zones": { "window": 5, "minYears": 2, "safeMargin": 1 }
+}

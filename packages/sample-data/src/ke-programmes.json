@@ -1,0 +1,20 @@
+[
+  { "id": "ke-uon-mbchb", "code": "DEMO-KE-01", "title": "Bachelor of Medicine and Bachelor of Surgery", "institution": "University of Nairobi", "institutionType": "public", "field": "medicine",
+    "requirements": { "cluster": ["BIO", "CHE", "MAT", "PHY", "ENG", "KIS"], "mandatory": [{ "subject": "BIO", "minGrade": "B" }, { "subject": "CHE", "minGrade": "B" }] },
+    "cutoffs": [{ "year": 2021, "points": 44.9 }, { "year": 2022, "points": 45.3 }, { "year": 2023, "points": 45.1 }, { "year": 2024, "points": 45.6 }, { "year": 2025, "points": 45.8 }] },
+  { "id": "ke-mu-mbchb", "code": "DEMO-KE-02", "title": "Bachelor of Medicine and Bachelor of Surgery", "institution": "Moi University", "institutionType": "public", "field": "medicine",
+    "requirements": { "cluster": ["BIO", "CHE", "MAT", "PHY", "ENG", "KIS"], "mandatory": [{ "subject": "BIO", "minGrade": "B" }, { "subject": "CHE", "minGrade": "B" }] },
+    "cutoffs": [{ "year": 2021, "points": 43.5 }, { "year": 2022, "points": 43.9 }, { "year": 2023, "points": 44.2 }, { "year": 2024, "points": 44.0 }, { "year": 2025, "points": 44.4 }] },
+  { "id": "ke-jkuat-civil", "code": "DEMO-KE-03", "title": "Bachelor of Science in Civil Engineering", "institution": "Jomo Kenyatta University of Agriculture and Technology", "institutionType": "public", "field": "engineering",
+    "requirements": { "cluster": ["MAT", "PHY", "CHE", "BIO", "GEO", "CSC"], "mandatory": [{ "subject": "MAT", "minGrade": "C+" }, { "subject": "PHY", "minGrade": "C+" }] },
+    "cutoffs": [{ "year": 2021, "points": 41.8 }, { "year": 2022, "points": 42.3 }, { "year": 2023, "points": 42.0 }, { "year": 2024, "points": 42.7 }, { "year": 2025, "points": 43.0 }] },
+  { "id": "ke-uon-cs", "code": "DEMO-KE-04", "title": "Bachelor of Science in Computer Science", "institution": "University of Nairobi", "institutionType": "public", "field": "computing",
+    "requirements": { "cluster": ["MAT", "PHY", "CHE", "CSC", "BIO", "GEO"], "mandatory": [{ "subject": "MAT", "minGrade": "C+" }] },
+    "cutoffs": [{ "year": 2021, "points": 40.6 }, { "year": 2022, "points": 41.2 }, { "year": 2023, "points": 41.9 }, { "year": 2024, "points": 42.3 }, { "year": 2025, "points": 42.6 }] },
+  { "id": "ke-ku-commerce", "code": "DEMO-KE-05", "title": "Bachelor of Commerce", "institution": "Kenyatta University", "institutionType": "public", "field": "business",
+    "requirements": { "cluster": ["MAT", "ENG", "BST", "GEO", "HIS", "KIS"], "mandatory": [{ "subject": "MAT", "minGrade": "C" }] },
+    "cutoffs": [{ "year": 2021, "points": 33.1 }, { "year": 2022, "points": 33.8 }, { "year": 2023, "points": 34.2 }, { "year": 2024, "points": 34.0 }, { "year": 2025, "points": 34.5 }] },
+  { "id": "ke-mu-educ-arts", "code": "DEMO-KE-06", "title": "Bachelor of Education (Arts)", "institution": "Moi University", "institutionType": "public", "field": "education",
+    "requirements": { "cluster": ["ENG", "KIS", "HIS", "GEO", "CRE", "BST"] },
+    "cutoffs": [{ "year": 2021, "points": 29.4 }, { "year": 2022, "points": 30.1 }, { "year": 2023, "points": 30.6 }, { "year": 2024, "points": 30.2 }, { "year": 2025, "points": 30.9 }] }
+]
