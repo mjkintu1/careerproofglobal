@@ -20,7 +20,11 @@
     "db:stop": "supabase stop",
     "db:reset": "supabase db reset",
     "db:types": "supabase gen types typescript > packages/db/src/database.types.ts",
-    "db:seed:generate": "node scripts/generate-seed.mjs"
+    "db:seed:generate": "node scripts/generate-seed.mjs",
+    "ingest:bls": "node scripts/ingest/bls-oews.mjs --all",
+    "ingest:join": "node scripts/ingest/world-bank-join.mjs",
+    "ingest:esco": "node scripts/ingest/esco.mjs",
+    "ingest:catalogue": "node scripts/ingest/load-catalogue.mjs"
   },
   "devDependencies": {
     "supabase": "^3.0.0",

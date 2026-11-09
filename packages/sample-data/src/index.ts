@@ -25,3 +25,5 @@ export const datasets: CountryDataset[] = [
 export function datasetFor(region: string): CountryDataset | undefined {
   return datasets.find((d) => d.region === region);
 }
+
+export { careerGraphData, subjectRules, type SubjectRules } from "./careers";

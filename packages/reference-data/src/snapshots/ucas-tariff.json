@@ -1,0 +1,347 @@
+{
+  "source": "UCAS, 2027 Tariff tables (tariff-may-2027_cycle-v1.1.4.1.xlsx)",
+  "url": "https://www.ucas.com/applying/before-you-apply/what-and-where-to-study/entry-requirements/ucas-tariff-points",
+  "cycle": "2027 entry",
+  "checkedAt": "2026-11-09",
+  "notes": [
+    "Points are taken unchanged from UCAS's published Tariff tables.",
+    "The IB Diploma as a whole has no Tariff points; its components do. CAS has no Tariff points."
+  ],
+  "qualifications": [
+    {
+      "id": "a-level",
+      "label": "A level",
+      "group": "England, Wales and Northern Ireland",
+      "officialTitle": "A Level",
+      "sizeBand": "4",
+      "grades": [
+        {
+          "grade": "A*",
+          "points": 56
+        },
+        {
+          "grade": "A",
+          "points": 48
+        },
+        {
+          "grade": "B",
+          "points": 40
+        },
+        {
+          "grade": "C",
+          "points": 32
+        },
+        {
+          "grade": "D",
+          "points": 24
+        },
+        {
+          "grade": "E",
+          "points": 16
+        }
+      ]
+    },
+    {
+      "id": "as-level",
+      "label": "AS level",
+      "group": "England, Wales and Northern Ireland",
+      "officialTitle": "AS",
+      "sizeBand": "2",
+      "grades": [
+        {
+          "grade": "A",
+          "points": 20
+        },
+        {
+          "grade": "B",
+          "points": 16
+        },
+        {
+          "grade": "C",
+          "points": 12
+        },
+        {
+          "grade": "D",
+          "points": 10
+        },
+        {
+          "grade": "E",
+          "points": 6
+        }
+      ]
+    },
+    {
+      "id": "epq",
+      "label": "Extended Project (EPQ)",
+      "group": "England, Wales and Northern Ireland",
+      "officialTitle": "Extended Project",
+      "sizeBand": "2",
+      "grades": [
+        {
+          "grade": "A*",
+          "points": 28
+        },
+        {
+          "grade": "A",
+          "points": 24
+        },
+        {
+          "grade": "B",
+          "points": 20
+        },
+        {
+          "grade": "C",
+          "points": 16
+        },
+        {
+          "grade": "D",
+          "points": 12
+        },
+        {
+          "grade": "E",
+          "points": 8
+        }
+      ]
+    },
+    {
+      "id": "ib-hl",
+      "label": "IB Diploma subject, Higher Level",
+      "group": "International Baccalaureate",
+      "officialTitle": "IBO Certificate in Higher Level",
+      "sizeBand": "4",
+      "grades": [
+        {
+          "grade": "H7",
+          "points": 56
+        },
+        {
+          "grade": "H6",
+          "points": 48
+        },
+        {
+          "grade": "H5",
+          "points": 40
+        },
+        {
+          "grade": "H4",
+          "points": 32
+        },
+        {
+          "grade": "H3",
+          "points": 24
+        },
+        {
+          "grade": "H2",
+          "points": 16
+        },
+        {
+          "grade": "H1",
+          "points": 12
+        }
+      ]
+    },
+    {
+      "id": "ib-sl",
+      "label": "IB Diploma subject, Standard Level",
+      "group": "International Baccalaureate",
+      "officialTitle": "IBO Certificate in Standard Level",
+      "sizeBand": "2",
+      "grades": [
+        {
+          "grade": "S7",
+          "points": 28
+        },
+        {
+          "grade": "S6",
+          "points": 24
+        },
+        {
+          "grade": "S5",
+          "points": 20
+        },
+        {
+          "grade": "S4",
+          "points": 16
+        },
+        {
+          "grade": "S3",
+          "points": 12
+        },
+        {
+          "grade": "S2",
+          "points": 8
+        },
+        {
+          "grade": "S1",
+          "points": 6
+        }
+      ]
+    },
+    {
+      "id": "ib-ee",
+      "label": "IB Extended Essay",
+      "group": "International Baccalaureate",
+      "officialTitle": "IBO Certificate in Extended Essay",
+      "sizeBand": "1",
+      "grades": [
+        {
+          "grade": "A",
+          "points": 12
+        },
+        {
+          "grade": "B",
+          "points": 10
+        },
+        {
+          "grade": "C",
+          "points": 8
+        },
+        {
+          "grade": "D",
+          "points": 6
+        },
+        {
+          "grade": "E",
+          "points": 4
+        }
+      ]
+    },
+    {
+      "id": "ib-tok",
+      "label": "IB Theory of Knowledge",
+      "group": "International Baccalaureate",
+      "officialTitle": "IBO Certificate in Theory of Knowledge (603/6253/4)",
+      "sizeBand": "1",
+      "grades": [
+        {
+          "grade": "A",
+          "points": 12
+        },
+        {
+          "grade": "B",
+          "points": 10
+        },
+        {
+          "grade": "C",
+          "points": 8
+        },
+        {
+          "grade": "D",
+          "points": 6
+        },
+        {
+          "grade": "E",
+          "points": 4
+        }
+      ]
+    },
+    {
+      "id": "sqa-higher",
+      "label": "Scottish Higher",
+      "group": "Scotland",
+      "officialTitle": "Scottish Higher",
+      "sizeBand": "3",
+      "grades": [
+        {
+          "grade": "A",
+          "points": 33
+        },
+        {
+          "grade": "B",
+          "points": 27
+        },
+        {
+          "grade": "C",
+          "points": 21
+        },
+        {
+          "grade": "D",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "id": "sqa-adv-higher",
+      "label": "Scottish Advanced Higher",
+      "group": "Scotland",
+      "officialTitle": "Scottish Advanced Higher",
+      "sizeBand": "4",
+      "grades": [
+        {
+          "grade": "A",
+          "points": 56
+        },
+        {
+          "grade": "B",
+          "points": 48
+        },
+        {
+          "grade": "C",
+          "points": 40
+        },
+        {
+          "grade": "D",
+          "points": 32
+        }
+      ]
+    },
+    {
+      "id": "ie-lc-higher",
+      "label": "Irish Leaving Certificate, Higher Level",
+      "group": "Ireland",
+      "officialTitle": "Leaving Certificate - Higher Level (Ireland) (first awarded in 2017)",
+      "sizeBand": "3",
+      "grades": [
+        {
+          "grade": "H1",
+          "points": 36
+        },
+        {
+          "grade": "H2",
+          "points": 30
+        },
+        {
+          "grade": "H3",
+          "points": 24
+        },
+        {
+          "grade": "H4",
+          "points": 18
+        },
+        {
+          "grade": "H5",
+          "points": 12
+        },
+        {
+          "grade": "H6",
+          "points": 9
+        }
+      ]
+    },
+    {
+      "id": "ie-lc-ordinary",
+      "label": "Irish Leaving Certificate, Ordinary Level",
+      "group": "Ireland",
+      "officialTitle": "Leaving Certificate - Ordinary Level (Ireland) (first awarded in 2017)",
+      "sizeBand": "2",
+      "grades": [
+        {
+          "grade": "O1",
+          "points": 12
+        },
+        {
+          "grade": "O2",
+          "points": 10
+        },
+        {
+          "grade": "O3",
+          "points": 8
+        },
+        {
+          "grade": "O4",
+          "points": 6
+        }
+      ]
+    }
+  ]
+}

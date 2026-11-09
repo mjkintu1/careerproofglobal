@@ -12,7 +12,7 @@ const fmt = (n: number) => n.toFixed(n % 1 === 0 ? 0 : 1);
 export function ResultCard({ result, pointsLabel, alternatives }: Props) {
   const { programme, points, zone, cutoffRange, breakdown } = result;
   return (
-    <li className="border-2 border-border p-4">
+    <li className="card p-5">
       <div className="flex flex-wrap items-start justify-between gap-2">
         <div>
           <h3 className="text-lg font-bold leading-snug">{programme.title}</h3>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 330" role="img" aria-labelledby="cpg-title-s cpg-desc-s">
+  <title id="cpg-title-s">CareerProof Global</title>
+  <desc id="cpg-desc-s">Map your path. Prove your future.</desc>
+  <defs>
+    <linearGradient id="cpg-proof-s" gradientUnits="userSpaceOnUse" x1="216" y1="0" x2="364" y2="0">
+      <stop offset="0" stop-color="#00B4D8"/>
+      <stop offset="1" stop-color="#FDC500"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(140 20)">
+    <rect width="120" height="120" rx="28" fill="#0A3D8F"/>
+    <polyline points="30,62 52,84 90,40" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="30" cy="62" r="9" fill="#00B4D8" stroke="#FFFFFF" stroke-width="3"/>
+    <circle cx="52" cy="84" r="9" fill="#00B4D8" stroke="#FFFFFF" stroke-width="3"/>
+    <circle cx="90" cy="40" r="12" fill="#FDC500" stroke="#FFFFFF" stroke-width="3"/>
+  </g>
+  <g font-family="'Plus Jakarta Sans', 'Montserrat', 'Poppins', 'Segoe UI', Arial, sans-serif">
+    <text x="36" y="214" font-size="54" font-weight="800" fill="#0A3D8F" textLength="178" lengthAdjust="spacingAndGlyphs">Career</text>
+    <text x="216" y="214" font-size="54" font-weight="800" fill="url(#cpg-proof-s)" textLength="148" lengthAdjust="spacingAndGlyphs">Proof</text>
+    <text x="200" y="250" font-size="20" font-weight="700" fill="#0A3D8F" text-anchor="middle" textLength="132" lengthAdjust="spacing">GLOBAL</text>
+    <text x="200" y="292" font-size="17" font-weight="500" fill="#475569" text-anchor="middle" textLength="300" lengthAdjust="spacing">Map your path. Prove your future.</text>
+  </g>
+</svg>

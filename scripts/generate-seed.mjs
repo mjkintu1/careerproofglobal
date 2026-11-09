@@ -2,6 +2,9 @@
 // Usage: npm run db:seed:generate
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
+import { careerSeed, locations } from "./seed-careers.mjs";
+import { subjectSeed } from "./seed-subjects.mjs";
+import { sourceSeed } from "./seed-sources.mjs";
 
 const dataDir = join(import.meta.dirname, "..", "packages", "sample-data", "src");
 const read = (f) => JSON.parse(readFileSync(join(dataDir, f), "utf8"));
@@ -21,6 +24,9 @@ const out = [
   "",
 ];
 
+out.push("insert into public.regions (iso_code, name, currency, secondary_exams, sort_order) values");
+out.push(locations.map((l, i) => `  (${q(l.code)}, ${q(l.name)}, ${q(l.currency)}, ${q(l.secondaryExams)}, ${i})`).join(",\n") + ";", "");
+
 const fields = new Set(countries.flatMap((c) => c.programmes.map((p) => p.field)));
 out.push("insert into public.fields (slug, name) values");
 out.push([...fields].map((f) => `  (${q(f)}, ${q(fieldName(f))})`).join(",\n") + ";", "");
@@ -30,7 +36,6 @@ for (const c of countries) {
   const fwId = `(select id from public.education_frameworks where code = ${q(fw)})`;
   const rsId = `(select id from public.rule_sets where framework_id = ${fwId} and version = ${q(c.rules.version)})`;
   out.push(`-- ${c.name}`);
-  out.push(`insert into public.regions (iso_code, name, currency) values (${q(c.iso)}, ${q(c.name)}, ${q(c.currency)});`);
   out.push(`insert into public.education_frameworks (region_id, code, name, level) values ((select id from public.regions where iso_code = ${q(c.iso)}), ${q(fw)}, ${q(c.frameworkName)}, 'upper_secondary');`);
   out.push(`insert into public.rule_sets (framework_id, version, rules, status) values (${fwId}, ${q(c.rules.version)}, ${q(JSON.stringify(c.rules))}::jsonb, 'illustrative');`);
   out.push("insert into public.subjects (framework_id, code, name, kind) values");
@@ -58,6 +63,10 @@ for (const c of countries) {
   }
   out.push("");
 }
+
+out.push(...careerSeed(q), "");
+out.push(...subjectSeed(q), "");
+out.push(...sourceSeed(q), "");
 
 const target = join(import.meta.dirname, "..", "supabase", "seed.sql");
 writeFileSync(target, out.join("\n") + "\n");

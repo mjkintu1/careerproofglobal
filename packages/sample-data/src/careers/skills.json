@@ -1,0 +1,21 @@
+{
+  "maths": "Mathematics", "physics": "Physics", "chemistry": "Chemistry", "biology": "Biology",
+  "patient-care": "Patient care", "clinical-diagnosis": "Clinical diagnosis", "pharmacology": "Pharmacology",
+  "lab-techniques": "Laboratory techniques", "public-health": "Public health", "anatomy": "Human anatomy",
+  "programming": "Programming", "databases": "Databases", "data-analysis": "Data analysis", "statistics": "Statistics",
+  "machine-learning": "Machine learning", "networking": "Computer networking", "info-security": "Information security",
+  "cloud": "Cloud computing", "user-research": "User research", "visual-design": "Visual design", "cad": "Computer-aided design",
+  "project-management": "Project management", "budgeting": "Budgeting", "financial-reporting": "Financial reporting",
+  "financial-modelling": "Financial modelling", "marketing": "Marketing", "sales": "Sales", "negotiation": "Negotiation",
+  "people-management": "People management", "recruitment": "Recruitment", "procurement": "Procurement",
+  "logistics-planning": "Logistics planning", "legal-research": "Legal research", "advocacy": "Advocacy",
+  "policy-analysis": "Policy analysis", "teaching": "Teaching", "curriculum-design": "Curriculum design",
+  "counselling": "Counselling", "crop-science": "Crop science", "animal-health": "Animal health",
+  "environmental-assessment": "Environmental assessment", "writing": "Writing", "research-methods": "Research methods",
+  "photo-video": "Photography and video", "social-media": "Social media", "electrical-installation": "Electrical installation",
+  "plumbing-systems": "Plumbing systems", "woodwork": "Woodwork", "welding": "Welding and fabrication",
+  "construction-methods": "Construction methods", "cooking": "Cooking", "customer-service": "Customer service",
+  "communication": "Communication", "problem-solving": "Problem solving", "mechanical-systems": "Mechanical systems",
+  "aviation": "Aviation operations", "safety-compliance": "Health and safety compliance", "quality-control": "Quality control",
+  "entrepreneurship": "Entrepreneurship"
+}

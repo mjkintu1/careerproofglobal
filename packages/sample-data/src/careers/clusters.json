@@ -1,0 +1,14 @@
+[
+  { "slug": "health", "name": "Health and Medicine", "description": "Caring for people, diagnosing and treating illness, and keeping communities healthy." },
+  { "slug": "engineering", "name": "Engineering", "description": "Designing and improving machines, structures, systems and processes." },
+  { "slug": "technology", "name": "Technology and Data", "description": "Building software, running networks, protecting systems and turning data into decisions." },
+  { "slug": "business-finance", "name": "Business and Finance", "description": "Running organisations, managing money, people and customers." },
+  { "slug": "law-public-service", "name": "Law and Public Service", "description": "Upholding the law, shaping policy and serving communities." },
+  { "slug": "education", "name": "Education and Training", "description": "Teaching, training and guiding learners of every age." },
+  { "slug": "agriculture-environment", "name": "Agriculture and Environment", "description": "Producing food, caring for animals and protecting natural resources." },
+  { "slug": "creative-media", "name": "Creative Arts and Media", "description": "Telling stories and designing what people see, read and watch." },
+  { "slug": "construction-trades", "name": "Construction and Skilled Trades", "description": "Planning, building and maintaining homes, infrastructure and installations." },
+  { "slug": "hospitality-tourism", "name": "Hospitality and Tourism", "description": "Food, travel and guest experiences." },
+  { "slug": "science-research", "name": "Science and Research", "description": "Investigating how the world works and turning discoveries into products." },
+  { "slug": "transport-logistics", "name": "Transport and Logistics", "description": "Moving people and goods safely and efficiently." }
+]

@@ -17,7 +17,7 @@ const scaleTitles: Record<string, string> = {
 };
 
 const inputClass =
-  "min-h-11 w-full border-2 border-border bg-surface px-2 text-base text-ink";
+  "field";
 
 export function ResultsForm({ ruleSet, applicant, presets, onChange }: Props) {
   const scales = Object.keys(ruleSet.grades);
@@ -49,7 +49,7 @@ export function ResultsForm({ ruleSet, applicant, presets, onChange }: Props) {
                 key={p.id}
                 type="button"
                 onClick={() => onChange(p.applicant)}
-                className="min-h-11 border-2 border-teal-700 px-3 font-semibold text-teal-700 hover:bg-surface-muted"
+                className="min-h-11 rounded-full border border-teal-700 px-4 font-semibold text-teal-700 hover:bg-teal-50"
               >
                 {p.label}
               </button>

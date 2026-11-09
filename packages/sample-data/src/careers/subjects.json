@@ -1,0 +1,27 @@
+{
+  "_note": "Normalisation rules for the school subjects named in occupations. Used by the website and the database seed.",
+  "generic": ["any secondary subjects", "the two subjects you want to teach", "subjects in your chosen field"],
+  "aliases": { "Art": "Fine Art", "Design": "Fine Art", "a foreign language": "Foreign Language", "Literature": "Literature in English" },
+  "about": {
+    "Mathematics": "The most widely required subject: engineering, technology, finance, science and many trades build on it.",
+    "Physics": "Opens engineering, aviation, technology and the physical sciences.",
+    "Chemistry": "Central to health, pharmacy, engineering, agriculture and laboratory careers.",
+    "Biology": "The foundation for health, agriculture, veterinary and life-science careers.",
+    "English": "Communication underpins every career; essential for law, media, teaching and business.",
+    "Literature in English": "Builds reading, argument and writing for law, media and teaching.",
+    "Economics": "Supports business, finance, policy and data careers.",
+    "Geography": "Useful for environment, planning, logistics, tourism and public health.",
+    "History": "Builds research and argument for law, policy, journalism and teaching.",
+    "Divinity": "Supports social work, counselling, teaching and community roles.",
+    "Fine Art": "Leads to design, architecture, media and creative industries.",
+    "Agriculture": "Leads to farming, agronomy, extension work and agribusiness.",
+    "Entrepreneurship": "Useful for business, marketing and starting your own enterprise.",
+    "Accounting": "A direct start for accounting, auditing and finance.",
+    "Computer Studies": "A head start for software, networks, IT support and data careers.",
+    "Technical Drawing": "Supports architecture, engineering, carpentry and construction.",
+    "Woodwork": "Hands-on preparation for carpentry and construction trades.",
+    "Metalwork": "Hands-on preparation for welding, fabrication and mechanical trades.",
+    "Foods and Nutrition": "Leads to cooking, catering and hospitality careers.",
+    "Foreign Language": "Valuable in tourism, diplomacy and international business."
+  }
+}

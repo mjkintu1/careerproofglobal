@@ -28,7 +28,7 @@ export function Simulator() {
 
   return (
     <div className="space-y-8">
-      <div role="note" className="border-l-8 border-gold-400 bg-surface-muted p-4">
+      <div role="note" className="rounded-[var(--radius-card)] border border-gold-400/60 bg-gold-50 p-4">
         <p className="font-bold">Demo with sample data</p>
         <p className="text-ink-muted">
           The scoring follows the structure of each national system, but the rule
@@ -42,7 +42,7 @@ export function Simulator() {
         <p className="text-ink-muted">One engine, configured per country by data.</p>
         <div className="flex flex-wrap gap-3">
           {datasets.map((d) => (
-            <label key={d.region} className="flex min-h-11 cursor-pointer items-center gap-2 border-2 border-border px-3 has-[:checked]:border-teal-700 has-[:checked]:bg-surface-muted">
+            <label key={d.region} className="flex min-h-11 cursor-pointer items-center gap-2 rounded-full border border-line bg-white px-4 has-[:checked]:border-teal-700 has-[:checked]:bg-teal-50">
               <input
                 type="radio"
                 name="region"

@@ -1,54 +1,76 @@
 @import "tailwindcss";
 
 /*
- * Career Proof design tokens.
- * Contrast notes (WCAG 2.2): see docs/IMPLEMENTATION_PLAN.md section 6.
- * - Brand teal (#00B4D8) and brand gold (#FDC500) are fills only: put ink text on them, never white.
- * - Text and interactive colours below all reach >= 4.5:1 on white.
+ * Career Proof theme v2.
+ * Brand: Pathway Teal + Global Gold on deep navy, rounded cards, display type.
+ * Every text/background pair used is checked for WCAG AA (see docs/IMPLEMENTATION_PLAN.md section 6):
+ * - teal-700 on white 4.87; teal-800 on teal-50 6.66 (use teal-800, not teal-700, on tints)
+ * - white on navy 16.7; teal-500 on navy 6.8; gold on navy 10.5; ink on gold 11.2
+ * - muted on white 7.6; input border #64748b on white 4.8 (>= 3:1 for controls)
  */
 @theme {
   /* Brand */
-  --color-teal-500: #00b4d8; /* brand fill, ink text on top */
-  --color-teal-700: #0077b6; /* primary buttons (white text), links */
-  --color-teal-800: #005a8c; /* hover / pressed */
-  --color-gold-400: #fdc500; /* highlight fill, ink text on top; also focus fill */
+  --color-teal-50: #e6f6fa;
+  --color-teal-100: #c8edf6;
+  --color-teal-500: #00b4d8; /* fills and accents; ink text on it, or as text on navy */
+  --color-teal-700: #0077b6; /* buttons (white text), links on white */
+  --color-teal-800: #005a8c; /* hover, text on teal-50 */
+  --color-gold-50: #fff8db;
+  --color-gold-400: #fdc500; /* highlight fills (ink text), focus */
   --color-gold-800: #8a6a00; /* gold-family text on white */
+  --color-navy-900: #0b1f33; /* hero bands, footer */
+  --color-navy-800: #12304d;
 
   /* Neutrals */
-  --color-ink: #1a1a1a;
-  --color-ink-muted: #4a4a4a;
-  --color-border: #6f777b; /* >= 3:1 for component boundaries */
+  --color-ink: #0f172a;
+  --color-ink-muted: #475569;
+  --color-border: #64748b; /* form controls (>= 3:1) */
+  --color-line: #e2e8f0; /* decorative card borders */
   --color-surface: #ffffff;
-  --color-surface-muted: #f3f4f5;
+  --color-surface-muted: #f5f7fa;
 
-  /* Admission zones: always paired with an icon and a text label */
+  /* Admission zones: always with icon + words */
   --color-zone-safe: #00703c;
   --color-zone-borderline: #8a6a00;
   --color-zone-danger: #b3261e;
 
-  /* Type: 16px base, 1.25 (major third) scale */
+  /* Type */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --text-sm: 0.8rem;
+  --font-display: var(--font-display-face), var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --text-sm: 0.875rem;
   --text-base: 1rem;
   --text-lg: 1.25rem;
   --text-xl: 1.5625rem;
   --text-2xl: 1.953rem;
   --text-3xl: 2.441rem;
+  --text-4xl: 3.052rem;
+
+  /* Shape */
+  --radius-card: 1rem;
+  --shadow-card: 0 1px 2px rgb(15 23 42 / 0.06), 0 1px 3px rgb(15 23 42 / 0.08);
+  --shadow-lift: 0 8px 24px rgb(15 23 42 / 0.1);
 }
 
 @layer base {
   html {
     color: var(--color-ink);
-    background: var(--color-surface);
+    background: var(--color-surface-muted);
     font-family: var(--font-sans);
-    font-size: 100%;
-    line-height: 1.5;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.015em;
+    line-height: 1.15;
   }
 
   a {
     color: var(--color-teal-700);
     text-decoration: underline;
-    text-underline-offset: 0.15em;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
   }
 
   a:hover {
@@ -57,12 +79,73 @@
   }
 }
 
+@layer components {
+  .card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-card);
+  }
+
+  .card-link {
+    transition: box-shadow 150ms ease, transform 150ms ease, border-color 150ms ease;
+  }
+
+  .card-link:hover {
+    box-shadow: var(--shadow-lift);
+    border-color: var(--color-teal-100);
+    transform: translateY(-2px);
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    border-radius: 999px;
+    padding: 0.25rem 0.75rem;
+    font-size: var(--text-sm);
+    font-weight: 600;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 999px;
+    background: var(--color-teal-700);
+    padding: 0 1.25rem;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .btn-primary:hover {
+    background: var(--color-teal-800);
+    color: #fff;
+  }
+
+  .field {
+    min-height: 2.75rem;
+    width: 100%;
+    border: 1px solid var(--color-border);
+    border-radius: 0.75rem;
+    background: var(--color-surface);
+    padding: 0 0.75rem;
+    font-size: var(--text-base);
+    color: var(--color-ink);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .card-link, .card-link:hover { transition: none; transform: none; }
+  }
+}
+
 /* Unlayered on purpose: focus styles must beat utility classes (e.g. text-white). */
-/* High-contrast focus: gold fill + ink underline, visible on any background */
 :focus-visible {
   outline: 3px solid var(--color-gold-400);
-  outline-offset: 0;
-  box-shadow: 0 4px 0 0 var(--color-ink);
+  outline-offset: 2px;
+  border-radius: 4px;
 }
 
 a:focus-visible {

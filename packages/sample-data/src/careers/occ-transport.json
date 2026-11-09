@@ -1,0 +1,22 @@
+[
+  { "slug": "pilot", "title": "Airline Pilot", "isco": "3153", "cluster": "transport-logistics", "level": "diploma", "riasec": "RIE",
+    "summary": "Pilots fly passengers and cargo safely, planning flights and handling the aircraft in all conditions.",
+    "tasks": ["Plan flights and check weather", "Fly and monitor the aircraft", "Follow air traffic and safety procedures"],
+    "skills": ["aviation", "physics", "maths", "safety-compliance"], "subjects": ["Mathematics", "Physics"],
+    "routes": [{ "type": "licence", "title": "Commercial pilot licence from a flight school", "years": 1.5 }, { "type": "experience", "title": "Build flying hours, then airline training", "years": 2 }] },
+  { "slug": "aircraft-maintenance-engineer", "title": "Aircraft Maintenance Engineer", "isco": "7232", "cluster": "transport-logistics", "level": "diploma", "riasec": "RIC",
+    "summary": "Aircraft maintenance engineers inspect, repair and certify aircraft so they are safe to fly.",
+    "tasks": ["Inspect aircraft systems", "Repair and replace parts", "Sign off maintenance records"],
+    "skills": ["mechanical-systems", "aviation", "safety-compliance", "quality-control"], "subjects": ["Mathematics", "Physics"],
+    "routes": [{ "type": "diploma", "title": "Aircraft maintenance training course", "years": 2 }, { "type": "licence", "title": "Aircraft maintenance licence", "years": 0 }] },
+  { "slug": "logistics-manager", "title": "Logistics Manager", "isco": "1324", "cluster": "transport-logistics", "level": "bachelor", "riasec": "ECR",
+    "summary": "Logistics managers plan how goods move and are stored, keeping supply chains fast, cheap and reliable.",
+    "tasks": ["Plan transport and warehousing", "Manage suppliers and carriers", "Track costs and delivery times"],
+    "skills": ["logistics-planning", "people-management", "budgeting", "negotiation"], "subjects": ["Mathematics", "Economics", "Geography"],
+    "routes": [{ "type": "degree", "title": "Degree in logistics, supply chain or business", "years": 3 }, { "type": "certification", "title": "Logistics or supply chain certification", "years": 1 }] },
+  { "slug": "supply-chain-analyst", "title": "Supply Chain Analyst", "isco": null, "cluster": "transport-logistics", "level": "bachelor", "riasec": "CIE",
+    "summary": "Supply chain analysts use data to forecast demand, set stock levels and find savings across the supply chain.",
+    "tasks": ["Forecast demand", "Analyse stock and delivery data", "Recommend process improvements"],
+    "skills": ["data-analysis", "logistics-planning", "statistics", "procurement"], "subjects": ["Mathematics", "Economics"],
+    "routes": [{ "type": "degree", "title": "Degree in supply chain, business or engineering", "years": 3 }] }
+]

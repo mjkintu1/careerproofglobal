@@ -15,3 +15,6 @@ supabase/.temp/
 .DS_Store
 Thumbs.db
 npm-debug.log*
+
+# Raw downloads from external sources (large; re-downloadable; never committed)
+data-raw/

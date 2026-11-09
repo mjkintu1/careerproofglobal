@@ -7,3 +7,10 @@ export {
   generalEligibility,
   suggestAlternatives,
 } from "./evaluate";
+export {
+  sumQualificationPoints,
+  type PointsEntry,
+  type PointsLine,
+  type PointsQualification,
+  type PointsResult,
+} from "./points-sum";

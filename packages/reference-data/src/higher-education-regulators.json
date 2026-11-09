@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "source": "African Quality Assurance Network (AfriQAN) membership list, Association of African Universities",
+    "url": "https://afriqan.aau.org/membership/membership-list/",
+    "retrievedAt": "2026-11-10",
+    "note": "Only national and regional regulators/quality-assurance bodies are kept; member universities are excluded because network membership is not accreditation. The list appears dated (page copyright 2021); confirm each body on its official website before marking it verified."
+  },
+  "regulators": [
+    {
+      "country": "UG",
+      "name": "National Council for Higher Education (NCHE)",
+      "scope": "national",
+      "status": "official-site-checked",
+      "website": "https://unche.or.ug/",
+      "note": "Not on the AfriQAN list; added from the official website (checked 2026-11-10)."
+    },
+    {
+      "country": "LS",
+      "name": "Council on Higher Education",
+      "scope": "national",
+      "status": "listed"
+    },
+    {
+      "country": "NA",
+      "name": "National Council for Higher Education (NCHE)",
+      "scope": "national",
+      "status": "listed"
+    },
+    {
+      "country": "KE",
+      "name": "Commission for University Education (CUE)",
+      "scope": "national",
+      "status": "listed"
+    },
+    {
+      "country": "KE",
+      "name": "Kenya National Qualifications Authority (KNQA)",
+      "scope": "national",
+      "status": "listed"
+    },
+    {
+      "country": "ZW",
+      "name": "Zimbabwe Council for Higher Education (ZIMCHE)",
+      "scope": "national",
+      "status": "listed"
+    },
+    {
+      "country": "BW",
+      "name": "Tertiary Education Council (TEC)",
+      "scope": "national",
+      "status": "listed",
+      "caution": "Name as listed; Botswana's tertiary regulator has since been restructured. Confirm the current body."
+    },
+    {
+      "country": "NG",
+      "name": "National Universities Commission (NUC)",
+      "scope": "national",
+      "status": "listed"
+    },
+    {
+      "country": "SN",
+      "name": "Autorité Nationale d'Assurance Qualité de l'Enseignement Supérieur, de la Recherche et de l'Innovation (ANAQ-Sup)",
+      "scope": "national",
+      "status": "listed"
+    },
+    {
+      "country": "TZ",
+      "name": "Tanzania Commission for Universities (TCU)",
+      "scope": "national",
+      "status": "listed"
+    },
+    {
+      "country": "MZ",
+      "name": "National Accreditation and Quality Assurance Council in Higher Education (CNAQ)",
+      "scope": "national",
+      "status": "listed"
+    },
+    {
+      "country": "GH",
+      "name": "Ghana Tertiary Education Commission (GTEC)",
+      "scope": "national",
+      "status": "listed"
+    },
+    {
+      "country": "SZ",
+      "name": "Eswatini Higher Education Council",
+      "scope": "national",
+      "status": "listed"
+    },
+    {
+      "country": "CV",
+      "name": "Higher Education Regulatory Agency (ARES)",
+      "scope": "national",
+      "status": "listed"
+    },
+    {
+      "country": "BF",
+      "name": "Conseil Africain et Malgache pour l'Enseignement Supérieur (CAMES)",
+      "scope": "regional",
+      "status": "listed",
+      "note": "Regional body for francophone African and Malagasy member states, headquartered in Burkina Faso."
+    }
+  ]
+}

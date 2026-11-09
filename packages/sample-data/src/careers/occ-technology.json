@@ -1,0 +1,22 @@
+[
+  { "slug": "software-developer", "title": "Software Developer", "isco": "2512", "cluster": "technology", "level": "bachelor", "riasec": "IRC",
+    "summary": "Software developers design, write and maintain the code behind apps, websites and business systems.",
+    "tasks": ["Write and review code", "Design features with users and teams", "Fix bugs and improve performance"],
+    "skills": ["programming", "databases", "problem-solving", "cloud"], "subjects": ["Mathematics", "Physics or Computer Studies"],
+    "routes": [{ "type": "degree", "title": "Bachelor of Computer Science or Software Engineering", "years": 3 }, { "type": "certificate", "title": "Coding bootcamp plus a portfolio", "years": 0.5 }] },
+  { "slug": "web-developer", "title": "Web Developer", "isco": "2513", "cluster": "technology", "level": "diploma", "riasec": "IAR",
+    "summary": "Web developers build and maintain websites and web apps, from page layout to the systems behind them.",
+    "tasks": ["Build web pages and interfaces", "Connect sites to databases and services", "Keep sites fast, secure and accessible"],
+    "skills": ["programming", "visual-design", "databases"], "subjects": ["Mathematics", "Computer Studies"],
+    "routes": [{ "type": "diploma", "title": "Diploma in information technology", "years": 2 }, { "type": "certificate", "title": "Online courses plus a portfolio", "years": 0.5 }] },
+  { "slug": "data-analyst", "title": "Data Analyst", "isco": null, "cluster": "technology", "level": "bachelor", "riasec": "ICE",
+    "summary": "Data analysts collect, clean and analyse data, then turn it into reports and dashboards that guide decisions.",
+    "tasks": ["Clean and combine data sets", "Analyse trends", "Build dashboards and present findings"],
+    "skills": ["data-analysis", "statistics", "databases", "communication"], "subjects": ["Mathematics", "Economics or Physics"],
+    "routes": [{ "type": "degree", "title": "Degree in statistics, economics, computer science or similar", "years": 3 }, { "type": "certification", "title": "Professional data analytics certificate", "years": 0.5 }] },
+  { "slug": "data-scientist", "title": "Data Scientist", "isco": null, "cluster": "technology", "level": "master", "riasec": "IRC",
+    "summary": "Data scientists build statistical and machine-learning models to predict outcomes and automate decisions.",
+    "tasks": ["Build and test predictive models", "Design experiments", "Explain model results to decision-makers"],
+    "skills": ["machine-learning", "statistics", "programming", "data-analysis"], "subjects": ["Mathematics", "Physics or Economics"],
+    "routes": [{ "type": "degree", "title": "Degree in statistics, mathematics or computer science", "years": 3 }, { "type": "degree", "title": "Master's in data science (common, not essential)", "years": 1.5 }] }
+]

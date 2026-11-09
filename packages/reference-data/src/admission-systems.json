@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "checkedAt": "2026-11-09",
+    "method": "A calculator is published only where an admissions body publishes its formula or points table, and is labelled with that body and the admission cycle. Explainers quote only what the official body states. Nothing here predicts a chance of admission."
+  },
+  "tiers": {
+    "points": "Points calculator: applies a formula or table an admissions body publishes.",
+    "explainer": "How admission works: what the official body says, with a link to its portal.",
+    "eligibility": "Minimum requirements: set by each country's regulator and institutions."
+  },
+  "systems": [
+    {
+      "id": "ucas-tariff",
+      "countries": ["GB"],
+      "tier": "points",
+      "name": "UCAS Tariff points",
+      "body": "UCAS",
+      "status": "verified",
+      "cycle": "2027 entry",
+      "href": "/admissions/calculators/ucas-tariff",
+      "summary": "Converts A levels, AS, the EPQ, IB Diploma components, Scottish Highers and the Irish Leaving Certificate into UCAS Tariff points, as used by many UK universities.",
+      "facts": [
+        "Points come from UCAS's published Tariff tables for the 2027 entry cycle.",
+        "The IB Diploma as a whole has no Tariff points; its Higher Level, Standard Level, Extended Essay and Theory of Knowledge components do.",
+        "Not every UK course uses Tariff points; many make offers in grades. Check each course's entry requirements."
+      ],
+      "source": { "name": "UCAS, UCAS Tariff points and 2027 Tariff tables", "url": "https://www.ucas.com/applying/before-you-apply/what-and-where-to-study/entry-requirements/ucas-tariff-points" }
+    },
+    {
+      "id": "ug-pujab",
+      "countries": ["UG"],
+      "tier": "points",
+      "name": "Uganda weighted admission points",
+      "body": "Public Universities Joint Admissions Board (PUJAB)",
+      "status": "illustrative",
+      "href": "/simulator",
+      "summary": "Follows the structure of Uganda's weighted points system (essential, relevant and desirable subjects). Rule values and cut-off points are not yet verified with PUJAB.",
+      "facts": [],
+      "source": null
+    },
+    {
+      "id": "ke-kuccps",
+      "countries": ["KE"],
+      "tier": "points",
+      "name": "Kenya cluster points",
+      "body": "Kenya Universities and Colleges Central Placement Service (KUCCPS)",
+      "status": "illustrative",
+      "href": "/simulator",
+      "summary": "Follows the structure of Kenya's cluster points formula. Rule values and cut-off points are not yet verified with KUCCPS.",
+      "facts": [],
+      "source": null
+    },
+    {
+      "id": "au-atar",
+      "countries": ["AU"],
+      "tier": "explainer",
+      "name": "Australian Tertiary Admission Rank (ATAR)",
+      "body": "Universities Admissions Centre (UAC) and the other state admission centres",
+      "status": "verified",
+      "href": null,
+      "summary": "The ATAR is calculated centrally, so no calculator can reproduce it from grades.",
+      "facts": [
+        "The ATAR is a rank, not a mark: a number between 0.00 and 99.95 that shows a student's position relative to their age group.",
+        "In New South Wales, the ATAR is calculated and released by UAC."
+      ],
+      "source": { "name": "UAC, ATAR", "url": "https://www.uac.edu.au/future-applicants/atar" }
+    },
+    {
+      "id": "in-nta",
+      "countries": ["IN"],
+      "tier": "explainer",
+      "name": "National entrance examinations",
+      "body": "National Testing Agency (NTA)",
+      "status": "verified",
+      "href": null,
+      "summary": "Entry to many programmes depends on national entrance exam results rather than a school-grade formula.",
+      "facts": [
+        "The NTA is an autonomous testing organisation that conducts entrance examinations.",
+        "Its exams include JEE (Main) for engineering, NEET (UG) for medicine and CUET (UG) for central universities."
+      ],
+      "source": { "name": "National Testing Agency", "url": "https://nta.ac.in/" }
+    },
+    {
+      "id": "fr-parcoursup",
+      "countries": ["FR"],
+      "tier": "explainer",
+      "name": "Parcoursup",
+      "body": "Ministry of Higher Education and Research",
+      "status": "pending",
+      "href": null,
+      "summary": "France's national platform for applying to first-year higher education. Details are being confirmed with the official site.",
+      "facts": [],
+      "source": { "name": "Parcoursup (official portal)", "url": "https://www.parcoursup.gouv.fr/" }
+    },
+    {
+      "id": "us-institutional",
+      "countries": ["US"],
+      "tier": "explainer",
+      "name": "Admission by each institution",
+      "body": "EducationUSA (U.S. Department of State)",
+      "status": "pending",
+      "href": null,
+      "summary": "US colleges set their own admission requirements; there is no national points formula. Details are being confirmed with EducationUSA.",
+      "facts": [],
+      "source": { "name": "EducationUSA (official advising network)", "url": "https://educationusa.state.gov/" }
+    }
+  ],
+  "pending": [
+    { "name": "IB Diploma points (out of 45)", "reason": "The IB's own site blocks automated checks; to be confirmed directly with the IB before publishing." },
+    { "name": "Ghana WASSCE aggregate", "reason": "Awaiting the official published rules." },
+    { "name": "South Africa Admission Point Score (APS)", "reason": "Each university publishes its own APS rules; to be added university by university." },
+    { "name": "Nigeria UTME and post-UTME aggregate", "reason": "Each university sets its own aggregate; awaiting official rules." }
+  ]
+}

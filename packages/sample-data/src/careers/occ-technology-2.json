@@ -1,0 +1,22 @@
+[
+  { "slug": "network-engineer", "title": "Network Engineer", "isco": "2523", "cluster": "technology", "level": "bachelor", "riasec": "RIC",
+    "summary": "Network engineers design and run the computer networks that connect offices, data centres and the internet.",
+    "tasks": ["Configure routers, switches and firewalls", "Monitor network performance", "Plan upgrades"],
+    "skills": ["networking", "info-security", "cloud", "problem-solving"], "subjects": ["Mathematics", "Physics"],
+    "routes": [{ "type": "degree", "title": "Degree in computer or telecommunications engineering", "years": 4 }, { "type": "certification", "title": "Vendor networking certification", "years": 0.5 }] },
+  { "slug": "cybersecurity-analyst", "title": "Cybersecurity Analyst", "isco": "2529", "cluster": "technology", "level": "bachelor", "riasec": "ICR",
+    "summary": "Cybersecurity analysts protect organisations from attacks by monitoring systems, finding weaknesses and responding to incidents.",
+    "tasks": ["Monitor systems for threats", "Test for vulnerabilities", "Respond to security incidents"],
+    "skills": ["info-security", "networking", "programming", "problem-solving"], "subjects": ["Mathematics", "Physics or Computer Studies"],
+    "routes": [{ "type": "degree", "title": "Degree in computer science or IT", "years": 3 }, { "type": "certification", "title": "Security certification (entry to advanced)", "years": 0.5 }] },
+  { "slug": "it-support-technician", "title": "IT Support Technician", "isco": "3512", "cluster": "technology", "level": "certificate", "riasec": "RCS",
+    "summary": "IT support technicians keep computers, printers and accounts working and help staff solve technical problems.",
+    "tasks": ["Set up computers and accounts", "Answer help-desk requests", "Install updates and repair hardware"],
+    "skills": ["networking", "customer-service", "problem-solving"], "subjects": ["Mathematics", "Computer Studies"],
+    "routes": [{ "type": "certificate", "title": "Certificate in IT support", "years": 1 }, { "type": "certification", "title": "Entry-level IT certification", "years": 0.3 }] },
+  { "slug": "ux-designer", "title": "UX Designer", "isco": null, "cluster": "technology", "level": "bachelor", "riasec": "AIS",
+    "summary": "UX designers research how people use products and design apps and websites that are easy and pleasant to use.",
+    "tasks": ["Interview and observe users", "Sketch and prototype designs", "Test designs and improve them"],
+    "skills": ["user-research", "visual-design", "communication", "problem-solving"], "subjects": ["Art or Design", "English"],
+    "routes": [{ "type": "degree", "title": "Degree in design, psychology or computing", "years": 3 }, { "type": "certificate", "title": "UX course plus a portfolio", "years": 0.5 }] }
+]

@@ -23,7 +23,35 @@ export type Database = {
           }
         },"public": {
           Tables: {
-            "combination_subjects": {
+            "career_clusters": {
+                  Row: {
+                    "description": string,"id": string,"name": string,"slug": string,"sort_order": number
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "description": string,"id"?: string,"name": string,"slug": string,"sort_order"?: number
+                  }
+                  Update: {
+                    "description"?: string,"id"?: string,"name"?: string,"slug"?: string,"sort_order"?: number
+                  }
+                  Relationships: [
+                    
+                  ]
+                },"certifications": {
+                  Row: {
+                    "id": string,"issuer": string | null,"name": string,"scope": string,"slug": string,"typical_months": number | null
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "id"?: string,"issuer"?: string | null,"name": string,"scope"?: string,"slug": string,"typical_months"?: number | null
+                  }
+                  Update: {
+                    "id"?: string,"issuer"?: string | null,"name"?: string,"scope"?: string,"slug"?: string,"typical_months"?: number | null
+                  }
+                  Relationships: [
+                    
+                  ]
+                },"combination_subjects": {
                   Row: {
                     "combination_id": string,"subject_id": string
                   }
@@ -83,6 +111,20 @@ isOneToOne: false
                   Relationships: [
                     
                   ]
+                },"data_sources": {
+                  Row: {
+                    "access_method": string,"attribution": string,"id": string,"last_checked_at": string | null,"licence": string,"licence_url": string | null,"name": string,"notes": string | null,"publisher": string,"slug": string,"status": string,"update_frequency": string,"url": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "access_method": string,"attribution": string,"id"?: string,"last_checked_at"?: string | null,"licence": string,"licence_url"?: string | null,"name": string,"notes"?: string | null,"publisher": string,"slug": string,"status"?: string,"update_frequency": string,"url": string
+                  }
+                  Update: {
+                    "access_method"?: string,"attribution"?: string,"id"?: string,"last_checked_at"?: string | null,"licence"?: string,"licence_url"?: string | null,"name"?: string,"notes"?: string | null,"publisher"?: string,"slug"?: string,"status"?: string,"update_frequency"?: string,"url"?: string
+                  }
+                  Relationships: [
+                    
+                  ]
                 },"degrees": {
                   Row: {
                     "field_id": string,"id": string,"level": string,"name": string
@@ -137,6 +179,20 @@ isOneToOne: false
                   Relationships: [
                     
                   ]
+                },"global_subjects": {
+                  Row: {
+                    "description": string,"id": string,"name": string,"slug": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "description": string,"id"?: string,"name": string,"slug": string
+                  }
+                  Update: {
+                    "description"?: string,"id"?: string,"name"?: string,"slug"?: string
+                  }
+                  Relationships: [
+                    
+                  ]
                 },"historical_cutoffs": {
                   Row: {
                     "created_at": string,"entered_by": string | null,"id": string,"intake_year": number,"is_illustrative": boolean,"points": number,"programme_id": string,"reviewed_by": string | null,"scheme": string,"sex": string,"source_url": string | null
@@ -154,6 +210,26 @@ isOneToOne: false
       columns: ["programme_id"]
 isOneToOne: false
       referencedRelation: "programmes"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"ingestion_runs": {
+                  Row: {
+                    "error": string | null,"finished_at": string | null,"id": string,"params": NonNullable<Json>,"rows_read": number,"rows_written": number,"source_id": string,"started_at": string,"status": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "error"?: string | null,"finished_at"?: string | null,"id"?: string,"params"?: NonNullable<Json>,"rows_read"?: number,"rows_written"?: number,"source_id": string,"started_at"?: string,"status"?: string
+                  }
+                  Update: {
+                    "error"?: string | null,"finished_at"?: string | null,"id"?: string,"params"?: NonNullable<Json>,"rows_read"?: number,"rows_written"?: number,"source_id"?: string,"started_at"?: string,"status"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "ingestion_runs_source_id_fkey"
+      columns: ["source_id"]
+isOneToOne: false
+      referencedRelation: "data_sources"
       referencedColumns: ["id"]
     }
                   ]
@@ -176,6 +252,252 @@ isOneToOne: false
       referencedRelation: "regions"
       referencedColumns: ["id"]
     }
+                  ]
+                },"job_postings": {
+                  Row: {
+                    "apply_url": string,"city": string | null,"expires_at": string | null,"external_id": string,"id": string,"ingestion_run_id": string | null,"isco_code": string | null,"occupation_id": string | null,"organisation": string | null,"posted_at": string,"region_id": string | null,"remote": boolean,"salary_currency": string | null,"salary_max": number | null,"salary_min": number | null,"salary_period": string | null,"source_id": string,"status": string,"title": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "apply_url": string,"city"?: string | null,"expires_at"?: string | null,"external_id": string,"id"?: string,"ingestion_run_id"?: string | null,"isco_code"?: string | null,"occupation_id"?: string | null,"organisation"?: string | null,"posted_at": string,"region_id"?: string | null,"remote"?: boolean,"salary_currency"?: string | null,"salary_max"?: number | null,"salary_min"?: number | null,"salary_period"?: string | null,"source_id": string,"status"?: string,"title": string
+                  }
+                  Update: {
+                    "apply_url"?: string,"city"?: string | null,"expires_at"?: string | null,"external_id"?: string,"id"?: string,"ingestion_run_id"?: string | null,"isco_code"?: string | null,"occupation_id"?: string | null,"organisation"?: string | null,"posted_at"?: string,"region_id"?: string | null,"remote"?: boolean,"salary_currency"?: string | null,"salary_max"?: number | null,"salary_min"?: number | null,"salary_period"?: string | null,"source_id"?: string,"status"?: string,"title"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "job_postings_ingestion_run_id_fkey"
+      columns: ["ingestion_run_id"]
+isOneToOne: false
+      referencedRelation: "ingestion_runs"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "job_postings_occupation_id_fkey"
+      columns: ["occupation_id"]
+isOneToOne: false
+      referencedRelation: "occupations"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "job_postings_region_id_fkey"
+      columns: ["region_id"]
+isOneToOne: false
+      referencedRelation: "regions"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "job_postings_source_id_fkey"
+      columns: ["source_id"]
+isOneToOne: false
+      referencedRelation: "data_sources"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"labour_indicators": {
+                  Row: {
+                    "age_group": string,"education_level": string,"id": number,"indicator_code": string,"indicator_name": string,"ingestion_run_id": string | null,"isco_code": string | null,"observation_status": string | null,"period": string,"region_id": string,"sex": string,"source_id": string,"unit": string,"urbanisation": string,"value": number
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "age_group"?: string,"education_level"?: string,"id"?: never,"indicator_code": string,"indicator_name": string,"ingestion_run_id"?: string | null,"isco_code"?: string | null,"observation_status"?: string | null,"period": string,"region_id": string,"sex"?: string,"source_id": string,"unit": string,"urbanisation"?: string,"value": number
+                  }
+                  Update: {
+                    "age_group"?: string,"education_level"?: string,"id"?: never,"indicator_code"?: string,"indicator_name"?: string,"ingestion_run_id"?: string | null,"isco_code"?: string | null,"observation_status"?: string | null,"period"?: string,"region_id"?: string,"sex"?: string,"source_id"?: string,"unit"?: string,"urbanisation"?: string,"value"?: number
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "labour_indicators_ingestion_run_id_fkey"
+      columns: ["ingestion_run_id"]
+isOneToOne: false
+      referencedRelation: "ingestion_runs"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "labour_indicators_region_id_fkey"
+      columns: ["region_id"]
+isOneToOne: false
+      referencedRelation: "regions"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "labour_indicators_source_id_fkey"
+      columns: ["source_id"]
+isOneToOne: false
+      referencedRelation: "data_sources"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"occupation_crosswalks": {
+                  Row: {
+                    "code": string,"label": string | null,"occupation_id": string,"region_id": string | null,"scheme": string,"source_id": string | null,"uri": string | null
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "code": string,"label"?: string | null,"occupation_id": string,"region_id"?: string | null,"scheme": string,"source_id"?: string | null,"uri"?: string | null
+                  }
+                  Update: {
+                    "code"?: string,"label"?: string | null,"occupation_id"?: string,"region_id"?: string | null,"scheme"?: string,"source_id"?: string | null,"uri"?: string | null
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "occupation_crosswalks_occupation_id_fkey"
+      columns: ["occupation_id"]
+isOneToOne: false
+      referencedRelation: "occupations"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "occupation_crosswalks_region_id_fkey"
+      columns: ["region_id"]
+isOneToOne: false
+      referencedRelation: "regions"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "occupation_crosswalks_source_id_fkey"
+      columns: ["source_id"]
+isOneToOne: false
+      referencedRelation: "data_sources"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"occupation_localisations": {
+                  Row: {
+                    "context": string | null,"demand": string,"is_illustrative": boolean,"last_reviewed_at": string | null,"local_title": string | null,"occupation_id": string,"region_id": string,"regulator": string | null,"regulator_url": string | null,"salary_band_high": number | null,"salary_band_low": number | null,"salary_period": string | null,"salary_source": string | null,"salary_year": number | null,"source_url": string | null
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "context"?: string | null,"demand"?: string,"is_illustrative"?: boolean,"last_reviewed_at"?: string | null,"local_title"?: string | null,"occupation_id": string,"region_id": string,"regulator"?: string | null,"regulator_url"?: string | null,"salary_band_high"?: number | null,"salary_band_low"?: number | null,"salary_period"?: string | null,"salary_source"?: string | null,"salary_year"?: number | null,"source_url"?: string | null
+                  }
+                  Update: {
+                    "context"?: string | null,"demand"?: string,"is_illustrative"?: boolean,"last_reviewed_at"?: string | null,"local_title"?: string | null,"occupation_id"?: string,"region_id"?: string,"regulator"?: string | null,"regulator_url"?: string | null,"salary_band_high"?: number | null,"salary_band_low"?: number | null,"salary_period"?: string | null,"salary_source"?: string | null,"salary_year"?: number | null,"source_url"?: string | null
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "occupation_localisations_occupation_id_fkey"
+      columns: ["occupation_id"]
+isOneToOne: false
+      referencedRelation: "occupations"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "occupation_localisations_region_id_fkey"
+      columns: ["region_id"]
+isOneToOne: false
+      referencedRelation: "regions"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"occupation_skills": {
+                  Row: {
+                    "importance": number,"occupation_id": string,"skill_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "importance"?: number,"occupation_id": string,"skill_id": string
+                  }
+                  Update: {
+                    "importance"?: number,"occupation_id"?: string,"skill_id"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "occupation_skills_occupation_id_fkey"
+      columns: ["occupation_id"]
+isOneToOne: false
+      referencedRelation: "occupations"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "occupation_skills_skill_id_fkey"
+      columns: ["skill_id"]
+isOneToOne: false
+      referencedRelation: "skills"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"occupation_subjects": {
+                  Row: {
+                    "global_subject_id": string,"occupation_id": string,"requirement": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "global_subject_id": string,"occupation_id": string,"requirement": string
+                  }
+                  Update: {
+                    "global_subject_id"?: string,"occupation_id"?: string,"requirement"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "occupation_subjects_global_subject_id_fkey"
+      columns: ["global_subject_id"]
+isOneToOne: false
+      referencedRelation: "global_subjects"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "occupation_subjects_occupation_id_fkey"
+      columns: ["occupation_id"]
+isOneToOne: false
+      referencedRelation: "occupations"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"occupation_transitions": {
+                  Row: {
+                    "evidence_count": number,"from_occupation_id": string,"id": string,"kind": string,"region_id": string | null,"source_url": string | null,"to_occupation_id": string,"typical_years": number | null,"via": string | null
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "evidence_count"?: number,"from_occupation_id": string,"id"?: string,"kind": string,"region_id"?: string | null,"source_url"?: string | null,"to_occupation_id": string,"typical_years"?: number | null,"via"?: string | null
+                  }
+                  Update: {
+                    "evidence_count"?: number,"from_occupation_id"?: string,"id"?: string,"kind"?: string,"region_id"?: string | null,"source_url"?: string | null,"to_occupation_id"?: string,"typical_years"?: number | null,"via"?: string | null
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "occupation_transitions_from_occupation_id_fkey"
+      columns: ["from_occupation_id"]
+isOneToOne: false
+      referencedRelation: "occupations"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "occupation_transitions_region_id_fkey"
+      columns: ["region_id"]
+isOneToOne: false
+      referencedRelation: "regions"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "occupation_transitions_to_occupation_id_fkey"
+      columns: ["to_occupation_id"]
+isOneToOne: false
+      referencedRelation: "occupations"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"occupations": {
+                  Row: {
+                    "cluster_id": string,"created_at": string,"id": string,"isco_code": string | null,"last_reviewed_at": string | null,"riasec": string | null,"school_subjects": (string)[],"slug": string,"source_url": string | null,"status": string,"summary": string,"tasks": (string)[],"title": string,"typical_level": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "cluster_id": string,"created_at"?: string,"id"?: string,"isco_code"?: string | null,"last_reviewed_at"?: string | null,"riasec"?: string | null,"school_subjects"?: (string)[],"slug": string,"source_url"?: string | null,"status"?: string,"summary": string,"tasks"?: (string)[],"title": string,"typical_level": string
+                  }
+                  Update: {
+                    "cluster_id"?: string,"created_at"?: string,"id"?: string,"isco_code"?: string | null,"last_reviewed_at"?: string | null,"riasec"?: string | null,"school_subjects"?: (string)[],"slug"?: string,"source_url"?: string | null,"status"?: string,"summary"?: string,"tasks"?: (string)[],"title"?: string,"typical_level"?: string
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "occupations_cluster_id_fkey"
+      columns: ["cluster_id"]
+isOneToOne: false
+      referencedRelation: "career_clusters"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"page_feedback": {
+                  Row: {
+                    "comment": string | null,"created_at": string,"helpful": boolean,"id": string,"location": string | null,"page_path": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "comment"?: string | null,"created_at"?: string,"helpful": boolean,"id"?: string,"location"?: string | null,"page_path": string
+                  }
+                  Update: {
+                    "comment"?: string | null,"created_at"?: string,"helpful"?: boolean,"id"?: string,"location"?: string | null,"page_path"?: string
+                  }
+                  Relationships: [
+                    
                   ]
                 },"profiles": {
                   Row: {
@@ -255,16 +577,54 @@ isOneToOne: false
       referencedColumns: ["id"]
     }
                   ]
-                },"regions": {
+                },"qualification_routes": {
                   Row: {
-                    "created_at": string,"currency": string,"id": string,"iso_code": string,"locale": string,"name": string
+                    "certification_id": string | null,"degree_id": string | null,"id": string,"last_reviewed_at": string | null,"occupation_id": string,"region_id": string | null,"route_type": string,"sort_order": number,"source_url": string | null,"title": string,"typical_years": number | null
                   }
                   ComputedFields: never
                   Insert: {
-                    "created_at"?: string,"currency": string,"id"?: string,"iso_code": string,"locale"?: string,"name": string
+                    "certification_id"?: string | null,"degree_id"?: string | null,"id"?: string,"last_reviewed_at"?: string | null,"occupation_id": string,"region_id"?: string | null,"route_type": string,"sort_order"?: number,"source_url"?: string | null,"title": string,"typical_years"?: number | null
                   }
                   Update: {
-                    "created_at"?: string,"currency"?: string,"id"?: string,"iso_code"?: string,"locale"?: string,"name"?: string
+                    "certification_id"?: string | null,"degree_id"?: string | null,"id"?: string,"last_reviewed_at"?: string | null,"occupation_id"?: string,"region_id"?: string | null,"route_type"?: string,"sort_order"?: number,"source_url"?: string | null,"title"?: string,"typical_years"?: number | null
+                  }
+                  Relationships: [
+                    {
+      foreignKeyName: "qualification_routes_certification_id_fkey"
+      columns: ["certification_id"]
+isOneToOne: false
+      referencedRelation: "certifications"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "qualification_routes_degree_id_fkey"
+      columns: ["degree_id"]
+isOneToOne: false
+      referencedRelation: "degrees"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "qualification_routes_occupation_id_fkey"
+      columns: ["occupation_id"]
+isOneToOne: false
+      referencedRelation: "occupations"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "qualification_routes_region_id_fkey"
+      columns: ["region_id"]
+isOneToOne: false
+      referencedRelation: "regions"
+      referencedColumns: ["id"]
+    }
+                  ]
+                },"regions": {
+                  Row: {
+                    "created_at": string,"currency": string | null,"id": string,"iso_code": string,"locale": string,"name": string,"secondary_exams": string | null,"sort_order": number
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "created_at"?: string,"currency"?: string | null,"id"?: string,"iso_code": string,"locale"?: string,"name": string,"secondary_exams"?: string | null,"sort_order"?: number
+                  }
+                  Update: {
+                    "created_at"?: string,"currency"?: string | null,"id"?: string,"iso_code"?: string,"locale"?: string,"name"?: string,"secondary_exams"?: string | null,"sort_order"?: number
                   }
                   Relationships: [
                     
@@ -289,6 +649,20 @@ isOneToOne: false
       referencedColumns: ["id"]
     }
                   ]
+                },"saved_items": {
+                  Row: {
+                    "created_at": string,"item_key": string,"item_type": string,"location": string | null,"user_id": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "created_at"?: string,"item_key": string,"item_type": string,"location"?: string | null,"user_id": string
+                  }
+                  Update: {
+                    "created_at"?: string,"item_key"?: string,"item_type"?: string,"location"?: string | null,"user_id"?: string
+                  }
+                  Relationships: [
+                    
+                  ]
                 },"saved_simulations": {
                   Row: {
                     "created_at": string,"id": string,"inputs": NonNullable<Json>,"results": NonNullable<Json>,"rule_set_id": string,"user_id": string
@@ -309,16 +683,30 @@ isOneToOne: false
       referencedColumns: ["id"]
     }
                   ]
-                },"subjects": {
+                },"skills": {
                   Row: {
-                    "code": string,"framework_id": string,"id": string,"kind": string,"name": string
+                    "esco_uri": string | null,"id": string,"kind": string,"name": string,"slug": string
                   }
                   ComputedFields: never
                   Insert: {
-                    "code": string,"framework_id": string,"id"?: string,"kind": string,"name": string
+                    "esco_uri"?: string | null,"id"?: string,"kind"?: string,"name": string,"slug": string
                   }
                   Update: {
-                    "code"?: string,"framework_id"?: string,"id"?: string,"kind"?: string,"name"?: string
+                    "esco_uri"?: string | null,"id"?: string,"kind"?: string,"name"?: string,"slug"?: string
+                  }
+                  Relationships: [
+                    
+                  ]
+                },"subjects": {
+                  Row: {
+                    "code": string,"framework_id": string,"global_subject_id": string | null,"id": string,"kind": string,"name": string
+                  }
+                  ComputedFields: never
+                  Insert: {
+                    "code": string,"framework_id": string,"global_subject_id"?: string | null,"id"?: string,"kind": string,"name": string
+                  }
+                  Update: {
+                    "code"?: string,"framework_id"?: string,"global_subject_id"?: string | null,"id"?: string,"kind"?: string,"name"?: string
                   }
                   Relationships: [
                     {
@@ -326,6 +714,12 @@ isOneToOne: false
       columns: ["framework_id"]
 isOneToOne: false
       referencedRelation: "education_frameworks"
+      referencedColumns: ["id"]
+    },{
+      foreignKeyName: "subjects_global_subject_id_fkey"
+      columns: ["global_subject_id"]
+isOneToOne: false
+      referencedRelation: "global_subjects"
       referencedColumns: ["id"]
     }
                   ]

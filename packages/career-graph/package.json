@@ -1,0 +1,14 @@
+{
+  "name": "@careerproof/career-graph",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Global career graph: occupations, skills, transitions, related careers and path finding. Pure functions, no I/O.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@careerproof/reference-data",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Real reference data: the data-source registry and cited snapshots from official sources (World Bank, ILO, OECD).",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  }
+}

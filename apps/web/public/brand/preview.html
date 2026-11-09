@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CareerProof Global: logo preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; font-family: 'Plus Jakarta Sans', Arial, sans-serif; background: #f5f7fa; color: #0f172a; }
+  main { max-width: 1100px; margin: 0 auto; padding: 32px 24px; display: grid; gap: 24px; }
+  h1 { margin: 0; font-size: 28px; }
+  .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+  .tile { border-radius: 16px; padding: 28px; display: grid; place-items: center; border: 1px solid #e2e8f0; background: #fff; }
+  .tile.dark { background: #0b1f33; border-color: #0b1f33; }
+  .tile p { margin: 12px 0 0; font-size: 13px; color: #475569; }
+  .tile.dark p { color: #cbd5e1; }
+  .svg svg { width: 100%; height: auto; display: block; }
+  .small { display: flex; gap: 24px; align-items: center; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+<main>
+  <h1>CareerProof Global: logo</h1>
+  <div class="row">
+    <div class="tile"><div class="svg" data-src="careerproof-global-logo.svg" style="width:100%"></div><p>Primary, horizontal (light backgrounds)</p></div>
+    <div class="tile dark"><div class="svg" data-src="careerproof-global-logo-dark.svg" style="width:100%"></div><p>Horizontal, dark backgrounds</p></div>
+  </div>
+  <div class="row">
+    <div class="tile"><div class="svg" data-src="careerproof-global-stacked.svg" style="width:70%"></div><p>Stacked</p></div>
+    <div class="tile"><div class="small">
+      <div class="svg" data-src="careerproof-global-icon.svg" style="width:96px"></div>
+      <div class="svg" data-src="careerproof-global-icon.svg" style="width:48px"></div>
+      <div class="svg" data-src="careerproof-global-icon.svg" style="width:24px"></div>
+      <div class="svg" data-src="careerproof-global-logo.svg" style="width:220px"></div>
+    </div><p>Icon at 96, 48 and 24 px; logo at 220 px wide</p></div>
+  </div>
+</main>
+<script>
+  // Inline the SVGs so they use the web font loaded above.
+  document.querySelectorAll("[data-src]").forEach(async (el) => {
+    const res = await fetch(el.dataset.src);
+    el.innerHTML = await res.text();
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+[
+  { "code": "UG", "name": "Uganda", "currency": "UGX", "secondaryExams": "UCE (O-level), then UACE (A-level)" },
+  { "code": "KE", "name": "Kenya", "currency": "KES", "secondaryExams": "KCSE" },
+  { "code": "NG", "name": "Nigeria", "currency": "NGN", "secondaryExams": "WASSCE or NECO, then UTME (JAMB) for university" },
+  { "code": "GH", "name": "Ghana", "currency": "GHS", "secondaryExams": "WASSCE" },
+  { "code": "ZA", "name": "South Africa", "currency": "ZAR", "secondaryExams": "National Senior Certificate (matric)" },
+  { "code": "RW", "name": "Rwanda", "currency": "RWF", "secondaryExams": "Advanced Level national examinations" },
+  { "code": "TZ", "name": "Tanzania", "currency": "TZS", "secondaryExams": "CSEE, then ACSEE" },
+  { "code": "GB", "name": "United Kingdom", "currency": "GBP", "secondaryExams": "GCSEs, then A-levels or T-levels" },
+  { "code": "US", "name": "United States", "currency": "USD", "secondaryExams": "High school diploma; SAT or ACT for many colleges" },
+  { "code": "IN", "name": "India", "currency": "INR", "secondaryExams": "Class 10 and Class 12 board exams; entrance tests such as JEE or NEET" }
+]
