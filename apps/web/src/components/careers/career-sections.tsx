@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { RegulatorList } from "@/components/admissions/regulator-list";
 import { BadgeCheck, GraduationCap, MapPin } from "lucide-react";
 import type { Localised, Occupation, RelatedCareer } from "@careerproof/career-graph";
 import { careerHref, formatYears, graph } from "@/lib/careers";
@@ -100,17 +101,15 @@ export function RelatedCareers({ related, location }: { related: RelatedCareer[]
   );
 }
 
-/** National higher-education regulators listed by AfriQAN (shown as listed, not yet verified). */
+/** Higher-education regulators and QA agencies listed by AfriQAN and INQAAHE (shown as listed, not yet verified). */
 function HeRegulatorList({ countryCode }: { countryCode: string }) {
-  const { regulators, source, sourceUrl } = higherEducationRegulators(countryCode);
+  const { regulators, sources } = higherEducationRegulators(countryCode);
   if (regulators.length === 0) return null;
   return (
     <div>
       <dt className="flex items-center gap-1 font-semibold"><BadgeCheck aria-hidden="true" size={16} /> Higher education regulator</dt>
       <dd className="space-y-1 text-ink-muted">
-        {regulators.map((r) => <p key={r.name}>{r.website ? <a href={r.website}>{r.name}</a> : r.name}{r.caution ? ` (${r.caution})` : ""}</p>)}
-        {regulators.some((r) => r.status === "listed") && <p className="text-xs">As listed by <a href={sourceUrl}>{source}</a>; confirm on the regulator&apos;s website.</p>}
-        {regulators.some((r) => r.website) && <p className="text-xs">Linked names go to the regulator&apos;s official website.</p>}
+        <RegulatorList regulators={regulators} sources={sources} />
       </dd>
     </div>
   );

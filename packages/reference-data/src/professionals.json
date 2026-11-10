@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "purpose": "Professionals featured on career pages, with links to their own LinkedIn profiles.",
+    "rules": [
+      "Only people who have given written (recorded) consent are listed; consent can be withdrawn at any time and the entry is then removed.",
+      "Profile data is supplied by the person, never collected from LinkedIn or any other site (LinkedIn's User Agreement prohibits scraping).",
+      "The LinkedIn URL is checked by a team member against the person's own confirmation before publishing.",
+      "No minors; no contact details beyond the public profile link the person chooses to share."
+    ],
+    "fields": {
+      "career": "career slug (e.g. accountant)",
+      "name": "name as the person wants it shown",
+      "headline": "current role and organisation, in the person's words",
+      "country": "ISO 3166-1 alpha-2",
+      "linkedin": "https://www.linkedin.com/in/...",
+      "story": "optional one-paragraph journey, written or approved by the person",
+      "consentRecordedAt": "YYYY-MM-DD",
+      "checkedBy": "team member who verified the link",
+      "background": "where they started (school, subjects, first job), in their words",
+      "turningPoint": "the decision or event that changed their path",
+      "steps": "array of short steps they took (study, certification, roles)",
+      "result": "where they are now",
+      "lesson": "one sentence of advice to students"
+    },
+    "storyFormat": "Career stories follow a case-study shape (background, turning point, steps, result) and end with a lesson, like short motivational stories. Every story is told or approved by the person; we never retell other sites' stories."
+  },
+  "professionals": []
+}

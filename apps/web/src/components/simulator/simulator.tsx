@@ -1,11 +1,17 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import { evaluateAll, suggestAlternatives, type Applicant } from "@careerproof/rules-engine";
-import { datasets } from "@careerproof/sample-data";
+import { ugandaAdmissionSources, ugandaProgrammes, ugandaRuleSet } from "@careerproof/reference-data/uganda";
 import { presets } from "./presets";
 import { ResultCard } from "./result-card";
 import { ResultsForm } from "./results-form";
+
+/** Only countries with official rules and published cut-offs. No demo data. */
+const datasets = [
+  { region: "UG", name: "Uganda", ruleSet: ugandaRuleSet, programmes: ugandaProgrammes },
+];
 
 export function Simulator() {
   const [region, setRegion] = useState("UG");
@@ -28,18 +34,26 @@ export function Simulator() {
 
   return (
     <div className="space-y-8">
-      <div role="note" className="rounded-[var(--radius-card)] border border-gold-400/60 bg-gold-50 p-4">
-        <p className="font-bold">Demo with sample data</p>
+      <div role="note" className="rounded-[var(--radius-card)] border border-teal-500/60 bg-teal-50 p-4">
+        <p className="font-bold">Official rules and published cut-off points</p>
         <p className="text-ink-muted">
-          The scoring follows the structure of each national system, but the rule
-          values are not yet verified and every cut-off shown is made up. Do not
-          use these results to make real decisions.
+          Scored with the weighting system in the Ministry of Education &amp; Sports Notes to Schools 2026/2027, and
+          compared with Makerere University&apos;s government-sponsorship cut-offs for 2023/24 to 2025/26. Cut-offs change
+          every year: this shows how your points compare with past years, not your chance of admission. Rules were transcribed
+          from the official PDFs on 10 November 2026 and are awaiting independent review.
         </p>
+        <ul className="mt-2 list-disc pl-5 text-sm">
+          {ugandaAdmissionSources.map((s) => <li key={s.url}><a href={s.url}>{s.name}</a></li>)}
+        </ul>
       </div>
+
 
       <fieldset className="space-y-2">
         <legend className="text-lg font-bold">Country</legend>
-        <p className="text-ink-muted">One engine, configured per country by data.</p>
+        <p className="text-ink-muted">
+          Calculators appear only where we hold official rules and published cut-offs. Kenya is next: see{" "}
+          <Link href="/admissions/kenya">how admission works in Kenya</Link>.
+        </p>
         <div className="flex flex-wrap gap-3">
           {datasets.map((d) => (
             <label key={d.region} className="flex min-h-11 cursor-pointer items-center gap-2 rounded-full border border-line bg-white px-4 has-[:checked]:border-teal-700 has-[:checked]:bg-teal-50">
@@ -69,7 +83,7 @@ export function Simulator() {
       <section aria-labelledby="results-heading" className="space-y-4">
         <h2 id="results-heading" className="text-xl font-bold">Your options</h2>
         <p aria-live="polite" className="text-ink-muted">
-          {open.length} of {results.length} sample programmes are open to you.
+          {open.length} of {results.length} programmes are open to you.
           Scored with {ruleSet.label}, rule set {ruleSet.version}.
         </p>
         <ul className="space-y-4">
@@ -79,6 +93,7 @@ export function Simulator() {
               result={r}
               pointsLabel={ruleSet.pointsLabel}
               alternatives={r.zone === "danger" ? suggestAlternatives(r, results) : []}
+              sex={applicant.sex}
             />
           ))}
         </ul>

@@ -7,7 +7,7 @@ export function Provenance({ children }: { children: React.ReactNode }) {
   return <p className="text-xs text-ink-muted">{children}</p>;
 }
 
-export const GUIDANCE_NOTE = "Career Proof guidance: common routes and typical durations compiled by our team; they vary by country and person.";
+export const GUIDANCE_NOTE = "CareerProof Global guidance: common routes and typical durations compiled by our team; they vary by country and person.";
 
 /** Official ISCO-08 definition of the career's unit group (via ESCO). */
 export function OfficialDefinition({ isco }: { isco: string | null }) {

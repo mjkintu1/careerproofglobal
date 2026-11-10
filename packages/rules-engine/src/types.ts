@@ -29,7 +29,11 @@ export interface WeightedCategoriesScoring {
     weight: number;
     /** If true, the programme is blocked unless `pick` passed subjects fill this category. */
     required: boolean;
+    /** Lowest grade points a subject needs to count in this category (default 1). Uganda: essentials need a principal pass (2). */
+    minPoints?: number;
   }[];
+  /** Scale that "*" (any subject) expands to in programme requirement lists. Default "principal". */
+  anyScale?: string;
   /** Optional bonus from a lower-level exam, entered as counts per band (e.g. distinctions). */
   secondaryBonus?: {
     label: string;
@@ -95,6 +99,8 @@ export interface RuleSet {
   eligibility: Eligibility;
   adjustments: Adjustment[];
   zones: ZoneConfig;
+  /** Official document the rules were taken from. Rules without a source are demo values. */
+  source?: { name: string; url: string };
 }
 
 export interface Cutoff {
@@ -117,8 +123,16 @@ export interface Programme {
     desirable?: string[];
     cluster?: string[];
     mandatory?: { subject: string; minGrade: string }[];
+    /** Subjects that must be counted as essential (e.g. "Mathematics and one better done of ..."). */
+    essentialFixed?: string[];
+    /** Per-programme override of how many subjects each category takes. */
+    picks?: Partial<Record<CategoryRole, number>>;
   };
   cutoffs: Cutoff[];
+  /** Requirements the engine does not check (e.g. O-level credits in named subjects), shown to the user. */
+  notes?: string[];
+  /** Where the requirements and cut-offs come from. */
+  source?: { name: string; url: string };
 }
 
 export interface Applicant {

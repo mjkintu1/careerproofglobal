@@ -110,7 +110,7 @@ export function ResultsForm({ ruleSet, applicant, presets, onChange }: Props) {
 
       {asksSex && (
         <label className="block max-w-xs space-y-1">
-          <span className="block font-bold">Sex (affects some bonuses)</span>
+          <span className="block font-bold">Sex (affects the 1.5-point scheme and STEM cut-offs)</span>
           <select
             value={applicant.sex ?? ""}
             onChange={(e) => {

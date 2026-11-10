@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "source": "Ministry of Education & Sports, Notes to Schools 2026/2027 Academic Year: Detailed weighting system for programmes offered at Makerere University",
+    "url": "https://news.mak.ac.ug/wp-content/uploads/2025/10/Notes-to-Schools-2026-2027-Academic-Year.pdf",
+    "transcribedAt": "2026-11-10",
+    "method": "Transcribed by hand from the official PDF. Only programmes whose rules map exactly onto the weighting engine are included; programmes with 'and/or' essentials (e.g. Commerce, Business Administration) are left out until modelled."
+  },
+  "programmes": [
+    { "code": "MAM", "title": "Bachelor of Medicine and Bachelor of Surgery", "field": "medicine",
+      "essential": ["BIO", "CHE"], "relevant": ["MAT", "PHY"], "desirable": ["GP", "SMAT", "SICT"] },
+    { "code": "BDS", "title": "Bachelor of Dental Surgery", "field": "dentistry",
+      "essential": ["BIO", "CHE"], "relevant": ["MAT", "PHY"], "desirable": ["GP", "SMAT", "SICT"] },
+    { "code": "PHA", "title": "Bachelor of Pharmacy", "field": "pharmacy",
+      "essential": ["BIO", "CHE"], "relevant": ["MAT", "PHY"], "desirable": ["GP", "SMAT", "SICT"] },
+    { "code": "NUR", "title": "Bachelor of Nursing Science", "field": "nursing",
+      "essential": ["BIO", "CHE"], "relevant": ["AGR", "MAT", "PHY", "FN", "ECO"], "desirable": ["GP", "SMAT", "SICT"] },
+    { "code": "VET", "title": "Bachelor of Veterinary Medicine", "field": "veterinary",
+      "essential": ["BIO", "CHE"], "relevant": ["MAT", "PHY", "AGR", "FN"], "desirable": ["GP", "SMAT", "SICT"] },
+    { "code": "AGR", "title": "Bachelor of Science in Agriculture", "field": "agriculture",
+      "essential": ["BIO", "CHE", "AGR"], "relevant": ["BIO", "AGR", "CHE", "PHY", "GEO", "MAT"], "desirable": ["GP", "SMAT", "SICT"] },
+    { "code": "CIV", "title": "Bachelor of Science in Civil Engineering", "field": "engineering",
+      "essential": ["MAT", "PHY"], "relevant": ["CHE", "ECO", "GMD", "GBD", "ENT", "GEO"], "desirable": ["GP", "SICT"] },
+    { "code": "ELE", "title": "Bachelor of Science in Electrical Engineering", "field": "engineering",
+      "essential": ["MAT", "PHY"], "relevant": ["CHE", "ECO", "GMD", "GBD", "ENT", "GEO"], "desirable": ["GP", "SICT"] },
+    { "code": "MEC", "title": "Bachelor of Science in Mechanical Engineering", "field": "engineering",
+      "essential": ["MAT", "PHY"], "relevant": ["CHE", "ECO", "GMD", "GBD", "ENT", "GEO"], "desirable": ["GP", "SICT"] },
+    { "code": "BWE", "title": "Bachelor of Science in Water and Irrigation Engineering", "field": "engineering",
+      "essential": ["MAT", "PHY"], "relevant": ["CHE"], "desirable": ["GP", "SICT"] },
+    { "code": "CSC", "title": "Bachelor of Science in Computer Science", "field": "computing",
+      "essentialFixed": ["MAT"], "essential": ["PHY", "CHE", "ECO", "GMD", "GBD", "BIO"], "relevant": ["*"], "desirable": ["GP", "SICT"] },
+    { "code": "BSW", "title": "Bachelor of Science in Software Engineering", "field": "computing",
+      "essentialFixed": ["MAT"], "essential": ["PHY", "ECO", "GEO", "CHE", "BIO"], "relevant": ["PHY", "CHE", "ECO", "GEO", "BIO"], "desirable": ["GP", "SICT"],
+      "notes": ["Also needs at least a credit in English and Mathematics at O-level (not checked by this calculator)."] },
+    { "code": "ECO", "title": "Bachelor of Arts in Economics", "field": "economics",
+      "essential": ["ECO"], "relevant": ["MAT", "PHY", "ENT", "HIS", "GEO", "AGR"], "desirable": ["GP", "SMAT", "SICT"],
+      "picks": { "essential": 1, "relevant": 2 },
+      "notes": ["The relevant-subject list is as printed in the Notes to Schools (it ends with a trailing comma); confirm with Makerere."] }
+  ]
+}

@@ -1,13 +1,22 @@
 {
   "_note": "Normalisation rules for the school subjects named in occupations. Used by the website and the database seed.",
-  "generic": ["any secondary subjects", "the two subjects you want to teach", "subjects in your chosen field"],
-  "aliases": { "Art": "Fine Art", "Design": "Fine Art", "a foreign language": "Foreign Language", "Literature": "Literature in English" },
+  "generic": [
+    "any secondary subjects",
+    "the two subjects you want to teach",
+    "subjects in your chosen field"
+  ],
+  "aliases": {
+    "Art": "Fine Art",
+    "Design": "Fine Art",
+    "a foreign language": "Foreign Language",
+    "Literature": "Literature in English"
+  },
   "about": {
     "Mathematics": "The most widely required subject: engineering, technology, finance, science and many trades build on it.",
     "Physics": "Opens engineering, aviation, technology and the physical sciences.",
     "Chemistry": "Central to health, pharmacy, engineering, agriculture and laboratory careers.",
     "Biology": "The foundation for health, agriculture, veterinary and life-science careers.",
-    "English": "Communication underpins every career; essential for law, media, teaching and business.",
+    "English": "Reading, writing and speaking well: every career relies on it, and many university programmes require it.",
     "Literature in English": "Builds reading, argument and writing for law, media and teaching.",
     "Economics": "Supports business, finance, policy and data careers.",
     "Geography": "Useful for environment, planning, logistics, tourism and public health.",
@@ -22,6 +31,18 @@
     "Woodwork": "Hands-on preparation for carpentry and construction trades.",
     "Metalwork": "Hands-on preparation for welding, fabrication and mechanical trades.",
     "Foods and Nutrition": "Leads to cooking, catering and hospitality careers.",
-    "Foreign Language": "Valuable in tourism, diplomacy and international business."
+    "Foreign Language": "Valuable in tourism, diplomacy and international business.",
+    "Statistics": "Collecting, analysing and interpreting data: the base for data science, economics, research and public health.",
+    "Environmental Science": "How natural systems work and how people affect them: leads to conservation, environmental health and planning.",
+    "Philosophy": "Clear reasoning, argument and ethics: useful for law, policy, teaching and research.",
+    "Psychology": "How people think, feel and behave: leads to counselling, health, education, management and marketing.",
+    "Sociology": "How societies, groups and institutions work: leads to social work, policy, research and development work.",
+    "Government and Politics": "How states, laws and public institutions work: leads to law, public administration and international affairs.",
+    "Business Studies": "How organisations are run, marketed and financed: a base for management, marketing and starting a business.",
+    "Design and Technology": "Designing and making products, from idea to prototype: leads to engineering, product and industrial design.",
+    "Music": "Performance, composition and theory: leads to performance, production, teaching and sound engineering.",
+    "Drama and Theatre": "Performance, storytelling and production: leads to acting, directing, media and teaching.",
+    "Media Studies": "How media is made and how it shapes audiences: leads to journalism, film, communications and marketing.",
+    "Physical Education": "Sport, fitness and the body: leads to coaching, sports science, physiotherapy and teaching."
   }
 }

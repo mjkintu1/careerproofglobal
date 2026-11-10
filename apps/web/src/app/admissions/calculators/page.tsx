@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
-import { admissionMeta, admissionSystems, admissionSystemsPending, admissionTiers, higherEducationRegulators, institutionCounts, type AdmissionTier } from "@careerproof/reference-data";
+import { admissionMeta, admissionSystems, admissionSystemsPending, admissionTiers, educationStructure, higherEducationRegulators, institutionCounts, uisMeta, type AdmissionTier } from "@careerproof/reference-data";
 import { careerGraphData } from "@careerproof/sample-data";
 import { Container } from "@/components/container";
 import { PageBand } from "@/components/page-band";
@@ -23,6 +23,7 @@ export default function CalculatorsPage() {
     careerGraphData.locations.map((l) => [l.code, {
       regulators: higherEducationRegulators(l.code).regulators.map(({ name, website }) => ({ name, website })),
       institutions: institutionCounts[l.code] ?? 0,
+      structure: educationStructure(l.code),
     }]),
   );
   return (
@@ -31,7 +32,7 @@ export default function CalculatorsPage() {
         intro="Every country admits students differently. We only calculate where an admissions body publishes its formula, and say so when a result is illustrative." />
       <Container className="space-y-12 py-10">
         <Suspense fallback={<div className="card h-48 animate-pulse" aria-hidden="true" />}>
-          <CalculatorFinder countries={countries} systems={admissionSystems} info={info} />
+          <CalculatorFinder countries={countries} systems={admissionSystems} info={info} uis={{ attribution: uisMeta.attribution, licenceUrl: uisMeta.licenceUrl }} />
         </Suspense>
         {(Object.keys(TIER_TITLES) as (keyof typeof TIER_TITLES)[]).map((tier) => (
           <section key={tier} aria-labelledby={`tier-${tier}`} className="space-y-4">

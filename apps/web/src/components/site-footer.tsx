@@ -16,7 +16,7 @@ export function SiteFooter() {
           <p className="text-sm">Map your path. Prove your future.</p>
           <p className="text-sm">
             Official classifications and statistics are cited where they appear. Career routes and typical durations
-            are Career Proof guidance. Admission figures in the simulator are samples. Official decisions are made by the
+            are CareerProof Global guidance. Admission figures come only from official published lists. Official decisions are made by the
             relevant institutions and licensing bodies.
           </p>
         </div>

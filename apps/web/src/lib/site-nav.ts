@@ -11,6 +11,7 @@ export const mainNav: NavGroup[] = [
       { href: "/careers/global", label: "Career paths", description: "Guided careers: ways in and where they lead" },
       { href: "/occupations", label: "Occupation directory", description: "Every occupation, by the ILO ISCO-08 standard" },
       { href: "/certifications", label: "Certifications", description: "ACCA, CFA, PMP, CCNA and more, plus how to judge one" },
+      { href: "/grow", label: "Grow your career", description: "Habits that help, and real career stories" },
     ],
   },
   {

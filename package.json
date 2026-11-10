@@ -24,7 +24,12 @@
     "ingest:bls": "node scripts/ingest/bls-oews.mjs --all",
     "ingest:join": "node scripts/ingest/world-bank-join.mjs",
     "ingest:esco": "node scripts/ingest/esco.mjs",
-    "ingest:catalogue": "node scripts/ingest/load-catalogue.mjs"
+    "ingest:catalogue": "node scripts/ingest/load-catalogue.mjs",
+    "ingest:uis": "node scripts/ingest/uis-structure.mjs",
+    "ingest:inqaahe": "node scripts/ingest/inqaahe.mjs && node scripts/ingest/inqaahe_build.mjs",
+    "ingest:isced": "node scripts/ingest/isced_names.mjs data-raw/isced/files.txt data-raw/isced/names.json && python -I scripts/ingest/isced_build.py data-raw/isced/files data-raw/isced/names.json packages/reference-data/src/snapshots/isced-mappings.json",
+    "ingest:onet-knowledge": "python -I scripts/ingest/onet_knowledge_build.py data-raw/onet-31.0/text packages/reference-data/src/snapshots/onet-knowledge-related.json",
+    "match:career-esco": "node scripts/ingest/career_esco_match.mjs"
   },
   "devDependencies": {
     "supabase": "^3.0.0",

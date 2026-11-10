@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "purpose": "A country-neutral structure for school subjects, linked to global standards so any exam system can be mapped onto it.",
+    "standards": [
+      { "name": "ISCED Fields of Education and Training 2013 (ISCED-F 2013)", "publisher": "UNESCO Institute for Statistics", "url": "https://uis.unesco.org/sites/default/files/documents/international-standard-classification-of-education-fields-of-education-and-training-2013-detailed-field-descriptions-2015-en.pdf", "use": "Field of study each subject leads into (four-digit detailed field)." },
+      { "name": "O*NET Knowledge domains", "publisher": "U.S. Department of Labor (O*NET 31.0, CC BY 4.0)", "url": "https://www.onetcenter.org/database.html", "use": "How important the subject's knowledge is in each occupation (importance 1 to 5)." }
+    ],
+    "examNamesNote": "Exam-system names are recorded only from official documents. UG-UACE names come from the Ministry of Education & Sports, Notes to Schools 2026/2027.",
+    "iscedF": {
+      "0211": "Audio-visual techniques and media production", "0212": "Fashion, interior and industrial design", "0213": "Fine arts", "0215": "Music and performing arts",
+      "0221": "Religion and theology", "0222": "History and archaeology", "0223": "Philosophy and ethics", "0231": "Language acquisition", "0232": "Literature and linguistics",
+      "0311": "Economics", "0312": "Political sciences and civics", "0313": "Psychology", "0314": "Sociology and cultural studies", "0321": "Journalism and reporting",
+      "0411": "Accounting and taxation", "0413": "Management and administration", "0414": "Marketing and advertising",
+      "0511": "Biology", "0521": "Environmental sciences", "0531": "Chemistry", "0532": "Earth sciences", "0533": "Physics", "0541": "Mathematics", "0542": "Statistics",
+      "0611": "Computer use", "0613": "Software and applications development and analysis",
+      "0715": "Mechanics and metal trades", "0721": "Food processing", "0722": "Materials (glass, paper, plastic and wood)", "0731": "Architecture and town planning",
+      "0811": "Crop and livestock production", "1014": "Sports"
+    }
+  },
+  "groups": [
+    { "id": "mathematics", "name": "Mathematics" },
+    { "id": "sciences", "name": "Sciences" },
+    { "id": "languages", "name": "Languages and literature" },
+    { "id": "humanities", "name": "Humanities and social sciences" },
+    { "id": "business", "name": "Business and economics" },
+    { "id": "technology", "name": "Technology and computing" },
+    { "id": "arts", "name": "Arts" },
+    { "id": "vocational", "name": "Technical and vocational" },
+    { "id": "health-pe", "name": "Physical education" }
+  ],
+  "subjects": [
+    { "slug": "mathematics", "name": "Mathematics", "group": "mathematics", "isced": ["0541"], "onet": ["2.C.4.a"], "exams": { "UG-UACE": ["Mathematics", "Subsidiary Mathematics"] } },
+    { "slug": "statistics", "name": "Statistics", "group": "mathematics", "isced": ["0542"], "onet": ["2.C.4.a"] },
+    { "slug": "physics", "name": "Physics", "group": "sciences", "isced": ["0533"], "onet": ["2.C.4.b"], "exams": { "UG-UACE": ["Physics"] } },
+    { "slug": "chemistry", "name": "Chemistry", "group": "sciences", "isced": ["0531"], "onet": ["2.C.4.c"], "exams": { "UG-UACE": ["Chemistry"] } },
+    { "slug": "biology", "name": "Biology", "group": "sciences", "isced": ["0511"], "onet": ["2.C.4.d"], "exams": { "UG-UACE": ["Biology"] } },
+    { "slug": "environmental-science", "name": "Environmental Science", "group": "sciences", "isced": ["0521"], "onet": ["2.C.4.d", "2.C.4.g"] },
+    { "slug": "english", "name": "English", "group": "languages", "isced": ["0231"], "onet": ["2.C.7.a"] },
+    { "slug": "literature-in-english", "name": "Literature in English", "group": "languages", "isced": ["0232"], "onet": ["2.C.7.a"], "exams": { "UG-UACE": ["Literature in English"] } },
+    { "slug": "foreign-language", "name": "Foreign Language", "group": "languages", "isced": ["0231"], "onet": ["2.C.7.b"] },
+    { "slug": "history", "name": "History", "group": "humanities", "isced": ["0222"], "onet": ["2.C.7.d"], "exams": { "UG-UACE": ["History"] } },
+    { "slug": "geography", "name": "Geography", "group": "humanities", "isced": ["0532", "0314"], "onet": ["2.C.4.g"], "exams": { "UG-UACE": ["Geography"] } },
+    { "slug": "divinity", "name": "Divinity", "group": "humanities", "isced": ["0221"], "onet": ["2.C.7.e"], "exams": { "UG-UACE": ["Divinity (CRE/IRE)"] } },
+    { "slug": "philosophy", "name": "Philosophy", "group": "humanities", "isced": ["0223"], "onet": ["2.C.7.e"] },
+    { "slug": "psychology", "name": "Psychology", "group": "humanities", "isced": ["0313"], "onet": ["2.C.4.e"] },
+    { "slug": "sociology", "name": "Sociology", "group": "humanities", "isced": ["0314"], "onet": ["2.C.4.f"] },
+    { "slug": "government-and-politics", "name": "Government and Politics", "group": "humanities", "isced": ["0312"], "onet": ["2.C.8.b"] },
+    { "slug": "economics", "name": "Economics", "group": "business", "isced": ["0311"], "onet": ["2.C.1.c"], "exams": { "UG-UACE": ["Economics"] } },
+    { "slug": "business-studies", "name": "Business Studies", "group": "business", "isced": ["0413", "0414"], "onet": ["2.C.1.a"] },
+    { "slug": "accounting", "name": "Accounting", "group": "business", "isced": ["0411"], "onet": ["2.C.1.c"] },
+    { "slug": "entrepreneurship", "name": "Entrepreneurship", "group": "business", "isced": ["0413"], "onet": ["2.C.1.a"], "exams": { "UG-UACE": ["Entrepreneurship"] } },
+    { "slug": "computer-studies", "name": "Computer Studies", "group": "technology", "isced": ["0611", "0613"], "onet": ["2.C.3.a"], "exams": { "UG-UACE": ["Computer Studies (subsidiary ICT)"] } },
+    { "slug": "design-and-technology", "name": "Design and Technology", "group": "technology", "isced": ["0212"], "onet": ["2.C.3.c", "2.C.3.b"] },
+    { "slug": "technical-drawing", "name": "Technical Drawing", "group": "technology", "isced": ["0731", "0715"], "onet": ["2.C.3.c"], "exams": { "UG-UACE": ["Geometry and Mechanical Drawing", "Geometry and Building Drawing"] } },
+    { "slug": "fine-art", "name": "Fine Art", "group": "arts", "isced": ["0213"], "onet": ["2.C.7.c"], "exams": { "UG-UACE": ["Fine Art"] } },
+    { "slug": "music", "name": "Music", "group": "arts", "isced": ["0215"], "onet": ["2.C.7.c"] },
+    { "slug": "drama", "name": "Drama and Theatre", "group": "arts", "isced": ["0215"], "onet": ["2.C.7.c"] },
+    { "slug": "media-studies", "name": "Media Studies", "group": "arts", "isced": ["0211", "0321"], "onet": ["2.C.9.b"] },
+    { "slug": "agriculture", "name": "Agriculture", "group": "vocational", "isced": ["0811"], "onet": ["2.C.2.b"], "exams": { "UG-UACE": ["Agriculture"] } },
+    { "slug": "foods-and-nutrition", "name": "Foods and Nutrition", "group": "vocational", "isced": ["0721"], "onet": ["2.C.2.b"], "exams": { "UG-UACE": ["Foods and Nutrition"] } },
+    { "slug": "woodwork", "name": "Woodwork", "group": "vocational", "isced": ["0722"], "onet": ["2.C.3.d"] },
+    { "slug": "metalwork", "name": "Metalwork", "group": "vocational", "isced": ["0715"], "onet": ["2.C.3.e"] },
+    { "slug": "physical-education", "name": "Physical Education", "group": "health-pe", "isced": ["1014"], "onet": [] }
+  ]
+}

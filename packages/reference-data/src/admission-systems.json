@@ -11,7 +11,9 @@
   "systems": [
     {
       "id": "ucas-tariff",
-      "countries": ["GB"],
+      "countries": [
+        "GB"
+      ],
       "tier": "points",
       "name": "UCAS Tariff points",
       "body": "UCAS",
@@ -24,35 +26,76 @@
         "The IB Diploma as a whole has no Tariff points; its Higher Level, Standard Level, Extended Essay and Theory of Knowledge components do.",
         "Not every UK course uses Tariff points; many make offers in grades. Check each course's entry requirements."
       ],
-      "source": { "name": "UCAS, UCAS Tariff points and 2027 Tariff tables", "url": "https://www.ucas.com/applying/before-you-apply/what-and-where-to-study/entry-requirements/ucas-tariff-points" }
+      "source": {
+        "name": "UCAS, UCAS Tariff points and 2027 Tariff tables",
+        "url": "https://www.ucas.com/applying/before-you-apply/what-and-where-to-study/entry-requirements/ucas-tariff-points"
+      }
     },
     {
       "id": "ug-pujab",
-      "countries": ["UG"],
+      "countries": [
+        "UG"
+      ],
       "tier": "points",
       "name": "Uganda weighted admission points",
-      "body": "Public Universities Joint Admissions Board (PUJAB)",
-      "status": "illustrative",
+      "body": "Public universities (Ministry of Education & Sports, Notes to Schools 2026/2027)",
+      "status": "verified",
+      "cycle": "2026/2027 rules; cut-offs 2023/24 to 2025/26",
       "href": "/simulator",
-      "summary": "Follows the structure of Uganda's weighted points system (essential, relevant and desirable subjects). Rule values and cut-off points are not yet verified with PUJAB.",
-      "facts": [],
-      "source": null
+      "summary": "Applies the official weighting system used by all ten public universities, and compares your points with Makerere University's published government-sponsorship cut-offs for the last three intakes.",
+      "facts": [
+        "Essential subjects count three times, relevant twice and desirable once; A=6, B=5, C=4, D=3, E=2, O=1.",
+        "Essential subjects need a principal pass; a subsidiary pass (O) can only count as relevant.",
+        "O-level distinctions add 0.3, credits 0.2 and passes 0.1 each; female candidates get 1.5 points.",
+        "13 Makerere programmes are modelled so far, each with three years of published cut-offs."
+      ],
+      "source": {
+        "name": "Notes to Schools 2026/2027 Academic Year (Ministry of Education & Sports, via Makerere University)",
+        "url": "https://news.mak.ac.ug/wp-content/uploads/2025/10/Notes-to-Schools-2026-2027-Academic-Year.pdf"
+      }
     },
     {
-      "id": "ke-kuccps",
-      "countries": ["KE"],
-      "tier": "points",
-      "name": "Kenya cluster points",
-      "body": "Kenya Universities and Colleges Central Placement Service (KUCCPS)",
-      "status": "illustrative",
-      "href": "/simulator",
-      "summary": "Follows the structure of Kenya's cluster points formula. Rule values and cut-off points are not yet verified with KUCCPS.",
+      "id": "ug-admissions-data",
+      "countries": [
+        "UG"
+      ],
+      "tier": "explainer",
+      "name": "Uganda: accredited programmes and cut-off points",
+      "body": "National Council for Higher Education; Makerere and five other public universities",
+      "status": "verified",
+      "href": "/admissions/uganda",
+      "summary": "Every programme accredited by NCHE, and three years of published government cut-off points for six public universities.",
       "facts": [],
-      "source": null
+      "source": {
+        "name": "National Council for Higher Education (NCHE)",
+        "url": "https://unche.or.ug/all-academic-programs/"
+      }
+    },
+    {
+      "id": "ke-admission",
+      "countries": [
+        "KE"
+      ],
+      "tier": "explainer",
+      "name": "Kenya: KCSE and KUCCPS placement",
+      "body": "KNEC (examinations) and KUCCPS (placement)",
+      "status": "verified",
+      "href": "/admissions/kenya",
+      "summary": "How Kenya's system and university placement work, from UNESCO IICBA's country brief and the official bodies. The cluster-point calculator is added once KUCCPS data is collected from the official source.",
+      "facts": [
+        "KNEC supervises national examinations.",
+        "KUCCPS places students into degree programmes using cluster subjects and published cut-offs."
+      ],
+      "source": {
+        "name": "UNESCO IICBA, Kenya: Education Country Brief (January 2024)",
+        "url": "https://www.iicba.unesco.org/en/kenya"
+      }
     },
     {
       "id": "au-atar",
-      "countries": ["AU"],
+      "countries": [
+        "AU"
+      ],
       "tier": "explainer",
       "name": "Australian Tertiary Admission Rank (ATAR)",
       "body": "Universities Admissions Centre (UAC) and the other state admission centres",
@@ -63,11 +106,16 @@
         "The ATAR is a rank, not a mark: a number between 0.00 and 99.95 that shows a student's position relative to their age group.",
         "In New South Wales, the ATAR is calculated and released by UAC."
       ],
-      "source": { "name": "UAC, ATAR", "url": "https://www.uac.edu.au/future-applicants/atar" }
+      "source": {
+        "name": "UAC, ATAR",
+        "url": "https://www.uac.edu.au/future-applicants/atar"
+      }
     },
     {
       "id": "in-nta",
-      "countries": ["IN"],
+      "countries": [
+        "IN"
+      ],
       "tier": "explainer",
       "name": "National entrance examinations",
       "body": "National Testing Agency (NTA)",
@@ -78,11 +126,16 @@
         "The NTA is an autonomous testing organisation that conducts entrance examinations.",
         "Its exams include JEE (Main) for engineering, NEET (UG) for medicine and CUET (UG) for central universities."
       ],
-      "source": { "name": "National Testing Agency", "url": "https://nta.ac.in/" }
+      "source": {
+        "name": "National Testing Agency",
+        "url": "https://nta.ac.in/"
+      }
     },
     {
       "id": "fr-parcoursup",
-      "countries": ["FR"],
+      "countries": [
+        "FR"
+      ],
       "tier": "explainer",
       "name": "Parcoursup",
       "body": "Ministry of Higher Education and Research",
@@ -90,11 +143,16 @@
       "href": null,
       "summary": "France's national platform for applying to first-year higher education. Details are being confirmed with the official site.",
       "facts": [],
-      "source": { "name": "Parcoursup (official portal)", "url": "https://www.parcoursup.gouv.fr/" }
+      "source": {
+        "name": "Parcoursup (official portal)",
+        "url": "https://www.parcoursup.gouv.fr/"
+      }
     },
     {
       "id": "us-institutional",
-      "countries": ["US"],
+      "countries": [
+        "US"
+      ],
       "tier": "explainer",
       "name": "Admission by each institution",
       "body": "EducationUSA (U.S. Department of State)",
@@ -102,13 +160,32 @@
       "href": null,
       "summary": "US colleges set their own admission requirements; there is no national points formula. Details are being confirmed with EducationUSA.",
       "facts": [],
-      "source": { "name": "EducationUSA (official advising network)", "url": "https://educationusa.state.gov/" }
+      "source": {
+        "name": "EducationUSA (official advising network)",
+        "url": "https://educationusa.state.gov/"
+      }
     }
   ],
   "pending": [
-    { "name": "IB Diploma points (out of 45)", "reason": "The IB's own site blocks automated checks; to be confirmed directly with the IB before publishing." },
-    { "name": "Ghana WASSCE aggregate", "reason": "Awaiting the official published rules." },
-    { "name": "South Africa Admission Point Score (APS)", "reason": "Each university publishes its own APS rules; to be added university by university." },
-    { "name": "Nigeria UTME and post-UTME aggregate", "reason": "Each university sets its own aggregate; awaiting official rules." }
+    {
+      "name": "Kenya cluster points (KUCCPS)",
+      "reason": "The KUCCPS portal blocks automated access; awaiting an official data file or a checked manual collection, and the formula from an official document."
+    },
+    {
+      "name": "IB Diploma points (out of 45)",
+      "reason": "The IB's own site blocks automated checks; to be confirmed directly with the IB before publishing."
+    },
+    {
+      "name": "Ghana WASSCE aggregate",
+      "reason": "Awaiting the official published rules."
+    },
+    {
+      "name": "South Africa Admission Point Score (APS)",
+      "reason": "Each university publishes its own APS rules; to be added university by university."
+    },
+    {
+      "name": "Nigeria UTME and post-UTME aggregate",
+      "reason": "Each university sets its own aggregate; awaiting official rules."
+    }
   ]
 }

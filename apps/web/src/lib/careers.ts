@@ -21,6 +21,19 @@ export function locationName(code: string): string {
   return findLocation(code)?.name ?? "Global";
 }
 
+/**
+ * Countries with their own local detail (school exams, licensing bodies). Other
+ * country pages repeat the global content, so their canonical URL is the global page.
+ */
+export function hasLocalDetail(location: string): boolean {
+  return location === GLOBAL || Boolean(findLocation(location)?.secondaryExams);
+}
+
+/** Location to use in canonical URLs and the sitemap. */
+export function canonicalLocation(location: string): string {
+  return hasLocalDetail(location) ? location.toLowerCase() : GLOBAL;
+}
+
 export function careerHref(location: string, slug: string): string {
   return `/careers/${location}/${slug}`;
 }

@@ -7,7 +7,7 @@ import { careerPageTitle, clusterName, levelLabel, locationName, locationOptions
 import { CareerSearch } from "./career-search";
 import { LocationSelect } from "./location-select";
 
-export function CareerHero({ o, location }: { o: Occupation; location: string }) {
+export function CareerHero({ o, location, isco = o.isco }: { o: Occupation; location: string; isco?: string | null }) {
   return (
     <section className="bg-gradient-to-br from-navy-900 to-navy-800 text-white">
       <Container className="space-y-6 py-10">
@@ -33,7 +33,7 @@ export function CareerHero({ o, location }: { o: Occupation; location: string })
           <div className="flex flex-wrap items-center gap-3">
             <LocationSelect current={location} options={locationOptions} tone="dark" />
             <span className="chip bg-navy-800 text-white">{levelLabel[o.level]}</span>
-            {o.isco && <Link href={`/occupations/isco/${o.isco}`} className="chip bg-navy-800 text-white no-underline hover:bg-teal-800 hover:text-white">ISCO-08 {o.isco}</Link>}
+            {isco && <Link href={`/occupations/isco/${isco}`} className="chip bg-navy-800 text-white no-underline hover:bg-teal-800 hover:text-white">ISCO-08 {isco}</Link>}
           </div>
         </div>
       </Container>

@@ -10,7 +10,7 @@ import { ClusterIcon } from "@/components/cluster-icon";
 import { Container } from "@/components/container";
 import { SectionHeading } from "@/components/home/section-heading";
 import { PageBand } from "@/components/page-band";
-import { careerHref, findLocation, GLOBAL, graph, isLocationCode, locationOptions, searchItems } from "@/lib/careers";
+import { canonicalLocation, careerHref, findLocation, GLOBAL, graph, isLocationCode, locationOptions, searchItems } from "@/lib/careers";
 
 export function generateStaticParams() {
   return [{ location: GLOBAL }];
@@ -22,6 +22,7 @@ export async function generateMetadata({ params }: PageProps<"/careers/[location
   return {
     title: where ? `Career paths in ${where.name}` : "Career paths",
     description: `Explore ${careerGraphData.occupations.length} careers, the ways into them and how people move between them${where ? ` in ${where.name}` : ""}.`,
+    alternates: { canonical: `/careers/${canonicalLocation(location)}` },
   };
 }
 

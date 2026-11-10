@@ -6,6 +6,7 @@ import { BadgeCheck, ExternalLink, MapPin } from "lucide-react";
 import { higherEducationRegulators, institutionAttribution, institutionsIn } from "@careerproof/reference-data";
 import { Container } from "@/components/container";
 import { PageBand } from "@/components/page-band";
+import { RegulatorList } from "@/components/admissions/regulator-list";
 import { findLocation } from "@/lib/careers";
 
 export function generateStaticParams() {
@@ -22,7 +23,7 @@ async function CountryContent({ params }: Pick<PageProps<"/institutions/[country
   const loc = findLocation(code);
   if (!loc) notFound();
   const list = institutionsIn(loc.code);
-  const { regulators, source, sourceUrl } = higherEducationRegulators(loc.code);
+  const { regulators, sources } = higherEducationRegulators(loc.code);
   return (
     <>
       <PageBand kicker="Where to study" title={`Universities and colleges in ${loc.name}`}
@@ -54,12 +55,7 @@ async function CountryContent({ params }: Pick<PageProps<"/institutions/[country
           <div className="card space-y-2 p-5">
             <h2 className="flex items-center gap-2 font-display text-lg font-bold"><BadgeCheck aria-hidden="true" size={18} className="text-teal-700" /> Recognition</h2>
             <p className="text-sm">Being listed here is not accreditation. Check that an institution and programme are recognised by the national regulator.</p>
-            {regulators.length > 0 && (
-              <>
-                <ul className="space-y-1 text-sm font-semibold">{regulators.map((r) => <li key={r.name}>{r.website ? <a href={r.website}>{r.name}</a> : r.name}</li>)}</ul>
-                {regulators.some((r) => r.status === "listed") && <p className="text-xs text-ink-muted">As listed by <a href={sourceUrl}>{source}</a>; confirm on the regulator&apos;s website.</p>}
-              </>
-            )}
+            {regulators.length > 0 && <div className="text-sm"><RegulatorList regulators={regulators} sources={sources} /></div>}
           </div>
           <p className="text-xs text-ink-muted">{institutionAttribution.source}. <a href={institutionAttribution.url}>{institutionAttribution.text}</a></p>
         </aside>

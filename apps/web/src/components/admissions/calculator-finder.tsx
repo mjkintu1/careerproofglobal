@@ -2,23 +2,26 @@
 
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import type { AdmissionSystem } from "@careerproof/reference-data";
+import type { AdmissionSystem, EducationStructure } from "@careerproof/reference-data";
 import { CountrySearch, type CountryOption } from "@/components/country-search";
+import { EducationStructureCard } from "./education-structure";
 import { SystemCard } from "./system-card";
 
 export interface CountryInfo {
   regulators: { name: string; website?: string }[];
   institutions: number;
+  structure: EducationStructure | null;
 }
 
 interface Props {
   countries: CountryOption[];
   systems: AdmissionSystem[];
   info: Record<string, CountryInfo>;
+  uis: { attribution: string; licenceUrl: string };
 }
 
 /** Country search, then what admission tools exist for that country. */
-export function CalculatorFinder({ countries, systems, info }: Props) {
+export function CalculatorFinder({ countries, systems, info, uis }: Props) {
   const router = useRouter();
   const pathname = usePathname();
   const params = useSearchParams();
@@ -66,6 +69,8 @@ export function CalculatorFinder({ countries, systems, info }: Props) {
                 ) : <p className="text-ink-muted">None listed yet.</p>}
               </div>
             </div>
+            <EducationStructureCard s={details?.structure ?? null} attribution={uis.attribution} licenceUrl={uis.licenceUrl} />
+            <p><Link href={({ UG: "/admissions/uganda", KE: "/admissions/kenya" } as Record<string, string>)[country.code] ?? `/admissions/${country.code.toLowerCase()}`} className="font-semibold">Official entry requirements for {country.name}</Link></p>
             {ucas && !own.includes(ucas) && (
               <p className="text-sm text-ink-muted">
                 Applying to the UK? The <Link href={ucas.href ?? "#"}>UCAS Tariff calculator</Link> covers A levels and IB Diploma components, which many schools outside the UK offer.

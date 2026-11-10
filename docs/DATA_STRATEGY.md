@@ -146,3 +146,25 @@ Checked robots.txt, AI-crawler rules (Cloudflare Content Signals) and terms for 
 - **Pending:** the IB Diploma 45-point total, the Ghana WASSCE aggregate, South Africa's APS (per university) and Nigeria's UTME/post-UTME aggregate (per university).
 - **Engine:** `sumQualificationPoints()` in `packages/rules-engine` (method "sum of qualification points"). The points tables are data; new tables of the same kind need no code.
 - **Registry:** `packages/reference-data/src/admission-systems.json`, with sources `ucas-tariff` and `admission-bodies` in the source registry.
+
+## 12. Global subject structure and career evidence (added 2026-11-10)
+
+- **Subjects:** `packages/reference-data/src/school-subjects.json` defines 32 country-neutral school subjects in 9 groups.
+  - **Field of study:** each links to UNESCO ISCED-F 2013 detailed field(s).
+  - **Job relevance:** each links to O*NET Knowledge domain(s).
+  - **Exam names:** recorded only from official documents (so far Uganda UACE, from the Notes to Schools).
+  - **Adding a country:** add its exam names to each subject; nothing else changes.
+- **Evidence (O*NET 31.0, CC BY 4.0):**
+  - **Knowledge importance:** a 1–5 rating per occupation; we label it with O*NET's anchors (Important, Very important, Extremely important).
+  - **Related occupations:** O*NET's primary tiers.
+  - **Job Zone descriptions:** official text per preparation level.
+  - **Build:** `scripts/ingest/onet_knowledge_build.py`.
+  - **Scoring rules:** subjects measured by the same domain are merged ("Economics or Accounting"); combined subjects (Environmental Science = Biology + Geography) use the average of their domains.
+- **Guided careers ↔ ESCO:** `career-esco.json` links 59 of the 68 guided careers.
+  - **How:** exact title or alternative-label matches (`npm run match:career-esco`) plus hand-picked equivalents marked `manual`.
+  - **Rejected:** a match was dropped when ESCO lists the title only as an alternative label in another ISCO group (e.g. "civil engineer" is an alternative label of "land planner").
+  - **Two ISCO disagreements to review:** careers counsellor (ours 2359, ESCO 2423) and aircraft maintenance engineer (ours 7232, ESCO 3153).
+  - **Linking to O*NET:** the official crosswalk often gives several O*NET occupations. We pick the one with knowledge ratings whose title best matches the career title (with a small synonym list, e.g. doctor = physician).
+- **On pages:**
+  - **Subject pages:** "where this subject matters most at work" (O*NET 4+), with ISCED-F field and exam names.
+  - **Career and occupation pages:** "subjects this work relies on" (kept separate from entry subjects), preparation needed, and related occupations.

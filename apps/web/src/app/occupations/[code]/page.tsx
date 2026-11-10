@@ -3,7 +3,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { BadgeCheck, GraduationCap, ListChecks, Route, Sparkles } from "lucide-react";
-import { escoNarrower, escoOccupation, escoOccupations, iscoAncestors, iscoGroup, onetFor, usPayForSoc } from "@careerproof/reference-data";
+import { escoNarrower, escoOccupation, escoOccupations, iscoAncestors, iscoGroup, jobZoneInfo, bestOnetFor, hasOnetEvidence, relatedOnet, subjectsForOnet, usPayForSoc, type CareerEvidence } from "@careerproof/reference-data";
+import { EvidencePreparation, EvidenceRelated, EvidenceSubjects } from "@/components/careers/career-evidence";
 import { CatalogueAttribution } from "@/components/catalogue/attribution";
 import { IscoBreadcrumb } from "@/components/catalogue/isco-breadcrumb";
 import { Container } from "@/components/container";
@@ -26,7 +27,12 @@ async function OccupationContent({ params }: Pick<PageProps<"/occupations/[code]
   const o = escoOccupation(decodeURIComponent((await params).code));
   if (!o) notFound();
   const unit = iscoGroup(o.isco);
-  const onet = onetFor(o.code)[0] ?? onetFor(o.isco)[0];
+  const onet = bestOnetFor(o.code, o.title, undefined, (x) => hasOnetEvidence(x.code)) ?? bestOnetFor(o.isco, o.title, undefined, (x) => hasOnetEvidence(x.code));
+  const ev: CareerEvidence | null = onet ? {
+    esco: o.code, escoTitle: o.title, isco: o.isco, match: "self", iscoAgrees: null,
+    onet: { code: onet.code, title: onet.title, education: onet.education, jobZone: onet.jobZone },
+    jobZone: jobZoneInfo(onet.jobZone), subjects: subjectsForOnet(onet.code), related: relatedOnet(onet.code).filter((r) => r.esco !== o.code),
+  } : null;
   const narrower = escoNarrower(o.code);
   const broader = o.broader ? escoOccupation(o.broader) : undefined;
   const curated = graph.occupations().filter((c) => c.isco === o.isco);
@@ -79,6 +85,9 @@ async function OccupationContent({ params }: Pick<PageProps<"/occupations/[code]
               )}
             </section>
           )}
+          {ev && <EvidenceSubjects ev={ev} />}
+          {ev && <EvidencePreparation ev={ev} />}
+          {ev && <EvidenceRelated ev={ev} />}
           {narrower.length > 0 && (
             <section aria-labelledby="spec" className="space-y-3">
               <h2 id="spec" className="text-xl font-extrabold">Specialisations</h2>

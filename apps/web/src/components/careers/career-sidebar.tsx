@@ -3,11 +3,12 @@ import { Route } from "lucide-react";
 import type { Localised } from "@careerproof/career-graph";
 import { careerGraphData } from "@careerproof/sample-data";
 import { ClusterIcon } from "@/components/cluster-icon";
-import { careerHref, graph } from "@/lib/careers";
+import { careerHref, findLocation, graph } from "@/lib/careers";
 import { LocalDetail } from "./career-sections";
 import { UsPayBenchmark } from "./provenance";
 import { certificationsForCareer } from "@careerproof/reference-data";
 import { Award } from "lucide-react";
+import { LinkedInCard } from "./linkedin-links";
 
 const popular = ["civil-engineer", "nurse", "pilot", "software-developer", "accountant"];
 
@@ -24,6 +25,7 @@ export function CareerSidebar({ location, local, current, isco }: { location: st
           <ul className="space-y-1">{certificationsForCareer(current).map((c) => <li key={c.slug}><Link href={`/certifications/${c.slug}`}>{c.name}</Link></li>)}</ul>
         </div>
       )}
+      <LinkedInCard career={current} title={graph.get(current)?.title ?? current} countryName={findLocation(location)?.name ?? null} />
       <div className="card p-5">
         <h2 className="mb-3 font-display text-lg font-bold">Popular careers</h2>
         <ol className="space-y-2">

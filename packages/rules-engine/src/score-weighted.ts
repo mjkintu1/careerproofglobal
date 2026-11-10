@@ -27,32 +27,54 @@ export function scoreWeighted(
   const blockedBy: string[] = [];
   let total = 0;
 
-  for (const category of scoring.categories) {
-    const listed = programme.requirements[category.role] ?? [];
-    const candidates = listed
-      .filter((code) => !used.has(code) && applicant.results[code] !== undefined)
-      .map((code) => ({
-        code,
-        grade: applicant.results[code] as string,
-        points: gradePoints(ruleSet, code, applicant.results[code] as string),
-      }))
-      .sort((a, b) => b.points - a.points)
-      .slice(0, category.pick);
+  const anyScale = scoring.anyScale ?? "principal";
+  const expand = (codes: string[]) =>
+    codes.flatMap((c) => (c === "*" ? Object.keys(ruleSet.subjects).filter((k) => ruleSet.subjects[k]?.scale === anyScale) : [c]));
+  const nameOf = (code: string) => ruleSet.subjects[code]?.name ?? code;
+  const scored = (code: string) => ({
+    code,
+    grade: applicant.results[code] as string,
+    points: gradePoints(ruleSet, code, applicant.results[code] as string),
+  });
 
-    const passed = candidates.filter((c) => c.points > 0);
-    if (category.required && passed.length < category.pick) {
-      const names = listed.map((c) => ruleSet.subjects[c]?.name ?? c).join(", ");
-      blockedBy.push(
-        `Needs ${category.pick} passed ${category.role} subject${category.pick > 1 ? "s" : ""} from: ${names}`,
-      );
+  for (const category of scoring.categories) {
+    const pick = programme.requirements.picks?.[category.role] ?? category.pick;
+    const min = category.minPoints ?? 1;
+    const level = min > 1 ? " at principal level (grade E or better)" : "";
+    const listed = [...new Set(expand(programme.requirements[category.role] ?? []))];
+    const fixed = category.role === "essential" ? (programme.requirements.essentialFixed ?? []) : [];
+
+    const chosen: { code: string; grade: string; points: number }[] = [];
+    for (const code of fixed) {
+      if (used.has(code)) continue;
+      const c = applicant.results[code] !== undefined ? scored(code) : null;
+      if (!c || c.points < min) {
+        blockedBy.push(`Needs ${nameOf(code)} as an essential subject${level}`);
+      } else {
+        chosen.push(c);
+      }
+    }
+    const remaining = Math.max(0, pick - fixed.length);
+    const others = listed
+      .filter((code) => !used.has(code) && !fixed.includes(code) && applicant.results[code] !== undefined)
+      .map(scored)
+      .filter((c) => c.points >= min)
+      .sort((a, b) => b.points - a.points)
+      .slice(0, remaining);
+    chosen.push(...others);
+
+    if (category.required && others.length < remaining) {
+      const names = listed.filter((c) => !fixed.includes(c)).map(nameOf).join(", ");
+      const n = remaining;
+      blockedBy.push(`Needs ${n} ${category.role} subject${n > 1 ? "s" : ""}${level} from: ${names}`);
     }
 
-    for (const c of candidates) {
+    for (const c of chosen) {
       used.add(c.code);
       const points = c.points * category.weight;
       total += points;
       breakdown.push({
-        label: `${ruleSet.subjects[c.code]?.name ?? c.code} (${category.role})`,
+        label: `${nameOf(c.code)} (${category.role})`,
         detail: `${c.grade} = ${c.points} x ${category.weight}`,
         points: round(points),
       });

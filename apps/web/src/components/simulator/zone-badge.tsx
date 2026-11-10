@@ -2,13 +2,13 @@ import { CircleAlert, CircleCheck, CircleHelp, TriangleAlert } from "lucide-reac
 import type { Zone } from "@careerproof/rules-engine";
 
 const styles: Record<Zone, { label: string; className: string; Icon: typeof CircleCheck }> = {
-  safe: { label: "Safe", className: "bg-zone-safe text-white", Icon: CircleCheck },
-  borderline: { label: "Borderline", className: "bg-gold-400 text-ink", Icon: TriangleAlert },
-  danger: { label: "Danger", className: "bg-zone-danger text-white", Icon: CircleAlert },
-  no_data: { label: "Not enough data", className: "bg-surface-muted text-ink border border-border", Icon: CircleHelp },
+  safe: { label: "Above recent cut-offs", className: "bg-zone-safe text-white", Icon: CircleCheck },
+  borderline: { label: "Within recent cut-offs", className: "bg-gold-400 text-ink", Icon: TriangleAlert },
+  danger: { label: "Below recent cut-offs", className: "bg-zone-danger text-white", Icon: CircleAlert },
+  no_data: { label: "Not enough years published", className: "bg-surface-muted text-ink border border-border", Icon: CircleHelp },
 };
 
-/** Zone is always colour + icon + words, never colour alone. */
+/** Zone compares points with published cut-offs (never a chance of admission). Colour + icon + words. */
 export function ZoneBadge({ zone }: { zone: Zone }) {
   const { label, className, Icon } = styles[zone];
   return (

@@ -1,0 +1,58 @@
+{
+  "framework": "UG-UACE",
+  "region": "UG",
+  "version": "2026/2027",
+  "status": "draft",
+  "label": "Uganda public universities: weighting system (Notes to Schools 2026/2027)",
+  "pointsLabel": "weighted points",
+  "grades": {
+    "principal": { "A": 6, "B": 5, "C": 4, "D": 3, "E": 2, "O": 1, "F": 0 },
+    "subsidiary": { "Distinction or credit (D1 to C6)": 1, "Pass or fail (P7 to F9)": 0 }
+  },
+  "subjects": {
+    "BIO": { "name": "Biology", "scale": "principal" },
+    "CHE": { "name": "Chemistry", "scale": "principal" },
+    "PHY": { "name": "Physics", "scale": "principal" },
+    "MAT": { "name": "Mathematics", "scale": "principal" },
+    "AGR": { "name": "Agriculture", "scale": "principal" },
+    "FN": { "name": "Foods and Nutrition", "scale": "principal" },
+    "ECO": { "name": "Economics", "scale": "principal" },
+    "ENT": { "name": "Entrepreneurship", "scale": "principal" },
+    "GEO": { "name": "Geography", "scale": "principal" },
+    "HIS": { "name": "History", "scale": "principal" },
+    "LIT": { "name": "Literature in English", "scale": "principal" },
+    "DIV": { "name": "Divinity (CRE/IRE)", "scale": "principal" },
+    "ART": { "name": "Fine Art", "scale": "principal" },
+    "GMD": { "name": "Geometry and Mechanical Drawing", "scale": "principal" },
+    "GBD": { "name": "Geometry and Building Drawing", "scale": "principal" },
+    "GP": { "name": "General Paper", "scale": "subsidiary" },
+    "SMAT": { "name": "Subsidiary Mathematics", "scale": "subsidiary" },
+    "SICT": { "name": "Computer Studies (subsidiary ICT)", "scale": "subsidiary" }
+  },
+  "scoring": {
+    "method": "weighted_categories",
+    "anyScale": "principal",
+    "categories": [
+      { "role": "essential", "pick": 2, "weight": 3, "required": true, "minPoints": 2 },
+      { "role": "relevant", "pick": 1, "weight": 2, "required": false, "minPoints": 1 },
+      { "role": "desirable", "pick": 1, "weight": 1, "required": false, "minPoints": 1 }
+    ],
+    "secondaryBonus": {
+      "label": "UCE (O-level) weight",
+      "bands": [
+        { "id": "distinction", "label": "Distinctions (D1, D2)", "points": 0.3 },
+        { "id": "credit", "label": "Credits (C3 to C6)", "points": 0.2 },
+        { "id": "pass", "label": "Passes (P7, P8)", "points": 0.1 }
+      ],
+      "maxSubjects": 20
+    }
+  },
+  "eligibility": {
+    "minPasses": { "scale": "principal", "count": 2, "minPoints": 2, "label": "Needs at least two A-level principal passes (grade E or better) at the same sitting" }
+  },
+  "adjustments": [
+    { "id": "female_bonus", "label": "1.5 points scheme for female candidates (affirmative action)", "points": 1.5, "when": { "sex": "F", "institutionType": "public" } }
+  ],
+  "zones": { "window": 3, "minYears": 2, "safeMargin": 1 },
+  "source": { "name": "Ministry of Education & Sports, Notes to Schools 2026/2027 Academic Year, sections 3 to 5", "url": "https://news.mak.ac.ug/wp-content/uploads/2025/10/Notes-to-Schools-2026-2027-Academic-Year.pdf" }
+}

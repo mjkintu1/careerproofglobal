@@ -65,6 +65,26 @@ export function onetFor(escoOrIscoCode: string): OnetOccupation[] {
 }
 export const onetOccupation = (soc: string) => onet[soc];
 
+/** A few everyday words O*NET titles phrase differently ("doctor" -> "physician"). */
+const SYNONYMS: Record<string, string> = { doctor: "physician", medical: "medicine", lawyer: "attorney", programmer: "developer" };
+const words = (t: string) => new Set(t.toLowerCase().replace(/[^a-z ]/g, " ").split(/\s+/).filter((w) => w.length > 2)
+  .map((w) => w.replace(/s$/, "")).map((w) => SYNONYMS[w] ?? w));
+/**
+ * The crosswalk often links one ESCO occupation to several O*NET occupations. Pick the one whose
+ * title shares the most words with the given title (ties keep the crosswalk's order).
+ */
+export function bestOnetFor(escoOrIscoCode: string, title: string, tieBreakTitle?: string, prefer?: (o: OnetOccupation) => boolean): OnetOccupation | null {
+  const list = onetFor(escoOrIscoCode);
+  if (list.length < 2) return list[0] ?? null;
+  const target = words(title);
+  const second = words(tieBreakTitle ?? "");
+  const score = (o: OnetOccupation) => {
+    const w = [...words(o.title)];
+    return (prefer?.(o) ? 1000 : 0) + w.filter((x) => target.has(x)).length * 10 + w.filter((x) => second.has(x)).length;
+  };
+  return list.reduce((best, o) => (score(o) > score(best) ? o : best), list[0]!);
+}
+
 /** Compact list for client-side search. */
 export const occupationSearchItems = escoOccupations.map((o) => ({
   slug: o.code,

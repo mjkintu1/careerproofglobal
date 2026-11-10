@@ -1,0 +1,1563 @@
+{
+ "meta": {
+  "source": "INQAAHE (International Network for Quality Assurance Agencies in Higher Education), members database",
+  "url": "https://www.inqaahe.org/membership/members-database/",
+  "retrievedAt": "2026-11-10",
+  "note": "Full members are quality assurance or accreditation agencies. Membership is not government recognition: some are national regulators, others are private accreditors. Confirm a body's legal role with the country's ministry or regulator.",
+  "unmapped": []
+ },
+ "agencies": [
+  {
+   "country": "EG",
+   "name": "The Egyptian TVET Quality Assurance and Accreditation Authority (ETQAAN)",
+   "website": "www.etqaan.eg",
+   "profile": "https://www.inqaahe.org/member/the-egyptian-tvet-quality-assurance-and-accreditation-authority/",
+   "region": "Africa"
+  },
+  {
+   "country": "CA",
+   "name": "QA+ (QA+)",
+   "website": "http://www.qaplus.ca/",
+   "profile": "https://www.inqaahe.org/member/qa/",
+   "region": "North America"
+  },
+  {
+   "country": "SV",
+   "name": "Higher Education Quality Accreditation Commission (CdA)",
+   "website": "https://cda.edu.sv/",
+   "profile": "https://www.inqaahe.org/member/higher-education-quality-accreditation-commission-2/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "PA",
+   "name": "Central American Accreditation Agency for Architecture and Engineering Programs (ACAAI)",
+   "website": "https://acaai.org.gt/",
+   "profile": "https://www.inqaahe.org/member/central-american-accreditation-agency-for-architecture-and-engineering-programs-2/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "LS",
+   "name": "Council on Higher Education Lesotho (CHE)",
+   "website": "https://www.che.ac.ls/",
+   "profile": "https://www.inqaahe.org/member/council-on-higher-education-lesotho/",
+   "region": "Africa"
+  },
+  {
+   "country": "ES",
+   "name": "The Canarian Agency for Quality Assessment and Accreditation (ACCUEE)",
+   "website": "https://www3.gobiernodecanarias.org/educacion/accuee/?idioma=en",
+   "profile": "https://www.inqaahe.org/member/the-canarian-agency-for-quality-assessment-and-accreditation-2/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "US",
+   "name": "International Accreditation Council For Business Education (IACBE)",
+   "website": "https://iacbe.org/",
+   "profile": "https://www.inqaahe.org/member/international-accreditation-council-for-business-education-3/",
+   "region": "North America"
+  },
+  {
+   "country": "ES",
+   "name": "test",
+   "profile": "https://www.inqaahe.org/member/test-3/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "UZ",
+   "name": "Accreditation and Rating International Agency (ARIA)",
+   "website": "https://aria-uz.org",
+   "profile": "https://www.inqaahe.org/member/accreditation-and-rating-international-agency-2/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "UZ",
+   "name": "National Quality Assurance Agency for Education under the Administration of the President of the Republic of Uzbekistan (NQAAE)",
+   "website": "https://nqaae.uz/",
+   "profile": "https://www.inqaahe.org/member/national-quality-assurance-agency-for-education-under-the-administration-of-the-president-of-the-republic-of-uzbekistan/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "VN",
+   "name": "Center for Education Accreditation – The University of Da Nang (Cea-UD)",
+   "website": "https://cea.udn.vn/Detail.aspx?id=1492",
+   "profile": "https://www.inqaahe.org/member/center-for-education-accreditation-the-university-of-da-nang/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "AG",
+   "name": "Antigua and Barbuda National Accreditation Board (ABNAB)",
+   "website": "http://abnab.edu.ag/",
+   "profile": "https://www.inqaahe.org/member/antigua-and-barbuda-national-accreditation-board/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "VA",
+   "name": "Holy See’s Agency for the Evaluation and Promotion of Quality in Ecclesiastical Universities and Faculties (AVEPRO)",
+   "website": "https://www.avepro.va/?lang=es",
+   "profile": "https://www.inqaahe.org/member/holy-sees-agency-for-the-evaluation-and-promotion-of-quality-in-ecclesiastical-universities-and-faculties/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "ID",
+   "name": "Independent Accreditation Agency (LAM INFOKOM)",
+   "website": "https://laminfokom.or.id/",
+   "profile": "https://www.inqaahe.org/member/independent-accreditation-agency-lam-infokom/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "FJ",
+   "name": "Higher Education Commission Fiji (HECF)",
+   "website": "https://hec.org.fj/",
+   "profile": "https://www.inqaahe.org/member/higher-education-commission-fiji/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "GD",
+   "name": "Grenada Medical and Dental Council (GMDC)",
+   "website": "https://gmdc.gd/",
+   "profile": "https://www.inqaahe.org/member/grenada-medical-and-dental-council/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "ID",
+   "name": "The AsTEN Teacher Education Quality Assurance Agency (ATQA)",
+   "website": "https://web.atqa-asten-accreditation.org/",
+   "profile": "https://www.inqaahe.org/member/the-asten-teacher-education-quality-assurance-agency/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "GB",
+   "name": "Office for Students (OfS)",
+   "website": "https://www.officeforstudents.org.uk/",
+   "profile": "https://www.inqaahe.org/member/office-for-students/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "US",
+   "name": "Accreditation Council for Business Schools and Programs (ACBSP)",
+   "website": "https://acbsp.org/",
+   "profile": "https://www.inqaahe.org/member/accreditation-council-for-business-schools-and-programs/",
+   "region": "North America"
+  },
+  {
+   "country": "ID",
+   "name": "Accreditation Council for Education ( LAMDIK/ACE)",
+   "website": "http://lamdik.or.id/en",
+   "profile": "https://www.inqaahe.org/member/accreditation-council-for-education-ace/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "VN",
+   "name": "VNU-HCM Center for Education Accreditation (VNU-HCM CEA)",
+   "website": "https://ceahcm.edu.vn/en/",
+   "profile": "https://www.inqaahe.org/member/vnu-hcm-center-for-education-accreditation/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "SA",
+   "name": "National Center for Training Evaluation and Accreditation (ETEC/MASAR)",
+   "website": "https://www.etec.gov.sa/en/centers/nctea",
+   "profile": "https://www.inqaahe.org/member/education-and-training-evaluation-commission-the-national-center-for-training-evaluation/",
+   "region": "Arab States"
+  },
+  {
+   "country": "TN",
+   "name": "Tunisian Agency for Evaluation and Accreditation in Higher Education and Scientific Research (ATEA)",
+   "website": "https://atea.rnu.tn",
+   "profile": "https://www.inqaahe.org/member/tunisian-agency-for-evaluation-and-accreditation-in-higher-education-and-scientific-research/",
+   "region": "Arab States"
+  },
+  {
+   "country": "PH",
+   "name": "Philippine Association of Colleges and Universities Commission on Accreditation (PACUCOA)",
+   "website": "https://pacucoa.com/",
+   "profile": "https://www.inqaahe.org/member/philippine-association-of-colleges-and-universities-commission-on-accreditation/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "VN",
+   "name": "Thang Long Centre for Education Accreditation (CEA-THANGLONG)",
+   "website": "https://www.ceathanglong.edu.vn/",
+   "profile": "https://www.inqaahe.org/member/thang-long-centre-for-education-accreditation/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "CL",
+   "name": "ADC Agencia Acreditadora (ADC Acreditadora)",
+   "website": "https://adcacreditadora.cl/",
+   "profile": "https://www.inqaahe.org/member/adc-agencia-acreditadora/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "ES",
+   "name": "Foundation for Knowledge madri+d (madri+d)",
+   "website": "https://www.madrimasd.org/",
+   "profile": "https://www.inqaahe.org/member/foundation-for-knowledge-madrid/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "VN",
+   "name": "Saigon Centre for Educational Quality Accreditation (CEA SAIGON)",
+   "website": "https://cea-saigon.edu.vn",
+   "profile": "https://www.inqaahe.org/member/saigon-centre-for-educational-quality-accreditation/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "PA",
+   "name": "Consejo Nacional de Evaluación y Acreditación Universitaria de Panamá (CONEAUPA)",
+   "website": "https://coneaupa.edu.pa/",
+   "profile": "https://www.inqaahe.org/member/consejo-nacional-de-evaluacion-y-acreditacion-universitaria-de-panama/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "KZ",
+   "name": "Astana Accreditation Agency (AAA)",
+   "website": "https://astana-accred-center.kz /",
+   "profile": "https://www.inqaahe.org/member/astana-accreditation-agency-aaa/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "DE",
+   "name": "Foundation for International Business Administration Accreditation (FIBAA)",
+   "website": "http://www.fibaa.org",
+   "profile": "https://www.inqaahe.org/member/foundation-for-international-business-administration-accreditation/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "MN",
+   "name": "The Mongolian National Council for Education Accreditation (MNCEA)",
+   "website": "http://www.mncea.edu.mn",
+   "profile": "https://www.inqaahe.org/member/the-mongolian-national-council-for-education-accreditation/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "ES",
+   "name": "Agency for Scientific and University Quality of Andalusia (ACCUA)",
+   "website": "https://ws262.juntadeandalucia.es/accua/",
+   "profile": "https://www.inqaahe.org/member/agency-for-scientific-and-university-quality-of-andalusia-accua/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "GB",
+   "name": "British Accreditation Council for Independent Further and Higher Education (BAC)",
+   "website": "http://www.the-bac.org",
+   "profile": "https://www.inqaahe.org/member/british-accreditation-council-for-independent-further-and-higher-education/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "FI",
+   "name": "Finnish Education Evaluation Centre (FINEEC)",
+   "website": "http://karvi.fi/en/",
+   "profile": "https://www.inqaahe.org/member/finnish-education-evaluation-centre/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "KZ",
+   "name": "Independent Agency for Accreditation and Rating (IAAR)",
+   "website": "https://iaar.agency/en",
+   "profile": "https://www.inqaahe.org/member/independent-agency-for-accreditation-and-rating/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "JP",
+   "name": "Japan University Accreditation Association (JUAA)",
+   "website": "https://www.juaa.or.jp/en",
+   "profile": "https://www.inqaahe.org/member/japan-university-accreditation-association/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "TH",
+   "name": "The Office for National Education Standards and Quality Assessment (ONESQA)",
+   "website": "http://en.onesqa.or.th/",
+   "profile": "https://www.inqaahe.org/member/the-office-for-national-education-standards-and-quality-assessment/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "FR",
+   "name": "High Council for the Evaluation of Research and Higher Education (HCERES)",
+   "website": "https://www.hceres.fr/en",
+   "profile": "https://www.inqaahe.org/member/high-council-for-the-evaluation-of-research-and-higher-education/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "CO",
+   "name": "National Accreditation Council (CNA)",
+   "website": "http://www.cna.gov.co",
+   "profile": "https://www.inqaahe.org/member/national-accreditation-council/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "BH",
+   "name": "Education &#038; Training Quality Authority (BQA)",
+   "website": "https://www.bqa.gov.bh/en/pages/home.aspx",
+   "profile": "https://www.inqaahe.org/member/education-training-quality-authority/",
+   "region": "Arab States"
+  },
+  {
+   "country": "DE",
+   "name": "Foundation for the Accreditation of Study Programmes in Germany (German Accreditation Council)",
+   "website": "http://www.akkreditierungsrat.de",
+   "profile": "https://www.inqaahe.org/member/foundation-for-the-accreditation-of-study-programmes-in-germany-german-accreditation-council/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "NL",
+   "name": "European Association for Public Administration Accreditation (EAPAA)",
+   "website": "http://www.eapaa.org",
+   "profile": "https://www.inqaahe.org/member/european-association-for-public-administration-accreditation/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "US",
+   "name": "Commission on Collegiate Nursing Education (CCNE)",
+   "website": "https://www.aacnnursing.org/CCNE",
+   "profile": "https://www.inqaahe.org/member/commission-on-collegiate-nursing-education/",
+   "region": "North America"
+  },
+  {
+   "country": "NZ",
+   "name": "Academic Quality Agency for New Zealand Universities (AQA)",
+   "website": "http://www.aqa.ac.nz",
+   "profile": "https://www.inqaahe.org/member/academic-quality-agency-for-new-zealand-universities/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "ES",
+   "name": "Agency for Quality Assurance in the Catalan University System (AQU Catalunya)",
+   "website": "http://www.aqu.cat",
+   "profile": "https://www.inqaahe.org/member/agency-for-quality-assurance-in-the-catalan-university-system/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "CN",
+   "name": "Shanghai Education Evaluation Institute (SEEI)",
+   "website": "http://www.seei.edu.sh.cn/",
+   "profile": "https://www.inqaahe.org/member/shanghai-education-evaluation-institute/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "PH",
+   "name": "Accrediting Agency of Chartered Colleges and Universities of the Philippines (AACCUP)",
+   "website": "http://www.aaccupqa.org.ph",
+   "profile": "https://www.inqaahe.org/member/accrediting-agency-of-chartered-colleges-and-universities-of-the-philippines/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "HR",
+   "name": "Agency for Science and Higher Education (ASHE)",
+   "website": "http://www.azvo.hr",
+   "profile": "https://www.inqaahe.org/member/agency-for-science-and-higher-education-ashe/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "NL",
+   "name": "Accreditation Organisation of the Netherlands and Flanders (NVAO)",
+   "website": "https://www.nvao.net/en",
+   "profile": "https://www.inqaahe.org/member/accreditation-organisation-of-the-netherlands-and-flanders/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "CH",
+   "name": "Swiss Agency of Accreditation and Quality Assurance (AAQ)",
+   "website": "http://www.aaq.ch",
+   "profile": "https://www.inqaahe.org/member/swiss-agency-of-accreditation-and-quality-assurance/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "IN",
+   "name": "National Assessment and Accreditation Council (NAAC)",
+   "website": "http://www.naac.gov.in",
+   "profile": "https://www.inqaahe.org/member/national-assessment-and-accreditation-council/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "TT",
+   "name": "Caribbean Evangelical Theological Association (CETA)",
+   "website": "http://www.ceta.education/",
+   "profile": "https://www.inqaahe.org/member/caribbean-evangelical-theological-association/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "AE",
+   "name": "Abu Dhabi Department of Education and Knowledge (ADEK)",
+   "website": "http://www.adec.ac.ae",
+   "profile": "https://www.inqaahe.org/member/abu-dhabi-department-of-education-and-knowledge/",
+   "region": "Arab States"
+  },
+  {
+   "country": "AM",
+   "name": "National Center for Professional Education Quality Assurance (ANQA)",
+   "website": "http://www.anqa.am/en/",
+   "profile": "https://www.inqaahe.org/member/national-center-for-professional-education-quality-assurance/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "JP",
+   "name": "Accreditation Council for Practical Abilities (ACPA)",
+   "website": "http://www.acpa.jp",
+   "profile": "https://www.inqaahe.org/member/accreditation-council-for-practical-abilities/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "NZ",
+   "name": "Universities New Zealand-Te Pokai Tara",
+   "website": "http://www.universitiesnz.ac.nz/",
+   "profile": "https://www.inqaahe.org/member/universities-new-zealand-te-pokai-tara/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "OM",
+   "name": "Oman Authority for Quality Assurance of Education (OAQA)",
+   "website": "https://oaaaqa.gov.om/",
+   "profile": "https://www.inqaahe.org/member/sultanate-of-oman-authority-for-academic-accreditation-and-quality-assurance-of-education-oaaaqa/",
+   "region": "Arab States"
+  },
+  {
+   "country": "LS",
+   "name": "Council on Higher Education (CHE)",
+   "website": "https://www.che.ac.ls/",
+   "profile": "https://www.inqaahe.org/member/council-on-higher-education/",
+   "region": "Africa"
+  },
+  {
+   "country": "AT",
+   "name": "Agency for Quality Assurance and Accreditation Austria (AQ Austria)",
+   "website": "https://www.aq.ac.at/en/",
+   "profile": "https://www.inqaahe.org/member/agency-for-quality-assurance-and-accreditation-austria/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "MY",
+   "name": "Malaysian Qualifications Agency (MQA)",
+   "website": "https://www.mqa.gov.my/",
+   "profile": "https://www.inqaahe.org/member/malaysian-qualifications-agency/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "ES",
+   "name": "Agencia Nacional para la Evaluación de la Calidad y Acreditación (ANECA)",
+   "website": "http://www.aneca.es",
+   "profile": "https://www.inqaahe.org/member/agencia-nacional-para-la-evaluacion-de-la-calidad-y-acreditacion/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "MU",
+   "name": "Mauritius Qualifications Authority (MQA)",
+   "website": "http://www.mqa.mu",
+   "profile": "https://www.inqaahe.org/member/mauritius-qualifications-authority/",
+   "region": "Africa"
+  },
+  {
+   "country": "GY",
+   "name": "The National Accreditation Council - Guyana (NAC)",
+   "website": "http://www.nac.gov.gy",
+   "profile": "https://www.inqaahe.org/member/the-national-accreditation-council-guyana/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "MX",
+   "name": "Inter Institutional Committees for the Evaluation of Higher Education (CIEES)",
+   "website": "http://www.ciees.edu.mx/",
+   "profile": "https://www.inqaahe.org/member/inter-institutional-committees-for-the-evaluation-of-higher-education/",
+   "region": "North America"
+  },
+  {
+   "country": "CL",
+   "name": "Agencia Acreditadora de Chile (Acreditadora de Chile)",
+   "website": "http://www.acreditadoradechile.cl",
+   "profile": "https://www.inqaahe.org/member/agencia-acreditadora-de-chile/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "TW",
+   "name": "Higher Education Evaluation and Accreditation Council of Taiwan (HEEACT)",
+   "website": "http://www.heeact.edu.tw",
+   "profile": "https://www.inqaahe.org/member/higher-education-evaluation-and-accreditation-council-of-taiwan/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "CL",
+   "name": "National Accreditation Commission (CNA)",
+   "website": "http://www.cnachile.cl",
+   "profile": "https://www.inqaahe.org/member/national-accreditation-commission/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "WS",
+   "name": "Samoa Qualifications Authority (SQA)",
+   "website": "http://www.sqa.gov.ws",
+   "profile": "https://www.inqaahe.org/member/samoa-qualifications-authority-sqa/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "AU",
+   "name": "International Centre of Excellence in Tourism and Hospitality Education (THE-ICE)",
+   "website": "http://www.the-ice.org",
+   "profile": "https://www.inqaahe.org/member/international-centre-of-excellence-in-tourism-and-hospitality-education/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "BB",
+   "name": "Barbados Accreditation Council (BAC)",
+   "website": "http://www.bac.gov.bb",
+   "profile": "https://www.inqaahe.org/member/barbados-accreditation-council/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "MX",
+   "name": "Federation of Mexican Private Higher Education Institutions (FIMPES)",
+   "website": "http://www.fimpes.org.mx",
+   "profile": "https://www.inqaahe.org/member/federation-of-mexican-private-higher-education-institutions/",
+   "region": "North America"
+  },
+  {
+   "country": "BT",
+   "name": "Higher Education Quality Council (HEQC)",
+   "website": "http://www.bqpca.gov.bt/",
+   "profile": "https://www.inqaahe.org/member/higher-education-quality-council/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "BE",
+   "name": "Agency for Higher Education Quality Evaluation (AEQES)",
+   "website": "http://www.aeqes.be",
+   "profile": "https://www.inqaahe.org/member/agency-for-higher-education-quality-evaluation/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "XK",
+   "name": "Kosovo Accreditation Agency (KAA)",
+   "website": "https://akreditimi.rks-gov.net/",
+   "profile": "https://www.inqaahe.org/member/kosovo-accreditation-agency/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "RU",
+   "name": "National Centre for Public Accreditation (NCPA)",
+   "website": "http://www.ncpa.ru",
+   "profile": "https://www.inqaahe.org/member/national-centre-for-public-accreditation/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "CL",
+   "name": "Centro Interuniversitario de Desarrollo (CINDA)",
+   "website": "http://www.cinda.cl",
+   "profile": "https://www.inqaahe.org/member/centro-interuniversitario-de-desarrollo/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "US",
+   "name": "Transnational Association of Christian Colleges and Schools (TRACS)",
+   "website": "http://www.tracs.org/",
+   "profile": "https://www.inqaahe.org/member/transnational-association-of-christian-colleges-and-schools/",
+   "region": "North America"
+  },
+  {
+   "country": "EE",
+   "name": "Estonian Quality Agency for Education (HAKA)",
+   "website": "http://www.haka.ee/en",
+   "profile": "https://www.inqaahe.org/member/estonian-quality-agency-for-education/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "JP",
+   "name": "Japan Institution for Higher Education Evaluation (JIHEE)",
+   "website": "http://www.jihee.or.jp/en/index.html",
+   "profile": "https://www.inqaahe.org/member/japan-institution-for-higher-education-evaluation/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "VN",
+   "name": "Vietnam Education Quality Management Agency (VQA)",
+   "website": "http://www.veqa.edu.vn",
+   "profile": "https://www.inqaahe.org/member/general-department-of-education-testing-and-accreditation/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "ES",
+   "name": "Agency for the Quality of the Basque University System (Unibasq)",
+   "website": "http://www.unibasq.eus",
+   "profile": "https://www.inqaahe.org/member/agency-for-the-quality-of-the-basque-university-system/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "CN",
+   "name": "The Education Quality Evaluation Agency of the Ministry of Education in China (EQEA)",
+   "website": "https://www.eqea.edu.cn/pgzxyw/597083/index.html",
+   "profile": "https://www.inqaahe.org/member/education-quality-evaluation-agency-ministry-of-education-china/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "JM",
+   "name": "The University Council of Jamaica (UCJ)",
+   "website": "https://www.ucj.org.jm/",
+   "profile": "https://www.inqaahe.org/member/the-university-council-of-jamaica/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "DE",
+   "name": "International Accreditation Council for Global Development Studies and Research (IAC/EADI)",
+   "website": "http://www.eadi.org/accreditation",
+   "profile": "https://www.inqaahe.org/member/international-accreditation-council-for-global-development-studies-and-research/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "DE",
+   "name": "Evaluation Agency Baden-Wuerttemberg (EVALAG)",
+   "website": "http://www.evalag.de",
+   "profile": "https://www.inqaahe.org/member/evaluation-agency-baden-wuerttemberg/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "AE",
+   "name": "Commission for Academic Accreditation (CAA)",
+   "website": "http://www.caa.ae",
+   "profile": "https://www.inqaahe.org/member/commission-for-academic-accreditation/",
+   "region": "Arab States"
+  },
+  {
+   "country": "US",
+   "name": "Southern Association of Colleges and Schools Commission on Colleges (SACSCOC)",
+   "website": "http://www.sacscoc.org/",
+   "profile": "https://www.inqaahe.org/member/southern-association-of-colleges-and-schools-commission-on-colleges/",
+   "region": "North America"
+  },
+  {
+   "country": "CA",
+   "name": "Ontario Universities Council on Quality Assurance (The Quality Council)",
+   "website": "http://www.oucqa.ca",
+   "profile": "https://www.inqaahe.org/member/ontario-universities-council-on-quality-assurance/",
+   "region": "North America"
+  },
+  {
+   "country": "IL",
+   "name": "The Council for Higher Education (CHE)",
+   "website": "http://www.che.org.il",
+   "profile": "https://www.inqaahe.org/member/the-council-for-higher-education/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "US",
+   "name": "Accrediting Commission of Career Schools and Colleges (ACCSC)",
+   "website": "http://www.accsc.org",
+   "profile": "https://www.inqaahe.org/member/accrediting-commission-of-career-schools-and-colleges/",
+   "region": "North America"
+  },
+  {
+   "country": "BA",
+   "name": "Agency for Development of Higher Education and Quality Assurance of Bosnia and Herzegovina (HEA)",
+   "website": "http://hea.gov.ba",
+   "profile": "https://www.inqaahe.org/member/agency-for-development-of-higher-education-and-quality-assurance-of-bosnia-and-herzegovina/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "US",
+   "name": "Montessori Accreditation Council for Teacher Education (MACTE)",
+   "website": "http://www.macte.org",
+   "profile": "https://www.inqaahe.org/member/montessori-accreditation-council-for-teacher-education/",
+   "region": "North America"
+  },
+  {
+   "country": "RU",
+   "name": "Certification Association “Russian Register” (RR)",
+   "website": "http://www.rusregister.ru",
+   "profile": "https://www.inqaahe.org/member/certification-association-russian-register/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "NP",
+   "name": "University Grants Commission (UGC Nepal)",
+   "website": "https://www.ugcnepal.edu.np/",
+   "profile": "https://www.inqaahe.org/member/university-grants-commission/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "KR",
+   "name": "Korean Council for University Education (KCUE)",
+   "website": "http://english.kcue.or.kr/",
+   "profile": "https://www.inqaahe.org/member/korean-council-for-university-education/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "JM",
+   "name": "Caribbean Accreditation Authority for Education in Medicine and other Health Professions (CAAM-HP)",
+   "website": "http://www.caam-hp.org",
+   "profile": "https://www.inqaahe.org/member/caribbean-accreditation-authority-for-education-in-medicine-and-other-health-professions/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "CY",
+   "name": "Cyprus Agency of Quality Assurance and Accreditation in Higher Education (CYQAA)",
+   "website": "http://www.dipae.ac.cy",
+   "profile": "https://www.inqaahe.org/member/cyprus-agency-of-quality-assurance-and-accreditation-in-higher-education-cyqaa/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "PH",
+   "name": "Philippine Accrediting Association of Schools Colleges and Universities (PAASCU)",
+   "website": "http://www.paascu.org.ph",
+   "profile": "https://www.inqaahe.org/member/philippine-accrediting-association-of-schools-colleges-and-universities/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "MU",
+   "name": "Higher Education Commission Mauritius (HEC)",
+   "website": "http://www.hec.mu",
+   "profile": "https://www.inqaahe.org/member/higher-education-commission-mauritius/",
+   "region": "Africa"
+  },
+  {
+   "country": "DE",
+   "name": "Accreditation, Certification and Quality Assurance Institute (ACQUIN)",
+   "website": "http://www.acquin.org",
+   "profile": "https://www.inqaahe.org/member/accreditation-certification-and-quality-assurance-institute/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "DE",
+   "name": "Accreditation Agency for Study Programs in Health and Social Sciences (AHPGS)",
+   "website": "http://www.ahpgs.de",
+   "profile": "https://www.inqaahe.org/member/accreditation-agency-for-study-programs-in-health-and-social-sciences/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "US",
+   "name": "National Commission on Orthotic and Prosthetic Education (NCOPE)",
+   "website": "http://www.ncope.org",
+   "profile": "https://www.inqaahe.org/member/national-commission-on-orthotic-and-prosthetic-education/",
+   "region": "North America"
+  },
+  {
+   "country": "JP",
+   "name": "National Institution for Academic Degrees and Quality Enhancement of Higher Education (NIAD-QE)",
+   "website": "http://www.niad.ac.jp/english/index.html",
+   "profile": "https://www.inqaahe.org/member/national-institution-for-academic-degrees-and-quality-enhancement-of-higher-education/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "AU",
+   "name": "Tertiary Education Quality and Standards Agency (TEQSA)",
+   "website": "http://www.teqsa.gov.au",
+   "profile": "https://www.inqaahe.org/member/tertiary-education-quality-and-standards-agency/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "KZ",
+   "name": "Independent Agency for Quality Assurance in Education (IQAA)",
+   "website": "https://iqaa.kz/en/",
+   "profile": "https://www.inqaahe.org/member/independent-agency-for-quality-assurance-in-education/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "SI",
+   "name": "Slovenian Quality Assurance Agency (SQAA NAKVIS)",
+   "website": "http://www.nakvis.si",
+   "profile": "https://www.inqaahe.org/member/slovenian-quality-assurance-agency/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "AL",
+   "name": "Albanian Quality Assurance Agency in Higher Education (ASCAL)",
+   "website": "https://www.ascal.al/en/",
+   "profile": "https://www.inqaahe.org/member/quality-assurance-agency-in-higher-education-ascal/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "LK",
+   "name": "Quality Assurance and Accreditation Council of the University Grants Commission",
+   "website": "https://www.ugc.ac.lk/",
+   "profile": "https://www.inqaahe.org/member/quality-assurance-and-accreditation-council-of-the-university-grants-commission/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "ID",
+   "name": "National Accreditation Agency for Higher Education (BAN-PT/NAAHE)",
+   "website": "http://www.banpt.or.id",
+   "profile": "https://www.inqaahe.org/member/national-accreditation-agency-for-higher-education/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "KR",
+   "name": "Korean Accreditation Board of Nursing Education (KABONE)",
+   "website": "http://www.kabone.or.kr/eng/index.do",
+   "profile": "https://www.inqaahe.org/member/korean-accreditation-board-of-nursing-education/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "CY",
+   "name": "Higher Education Planning Evaluation Accreditation and Coordination Council (YODAK)",
+   "website": "https://www.yodak.gov.ct.tr/en/",
+   "profile": "https://www.inqaahe.org/member/higher-education-planning-evaluation-accreditation-and-coordination-council/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "GR",
+   "name": "Hellenic Authority for Higher Education (HAHE)",
+   "website": "http://www.adip.gr",
+   "profile": "https://www.inqaahe.org/member/hellenic-quality-assurance-and-accreditation-agency/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "LV",
+   "name": "Academic Information Centre (AIC)",
+   "website": "https://www.aika.lv/en/",
+   "profile": "https://www.inqaahe.org/member/academic-information-centre-aic/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "SA",
+   "name": "Education and Training Evaluation Commission/ National Centre for Academic Accreditation and Evaluation (ETEC / NCAAA)",
+   "website": "https://www.etec.gov.sa/en/centers/ncaaa",
+   "profile": "https://www.inqaahe.org/member/education-and-training-evaluation-commission-national-centre-for-academic-accreditation-and-evaluation-etec-ncaaa/",
+   "region": "Arab States"
+  },
+  {
+   "country": "HK",
+   "name": "Federation for Self-financing Tertiary Education (FSTE)",
+   "website": "https://www.fste.edu.hk/en/",
+   "profile": "https://www.inqaahe.org/member/federation-for-self-financing-tertiary-education/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "BA",
+   "name": "The Agency for Higher Education of the Republic of Srpska (AHERS)",
+   "website": "http://www.avors.org/",
+   "profile": "https://www.inqaahe.org/member/the-agency-for-higher-education-of-the-republic-of-srpska/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "KG",
+   "name": "Agency for Quality Assurance in the field of Education (EdNet) (EdNet)",
+   "website": "https://www.accreditation.asia/en",
+   "profile": "https://www.inqaahe.org/member/agency-for-quality-assurance-in-the-field-of-education-ednet/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "CA",
+   "name": "QA+",
+   "website": "http://www.ocqas.org",
+   "profile": "https://www.inqaahe.org/member/ontario-college-quality-assurance-service/",
+   "region": "North America"
+  },
+  {
+   "country": "CA",
+   "name": "Maritime Provinces Higher Education Commission (MPHEC)",
+   "website": "http://www.mphec.ca",
+   "profile": "https://www.inqaahe.org/member/maritime-provinces-higher-education-commission/",
+   "region": "North America"
+  },
+  {
+   "country": "KR",
+   "name": "Korean Council For University College Education (KCCE)",
+   "website": "http://www.kcce.or.kr",
+   "profile": "https://www.inqaahe.org/member/korean-council-for-university-college-education/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "US",
+   "name": "Network of Schools of Public Policy, Affairs, and Administration (NASPAA)",
+   "website": "http://www.naspaa.org",
+   "profile": "https://www.inqaahe.org/member/network-of-schools-of-public-policy-affairs-and-administration/",
+   "region": "North America"
+  },
+  {
+   "country": "SC",
+   "name": "Seychelles Qualifications Authority (SQA)",
+   "website": "http://www.sqa.sc",
+   "profile": "https://www.inqaahe.org/member/seychelles-qualifications-authority/",
+   "region": "Africa"
+  },
+  {
+   "country": "GB",
+   "name": "The Quality Assurance Agency for Higher Education (QAA )",
+   "website": "http://www.qaa.ac.uk",
+   "profile": "https://www.inqaahe.org/member/the-quality-assurance-agency-for-higher-education/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "HK",
+   "name": "University Grants Committee Hong Kong (UGC)",
+   "website": "http://www.ugc.edu.hk",
+   "profile": "https://www.inqaahe.org/member/university-grants-committee-hk/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "TO",
+   "name": "Tonga National Qualifications and Accreditation Board (TNQAB)",
+   "website": "http://www.tnqab.to",
+   "profile": "https://www.inqaahe.org/member/tonga-national-qualifications-and-accreditation-board/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "US",
+   "name": "National Architectural Accrediting Board (NAAB)",
+   "website": "http://www.naab.org",
+   "profile": "https://www.inqaahe.org/member/national-architectural-accrediting-board/",
+   "region": "North America"
+  },
+  {
+   "country": "TW",
+   "name": "Taiwan Assessment and Evaluation Association (TWAEA)",
+   "website": "https://www.twaea.org.tw/",
+   "profile": "https://www.inqaahe.org/member/taiwan-assessment-and-evaluation-association/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "US",
+   "name": "Middle States Commission on Higher Education (MSCHE)",
+   "website": "http://www.msche.org",
+   "profile": "https://www.inqaahe.org/member/middle-states-commission-on-higher-education/",
+   "region": "North America"
+  },
+  {
+   "country": "CL",
+   "name": "Accrediting Agency AcreditAccion (AcreditAcción)",
+   "website": "http://www.acreditaccion.cl",
+   "profile": "https://www.inqaahe.org/member/accrediting-agency-acreditaccion/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "NZ",
+   "name": "New Zealand Qualifications Authority (NZQA)",
+   "website": "http://www.nzqa.govt.nz/",
+   "profile": "https://www.inqaahe.org/member/new-zealand-qualifications-authority/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "LT",
+   "name": "Center for Quality Assessment in Higher Education (SKVC)",
+   "website": "http://skvc.lrv.lt/",
+   "profile": "https://www.inqaahe.org/member/center-for-quality-assessment-in-higher-education/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "NA",
+   "name": "National Council for Higher Education (NCHE)",
+   "website": "http://www.nche.org.na",
+   "profile": "https://www.inqaahe.org/member/national-council-for-higher-education/",
+   "region": "Africa"
+  },
+  {
+   "country": "PL",
+   "name": "The Polish Accreditation Committee (PKA)",
+   "website": "http://www.pka.edu.pl",
+   "profile": "https://www.inqaahe.org/member/the-polish-accreditation-committee/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "CN",
+   "name": "China Academic Degrees and Graduate Education Development Center (CDGDC)",
+   "website": "http://www.cdgdc.edu.cn",
+   "profile": "https://www.inqaahe.org/member/china-academic-degrees-and-graduate-education-development-center/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "US",
+   "name": "Distance Education Accrediting Commission (DEAC)",
+   "website": "https://www.deac.org/",
+   "profile": "https://www.inqaahe.org/member/distance-education-accrediting-commission/",
+   "region": "North America"
+  },
+  {
+   "country": "ES",
+   "name": "Aragon Agency for Quality Assurance and Strategic Foresight (ACPUA)",
+   "website": "https://acpua.aragon.es/",
+   "profile": "https://www.inqaahe.org/member/aragon-agency-for-quality-assurance-and-strategic-foresight/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "KZ",
+   "name": "Eurasian Сentre for Accreditation and Quality Assurance in Higher Education and Health Care (ECAQA)",
+   "website": "http://www.ecaqa.org/",
+   "profile": "https://www.inqaahe.org/member/eurasian-%d1%81entre-for-accreditation-and-quality-assurance-in-higher-education-and-health-%d1%81are/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "NL",
+   "name": "Accreditation Council for Entrepreneurial and Engaged Universities (ACEEU)",
+   "website": "http://www.aceeu.org",
+   "profile": "https://www.inqaahe.org/member/accreditation-council-for-entrepreneurial-and-engaged-universities/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "KZ",
+   "name": "Agency for Recognition and Quality Assurance in Education (ARQA)",
+   "website": "https://arqa.agency/",
+   "profile": "https://www.inqaahe.org/member/arqa-agency-for-recognition-and-quality-assurance-in-education/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "MX",
+   "name": "Accreditation Council for Administrative, Accounting and Related Sciences (CACECA)",
+   "website": "http://www.caceca.org",
+   "profile": "https://www.inqaahe.org/member/accreditation-council-for-administrative-accounting-and-related-sciences/",
+   "region": "North America"
+  },
+  {
+   "country": "MV",
+   "name": "Maldives Qualifications Authority (MQA)",
+   "website": "http://www.mqa.gov.mv/",
+   "profile": "https://www.inqaahe.org/member/maldives-qualifications-authority/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "US",
+   "name": "Quality Matters (QM)",
+   "website": "http://www.qualitymatters.org",
+   "profile": "https://www.inqaahe.org/member/quality-matters/",
+   "region": "North America"
+  },
+  {
+   "country": "PE",
+   "name": "Education Quality Accreditation Agency (EQUAA)",
+   "website": "http://equaa.org",
+   "profile": "https://www.inqaahe.org/member/education-quality-accreditation-agency/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "PY",
+   "name": "National Agency for Accreditation of Higher Education (ANEAES)",
+   "website": "http://www.aneaes.gov.py",
+   "profile": "https://www.inqaahe.org/member/national-agency-for-accreditation-of-higher-education/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "BS",
+   "name": "The National Accreditation and Equivalency Council of The Bahamas (NAECOB)",
+   "website": "https://naecob.org/",
+   "profile": "https://www.inqaahe.org/member/the-national-accreditation-and-equivalency-council-of-the-bahamas/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "DE",
+   "name": "European Quality Assurance Agency (EQAA)",
+   "website": "http://www.eqaa.eu",
+   "profile": "https://www.inqaahe.org/member/eqaa-european-quality-assurance-agency/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "NO",
+   "name": "Norwegian Agency for Quality Assurance in Education (NOKUT)",
+   "website": "http://www.nokut.no/",
+   "profile": "https://www.inqaahe.org/member/norwegian-agency-for-quality-assurance-in-education/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "AE",
+   "name": "University Quality Assurance International Board (UQAIB)",
+   "website": "https://www.khda.gov.ae/en",
+   "profile": "https://www.inqaahe.org/member/university-quality-assurance-international-board/",
+   "region": "Arab States"
+  },
+  {
+   "country": "CL",
+   "name": "Consejo Nacional de Educación (CNED)",
+   "website": "http://www.cned.cl",
+   "profile": "https://www.inqaahe.org/member/consejo-nacional-de-educacion/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "DE",
+   "name": "Akkreditierungsagentur für Studiengänge der Ingenieurwissenschaften der Informatik der Naturwissenschaften und der Mathematik (ASIIN e.V.)",
+   "website": "https://www.asiin.de",
+   "profile": "https://www.inqaahe.org/member/akkreditierungsagentur-fur-studiengange-der-ingenieurwissenschaften-der-informatik-der-naturwissenschaften-und-der-mathematik/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "IE",
+   "name": "Quality and Qualifications Ireland (QQI)",
+   "website": "http://www.qqi.ie",
+   "profile": "https://www.inqaahe.org/member/quality-and-qualifications-ireland/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "TT",
+   "name": "Accreditation Council of Trinidad and Tobago (ACTT)",
+   "website": "http://www.actt.org.tt",
+   "profile": "https://www.inqaahe.org/member/accreditation-council-of-trinidad-and-tobago/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "CA",
+   "name": "Postsecondary Education Quality Assessment Board Ministry of Training Colleges (PEQAB)",
+   "website": "http://www.peqab.ca/",
+   "profile": "https://www.inqaahe.org/member/postsecondary-education-quality-assessment-board-ministry-of-training-colleges/",
+   "region": "North America"
+  },
+  {
+   "country": "RO",
+   "name": "The Romanian Agency for Quality Assurance in Higher Education (ARACIS)",
+   "website": "http://www.aracis.ro",
+   "profile": "https://www.inqaahe.org/member/the-romanian-agency-for-quality-assurance-in-higher-education/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "CR",
+   "name": "Sistema Nacional de Acreditación de la Educación Superior (SINAES)",
+   "website": "http://www.sinaes.ac.cr",
+   "profile": "https://www.inqaahe.org/member/sistema-nacional-de-acreditacion-de-la-educacion-superior/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "DE",
+   "name": "Agency for Quality Assurance Through Accreditation of Study Programmes (AQAS)",
+   "website": "http://www.aqas.de",
+   "profile": "https://www.inqaahe.org/member/agency-for-quality-assurance-through-accreditation-of-study-programmes/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "SE",
+   "name": "Swedish Higher Education Autority (UKÄ)",
+   "website": "https://www.uka.se/swedish-higher-education-authority",
+   "profile": "https://www.inqaahe.org/member/swedish-higher-education-autority/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "DE",
+   "name": "European Council for Theological Education (ECTE)",
+   "website": "http://ecte.eu/",
+   "profile": "https://www.inqaahe.org/member/european-council-for-theological-education/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "MU",
+   "name": "Quality Assurance Authority (QAA)",
+   "website": "http://qaa.ac.mu/home",
+   "profile": "https://www.inqaahe.org/member/quality-assurance-authority/",
+   "region": "Africa"
+  },
+  {
+   "country": "TR",
+   "name": "Turkish Higher Education Quality Council (THEQC)",
+   "website": "https://yokak.gov.tr",
+   "profile": "https://www.inqaahe.org/member/turkish-higher-education-quality-council/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "UA",
+   "name": "National Agency for Higher Education Quality Assurance (NAQA)",
+   "website": "https://en.naqa.gov.ua/",
+   "profile": "https://www.inqaahe.org/member/national-agency-for-higher-education-quality-assurance/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "NL",
+   "name": "International Board of Certified Trainers (IBCT)",
+   "website": "https://www.ibct-global.com/",
+   "profile": "https://www.inqaahe.org/member/international-board-of-certified-trainers/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "CN",
+   "name": "Jiangsu Agency for Educational Evaluation (JAEE)",
+   "website": "http://english.jsjyt.edu.cn/",
+   "profile": "https://www.inqaahe.org/member/jiangsu-agency-for-educational-evaluation/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "KG",
+   "name": "Agency for Accreditation of Educational Programs and Organizations (AAEPO)",
+   "website": "http://www.aaopo.kg/",
+   "profile": "https://www.inqaahe.org/member/agency-for-accreditation-of-educational-programs-and-organizations/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "US",
+   "name": "Accreditation Commission for Education in Nursing (ACEN)",
+   "website": "https://www.acenursing.org/",
+   "profile": "https://www.inqaahe.org/member/accreditation-commission-for-education-in-nursing/",
+   "region": "North America"
+  },
+  {
+   "country": "GD",
+   "name": "Grenada National Accreditation Board (GNAB)",
+   "website": "https://accreditation.gd/",
+   "profile": "https://www.inqaahe.org/member/grenada-national-accreditation-board/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "VN",
+   "name": "VNU Center for Education Accreditation (VNU-CEA)",
+   "website": "https://cea.vnu.edu.vn/english.html",
+   "profile": "https://www.inqaahe.org/member/center-for-education-accreditation-vietnam-national-university-hanoi/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "MX",
+   "name": "Accreditation in Computing and Computer AC (CONAIC)",
+   "website": "https://conaic.net/ingles/index.html",
+   "profile": "https://www.inqaahe.org/member/accreditation-in-computing-and-computer-ac/",
+   "region": "North America"
+  },
+  {
+   "country": "VN",
+   "name": "Centre for Education Accreditation, Association of Vietnam Universities and Colleges (CEA-AVU&C)",
+   "website": "http://cea-avuc.edu.vn",
+   "profile": "https://www.inqaahe.org/member/centre-for-education-accreditation-association-of-vietnam-universities-and-colleges/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "PE",
+   "name": "National System of Evaluation, Accreditation and Certification of Educational Quality (SINEACE)",
+   "website": "https://www.gob.pe/sineace",
+   "profile": "https://www.inqaahe.org/member/national-system-of-evaluation-accreditation-and-certification-of-educational-quality/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "MM",
+   "name": "Myanmar Engineering Council (MEngC)",
+   "website": "http://www.myanmarengc.org",
+   "profile": "https://www.inqaahe.org/member/myanmar-engineering-council/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "NL",
+   "name": "SNRO (SNRO)",
+   "website": "https://snro-instituut.nl/",
+   "profile": "https://www.inqaahe.org/member/snro/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "CW",
+   "name": "Accreditation Agency of Curacao (AAC)",
+   "website": "https://www.aac.cw/",
+   "profile": "https://www.inqaahe.org/member/accreditation-agency-of-curacao/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "KZ",
+   "name": "Independent Kazakhstani Center of Accreditation (NKCA)",
+   "website": "https://nkca.kz/en",
+   "profile": "https://www.inqaahe.org/member/independent-kazakhstani-center-of-accreditation/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "CN",
+   "name": "Hong Kong Council for Accreditation of Academic and Vocational Qualifications (HKCAAVQ)",
+   "website": "http://www.hkcaavq.edu.hk",
+   "profile": "https://www.inqaahe.org/member/hong-kong-council-for-accreditation-of-academic-and-vocational-qualifications-hkcaavq/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "AD",
+   "name": "Quality Assurance Agency for Higher Education of Andorra (AQUA)",
+   "website": "https://www.aqua.ad/en",
+   "profile": "https://www.inqaahe.org/member/quality-assurance-agency-for-higher-education-of-andorra/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "US",
+   "name": "ABET (ABET)",
+   "website": "http://www.abet.org",
+   "profile": "https://www.inqaahe.org/member/abet/",
+   "region": "North America"
+  },
+  {
+   "country": "AZ",
+   "name": "Education Quality Assurance Agency (TKTA)",
+   "website": "https://www.tkta.edu.az/",
+   "profile": "https://www.inqaahe.org/member/education-quality-assurance-agency/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "TH",
+   "name": "ASEAN University Network – Quality Assurance (AUN-QA)",
+   "website": "https://aunsec.org/",
+   "profile": "https://www.inqaahe.org/member/asean-university-network-quality-assurance-aun-qa/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "SN",
+   "name": "Autorité Nationale d'Assurance Qualité de l'Enseignement Supérieur (ANAQ-SUP)",
+   "website": "https://anaqsup.sn/",
+   "profile": "https://www.inqaahe.org/member/autorite-nationale-dassurance-qualite-de-lenseignement-superieur/",
+   "region": "Africa"
+  },
+  {
+   "country": "GB",
+   "name": "Accreditation Service for International Schools, Colleges and Universities (ASIC)",
+   "website": "https://www.asic.org.uk/",
+   "profile": "https://www.inqaahe.org/member/accreditation-service-for-international-schools-colleges-and-universities/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "HN",
+   "name": "Central American Agency for Postgraduate Accreditation (ACAP)",
+   "website": "https://www.acapca.org/",
+   "profile": "https://www.inqaahe.org/member/central-american-agency-for-postgraduate-accreditation/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "KR",
+   "name": "Korean Accreditation Board for Health and Medical Information Management Education (KABHIME)",
+   "website": "http://www.kahime.or.kr/",
+   "profile": "https://www.inqaahe.org/member/korean-accreditation-board-for-health-and-medical-information-management-education/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "TR",
+   "name": "Association for Evaluation and Accreditation of Nursing Education Programs (HEPDAK)",
+   "website": "https://www.hepdak.org.tr/",
+   "profile": "https://www.inqaahe.org/member/association-for-evaluation-and-accreditation-of-nursing-education-programs/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "TR",
+   "name": "Association of Evaluation and Accreditation of Health Sciences Programs (SABAK)",
+   "website": "https://www.sabak.org.tr/index.php/en/",
+   "profile": "https://www.inqaahe.org/member/association-of-evaluation-and-accreditation-of-health-sciences-programs/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "KG",
+   "name": "Public Foundation Independent Accreditation Agency “BILIM-STANDART” (BS)",
+   "website": "https://www.bskg.agency/",
+   "profile": "https://www.inqaahe.org/member/public-foundation-independent-accreditation-agency-bilim-standart/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "KG",
+   "name": "Agency for accreditation of educational organizations and programms &#8220;Sapattuu bilim&#8221; (SB)",
+   "website": "http://sapatbilim.kg",
+   "profile": "https://www.inqaahe.org/member/agency-for-accreditation-of-educational-organizations-and-programms-sapattuu-bilim/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "US",
+   "name": "Accreditation Council for Pharmacy Education (ACPE)",
+   "website": "https://www.acpe-accredit.org/",
+   "profile": "https://www.inqaahe.org/member/accreditation-council-for-pharmacy-education/",
+   "region": "North America"
+  },
+  {
+   "country": "KW",
+   "name": "National Bureau for Academic Accreditation and Education Quality Assurance (NBAQ)",
+   "website": "https://nbaq.edu.kw/website/",
+   "profile": "https://www.inqaahe.org/member/national-bureau-for-academic-accreditation-and-education-quality-assurance/",
+   "region": "Arab States"
+  },
+  {
+   "country": "KR",
+   "name": "Institute of Korean Medicine Education and Evaluation (IKMEE)",
+   "website": "http://www.ikmee.or.kr",
+   "profile": "https://www.inqaahe.org/member/institute-of-korean-medicine-education-and-evaluation/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "PE",
+   "name": "Institute of Quality and Accreditation of Computing, Engineering and Engineering Technology Programs (ICACIT)",
+   "website": "http://www.icacit.org.pe/web/",
+   "profile": "https://www.inqaahe.org/member/institute-of-quality-and-accreditation-of-computing-engineering-and-engineering-technology-programs/",
+   "region": "Latin America and the Caribbean"
+  },
+  {
+   "country": "ES",
+   "name": "Agency for Quality Assurance in the Galician University System (ACSUG)",
+   "website": "http://www.acsug.es/en",
+   "profile": "https://www.inqaahe.org/member/agency-for-quality-assurance-in-the-galician-university-system/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "IQ",
+   "name": "The National Council for Accreditation of Education Group Colleges Programs (NCAECP)",
+   "website": "https://asse-gate.gov.iq/councils-3",
+   "profile": "https://www.inqaahe.org/member/the-national-council-for-accreditation-of-education-group-colleges-programs/",
+   "region": "Arab States"
+  },
+  {
+   "country": "DE",
+   "name": "Central Evaluation and Accreditation Agency Hanover (ZEvA)",
+   "website": "https://www.zeva.org/",
+   "profile": "https://www.inqaahe.org/member/central-evaluation-and-accreditation-agency-hanover/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "CZ",
+   "name": "National Accreditation Bureau for Higher Education (NAB)",
+   "website": "https://nauvs.cz/index.php/en/",
+   "profile": "https://www.inqaahe.org/member/national-accreditation-bureau-for-higher-education/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "SK",
+   "name": "Slovak Accreditation Agency for Higher Education (SAAHE)",
+   "website": "https://saavs.sk/en/",
+   "profile": "https://www.inqaahe.org/member/slovak-accreditation-agency-for-higher-education/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "ES",
+   "name": "Balearic Agency for Quality Assurance in Higher Education (AQUIB)",
+   "website": "https://www.aquib.es/en",
+   "profile": "https://www.inqaahe.org/member/balearic-agency-for-quality-assurance-in-higher-education/",
+   "region": "Western Europe"
+  },
+  {
+   "country": "ID",
+   "name": "Indonesian Accreditation Agency for Higher Education in Natural and Formal Sciences (LAMSAMA)",
+   "website": "https://lamsama.or.id/en/",
+   "profile": "https://www.inqaahe.org/member/indonesian-accreditation-agency-for-higher-education-in-natural-and-formal-sciences/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "EG",
+   "name": "National Authority for Quality Assurance and Accreditation of Education (NAQAAE)",
+   "website": "https://naqaae.eg/en/",
+   "profile": "https://www.inqaahe.org/member/national-authority-for-quality-assurance-and-accreditation-of-education/",
+   "region": "Arab States"
+  },
+  {
+   "country": "ID",
+   "name": "Indonesian Accreditation Agency for Higher Education in Health (LAM-PTKes / IAAHEH)",
+   "website": "https://iaaheh.org/",
+   "profile": "https://www.inqaahe.org/member/indonesian-accreditation-agency-for-higher-education-in-health/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "ID",
+   "name": "Institute of Accreditation for Economics, Management, Business and Accounting Programs (LAMEMBA)",
+   "website": "https://lamemba.or.id/",
+   "profile": "https://www.inqaahe.org/member/institute-of-accreditation-for-economics-management-business-and-accounting-programs/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "GE",
+   "name": "LEPL National Center for Educational Quality Enhancement (NCEQE)",
+   "website": "https://eqe.ge/en",
+   "profile": "https://www.inqaahe.org/member/lepl-national-center-for-educational-quality-enhancement/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "KG",
+   "name": "Independent Institute for Accreditation, Rating and Certification (IARC)",
+   "website": "https://iarc-institute.org/",
+   "profile": "https://www.inqaahe.org/member/independent-institute-for-accreditation-rating-and-certification/",
+   "region": "Asia-Pacific"
+  },
+  {
+   "country": "MR",
+   "name": "Mauritanian Authority for Quality Assurance in Higher Education (AMAQES)",
+   "website": "https://www.amaqes.mr/",
+   "profile": "https://www.inqaahe.org/member/mauritanian-authority-for-quality-assurance-in-higher-education-amaqes/",
+   "region": "Arab States"
+  },
+  {
+   "country": "MX",
+   "name": "Mexican Council for the Accreditation of Medical Education (COMAEM)",
+   "website": "https://www.comaem.org.mx/",
+   "profile": "https://www.inqaahe.org/member/mexican-council-for-the-accreditation-of-medical-education/",
+   "region": "North America"
+  },
+  {
+   "country": "RS",
+   "name": "National Entity for Accreditation and Quality Assurance in Higher Education (NEAQA)",
+   "website": "https://www.nat.rs/en/default-page/",
+   "profile": "https://www.inqaahe.org/member/national-entity-for-accreditation-and-quality-assurance-in-higher-education/",
+   "region": "Eastern Europe"
+  },
+  {
+   "country": "ES",
+   "name": "Valencian Agency for Assessment and Forecasting (AVAP)",
+   "website": "https://avap.es/en/",
+   "profile": "https://www.inqaahe.org/member/valencian-agency-for-assessment-and-forecasting/",
+   "region": "Western Europe"
+  }
+ ],
+ "networks": [
+  {
+   "name": "Council for Higher Education Accreditation (CHEA)",
+   "region": "North America",
+   "website": "https://www.chea.org/"
+  },
+  {
+   "name": "The Association of Specialized and Professional Accreditors (ASPA)",
+   "region": "North America",
+   "website": "https://aspa-usa.org/"
+  },
+  {
+   "name": "European Network for Accreditation of Engineering Education (ENAEE)",
+   "region": "Western Europe",
+   "website": "http://www.enaee.eu"
+  },
+  {
+   "name": "European Quality Assurance Network for Informatics Education (EQANIE)",
+   "region": "Western Europe",
+   "website": "http://www.eqanie.eu/"
+  },
+  {
+   "name": "Association of Quality Assurance Agencies of the Islamic World (AQAAIW/IQA)",
+   "region": "Asia-Pacific",
+   "website": "https://islamicqa-world.org/"
+  },
+  {
+   "name": "African Quality Assurance Network (AfriQAN)",
+   "region": "Africa",
+   "website": "http://afriqan.aau.org"
+  },
+  {
+   "name": "European Consortium for Accreditation (ECA)",
+   "region": "Western Europe",
+   "website": "https://ecahe.eu/"
+  },
+  {
+   "name": "European Association for Quality Assurance in Higher Education (ENQA)",
+   "region": "Western Europe",
+   "website": "http://www.enqa.eu"
+  },
+  {
+   "name": "Central and Eastern European Network of Quality Assurance in Higher Education (CEENQA)",
+   "region": "Eastern Europe",
+   "website": "https://www.ceenqa.org/"
+  },
+  {
+   "name": "Asia-Pacific Quality Network (APQN)",
+   "region": "Asia-Pacific",
+   "website": "http://www.apqn.org"
+  },
+  {
+   "name": "ASEAN Quality Assurance Network (AQAN)",
+   "region": "Asia-Pacific",
+   "website": "http://www.aqan.org"
+  },
+  {
+   "name": "Arab Network for Quality Assurance in Higher Education (ANQAHE)",
+   "region": "Arab States",
+   "website": "http://www.anqahe.org"
+  },
+  {
+   "name": "African and Malagasy Council for Higher Education (CAMES)",
+   "region": "Africa",
+   "website": "http://www.lecames.org"
+  },
+  {
+   "name": "Caribbean Area Network for Quality Assurance in Tertiary Education (CANQATE)",
+   "region": "Latin America and the Caribbean",
+   "website": "http://www.canqate.org"
+  },
+  {
+   "name": "European Alliance for Subject-Specific and Professional Accreditation And Quality Assurance (EASPA)",
+   "region": "Western Europe",
+   "website": "https://www.easpa.org/"
+  },
+  {
+   "name": "East African Network for Quality Assurance (EAQAN)",
+   "region": "Africa",
+   "website": "https://www.iucea.org/EAQAN/"
+  },
+  {
+   "name": "Pakistan Network of Quality Assurance in Higher Education (PNQAHE)",
+   "region": "Asia-Pacific",
+   "website": "https://pnqahe.org/"
+  },
+  {
+   "name": "Southern African Quality Assurance Network (SAQAN)",
+   "region": "Africa",
+   "website": "https://www.saqan.org/"
+  },
+  {
+   "name": "Red de Asociaciones Latinoamericanas y Caribeñas de Universidades Privadas (REALCUP)",
+   "region": "Latin America and the Caribbean",
+   "website": "https://realcup.org/"
+  }
+ ]
+}

@@ -2,12 +2,17 @@
   "name": "@careerproof/reference-data",
   "version": "0.0.0",
   "private": true,
-  "description": "Real reference data: the data-source registry and cited snapshots from official sources (World Bank, ILO, OECD).",
+  "description": "Real reference data: the data-source registry and cited snapshots from official sources (World Bank, ILO, ESCO, O*NET, ROR, UCAS, NCHE, Makerere).",
   "type": "module",
   "exports": {
-    ".": "./src/index.ts"
+    ".": "./src/index.ts",
+    "./uganda": "./src/uganda.ts"
   },
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@careerproof/rules-engine": "*"
   }
 }

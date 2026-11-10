@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "checkedAt": "2026-11-10",
+    "sources": [
+      { "id": "iicba", "name": "UNESCO IICBA, Kenya: Education Country Brief (January 2024)", "url": "https://www.iicba.unesco.org/en/kenya" },
+      { "id": "kuccps", "name": "KUCCPS student portal (programmes, cluster subjects and past cut-offs)", "url": "https://students.kuccps.net/" },
+      { "id": "afriqan", "name": "AfriQAN membership list (higher-education regulators)", "url": "https://afriqan.aau.org/" }
+    ]
+  },
+  "system": [
+    { "fact": "Kenya's education system follows a 2-6-3-3-3 structure: two years of pre-primary, six of primary, six of secondary (three junior and three senior) and at least three of tertiary education.", "source": "iicba" },
+    { "fact": "The structure replaced the previous system to align with Kenya's competency-based curriculum.", "source": "iicba" },
+    { "fact": "The Kenya National Examinations Council (KNEC) is the government body that supervises national examinations.", "source": "iicba" },
+    { "fact": "In 2021 KNEC developed a competency-based assessment framework, moving from a single final evaluation to ongoing formative and summative assessment.", "source": "iicba" },
+    { "fact": "Gross enrolment in tertiary education was 13% for men and 10% for women in 2017 (World Bank and UNESCO Institute for Statistics, as cited in the brief).", "source": "iicba" }
+  ],
+  "placement": [
+    { "fact": "Students are placed into degree programmes at public universities and colleges by the Kenya Universities and Colleges Central Placement Service (KUCCPS).", "source": "kuccps" },
+    { "fact": "The KUCCPS student portal lists, for each degree programme, the cluster subjects that count and the cut-off points of recent KCSE years at each institution.", "source": "kuccps" }
+  ],
+  "pending": {
+    "what": "Cluster-point calculator and cut-off points",
+    "why": "The KUCCPS portal blocked automated access from our servers on 10 November 2026, and the cluster-point formula is not yet confirmed from an official document. We do not publish rules or cut-offs we have not read from the official source.",
+    "route": ["Request a data file of programmes, cluster subjects and cut-offs from KUCCPS", "Or have a person in Kenya collect them from the portal, with a second person checking", "Confirm the cluster-point formula from a KUCCPS or Ministry of Education document"]
+  }
+}

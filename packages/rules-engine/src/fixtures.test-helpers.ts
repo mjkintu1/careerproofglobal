@@ -1,4 +1,4 @@
-// Test fixtures. Shapes match the illustrative rule sets in packages/sample-data;
+// Test fixtures for the engine only (made-up values to exercise each scoring method). Not shown in the app.
 // values are for testing arithmetic only.
 import type { Programme, RuleSet } from "./types";
 

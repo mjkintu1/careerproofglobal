@@ -75,7 +75,7 @@
     "update_frequency": "quarterly",
     "status": "planned",
     "attribution": "This page includes information from the O*NET 31.0 Database by the U.S. Department of Labor, Employment and Training Administration (USDOL/ETA). Used under the CC BY 4.0 license. Career Proof has modified all or some of this information.",
-    "notes": "Imported O*NET 31.0 (August 2026) text database, db_31_0_text.zip (13.2 MB), plus the official ESCO_to_ONET-SOC crosswalk. Tasks, skills, education, Job Zones and RIASEC interests."
+    "notes": "Imported O*NET 31.0 (August 2026) text database, db_31_0_text.zip (13.2 MB), plus the official ESCO_to_ONET-SOC crosswalk. Tasks, skills, education, Job Zones and RIASEC interests. Also used (2026-11-10): Knowledge (importance by subject domain), Related Occupations (primary tiers) and Job Zone Reference, via scripts/ingest/onet_knowledge_build.py."
   },
   {
     "slug": "unesco-uis",
@@ -363,5 +363,109 @@
     "status": "active",
     "attribution": "Source: each named admission body.",
     "notes": "ibo.org, parcoursup.gouv.fr and enseignementsup-recherche.gouv.fr block automated access (bot verification); not bypassed. To confirm directly with the bodies."
+  },
+  {
+    "slug": "ug-notes-to-schools",
+    "name": "Notes to Schools 2026/2027 (weighting system, programme requirements, 3-year cut-offs)",
+    "publisher": "Ministry of Education & Sports, Uganda (published by Makerere University)",
+    "url": "https://news.mak.ac.ug/wp-content/uploads/2025/10/Notes-to-Schools-2026-2027-Academic-Year.pdf",
+    "licence": "Public government document; facts reused with attribution",
+    "licence_url": null,
+    "access_method": "bulk_download",
+    "update_frequency": "annual",
+    "status": "active",
+    "attribution": "Source: Ministry of Education & Sports, Notes to Schools 2026/2027.",
+    "notes": "Parsed by scripts/ingest/ug_cutoffs_build.py; programme requirements hand-transcribed in ug-programme-requirements.json."
+  },
+  {
+    "slug": "makerere-cutoffs",
+    "name": "Makerere University admission cut-off points (government and private, 2025/2026)",
+    "publisher": "Makerere University, Academic Registrar",
+    "url": "https://www.mak.ac.ug/study-mak/cut-points",
+    "licence": "Public notices; facts reused with attribution",
+    "licence_url": null,
+    "access_method": "bulk_download",
+    "update_frequency": "annual",
+    "status": "active",
+    "attribution": "Source: Makerere University Academic Registrar.",
+    "notes": "PDF lists parsed with pdftotext -raw; values cross-checked against the Notes to Schools."
+  },
+  {
+    "slug": "nche-uganda",
+    "name": "NCHE registered institutions and accredited programmes",
+    "publisher": "National Council for Higher Education, Uganda",
+    "url": "https://unche.or.ug/all-academic-programs/",
+    "licence": "Public register; facts reused with attribution",
+    "licence_url": null,
+    "access_method": "bulk_download",
+    "update_frequency": "monthly",
+    "status": "active",
+    "attribution": "Source: National Council for Higher Education (NCHE), Uganda.",
+    "notes": "robots.txt allows; data embedded in the page. Parsed by scripts/ingest/nche_build.py."
+  },
+  {
+    "slug": "iicba-country-briefs",
+    "name": "UNESCO IICBA Education Country Briefs (Africa)",
+    "publisher": "UNESCO International Institute for Capacity Building in Africa",
+    "url": "https://www.iicba.unesco.org/en/kenya",
+    "licence": "UNESCO publication; short facts quoted with attribution",
+    "licence_url": null,
+    "access_method": "manual",
+    "update_frequency": "annual",
+    "status": "active",
+    "attribution": "Source: UNESCO IICBA, Education Country Brief.",
+    "notes": "Kenya brief (Jan 2024) read in a browser on 2026-11-10; plain HTTP requests get a bot-check page, not bypassed. Briefs exist for other African countries."
+  },
+  {
+    "slug": "kuccps-portal",
+    "name": "KUCCPS programmes, cluster subjects and cut-off points",
+    "publisher": "Kenya Universities and Colleges Central Placement Service",
+    "url": "https://students.kuccps.net/",
+    "licence": "Unknown; to request",
+    "licence_url": null,
+    "access_method": "partner_feed",
+    "update_frequency": "annual",
+    "status": "planned",
+    "attribution": "Source: KUCCPS.",
+    "notes": "Blocked automated access (503 block page) on 2026-11-10; www.kuccps.ac.ke serves a bot-check script. Route: request a data file from KUCCPS."
+  },
+  {
+    "slug": "uis-data-api",
+    "name": "UNESCO UIS Data API: education-system structure and tertiary enrolment",
+    "publisher": "UNESCO Institute for Statistics",
+    "url": "https://api.uis.unesco.org/api/public",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "access_method": "rest_api",
+    "update_frequency": "annual",
+    "status": "active",
+    "attribution": "Source: UNESCO Institute for Statistics (UIS), https://api.uis.unesco.org/api/public. Licensed CC BY-SA 4.0.",
+    "notes": "Indicators 299905, 299932, 999975-999978, 400, GER.5T8 for 224 countries (Feb 2026 release). Script: scripts/ingest/uis-structure.mjs. Share-alike: the snapshot is redistributed under CC BY-SA 4.0."
+  },
+  {
+    "slug": "uis-isced-mappings",
+    "name": "UNESCO UIS ISCED mappings (national programmes and minimum entry requirements)",
+    "publisher": "UNESCO Institute for Statistics",
+    "url": "https://www.uis.unesco.org/en/methods-and-tools/isced/mapping-and-diagrams",
+    "licence": "CC BY-SA 3.0 IGO (UIS terms)",
+    "licence_url": "https://uis.unesco.org/en/terms-and-conditions",
+    "access_method": "bulk_download",
+    "update_frequency": "irregular",
+    "status": "active",
+    "attribution": "Source: UNESCO Institute for Statistics (UIS), ISCED mappings.",
+    "notes": "201 ISCED 2011 mapping files downloaded from download.uis.unesco.org (no robots.txt on that host; files listed on the UIS mapping page, read at the user's request). The www.uis.unesco.org website disallows ClaudeBot and was not crawled. Parsed by scripts/ingest/isced_build.py; names mapped by scripts/ingest/isced_names.mjs."
+  },
+  {
+    "slug": "inqaahe-members",
+    "name": "INQAAHE members database (quality assurance agencies)",
+    "publisher": "International Network for Quality Assurance Agencies in Higher Education",
+    "url": "https://www.inqaahe.org/membership/members-database/",
+    "licence": "Public directory; names, countries and websites used as facts with attribution",
+    "licence_url": null,
+    "access_method": "bulk_download",
+    "update_frequency": "quarterly",
+    "status": "active",
+    "attribution": "Source: INQAAHE members database.",
+    "notes": "robots.txt allows all. 350 members fetched 2026-11-10 (1.5 s per page); 208 full members (QA agencies) in 94 countries kept. Scripts: scripts/ingest/inqaahe.mjs, inqaahe_build.mjs. Next: EQAR (bot check), APQN, ANQAHE member lists."
   }
 ]

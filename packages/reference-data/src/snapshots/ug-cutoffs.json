@@ -1,0 +1,4599 @@
+{
+ "meta": {
+  "checkedAt": "2026-11-10",
+  "sources": [
+   {
+    "name": "Ministry of Education & Sports, Notes to Schools 2026/2027 Academic Year (three-year government cut-offs, weighting system)",
+    "url": "https://news.mak.ac.ug/wp-content/uploads/2025/10/Notes-to-Schools-2026-2027-Academic-Year.pdf"
+   },
+   {
+    "name": "Makerere University, Government (A'Level) admissions 2025/2026, National Merit cut-off points",
+    "url": "https://www.mak.ac.ug/sites/default/files/2025-04/Makerere-University-NATIONAL-MERIT-SCHOLARSHIP-CUT-OFF%20POINTS-2025-2026.pdf"
+   },
+   {
+    "name": "Makerere University, Private students' admissions 2025/2026, direct entry cut-off points",
+    "url": "https://www.mak.ac.ug/sites/default/files/2025-07/Cut-Off-Points-DIRECT_ENTRY-Private-Sponsorship-2025-2026.pdf"
+   }
+  ],
+  "notes": [
+   "Cut-off points are the lowest combined weight admitted in that year, as published. They change every year.",
+   "STEM programmes at Makerere publish separate female and male cut-offs; other programmes publish one figure.",
+   "Rows that could not be read unambiguously from the PDFs were left out rather than guessed."
+  ],
+  "skippedRows": 82
+ },
+ "threeYear": [
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Pharmacy",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 48.1,
+     "male": 49.8
+    },
+    {
+     "year": "2024/2025",
+     "female": 47.7,
+     "male": 47.0
+    },
+    {
+     "year": "2023/2024",
+     "female": 45.4,
+     "male": 46.8
+    }
+   ],
+   "code": "PHA"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Medicine and Bachelor of Surgery",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 49.4,
+     "male": 52.0
+    },
+    {
+     "year": "2024/2025",
+     "female": 48.4,
+     "male": 49.9
+    },
+    {
+     "year": "2023/2024",
+     "female": 48.0,
+     "male": 49.7
+    }
+   ],
+   "code": "MAM"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Dental Surgery",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 48.2,
+     "male": 49.9
+    },
+    {
+     "year": "2024/2025",
+     "female": 46.5,
+     "male": 46.9
+    },
+    {
+     "year": "2023/2024",
+     "female": 45.2,
+     "male": 46.8
+    }
+   ],
+   "code": "BDS"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Nursing Science",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 46.3,
+     "male": 47.9
+    },
+    {
+     "year": "2024/2025",
+     "female": 47.7,
+     "male": 47.0
+    },
+    {
+     "year": "2023/2024",
+     "female": 45.1,
+     "male": 46.6
+    }
+   ],
+   "code": "NUR"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Medical Radiography",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 46.0,
+     "male": 47.6
+    },
+    {
+     "year": "2024/2025",
+     "female": 39.5,
+     "male": 44.6
+    },
+    {
+     "year": "2023/2024",
+     "female": 36.5,
+     "male": 43.4
+    }
+   ],
+   "code": "BMR"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Food Science and Technology",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 44.7,
+     "male": 44.8
+    },
+    {
+     "year": "2024/2025",
+     "female": 43.2,
+     "male": 44.7
+    },
+    {
+     "year": "2023/2024",
+     "female": 41.8,
+     "male": 43.8
+    }
+   ],
+   "code": "FST"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Environmental Health Science",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 44.5,
+     "male": 46.9
+    },
+    {
+     "year": "2024/2025",
+     "female": 42.4,
+     "male": 44.0
+    },
+    {
+     "year": "2023/2024",
+     "female": 42.4,
+     "male": 43.9
+    }
+   ],
+   "code": "BEH"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Biomedical Laboratory Technology",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 45.3,
+     "male": 47.7
+    },
+    {
+     "year": "2024/2025",
+     "female": 45.2,
+     "male": 46.9
+    },
+    {
+     "year": "2023/2024",
+     "female": 45.1,
+     "male": 46.6
+    }
+   ],
+   "code": "MLT"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Agriculture",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 40.3,
+     "male": 44.0
+    },
+    {
+     "year": "2024/2025",
+     "female": 40.4,
+     "male": 43.4
+    },
+    {
+     "year": "2023/2024",
+     "female": 38.6,
+     "male": 41.5
+    }
+   ],
+   "code": "AGR"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor Veterinary Medicine",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 45.2,
+     "male": 47.6
+    },
+    {
+     "year": "2024/2025",
+     "female": 43.3,
+     "male": 46.6
+    },
+    {
+     "year": "2023/2024",
+     "female": 44.7,
+     "male": 45.6
+    }
+   ],
+   "code": "VET"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Fisheries & Aquaculture",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 41.1,
+     "male": 42.5
+    },
+    {
+     "year": "2024/2025",
+     "female": 42.3,
+     "male": 43.7
+    },
+    {
+     "year": "2023/2024",
+     "female": 34.7,
+     "male": 40.5
+    }
+   ],
+   "code": "BFS"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Animal Production Technology and Management",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 41.0,
+     "male": 43.9
+    },
+    {
+     "year": "2024/2025",
+     "female": 42.3,
+     "male": 43.8
+    },
+    {
+     "year": "2023/2024",
+     "female": 37.1,
+     "male": 40.7
+    }
+   ],
+   "code": "BAP"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Architecture",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 51.1,
+     "male": 52.5
+    },
+    {
+     "year": "2024/2025",
+     "female": 51.9,
+     "male": 52.1
+    },
+    {
+     "year": "2023/2024",
+     "female": 49.8,
+     "male": 50.4
+    }
+   ],
+   "code": "ARC"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Electrical Engineering",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 49.3,
+     "male": 52.2
+    },
+    {
+     "year": "2024/2025",
+     "female": 49.2,
+     "male": 52.2
+    },
+    {
+     "year": "2023/2024",
+     "female": 48.2,
+     "male": 51.7
+    }
+   ],
+   "code": "ELE"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Civil Engineering",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 52.1,
+     "male": 52.8
+    },
+    {
+     "year": "2024/2025",
+     "female": 51.4,
+     "male": 52.8
+    },
+    {
+     "year": "2023/2024",
+     "female": 49.1,
+     "male": 52.4
+    }
+   ],
+   "code": "CIV"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Mechanical Engineering",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 48.5,
+     "male": 52.4
+    },
+    {
+     "year": "2024/2025",
+     "female": 48.1,
+     "male": 50.6
+    },
+    {
+     "year": "2023/2024",
+     "female": 45.2,
+     "male": 49.5
+    }
+   ],
+   "code": "MEC"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Land Surveying & Geomatics",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 48.1,
+     "male": 50.6
+    },
+    {
+     "year": "2024/2025",
+     "female": 47.9,
+     "male": 49.8
+    },
+    {
+     "year": "2023/2024",
+     "female": 46.1,
+     "male": 48.5
+    }
+   ],
+   "code": "LSG"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Agricultural Engineering",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 46.1,
+     "male": 49.8
+    },
+    {
+     "year": "2024/2025",
+     "female": 46.2,
+     "male": 47.9
+    },
+    {
+     "year": "2023/2024",
+     "female": 43.0,
+     "male": 47.6
+    }
+   ],
+   "code": "AGE"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Industrial Chemistry",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 44.4,
+     "male": 47.8
+    },
+    {
+     "year": "2024/2025",
+     "female": null,
+     "male": null
+    },
+    {
+     "year": "2023/2024",
+     "female": 45.3,
+     "male": 47.8
+    }
+   ],
+   "code": "BIC"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Statistics",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 37.4,
+     "male": 38.5
+    },
+    {
+     "year": "2024/2025",
+     "female": 38.3,
+     "male": 38.4
+    },
+    {
+     "year": "2023/2024",
+     "female": 38.8,
+     "male": 38.7
+    }
+   ],
+   "code": "STA"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Quantitative Economics",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 46.4,
+     "male": 49.0
+    },
+    {
+     "year": "2024/2025",
+     "female": 47.9,
+     "male": 47.3
+    },
+    {
+     "year": "2023/2024",
+     "female": 48.0,
+     "male": 48.2
+    }
+   ],
+   "code": null
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Computer Science",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 47.7,
+     "male": 50.7
+    },
+    {
+     "year": "2024/2025",
+     "female": 48.8,
+     "male": 50.7
+    },
+    {
+     "year": "2023/2024",
+     "female": 47.1,
+     "male": 48.8
+    }
+   ],
+   "code": "CSC"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Actuarial Science",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 40.9,
+     "male": 42.0
+    },
+    {
+     "year": "2024/2025",
+     "female": 43.0,
+     "male": 42.6
+    },
+    {
+     "year": "2023/2024",
+     "female": 41.7,
+     "male": 42.5
+    }
+   ],
+   "code": "SAS"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Conservation Biology",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 42.9,
+     "male": 43.9
+    },
+    {
+     "year": "2024/2025",
+     "female": 34.9,
+     "male": 37.4
+    },
+    {
+     "year": "2023/2024",
+     "female": 29.7,
+     "male": 34.7
+    }
+   ],
+   "code": "BCB"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Agribusiness Management",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 46.5,
+     "male": 46.6
+    },
+    {
+     "year": "2024/2025",
+     "female": 47.8,
+     "male": 47.3
+    },
+    {
+     "year": "2023/2024",
+     "female": 45.7,
+     "male": 46.3
+    }
+   ],
+   "code": "AGM"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Commerce (MUBS)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 45.1
+    },
+    {
+     "year": "2024/2025",
+     "all": 46.2
+    },
+    {
+     "year": "2023/2024",
+     "all": 46.7
+    }
+   ],
+   "code": "COM"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Arts in Economics",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 43.4
+    },
+    {
+     "year": "2024/2025",
+     "all": 43.3
+    },
+    {
+     "year": "2023/2024",
+     "all": 43.3
+    }
+   ],
+   "code": "ECO"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of International Business (MUBS)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 51.9
+    },
+    {
+     "year": "2024/2025",
+     "all": 51.7
+    },
+    {
+     "year": "2023/2024",
+     "all": 50.0
+    }
+   ],
+   "code": "BIB"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Business Administration (MUBS)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 46.5
+    },
+    {
+     "year": "2024/2025",
+     "all": 47.4
+    },
+    {
+     "year": "2023/2024",
+     "all": 45.6
+    }
+   ],
+   "code": "BBD"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Fine Art",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 41.4
+    },
+    {
+     "year": "2024/2025",
+     "all": 42.8
+    },
+    {
+     "year": "2023/2024",
+     "all": 40.4
+    }
+   ],
+   "code": "BFA"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Applied Art & Industrial Design",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 44.3
+    },
+    {
+     "year": "2024/2025",
+     "all": 43.7
+    },
+    {
+     "year": "2023/2024",
+     "all": 42.4
+    }
+   ],
+   "code": null
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Visual Communication, Design & Multi Media",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 44.0
+    },
+    {
+     "year": "2024/2025",
+     "all": 42.8
+    },
+    {
+     "year": "2023/2024",
+     "all": 40.6
+    }
+   ],
+   "code": "BVC"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Business Computing (MUBS)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 51.8
+    },
+    {
+     "year": "2024/2025",
+     "all": 51.5
+    },
+    {
+     "year": "2023/2024",
+     "all": 49.6
+    }
+   ],
+   "code": "BBC"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Office and Information Management (MUBS)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 51.4
+    },
+    {
+     "year": "2024/2025",
+     "all": 51.0
+    },
+    {
+     "year": "2023/2024",
+     "all": 48.5
+    }
+   ],
+   "code": "BIM"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Entrepreneurship (MUBS)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 51.8
+    },
+    {
+     "year": "2024/2025",
+     "all": 51.4
+    },
+    {
+     "year": "2023/2024",
+     "all": 49.2
+    }
+   ],
+   "code": "BEN"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Population Studies",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 51.0
+    },
+    {
+     "year": "2024/2025",
+     "all": 51.4
+    },
+    {
+     "year": "2023/2024",
+     "all": 47.6
+    }
+   ],
+   "code": "BPS"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Sports Science",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 41.6,
+     "male": 43.8
+    },
+    {
+     "year": "2024/2025",
+     "female": 40.1,
+     "male": 43.3
+    },
+    {
+     "year": "2023/2024",
+     "female": 34.8,
+     "male": 38.9
+    }
+   ],
+   "code": null
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Leisure Events and Hotel Management",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 51.6
+    },
+    {
+     "year": "2024/2025",
+     "all": 51.3
+    },
+    {
+     "year": "2023/2024",
+     "all": 48.6
+    }
+   ],
+   "code": null
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Arts in Drama & Film",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": null
+    },
+    {
+     "year": "2024/2025",
+     "all": null
+    },
+    {
+     "year": "2023/2024",
+     "all": 48.3
+    }
+   ],
+   "code": null
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Quantity Surveying",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 50.0,
+     "male": 50.0
+    },
+    {
+     "year": "2024/2025",
+     "female": 49.4,
+     "male": 50.3
+    },
+    {
+     "year": "2023/2024",
+     "female": 48.7,
+     "male": 48.7
+    }
+   ],
+   "code": "SQS"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Valuation",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": null,
+     "male": null
+    },
+    {
+     "year": "2024/2025",
+     "female": null,
+     "male": null
+    },
+    {
+     "year": "2023/2024",
+     "female": 47.9,
+     "male": 47.9
+    }
+   ],
+   "code": "BVL"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Commerce (Makerere Campus)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 46.5
+    },
+    {
+     "year": "2024/2025",
+     "all": 48.1
+    },
+    {
+     "year": "2023/2024",
+     "all": 48.1
+    }
+   ],
+   "code": "COE"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Procurement and Supplies Management",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 52.0
+    },
+    {
+     "year": "2024/2025",
+     "all": 51.8
+    },
+    {
+     "year": "2023/2024",
+     "all": 51.2
+    }
+   ],
+   "code": null
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Library and Information Sciences (Arts)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 52.4
+    },
+    {
+     "year": "2024/2025",
+     "all": 51.7
+    },
+    {
+     "year": "2023/2024",
+     "all": 49.0
+    }
+   ],
+   "code": null
+  },
+  {
+   "university": "Makerere University",
+   "programme": "B. Library and Information Sciences (Science)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 46.0
+    },
+    {
+     "year": "2024/2025",
+     "all": 46.7
+    },
+    {
+     "year": "2023/2024",
+     "all": 40.9
+    }
+   ],
+   "code": null
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Software Engineering",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 49.3,
+     "male": 50.9
+    },
+    {
+     "year": "2024/2025",
+     "female": 49.4,
+     "male": 50.9
+    },
+    {
+     "year": "2023/2024",
+     "female": 49.1,
+     "male": 50.4
+    }
+   ],
+   "code": "BSW"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Arts in Music",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 50.4
+    },
+    {
+     "year": "2024/2025",
+     "all": 49.8
+    },
+    {
+     "year": "2023/2024",
+     "all": 46.7
+    }
+   ],
+   "code": "MUS"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Valuation",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 46.3,
+     "male": 49.5
+    },
+    {
+     "year": "2024/2025",
+     "female": 44.9,
+     "male": 44.4
+    },
+    {
+     "year": "2023/2024",
+     "female": null,
+     "male": null
+    }
+   ],
+   "code": "BVL"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Biomedical Engineering",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 49.2,
+     "male": 50.8
+    },
+    {
+     "year": "2024/2025",
+     "female": 50.8,
+     "male": 51.0
+    },
+    {
+     "year": "2023/2024",
+     "female": 46.7,
+     "male": 49.6
+    }
+   ],
+   "code": "BBI"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Agricultural Extension and & Rural Innovation",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 44.1,
+     "male": 45.1
+    },
+    {
+     "year": "2024/2025",
+     "female": 45.9,
+     "male": 46.8
+    },
+    {
+     "year": "2023/2024",
+     "female": 43.5,
+     "male": 44.2
+    }
+   ],
+   "code": "BAI"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Human Nutrition & Dietetics",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 46.3,
+     "male": 46.8
+    },
+    {
+     "year": "2024/2025",
+     "female": 45.3,
+     "male": 46.5
+    },
+    {
+     "year": "2023/2024",
+     "female": 44.6,
+     "male": 43.8
+    }
+   ],
+   "code": "BHD"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Biotechnology",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 44.1,
+     "male": 46.8
+    },
+    {
+     "year": "2024/2025",
+     "female": 43.3,
+     "male": 46.8
+    },
+    {
+     "year": "2023/2024",
+     "female": 40.3,
+     "male": 44.9
+    }
+   ],
+   "code": "BBT"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Petroleum Geo science and Production",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 47.5,
+     "male": 51.7
+    },
+    {
+     "year": "2024/2025",
+     "female": 50.2,
+     "male": 52.7
+    },
+    {
+     "year": "2023/2024",
+     "female": 47.3,
+     "male": 52.4
+    }
+   ],
+   "code": null
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Business Administration (Makerere)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 48.4
+    },
+    {
+     "year": "2024/2025",
+     "all": 47.5
+    },
+    {
+     "year": "2023/2024",
+     "all": 46.8
+    }
+   ],
+   "code": "ADM"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Cytotechnology",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 46.1,
+     "male": 47.5
+    },
+    {
+     "year": "2024/2025",
+     "female": 42.5,
+     "male": 45.7
+    },
+    {
+     "year": "2023/2024",
+     "female": 44.9,
+     "male": 46.6
+    }
+   ],
+   "code": "BYT"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Social Work",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": null
+    },
+    {
+     "year": "2024/2025",
+     "all": 52.0
+    },
+    {
+     "year": "2023/2024",
+     "all": 50.3
+    }
+   ],
+   "code": null
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Language and Speech Therapy",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 43.3,
+     "male": 44.3
+    },
+    {
+     "year": "2024/2025",
+     "female": 43.4,
+     "male": 43.9
+    },
+    {
+     "year": "2023/2024",
+     "female": 40.9,
+     "male": 43.7
+    }
+   ],
+   "code": null
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Optometry",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 46.5,
+     "male": 50.8
+    },
+    {
+     "year": "2024/2025",
+     "female": 46.4,
+     "male": 47.5
+    },
+    {
+     "year": "2023/2024",
+     "female": 45.1,
+     "male": 46.7
+    }
+   ],
+   "code": "BPT"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Forestry",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 45.9,
+     "male": 46.2
+    },
+    {
+     "year": "2024/2025",
+     "female": 45.9,
+     "male": 47.2
+    },
+    {
+     "year": "2023/2024",
+     "female": 45.5,
+     "male": 45.7
+    }
+   ],
+   "code": "BOF"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Information Systems and Technology",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 48.5
+    },
+    {
+     "year": "2024/2025",
+     "all": null
+    },
+    {
+     "year": "2023/2024",
+     "all": 48.1
+    }
+   ],
+   "code": "IST"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Water and Irrigation Engineering",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 45.6,
+     "male": 50.6
+    },
+    {
+     "year": "2024/2025",
+     "female": 47.1,
+     "male": 49.9
+    },
+    {
+     "year": "2023/2024",
+     "female": 44.2,
+     "male": 48.6
+    }
+   ],
+   "code": "BWE"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Bio-processing Engineering",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "female": 46.3,
+     "male": 50.5
+    },
+    {
+     "year": "2024/2025",
+     "female": 43.9,
+     "male": 47.5
+    },
+    {
+     "year": "2023/2024",
+     "female": 44.0,
+     "male": 44.8
+    }
+   ],
+   "code": "BBP"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Science in Tourism & Hospitality Management",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 50.5
+    },
+    {
+     "year": "2024/2025",
+     "all": 49.1
+    },
+    {
+     "year": "2023/2024",
+     "all": 47.0
+    }
+   ],
+   "code": null
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Applied Psychology",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 51.6
+    },
+    {
+     "year": "2024/2025",
+     "all": 53.0
+    },
+    {
+     "year": "2023/2024",
+     "all": null
+    }
+   ],
+   "code": "APS"
+  },
+  {
+   "university": "Makerere University",
+   "programme": "Bachelor of Geographical Sciences",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 49.1
+    },
+    {
+     "year": "2024/2025",
+     "all": 49.4
+    },
+    {
+     "year": "2023/2024",
+     "all": 46.2
+    }
+   ],
+   "code": "BGS"
+  },
+  {
+   "university": "Kyambogo University",
+   "programme": "Bachelor of Science in Accounting and Finance",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 46.0
+    },
+    {
+     "year": "2024/2025",
+     "all": 45.5
+    },
+    {
+     "year": "2023/2024",
+     "all": 46.0
+    }
+   ]
+  },
+  {
+   "university": "Kyambogo University",
+   "programme": "Bachelor of Arts in Economics",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 45.0
+    },
+    {
+     "year": "2024/2025",
+     "all": 45.0
+    },
+    {
+     "year": "2023/2024",
+     "all": 44.6
+    }
+   ]
+  },
+  {
+   "university": "Kyambogo University",
+   "programme": "Bachelor of Administrative Science",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 45.7
+    },
+    {
+     "year": "2024/2025",
+     "all": 45.5
+    },
+    {
+     "year": "2023/2024",
+     "all": 42.6
+    }
+   ]
+  },
+  {
+   "university": "Kyambogo University",
+   "programme": "Bachelor of Human Nutrition and Dietetics",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 41.9
+    },
+    {
+     "year": "2024/2025",
+     "all": 40.9
+    },
+    {
+     "year": "2023/2024",
+     "all": 39.6
+    }
+   ]
+  },
+  {
+   "university": "Kyambogo University",
+   "programme": "Bachelor of Science Technology (Biology)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 32.7
+    },
+    {
+     "year": "2024/2025",
+     "all": 32.4
+    },
+    {
+     "year": "2023/2024",
+     "all": 27.2
+    }
+   ]
+  },
+  {
+   "university": "Kyambogo University",
+   "programme": "Bachelor of Science Technology (Chemistry)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 30.4
+    },
+    {
+     "year": "2024/2025",
+     "all": 28.2
+    },
+    {
+     "year": "2023/2024",
+     "all": 28.1
+    }
+   ]
+  },
+  {
+   "university": "Kyambogo University",
+   "programme": "Bachelor of Science Technology (Physics)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 41.7
+    },
+    {
+     "year": "2024/2025",
+     "all": 38.5
+    },
+    {
+     "year": "2023/2024",
+     "all": 37.5
+    }
+   ]
+  },
+  {
+   "university": "Kyambogo University",
+   "programme": "Bachelor of Science in Building (Economics)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 47.2
+    },
+    {
+     "year": "2024/2025",
+     "all": 45.7
+    },
+    {
+     "year": "2023/2024",
+     "all": 44.5
+    }
+   ]
+  },
+  {
+   "university": "Kyambogo University",
+   "programme": "Bachelor of Guidance and Counselling",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 51.6
+    },
+    {
+     "year": "2024/2025",
+     "all": 51.4
+    },
+    {
+     "year": "2023/2024",
+     "all": 49.6
+    }
+   ]
+  },
+  {
+   "university": "Kyambogo University",
+   "programme": "Bachelor of Science in Land Economics",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 46.5
+    },
+    {
+     "year": "2024/2025",
+     "all": 47.6
+    },
+    {
+     "year": "2023/2024",
+     "all": 45.5
+    }
+   ]
+  },
+  {
+   "university": "Kyambogo University",
+   "programme": "Bachelor of Economics and Statistics",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 48.0
+    },
+    {
+     "year": "2024/2025",
+     "all": 48.1
+    },
+    {
+     "year": "2023/2024",
+     "all": 50.6
+    }
+   ]
+  },
+  {
+   "university": "Kyambogo University",
+   "programme": "Bachelor of Art and Industrial Design",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 49.9
+    },
+    {
+     "year": "2024/2025",
+     "all": 50.0
+    },
+    {
+     "year": "2023/2024",
+     "all": 41.5
+    }
+   ]
+  },
+  {
+   "university": "Kyambogo University",
+   "programme": "Bachelor of Microfinance",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 47.4
+    },
+    {
+     "year": "2024/2025",
+     "all": 46.2
+    },
+    {
+     "year": "2023/2024",
+     "all": 44.7
+    }
+   ]
+  },
+  {
+   "university": "Kyambogo University",
+   "programme": "Bachelor of Business Administration",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 44.9
+    },
+    {
+     "year": "2024/2025",
+     "all": 43.9
+    },
+    {
+     "year": "2023/2024",
+     "all": 43.5
+    }
+   ]
+  },
+  {
+   "university": "Kyambogo University",
+   "programme": "Bachelor of Architecture",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 52.6
+    },
+    {
+     "year": "2024/2025",
+     "all": 50.5
+    },
+    {
+     "year": "2023/2024",
+     "all": 49.7
+    }
+   ]
+  },
+  {
+   "university": "Kyambogo University",
+   "programme": "Bachelor of Electrical Engineering",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 50.9
+    },
+    {
+     "year": "2024/2025",
+     "all": 52.3
+    },
+    {
+     "year": "2023/2024",
+     "all": 49.7
+    }
+   ]
+  },
+  {
+   "university": "Muni University",
+   "programme": "Bachelor of Information Technology",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 44.1
+    },
+    {
+     "year": "2024/2025",
+     "all": 40.8
+    },
+    {
+     "year": "2023/2024",
+     "all": 45.1
+    }
+   ]
+  },
+  {
+   "university": "Muni University",
+   "programme": "Bachelor of Information Systems",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 43.2
+    },
+    {
+     "year": "2024/2025",
+     "all": 40.5
+    },
+    {
+     "year": "2023/2024",
+     "all": 45.3
+    }
+   ]
+  },
+  {
+   "university": "Muni University",
+   "programme": "Bachelor of Science with Education (Biological)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 44.6
+    },
+    {
+     "year": "2024/2025",
+     "all": 40.7
+    },
+    {
+     "year": "2023/2024",
+     "all": 40.5
+    }
+   ]
+  },
+  {
+   "university": "Muni University",
+   "programme": "Bachelor of Science with Education (Physical)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 48.5
+    },
+    {
+     "year": "2024/2025",
+     "all": 42.2
+    },
+    {
+     "year": "2023/2024",
+     "all": 41.1
+    }
+   ]
+  },
+  {
+   "university": "Muni University",
+   "programme": "Bachelor of Science with Education (Agriculture)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 44.5
+    },
+    {
+     "year": "2024/2025",
+     "all": 45.0
+    },
+    {
+     "year": "2023/2024",
+     "all": null
+    }
+   ]
+  },
+  {
+   "university": "Muni University",
+   "programme": "Bachelor of Science with Education (Computer Studies)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 47.2
+    },
+    {
+     "year": "2024/2025",
+     "all": 43.8
+    },
+    {
+     "year": "2023/2024",
+     "all": null
+    }
+   ]
+  },
+  {
+   "university": "Muni University",
+   "programme": "Bachelor of Science with Education (Physical Education)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 46.6
+    },
+    {
+     "year": "2024/2025",
+     "all": 33.9
+    },
+    {
+     "year": "2023/2024",
+     "all": null
+    }
+   ]
+  },
+  {
+   "university": "Muni University",
+   "programme": "Bachelor of Nursing Science",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 48.1
+    },
+    {
+     "year": "2024/2025",
+     "all": 44.8
+    },
+    {
+     "year": "2023/2024",
+     "all": 44.2
+    }
+   ]
+  },
+  {
+   "university": "Muni University",
+   "programme": "Bachelor of Science in Agriculture",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 44.2
+    },
+    {
+     "year": "2024/2025",
+     "all": 43.4
+    },
+    {
+     "year": "2023/2024",
+     "all": 38.4
+    }
+   ]
+  },
+  {
+   "university": "Muni University",
+   "programme": "Bachelor of Science in Environment and Natural Resources",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 44.4
+    },
+    {
+     "year": "2024/2025",
+     "all": 45.5
+    },
+    {
+     "year": "2023/2024",
+     "all": null
+    }
+   ]
+  },
+  {
+   "university": "Muni University",
+   "programme": "Bachelor of Science (Biological)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 41.6
+    },
+    {
+     "year": "2024/2025",
+     "all": null
+    },
+    {
+     "year": "2023/2024",
+     "all": null
+    }
+   ]
+  },
+  {
+   "university": "Muni University",
+   "programme": "Bachelor of Science (Physical)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 46.8
+    },
+    {
+     "year": "2024/2025",
+     "all": null
+    },
+    {
+     "year": "2023/2024",
+     "all": null
+    }
+   ]
+  },
+  {
+   "university": "Muni University",
+   "programme": "Bachelor of Science in Statistics",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 41.3
+    },
+    {
+     "year": "2024/2025",
+     "all": null
+    },
+    {
+     "year": "2023/2024",
+     "all": null
+    }
+   ]
+  },
+  {
+   "university": "Muni University",
+   "programme": "Bachelor of Economics",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 44.5
+    },
+    {
+     "year": "2024/2025",
+     "all": null
+    },
+    {
+     "year": "2023/2024",
+     "all": null
+    }
+   ]
+  },
+  {
+   "university": "Muni University",
+   "programme": "Bachelor of Medical Laboratory Science",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 46.7
+    },
+    {
+     "year": "2024/2025",
+     "all": null
+    },
+    {
+     "year": "2023/2024",
+     "all": null
+    }
+   ]
+  },
+  {
+   "university": "Kabale University",
+   "programme": "Bachelor of Civil Engineering",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 52.5
+    },
+    {
+     "year": "2024/2025",
+     "all": 50.8
+    },
+    {
+     "year": "2023/2024",
+     "all": 50.4
+    }
+   ]
+  },
+  {
+   "university": "Kabale University",
+   "programme": "Bachelor of Electrical Engineering",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 50.6
+    },
+    {
+     "year": "2024/2025",
+     "all": 49.8
+    },
+    {
+     "year": "2023/2024",
+     "all": 48.5
+    }
+   ]
+  },
+  {
+   "university": "Kabale University",
+   "programme": "Bachelor of Mechanical Engineering",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 50.6
+    },
+    {
+     "year": "2024/2025",
+     "all": 49.5
+    },
+    {
+     "year": "2023/2024",
+     "all": 47.9
+    }
+   ]
+  },
+  {
+   "university": "Kabale University",
+   "programme": "Bachelor of Applied Design and Fine Art",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 50.3
+    },
+    {
+     "year": "2024/2025",
+     "all": 48.5
+    },
+    {
+     "year": "2023/2024",
+     "all": 46.8
+    }
+   ]
+  },
+  {
+   "university": "Kabale University",
+   "programme": "Bachelor of Computer Science",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 43.7
+    },
+    {
+     "year": "2024/2025",
+     "all": 42.3
+    },
+    {
+     "year": "2023/2024",
+     "all": 40.4
+    }
+   ]
+  },
+  {
+   "university": "Kabale University",
+   "programme": "Bachelor of Science in Agriculture",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 41.5
+    },
+    {
+     "year": "2024/2025",
+     "all": null
+    },
+    {
+     "year": "2023/2024",
+     "all": null
+    }
+   ]
+  },
+  {
+   "university": "Kabale University",
+   "programme": "Bachelor of Environmental Science",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 41.6
+    },
+    {
+     "year": "2024/2025",
+     "all": null
+    },
+    {
+     "year": "2023/2024",
+     "all": null
+    }
+   ]
+  },
+  {
+   "university": "Kabale University",
+   "programme": "Bachelor of Nursing Science",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 44.4
+    },
+    {
+     "year": "2024/2025",
+     "all": null
+    },
+    {
+     "year": "2023/2024",
+     "all": null
+    }
+   ]
+  },
+  {
+   "university": "Kabale University",
+   "programme": "Bachelor of Medicine and Bachelor of Surgery",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 49.8
+    },
+    {
+     "year": "2024/2025",
+     "all": null
+    },
+    {
+     "year": "2023/2024",
+     "all": null
+    }
+   ]
+  },
+  {
+   "university": "Lira University",
+   "programme": "Bachelor of Science in Midwifery",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 45.2
+    },
+    {
+     "year": "2024/2025",
+     "all": 45.2
+    },
+    {
+     "year": "2023/2024",
+     "all": 42.2
+    }
+   ]
+  },
+  {
+   "university": "Lira University",
+   "programme": "Bachelor of Science in Public Health",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 40.5
+    },
+    {
+     "year": "2024/2025",
+     "all": 38.2
+    },
+    {
+     "year": "2023/2024",
+     "all": 36.9
+    }
+   ]
+  },
+  {
+   "university": "Lira University",
+   "programme": "Bachelor of Science in Computer Science",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 42.1
+    },
+    {
+     "year": "2024/2025",
+     "all": 41.6
+    },
+    {
+     "year": "2023/2024",
+     "all": 39.3
+    }
+   ]
+  },
+  {
+   "university": "Lira University",
+   "programme": "Years KEP 3 Years i) Biological (Agriculture)",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 44.3
+    },
+    {
+     "year": "2024/2025",
+     "all": 43.6
+    },
+    {
+     "year": "2023/2024",
+     "all": 33.5
+    }
+   ]
+  },
+  {
+   "university": "Mountains of the Moon University",
+   "programme": "Bachelor of Nursing Science",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 46.4
+    },
+    {
+     "year": "2024/2025",
+     "all": 43.7
+    },
+    {
+     "year": "2023/2024",
+     "all": 44.3
+    }
+   ]
+  },
+  {
+   "university": "Mountains of the Moon University",
+   "programme": "Bachelor of Science in Agriculture",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 41.7
+    },
+    {
+     "year": "2024/2025",
+     "all": 40.5
+    },
+    {
+     "year": "2023/2024",
+     "all": 37.5
+    }
+   ]
+  },
+  {
+   "university": "Mountains of the Moon University",
+   "programme": "Bachelor of Science in Computer Science",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 45.2
+    },
+    {
+     "year": "2024/2025",
+     "all": 47.0
+    },
+    {
+     "year": "2023/2024",
+     "all": 40.8
+    }
+   ]
+  },
+  {
+   "university": "Mountains of the Moon University",
+   "programme": "Bachelor of Science in Public Health",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 44.3
+    },
+    {
+     "year": "2024/2025",
+     "all": 39.8
+    },
+    {
+     "year": "2023/2024",
+     "all": 41.8
+    }
+   ]
+  },
+  {
+   "university": "Mountains of the Moon University",
+   "programme": "Bachelor of Environmental Health Science",
+   "scheme": "government",
+   "cutoffs": [
+    {
+     "year": "2025/2026",
+     "all": 43.2
+    },
+    {
+     "year": "2024/2025",
+     "all": 40.5
+    },
+    {
+     "year": "2023/2024",
+     "all": 38.8
+    }
+   ]
+  }
+ ],
+ "makerere2025": {
+  "government": [
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Administration",
+    "code": "ADM",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 48.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Agricultural Engineering",
+    "code": "AGE",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 49.8,
+    "female": 46.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Agribusiness Management",
+    "code": "AGM",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 46.6,
+    "female": 46.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Agriculture",
+    "code": "AGR",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 44.0,
+    "female": 40.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Applied Psychology",
+    "code": "APS",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 51.6
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Architecture",
+    "code": "ARC",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 52.6,
+    "female": 51.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Agricultural Extension and Rural Innovation",
+    "code": "BAI",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 44.1,
+    "female": 45.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Animal Production Technology and Management",
+    "code": "BAP",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 43.9,
+    "female": 41.0
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Computing",
+    "code": "BBC",
+    "campus": "MUBS",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 51.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Administration",
+    "code": "BBD",
+    "campus": "MUBS",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 46.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Biomedical Engineering",
+    "code": "BBI",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 50.8,
+    "female": 49.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Bio-Processing Engineering",
+    "code": "BBP",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 50.5,
+    "female": 46.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Biotechnology",
+    "code": "BBT",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 46.8,
+    "female": 44.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Conservation Biology",
+    "code": "BCB",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 42.2,
+    "female": 38.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Dental Surgery",
+    "code": "BDS",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 49.9,
+    "female": 48.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Environmental Health Science",
+    "code": "BEH",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 46.9,
+    "female": 44.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Entrepreneurship",
+    "code": "BEN",
+    "campus": "MUBS",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 51.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Environmental Science",
+    "code": "BEV",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 47.9,
+    "female": 44.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Fine Art",
+    "code": "BFA",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 41.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Fisheries and Aquaculture",
+    "code": "BFS",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 42.5,
+    "female": 41.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Geographical Sciences",
+    "code": "BGS",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 49.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Human Nutrition and Dietetics",
+    "code": "BHD",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 46.8,
+    "female": 46.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of International Business",
+    "code": "BIB",
+    "campus": "MUBS",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 51.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Industrial Chemistry",
+    "code": "BIC",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 47.8,
+    "female": 44.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Aplied Art & Industrial Design",
+    "code": "BID",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 44.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Office and Information Management",
+    "code": "BIM",
+    "campus": "MUBS",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 51.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Leisure Events and Hospitality Management",
+    "code": "BLM",
+    "campus": "MUBS",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 51.6
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Medical Radiography",
+    "code": "BMR",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 47.6,
+    "female": 46.0
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Forestry",
+    "code": "BOF",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 46.2,
+    "female": 45.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Biomedical Science",
+    "code": "BOS",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 47.7,
+    "female": 45.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Petroleum Geoscience and Production",
+    "code": "BPG",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 51.7,
+    "female": 47.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Population Studies",
+    "code": "BPS",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 51.0
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Optometry",
+    "code": "BPT",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 50.8,
+    "female": 46.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Quantative Economics",
+    "code": "BQE",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 49.0,
+    "female": 46.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Speech and Language Therapy",
+    "code": "BSL",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 44.3,
+    "female": 43.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Software Engineering",
+    "code": "BSW",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 50.9,
+    "female": 49.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Tourism & Hospitality",
+    "code": "BTH",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 50.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Tourism and Travel Management",
+    "code": "BTR",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 52.2,
+    "female": 53.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Visual Communication, Design and Multimedia",
+    "code": "BVC",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 44.0
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Valuation",
+    "code": "BVL",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 49.5,
+    "female": 46.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Water and Irrigation Engineering",
+    "code": "BWE",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 50.6,
+    "female": 45.6
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Cytotechnology",
+    "code": "BYT",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 47.5,
+    "female": 46.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Civil Engineering",
+    "code": "CIV",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 52.8,
+    "female": 52.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Commerce",
+    "code": "COE",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 46.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Commerce",
+    "code": "COM",
+    "campus": "MUBS",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 45.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Computer Science",
+    "code": "CSC",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 50.7,
+    "female": 47.7
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Arts in Economics",
+    "code": "ECO",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 43.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science with Education-Biological",
+    "code": "EDB",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 46.7,
+    "female": 41.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science with Education-Physical",
+    "code": "EDP",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 47.8,
+    "female": 43.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science with Education-Economics",
+    "code": "EEC",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 42.3,
+    "female": 40.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Electrical Engineering",
+    "code": "ELE",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 52.2,
+    "female": 49.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Food Science and Technology",
+    "code": "FST",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 44.8,
+    "female": 44.7
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Information Systems & Technology",
+    "code": "IST",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 48.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Laws",
+    "code": "LAW",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "note": "No cut-off published"
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Land Surveying and Geomatics",
+    "code": "LSG",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 50.6,
+    "female": 48.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Medicine and Bachelor Surgery",
+    "code": "MAM",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 52.0,
+    "female": 49.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Mechanical Engineering",
+    "code": "MEC",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 52.4,
+    "female": 48.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Biomedical Laboratory Technology",
+    "code": "MLT",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 47.7,
+    "female": 45.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Arts in Music",
+    "code": "MUS",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 50.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Nursing Science",
+    "code": "NUR",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 47.9,
+    "female": 46.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Pharmacy",
+    "code": "PHA",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 49.8,
+    "female": 48.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Procurement and Supply Chain Management",
+    "code": "PSM",
+    "campus": "MUBS",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 52.0
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Actuarial Science",
+    "code": "SAS",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 42.0,
+    "female": 40.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science-Biological",
+    "code": "SCB",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 43.9,
+    "female": 42.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science-Physical",
+    "code": "SCP",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 47.7,
+    "female": 43.6
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science-Economics",
+    "code": "SEC",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 47.5,
+    "female": 42.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Quantity Surveying",
+    "code": "SQS",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 50.0,
+    "female": 50.0
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Sports Science - Sport Management",
+    "code": "SSM",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "all": 51.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Statistics",
+    "code": "STA",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 38.5,
+    "female": 37.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Veterinary Medicine",
+    "code": "VET",
+    "campus": "MAK",
+    "scheme": "government",
+    "year": "2025/2026",
+    "male": 47.6,
+    "female": 45.2
+   }
+  ],
+  "private": [
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Accounting (Evening)",
+    "code": "ACC",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 14.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Administration (Afternoon) Mak.",
+    "code": "ADA",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 39.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Administration (Day) Jinja - Mak.",
+    "code": "ADJ",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 14.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Administration (Day) Mak.",
+    "code": "ADM",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 39.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Agricultural Engineering (Day)",
+    "code": "AGE",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 43.3,
+    "female": 36.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Agribusiness Management (Day)",
+    "code": "AGM",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 35.0,
+    "female": 35.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Agriculture (Day)",
+    "code": "AGR",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 36.3,
+    "female": 34.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Administration (Mbale) MUBS - Evening",
+    "code": "AML",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 18.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Applied Psychology (Day)",
+    "code": "APS",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 42.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Applied Psychology (Evening)",
+    "code": "APY",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 35.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Architecture (Day)",
+    "code": "ARC",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 49.5,
+    "female": 49.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Arts (Arts) - Day - Jinja Mak",
+    "code": "ARJ",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "note": "No cut-off published"
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Arts (Arts) - Day",
+    "code": "ARS",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 14.6
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor Arts (Social Sciences) (Evening)",
+    "code": "ASE",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 16.0
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Arts (Social Sciences) (Day)",
+    "code": "ASS",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 16.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Adult and Community Education (Day)",
+    "code": "BAC",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 23.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Agricultural Extension and Rural Innovation (Day)",
+    "code": "BAI",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 31.3,
+    "female": 31.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Animal Production Tech & Mgt (Day)",
+    "code": "BAP",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 31.9,
+    "female": 30.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Administration (Evening)",
+    "code": "BBA",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 22.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Computing (Day)",
+    "code": "BBC",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 31.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Administration (Day)",
+    "code": "BBD",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 26.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Computing (Evening)",
+    "code": "BBE",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 28.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Biomedical Engineering (Day)",
+    "code": "BBI",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 45.7,
+    "female": 42.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Computing (Jinja) Day",
+    "code": "BBJ",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 16.6
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Bioprocessing Engineering",
+    "code": "BBP",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 39.1,
+    "female": 36.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Biotechnology (Day)",
+    "code": "BBT",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 35.8,
+    "female": 33.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Conservation Biology (Day)",
+    "code": "BCB",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 19.2,
+    "female": 20.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Adult and Community Education (Evening)",
+    "code": "BCE",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 17.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Dental Surgery (Day)",
+    "code": "BDS",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 47.7,
+    "female": 45.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Dental Laboratory Technology",
+    "code": "BDT",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 38.5,
+    "female": 38.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bacholor of Arts in Economics (Day)",
+    "code": "BEC",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 13.6
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Environmental Health Science",
+    "code": "BEH",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 35.8,
+    "female": 34.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Enterprenuership (Day)",
+    "code": "BEN",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 16.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Early Childhood Care and Education",
+    "code": "BEY",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 17.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Fine Art",
+    "code": "BFA",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 29.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Fisheries and Aquaculture (Day)",
+    "code": "BFS",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 22.4,
+    "female": 22.6
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Geographical Sciences (Day)",
+    "code": "BGS",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 32.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor in Science in Human Nutrition & Dietetics",
+    "code": "BHD",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 38.6,
+    "female": 38.0
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Human Resource Mgt (Evening)",
+    "code": "BHE",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 28.6
+   },
+   {
+    "university": "Makerere University",
+    "programme": "BSc in Tourism and Hospitality Mgt (Day)- Jinja Mak",
+    "code": "BHJ",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 14.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Human Resource Management (Day)",
+    "code": "BHM",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 28.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Infor Sys & Technology (Eveing) Jinja - Mak",
+    "code": "BIA",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 18.0
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of International Business (Day)",
+    "code": "BIB",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 23.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Industrial Chemistry (Day)",
+    "code": "BIC",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 39.4,
+    "female": 34.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Industrial Art & Applied Design (Day)",
+    "code": "BID",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 38.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Office and Information Management (Day)",
+    "code": "BIM",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 15.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Agricultural Extension and Rural Innovation (Ext)",
+    "code": "BIX",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 28.1,
+    "female": 25.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "BSc in Tourism and Hospitality Mgt (Afternoon)- Jinja Mak",
+    "code": "BJA",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 19.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Computing (Jinja) Evening",
+    "code": "BJB",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 18.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Journalism & Communication (Day)",
+    "code": "BJC",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 44.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Journalism & Communication (Evening)",
+    "code": "BJE",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 39.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Commerce (Jinja - MUBS) Day",
+    "code": "BJO",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 11.6
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Accounting Jinja -",
+    "code": "BJS",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 15.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Marketing (Evening)-",
+    "code": "BKE",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 14.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Industrial Livestock and Business (Day)",
+    "code": "BLB",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 21.4,
+    "female": 18.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Leisure, Events and Hotel Mgt (Day) Jinja -",
+    "code": "BLC",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 13.6
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Library and Information Science (Evening)",
+    "code": "BLE",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 14.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor Leadership and Governance (Day)",
+    "code": "BLG",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 15.7
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Leisure, Events & Hotel Mananement (Day)",
+    "code": "BLM",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 15.6
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Biomedical Laboratory Technology (Evening)",
+    "code": "BLT",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 41.9,
+    "female": 39.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Accounting (Mbarara) Day",
+    "code": "BMA",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 13.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Administration (Mbale)",
+    "code": "BML",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 14.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Adminstration (Day) Mbarara",
+    "code": "BMM",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 17.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Medical Radiography (Day)",
+    "code": "BMR",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 44.3,
+    "female": 45.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Marketing (Day)",
+    "code": "BMS",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 15.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Enterprenuership (Evening)",
+    "code": "BNE",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 14.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Administration (Eve) Mbarara -",
+    "code": "BNM",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 14.0
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Forestry",
+    "code": "BOF",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 30.2,
+    "female": 29.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Office and Information Management (Evening)",
+    "code": "BOM",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 14.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Biomedical Sciences (Day)",
+    "code": "BOS",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 38.7,
+    "female": 37.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "BSc in Petroleum Geoscience and Production (Day)",
+    "code": "BPG",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 43.5,
+    "female": 39.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Leisure, Events and Hotel Mgt (Evening)",
+    "code": "BPL",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 16.7
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Population Studies (Day)",
+    "code": "BPS",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 15.0
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Optometry (Day)",
+    "code": "BPT",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 47.4,
+    "female": 44.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Quantitative Economic (Day)",
+    "code": "BQE",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 29.2,
+    "female": 29.6
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Administration (Day) Jinja -",
+    "code": "BRJ",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 13.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Real Estate Business Management (Day)",
+    "code": "BRM",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 15.7
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Administration (Eve) Jinja -",
+    "code": "BRO",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 12.7
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Accounting (Day)",
+    "code": "BSA",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 23.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Finance (Day)",
+    "code": "BSF",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 14.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Information Systems & Technology (Evening) Mak",
+    "code": "BSI",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 32.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Infor Systems and Technology (Day) Jinja - Mak",
+    "code": "BSJ",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 19.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Sci of Speech & Language Therapy (Day)",
+    "code": "BSL",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 40.3,
+    "female": 37.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Administration (Eve) Arua -",
+    "code": "BSU",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 15.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Software Engineering (Day)",
+    "code": "BSW",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 44.7,
+    "female": 40.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of International Business (Evening)",
+    "code": "BTB",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 17.0
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Tourism and Hospitality Mgt (Day)",
+    "code": "BTH",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 31.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Travel & Tourism Management (Day)",
+    "code": "BTT",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 16.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Urban & Regional Planning (Day)",
+    "code": "BUP",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 36.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Statistics (Day)",
+    "code": "BUS",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 10.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Visual Communication, Design & Multi-Media",
+    "code": "BVC",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 33.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Valuation",
+    "code": "BVL",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 38.4,
+    "female": 37.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Environmental Science (Day)",
+    "code": "BEV",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 32.6,
+    "female": 32.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "BSc in Water and Irrigation Engineering",
+    "code": "BWE",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 42.8,
+    "female": 37.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Cytotechnology (Day)",
+    "code": "BYT",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 39.8,
+    "female": 37.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Youth Development Work (External)",
+    "code": "BYW",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 14.6
+   },
+   {
+    "university": "Makerere University",
+    "programme": "BSc in Computer and Communications Engineering (Day)",
+    "code": "CCE",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 34.6,
+    "female": 23.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Commerce (Afternoon)",
+    "code": "CEA",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 32.6
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Civil Engineering (Day)",
+    "code": "CIV",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 49.7,
+    "female": 45.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Commerce (Day) Mbarara -",
+    "code": "CMM",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 11.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Commerce (Day) Makerere",
+    "code": "COE",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 37.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Commerce (Day) Jinja - Mak.",
+    "code": "COJ",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "note": "No cut-off published"
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Commerce (Day)",
+    "code": "COM",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 19.6
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Procurement & Supply Chain Mgt (Day) Jinja -",
+    "code": "CRJ",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 16.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Procurement & Supply Chain Mgt (Eve) Jinja -",
+    "code": "CRO",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 13.7
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Computer Science (Day) Mak",
+    "code": "CSC",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 43.1,
+    "female": 38.0
+   },
+   {
+    "university": "Makerere University",
+    "programme": "BSc in Computer Science (Evening) Mak",
+    "code": "CSE",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 41.1,
+    "female": 36.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "BSc in Computer Science (Day) Jinja - Mak.",
+    "code": "CSJ",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 29.7,
+    "female": 23.0
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Commerce (External) - Jinja -Mak",
+    "code": "CXJ",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "note": "No cut-off published"
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Diploma in Performing Arts (Day)",
+    "code": "DPA",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 16.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Arts in Economics (Afternoon) Mak",
+    "code": "ECE",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 21.7
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Arts in Economics (Jinja - Mak) Day",
+    "code": "ECJ",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "note": "No cut-off published"
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Arts in Economics (Day) Mak",
+    "code": "ECO",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 28.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Arts with Education (Day)",
+    "code": "EDA",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 34.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science with Education (Biological) Day",
+    "code": "EDB",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 41.5,
+    "female": 38.0
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science with Education (Physical) Day",
+    "code": "EDP",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 42.8,
+    "female": 37.7
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science with Education (Economics) Day",
+    "code": "EEC",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 30.9,
+    "female": 30.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Electrical Engineering (Day)",
+    "code": "ELE",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 48.9,
+    "female": 43.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "BSc in Food Science and Technology (Day)",
+    "code": "FST",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 36.6,
+    "female": 36.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Human Resource Mgt (Evening) Mbale-MUBS",
+    "code": "HMA",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 18.0
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Human Resource Mgt (Day) Mbale",
+    "code": "HML",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 19.7
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Human Resource Mgt (Day) Mbarara -",
+    "code": "HNM",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 18.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Human Resource Mgt (Eve) Mbarara -",
+    "code": "HOM",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 20.7
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Human Resource Mgt (Day) Jinja -",
+    "code": "HSJ",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 18.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Human Resource Mgt (Jinja) Evening",
+    "code": "HSO",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 14.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Information Sys and Technology",
+    "code": "IST",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 36.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Business Administration (Afternoon) Jinja - Mak",
+    "code": "JAA",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 19.0
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Entreprenuership (Jinja ) Day",
+    "code": "JBE",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 17.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Entreprenuership (Evening) Jinja",
+    "code": "JBI",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "note": "No cut-off published"
+   },
+   {
+    "university": "Makerere University",
+    "programme": "BSc in Computer Science (Afternoon) Jinja - Mak",
+    "code": "JCA",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 16.7,
+    "female": 19.7
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Arts in Economics (Jinja - Mak) Afternoon",
+    "code": "JEA",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "note": "No cut-off published"
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Commerce (Afternoon) Jinja - Mak",
+    "code": "JOA",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 12.0
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Arts (Arts) - Afternoon - Jinja Mak",
+    "code": "JRA",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "note": "No cut-off published"
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor Leadership and Governance (Evening)",
+    "code": "LGM",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 14.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Library and Information Science (Day)",
+    "code": "LIS",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 27.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "BSc in Land Surveying & Geomatics (Day)",
+    "code": "LSG",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 47.0,
+    "female": 43.7
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Medicine & Bachelor of Surgery (Day)",
+    "code": "MAM",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 49.7,
+    "female": 46.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Mechanical Engineering (Day)",
+    "code": "MEC",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 47.9,
+    "female": 43.0
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Biomedical Laboratory Technology (Day)",
+    "code": "MLT",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 41.9,
+    "female": 40.4
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Arts in Music (Day)",
+    "code": "MUS",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 14.7
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Nursing Science (Day)",
+    "code": "NUR",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 44.7,
+    "female": 43.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Pharmancy (Day)",
+    "code": "PHA",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 48.9,
+    "female": 46.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Procurement & Supply Chain Mgt (Evening) Mbale",
+    "code": "PMA",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 18.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Procurement & Supply Chain Mgt (Day) Mbale",
+    "code": "PML",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 49.6
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Procurement & Supply Chain Mgt (Day) Mbarara",
+    "code": "PMM",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 15.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Procurement & Supply Chain Mgt (Day) Mbarara",
+    "code": "PNM",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 14.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Procurement and Supply Chain Mgt (Evening)",
+    "code": "PSC",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 19.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Procuremennt and Supply Chain Mgt (Day)",
+    "code": "PSM",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 26.9
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Procurement & Supply Chain Mgt (Eve) Arua -",
+    "code": "PSU",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 16.5
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Actuarial Science (Day)",
+    "code": "SAS",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 25.3,
+    "female": 25.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science (Biological) Day",
+    "code": "SCB",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 26.5,
+    "female": 26.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science (Physical) Day",
+    "code": "SCP",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 17.9,
+    "female": 17.7
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science (External)",
+    "code": "SCX",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 20.2,
+    "female": 22.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science (Economics) Day",
+    "code": "SEC",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 15.9,
+    "female": 17.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Sports Science (Exercise Science)",
+    "code": "SPS",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 21.2,
+    "female": 21.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Science in Quantity Surveying (Day)",
+    "code": "SQS",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 44.8,
+    "female": 42.1
+   },
+   {
+    "university": "Makerere University",
+    "programme": "BSc in Software Engineering (Evening)",
+    "code": "SSE",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 43.6,
+    "female": 39.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Sports Science (Sports Management)",
+    "code": "SSM",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 17.8
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Statistics (Day)",
+    "code": "STA",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 29.7,
+    "female": 29.7
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Transport & Logistic Mgt (Eve)",
+    "code": "TLM",
+    "campus": "MUBS",
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 15.6
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Travel & Tourism Mgt (Evening)",
+    "code": "TTM",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "all": 17.3
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Veterinary Medicine (Day)",
+    "code": "VET",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "male": 43.6,
+    "female": 40.2
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Laws",
+    "code": "LAA",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "note": "Pre-entry examination pass mark 55%"
+   },
+   {
+    "university": "Makerere University",
+    "programme": "Bachelor of Laws",
+    "code": "LAW",
+    "campus": null,
+    "scheme": "private",
+    "year": "2025/2026",
+    "note": "Pre-entry examination pass mark 57%"
+   }
+  ]
+ }
+}

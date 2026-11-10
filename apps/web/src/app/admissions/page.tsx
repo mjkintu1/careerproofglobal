@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Globe2, GraduationCap, Layers } from "lucide-react";
-import { admissionSystemsFor, higherEducationRegulators, institutionCounts } from "@careerproof/reference-data";
+import { admissionSystemsFor, educationStructure, higherEducationRegulators, iscedCountryCount, iscedMapping, iscedMeta, institutionCounts, uisMeta } from "@careerproof/reference-data";
 import { careerGraphData } from "@careerproof/sample-data";
 import { Container } from "@/components/container";
 import { PageBand } from "@/components/page-band";
 import { CountryTable, type CountryRow } from "@/components/admissions/country-table";
+import { stage } from "@/components/admissions/education-structure";
 
 export const metadata: Metadata = {
   title: "Admission standards worldwide",
@@ -24,9 +25,17 @@ export default function AdmissionsPage() {
     code: l.code,
     name: l.name,
     secondaryExams: l.secondaryExams,
+    leaving: [...new Set((iscedMapping(l.code)?.upperSecondary ?? []).map((p) => p.a).filter((a) => a && a.toLowerCase() !== "na"))].join("; ") || null,
     regulators: higherEducationRegulators(l.code).regulators.map(({ name, website }) => ({ name, website })),
     institutions: institutionCounts[l.code] ?? 0,
     calculators: admissionSystemsFor(l.code).map(({ name, href, status }) => ({ name, href, status })),
+    ...(() => {
+      const s = educationStructure(l.code);
+      return {
+        upperSecondary: s ? stage(s.upperSecondaryEntryAge, s.upperSecondaryYears) : null,
+        tertiaryGer: s?.tertiaryGer ? `${s.tertiaryGer.value}% (${s.tertiaryGer.year})` : null,
+      };
+    })(),
   }));
   return (
     <>
@@ -57,8 +66,11 @@ export default function AdmissionsPage() {
         </section>
         <section aria-labelledby="countries" className="space-y-4">
           <h2 id="countries" className="flex items-center gap-2 text-2xl font-extrabold"><GraduationCap aria-hidden="true" size={24} className="text-teal-700" /> Country by country</h2>
-          <p className="text-ink-muted">Regulators link to official websites where checked; others are as listed by AfriQAN. School-leaving exams are being verified. Institution counts come from the Research Organization Registry (CC0).</p>
+          <p className="text-ink-muted">Choose a country for its official entry requirements. Regulators and quality-assurance agencies are as listed by AfriQAN and INQAAHE (membership is not government recognition). Upper-secondary durations and tertiary gross enrolment ratios come from UNESCO; institution counts from the Research Organization Registry (CC0).</p>
           <CountryTable rows={rows} />
+          <p className="text-xs text-ink-muted">
+            School-leaving qualifications marked UNESCO, and each country&apos;s entry requirements ({iscedCountryCount} countries), come from <a href={iscedMeta.url}>{iscedMeta.source}</a> (<a href={iscedMeta.licenceUrl}>{iscedMeta.licence}</a>). {uisMeta.attribution} <a href={uisMeta.licenceUrl}>Licence</a>.
+          </p>
         </section>
         <section aria-labelledby="calc" className="card flex flex-wrap items-center justify-between gap-4 border-l-4 border-l-gold-400 p-6">
           <div className="max-w-2xl space-y-1">

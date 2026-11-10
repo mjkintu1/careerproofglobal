@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Route } from "lucide-react";
 import { catalogueCounts } from "@careerproof/reference-data";
@@ -7,6 +8,11 @@ import { Community, Stages } from "@/components/home/community-stages";
 import { Fields, Popular } from "@/components/home/fields-popular";
 import { Hero } from "@/components/home/hero";
 import { GLOBAL } from "@/lib/careers";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+  openGraph: { url: "/" },
+};
 
 const popular = ["nurse", "software-developer", "civil-engineer", "accountant", "electrician", "journalist"];
 
@@ -25,7 +31,7 @@ export default function HomePage() {
         <Fields />
       </Container>
 
-      <section aria-label="Career Proof in numbers" className="bg-navy-900 text-white">
+      <section aria-label="CareerProof Global in numbers" className="bg-navy-900 text-white">
         <Container className="py-10">
           <dl className="grid grid-cols-2 gap-6 text-center md:grid-cols-4">
             {stats.map(([n, label]) => (

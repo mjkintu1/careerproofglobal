@@ -1,0 +1,422 @@
+{
+ "meta": {
+  "method": "Exact match of the career title to an ESCO preferred or alternative label (lower-case, letters only), preferring the career's ISCO group. 'manual' entries were chosen by a person and are never overwritten.",
+  "unlinked": "civil-engineer (ESCO concept missing from our import: ESCO API error), farmer, agricultural-extension-officer, entrepreneur, content-creator, clinical-officer, public-health-officer, cybersecurity-analyst, ux-designer: no equivalent ESCO concept found.",
+  "review": "Links with iscoAgrees=false need a person to decide whether our career ISCO code or ESCO is right."
+ },
+ "links": {
+  "agronomist": {
+   "esco": "2132.2",
+   "escoTitle": "agronomist",
+   "isco": "2132",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "environmental-scientist": {
+   "esco": "2133.7",
+   "escoTitle": "environmental scientist",
+   "isco": "2133",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "accountant": {
+   "esco": "2411.1",
+   "escoTitle": "accountant",
+   "isco": "2411",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "financial-analyst": {
+   "esco": "2413.1",
+   "escoTitle": "financial analyst",
+   "isco": "2413",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "marketing-officer": {
+   "esco": "2431.10.3",
+   "escoTitle": "marketing assistant",
+   "isco": "2431",
+   "match": "alt-label",
+   "iscoAgrees": true
+  },
+  "hr-officer": {
+   "esco": "2423.3",
+   "escoTitle": "human resources officer",
+   "isco": "2423",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "project-manager": {
+   "esco": "1219.6",
+   "escoTitle": "project manager",
+   "isco": "1219",
+   "match": "title",
+   "iscoAgrees": null
+  },
+  "management-consultant": {
+   "esco": "2421.1",
+   "escoTitle": "business analyst",
+   "isco": "2421",
+   "match": "alt-label",
+   "iscoAgrees": true
+  },
+  "electrician": {
+   "esco": "7411.1",
+   "escoTitle": "electrician",
+   "isco": "7411",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "plumber": {
+   "esco": "7126.8",
+   "escoTitle": "plumber",
+   "isco": "7126",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "carpenter": {
+   "esco": "7115.1",
+   "escoTitle": "carpenter",
+   "isco": "7115",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "architect": {
+   "esco": "2161.1",
+   "escoTitle": "architect",
+   "isco": "2161",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "quantity-surveyor": {
+   "esco": "2149.12",
+   "escoTitle": "quantity surveyor",
+   "isco": "2149",
+   "match": "title",
+   "iscoAgrees": null
+  },
+  "construction-manager": {
+   "esco": "1323.1",
+   "escoTitle": "construction manager",
+   "isco": "1323",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "graphic-designer": {
+   "esco": "2166.10",
+   "escoTitle": "graphic designer",
+   "isco": "2166",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "journalist": {
+   "esco": "2642.1",
+   "escoTitle": "journalist",
+   "isco": "2642",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "photographer": {
+   "esco": "3431.1",
+   "escoTitle": "photographer",
+   "isco": "3431",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "primary-teacher": {
+   "esco": "2341.1",
+   "escoTitle": "primary school teacher",
+   "isco": "2341",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "secondary-teacher": {
+   "esco": "2330.1",
+   "escoTitle": "secondary school teacher",
+   "isco": "2330",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "lecturer": {
+   "esco": "2310.1",
+   "escoTitle": "higher education lecturer",
+   "isco": "2310",
+   "match": "alt-label",
+   "iscoAgrees": true
+  },
+  "mechanical-engineer": {
+   "esco": "2144.1",
+   "escoTitle": "mechanical engineer",
+   "isco": "2144",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "electrical-engineer": {
+   "esco": "2151.1",
+   "escoTitle": "electrical engineer",
+   "isco": "2151",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "chemical-engineer": {
+   "esco": "2145.1",
+   "escoTitle": "chemical engineer",
+   "isco": "2145",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "biomedical-engineer": {
+   "esco": "2149.4.1",
+   "escoTitle": "biomedical engineer",
+   "isco": "2149",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "midwife": {
+   "esco": "2222.1",
+   "escoTitle": "midwife",
+   "isco": "2222",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "pharmacist": {
+   "esco": "2262.1",
+   "escoTitle": "pharmacist",
+   "isco": "2262",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "medical-lab-scientist": {
+   "esco": "3212.1",
+   "escoTitle": "biomedical scientist",
+   "isco": "3212",
+   "match": "alt-label",
+   "iscoAgrees": true
+  },
+  "physiotherapist": {
+   "esco": "2264.3",
+   "escoTitle": "physiotherapist",
+   "isco": "2264",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "chef": {
+   "esco": "3434.1",
+   "escoTitle": "chef",
+   "isco": "3434",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "hotel-manager": {
+   "esco": "1411.1",
+   "escoTitle": "accommodation manager",
+   "isco": "1411",
+   "match": "alt-label",
+   "iscoAgrees": true
+  },
+  "tour-guide": {
+   "esco": "5113.1",
+   "escoTitle": "guide",
+   "isco": "5113",
+   "match": "alt-label",
+   "iscoAgrees": true
+  },
+  "chemist": {
+   "esco": "2113.1",
+   "escoTitle": "chemist",
+   "isco": "2113",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "microbiologist": {
+   "esco": "2131.4.9",
+   "escoTitle": "microbiologist",
+   "isco": "2131",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "statistician": {
+   "esco": "2120.6",
+   "escoTitle": "statistician",
+   "isco": "2120",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "lawyer": {
+   "esco": "2611.1",
+   "escoTitle": "lawyer",
+   "isco": "2611",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "policy-analyst": {
+   "esco": "2422.10",
+   "escoTitle": "policy officer",
+   "isco": "2422",
+   "match": "alt-label",
+   "iscoAgrees": true
+  },
+  "social-worker": {
+   "esco": "2635.3",
+   "escoTitle": "social worker",
+   "isco": "2635",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "police-officer": {
+   "esco": "5412.1",
+   "escoTitle": "police officer",
+   "isco": "5412",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "network-engineer": {
+   "esco": "2523.3",
+   "escoTitle": "ICT network engineer",
+   "isco": "2523",
+   "match": "manual",
+   "iscoAgrees": true
+  },
+  "software-developer": {
+   "esco": "2512.3",
+   "escoTitle": "software developer",
+   "isco": "2512",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "web-developer": {
+   "esco": "2513.5",
+   "escoTitle": "web developer",
+   "isco": "2513",
+   "match": "title",
+   "iscoAgrees": true
+  },
+  "data-analyst": {
+   "esco": "2511.2",
+   "escoTitle": "data analyst",
+   "isco": "2511",
+   "match": "title",
+   "iscoAgrees": null
+  },
+  "data-scientist": {
+   "esco": "2511.3",
+   "escoTitle": "data scientist",
+   "isco": "2511",
+   "match": "title",
+   "iscoAgrees": null
+  },
+  "pilot": {
+   "esco": "3153.2.2",
+   "escoTitle": "commercial pilot",
+   "isco": "3153",
+   "match": "alt-label",
+   "iscoAgrees": true
+  },
+  "aircraft-maintenance-engineer": {
+   "esco": "3153.1",
+   "escoTitle": "aircraft maintenance engineer",
+   "isco": "3153",
+   "match": "title",
+   "iscoAgrees": false
+  },
+  "logistics-manager": {
+   "esco": "1324.3",
+   "escoTitle": "logistics and distribution manager",
+   "isco": "1324",
+   "match": "alt-label",
+   "iscoAgrees": true
+  },
+  "supply-chain-analyst": {
+   "esco": "2141.6",
+   "escoTitle": "logistics analyst",
+   "isco": "2141",
+   "match": "alt-label",
+   "iscoAgrees": null
+  },
+  "veterinarian": {
+   "esco": "2250.3",
+   "escoTitle": "general veterinarian",
+   "isco": "2250",
+   "match": "manual",
+   "iscoAgrees": true
+  },
+  "procurement-officer": {
+   "esco": "3323.2",
+   "escoTitle": "purchaser",
+   "isco": "3323",
+   "match": "manual",
+   "iscoAgrees": true
+  },
+  "welder": {
+   "esco": "7212.3",
+   "escoTitle": "welder",
+   "isco": "7212",
+   "match": "manual",
+   "iscoAgrees": true
+  },
+  "film-producer": {
+   "esco": "2654.2.2",
+   "escoTitle": "video and motion picture producer",
+   "isco": "2654",
+   "match": "manual",
+   "iscoAgrees": true
+  },
+  "early-childhood-teacher": {
+   "esco": "2342.1",
+   "escoTitle": "early years teacher",
+   "isco": "2342",
+   "match": "manual",
+   "iscoAgrees": true
+  },
+  "careers-counsellor": {
+   "esco": "2423.1",
+   "escoTitle": "career guidance advisor",
+   "isco": "2423",
+   "match": "manual",
+   "iscoAgrees": false
+  },
+  "medical-doctor": {
+   "esco": "2211.1",
+   "escoTitle": "general practitioner",
+   "isco": "2211",
+   "match": "manual",
+   "iscoAgrees": true
+  },
+  "nurse": {
+   "esco": "2221.2",
+   "escoTitle": "nurse responsible for general care",
+   "isco": "2221",
+   "match": "manual",
+   "iscoAgrees": true
+  },
+  "dentist": {
+   "esco": "2261.1",
+   "escoTitle": "dental practitioner",
+   "isco": "2261",
+   "match": "manual",
+   "iscoAgrees": true
+  },
+  "industrial-chemist": {
+   "esco": "2113.1",
+   "escoTitle": "chemist",
+   "isco": "2113",
+   "match": "manual",
+   "iscoAgrees": true
+  },
+  "judge": {
+   "esco": "2612.1",
+   "escoTitle": "judge",
+   "isco": "2612",
+   "match": "manual",
+   "iscoAgrees": true
+  },
+  "it-support-technician": {
+   "esco": "3512.1",
+   "escoTitle": "ICT help desk agent",
+   "isco": "3512",
+   "match": "manual",
+   "iscoAgrees": true
+  }
+ }
+}

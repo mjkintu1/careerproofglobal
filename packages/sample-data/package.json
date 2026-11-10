@@ -2,7 +2,7 @@
   "name": "@careerproof/sample-data",
   "version": "0.0.0",
   "private": true,
-  "description": "Illustrative rule sets and programmes for demos and tests. Not official data.",
+  "description": "Career graph content (careers, skills, transitions) written by our team. No admission demo data.",
   "type": "module",
   "exports": {
     ".": "./src/index.ts"
@@ -12,7 +12,6 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@careerproof/rules-engine": "*",
     "@careerproof/career-graph": "*"
   }
 }

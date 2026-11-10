@@ -8,7 +8,7 @@ import { LocationSelect } from "@/components/careers/location-select";
 import { ClusterIcon } from "@/components/cluster-icon";
 import { Container } from "@/components/container";
 import { PageBand } from "@/components/page-band";
-import { careerHref, findLocation, GLOBAL, graph, isLocationCode, levelLabel, locationOptions } from "@/lib/careers";
+import { canonicalLocation, careerHref, findLocation, GLOBAL, graph, isLocationCode, levelLabel, locationOptions } from "@/lib/careers";
 
 const findCluster = (slug: string) => careerGraphData.clusters.find((c) => c.slug === slug);
 
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps<"/careers/[location
   const c = findCluster(cluster);
   const where = findLocation(location);
   if (!c) return {};
-  return { title: `${c.name} careers${where ? ` in ${where.name}` : ""}`, description: c.description };
+  return { title: `${c.name} careers${where ? ` in ${where.name}` : ""}`, description: c.description, alternates: { canonical: `/careers/${canonicalLocation(location)}/field/${cluster}` } };
 }
 
 async function FieldContent({ params }: Pick<PageProps<"/careers/[location]/field/[cluster]">, "params">) {

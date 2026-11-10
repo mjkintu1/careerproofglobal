@@ -5,18 +5,22 @@ interface Props {
   result: ProgrammeResult;
   pointsLabel: string;
   alternatives: ProgrammeResult[];
+  sex?: "F" | "M";
 }
+
+/** 2025 -> "2025/26" (Ugandan intakes span two years). */
+const intake = (y: number) => `${y}/${String((y + 1) % 100).padStart(2, "0")}`;
 
 const fmt = (n: number) => n.toFixed(n % 1 === 0 ? 0 : 1);
 
-export function ResultCard({ result, pointsLabel, alternatives }: Props) {
+export function ResultCard({ result, pointsLabel, alternatives, sex }: Props) {
   const { programme, points, zone, cutoffRange, breakdown } = result;
   return (
     <li className="card p-5">
       <div className="flex flex-wrap items-start justify-between gap-2">
         <div>
           <h3 className="text-lg font-bold leading-snug">{programme.title}</h3>
-          <p className="text-ink-muted">{programme.institution}</p>
+          <p className="text-ink-muted">{programme.institution}{programme.code && !programme.code.startsWith("DEMO") ? ` · code ${programme.code}` : ""}</p>
         </div>
         {zone && <ZoneBadge zone={zone} />}
       </div>
@@ -24,11 +28,11 @@ export function ResultCard({ result, pointsLabel, alternatives }: Props) {
       <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1 sm:max-w-md">
         <dt className="text-ink-muted">Your {pointsLabel}</dt>
         <dd className="font-bold">{points !== null ? fmt(points) : "-"}</dd>
-        <dt className="text-ink-muted">Past cut-offs</dt>
+        <dt className="text-ink-muted">Past cut-offs{sex && programme.cutoffs.some((c) => c.sex === sex) ? ` (${sex === "F" ? "female" : "male"})` : ""}</dt>
         <dd className="font-bold">
           {cutoffRange
-            ? `${fmt(cutoffRange.min)} to ${fmt(cutoffRange.max)} (${Math.min(...cutoffRange.years)}-${Math.max(...cutoffRange.years)})`
-            : "Not enough years recorded"}
+            ? `${fmt(cutoffRange.min)} to ${fmt(cutoffRange.max)} (${intake(Math.min(...cutoffRange.years))} to ${intake(Math.max(...cutoffRange.years))})`
+            : "Not enough years published"}
         </dd>
       </dl>
 
@@ -50,6 +54,15 @@ export function ResultCard({ result, pointsLabel, alternatives }: Props) {
         </table>
       </details>
 
+      {programme.notes && programme.notes.length > 0 && (
+        <ul className="mt-3 list-disc pl-5 text-sm text-ink-muted">
+          {programme.notes.map((n) => <li key={n}>{n}</li>)}
+        </ul>
+      )}
+      {programme.source && (
+        <p className="mt-2 text-xs text-ink-muted">Subject rules: <a href={programme.source.url}>{programme.source.name}</a></p>
+      )}
+
       {zone === "danger" && (
         <div className="mt-3 border-l-4 border-teal-700 bg-surface-muted p-3">
           <p className="font-semibold">Backup options in the same field</p>
@@ -58,12 +71,12 @@ export function ResultCard({ result, pointsLabel, alternatives }: Props) {
               {alternatives.map((a) => (
                 <li key={a.programme.id}>
                   {a.programme.title}, {a.programme.institution}
-                  {a.zone === "safe" ? " (safe)" : " (borderline)"}
+                  {a.zone === "safe" ? " (above recent cut-offs)" : " (within recent cut-offs)"}
                 </li>
               ))}
             </ul>
           ) : (
-            <p className="mt-1 text-ink-muted">No safer option in this field in the sample data.</p>
+            <p className="mt-1 text-ink-muted">No programme in this field where your points are higher than past cut-offs.</p>
           )}
         </div>
       )}
