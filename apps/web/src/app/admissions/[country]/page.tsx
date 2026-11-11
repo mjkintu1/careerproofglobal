@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import { Suspense } from "react";
@@ -21,7 +22,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps<"/admissions/[country]">): Promise<Metadata> {
   const loc = findLocation((await params).country);
   return loc
-    ? { title: `University admission in ${loc.name}: entry requirements`, description: `Official minimum entry requirements, school system and higher-education regulator for ${loc.name}, from UNESCO and national sources.` }
+    ? seo(`/admissions/${loc.code.toLowerCase()}`, { title: `University admission in ${loc.name}: entry requirements`, description: `Official minimum entry requirements, school system and higher-education regulator for ${loc.name}, from UNESCO and national sources.` })
     : {};
 }
 

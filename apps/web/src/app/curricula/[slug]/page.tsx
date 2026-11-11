@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
@@ -13,11 +14,10 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps<"/curricula/[slug]">): Promise<Metadata> {
   const c = curriculum((await params).slug);
-  return c ? {
+  return c ? seo(`/curricula/${c.slug}`, {
     title: `${c.name}: grading, university entry and subjects`,
     description: `${c.name} (${c.body}): ${c.grading ?? c.level}`.slice(0, 300),
-    alternates: { canonical: `/curricula/${c.slug}` },
-  } : {};
+  }) : {};
 }
 
 function Fact({ label, value }: { label: string; value: string | null }) {

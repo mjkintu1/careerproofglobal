@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { Route } from "lucide-react";
 import { catalogueCounts } from "@careerproof/reference-data";
@@ -9,10 +10,7 @@ import { Fields, Popular } from "@/components/home/fields-popular";
 import { Hero } from "@/components/home/hero";
 
 
-export const metadata: Metadata = {
-  alternates: { canonical: "/" },
-  openGraph: { url: "/" },
-};
+export const metadata: Metadata = seo("/");
 
 const popular = ["nurse", "software-developer", "civil-engineer", "accountant", "electrician", "journalist"];
 

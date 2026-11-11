@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { Award, BadgeCheck, Building2, Coins, Scale, Search } from "lucide-react";
 import { certificationMethod, certifications, certificationsCheckedAt, certificationsPending } from "@careerproof/reference-data";
 import { Container } from "@/components/container";
 import { PageBand } from "@/components/page-band";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/certifications", {
   title: "Certifications and accreditation: a guide",
   description: "How to judge a certification or accreditation, and verified facts on professional certifications such as ACCA, CFA, PMP, CISSP, CCNA and AWS.",
-};
+});
 
 const checks = [
   { Icon: Building2, title: "Who issues it?", body: "A professional body, a technology company, a university or a training provider. Professional bodies and major vendors usually carry the most weight with employers." },

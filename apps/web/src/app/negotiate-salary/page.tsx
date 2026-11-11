@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { careerGraphData } from "@careerproof/sample-data";
 import { CitedFact, Guidance } from "@/components/cited";
@@ -8,11 +9,10 @@ import { countryOptions } from "@/components/paths/paths-page";
 import { RangeChecker } from "@/components/pay/range-checker";
 import { nodeOptions } from "@/lib/path-network";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/negotiate-salary", {
   title: "Negotiating pay when a salary range is posted",
   description: "Check a posted pay range and an offer against official pay figures for the same job and country, and learn what pay-transparency laws in the EU, California and New York require.",
-  alternates: { canonical: "/negotiate-salary" },
-};
+});
 
 const laws = [
   { where: "European Union", facts: [

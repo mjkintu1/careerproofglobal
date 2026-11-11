@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
@@ -17,7 +18,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps<"/occupations/isco/[code]">): Promise<Metadata> {
   const g = iscoGroup((await params).code);
-  return g ? { title: `${g.title} (ISCO-08 ${g.code})`, description: g.description.slice(0, 160) } : {};
+  return g ? seo(`/occupations/isco/${g.code}`, { title: `${g.title} (ISCO-08 ${g.code})`, description: g.description.slice(0, 160) }) : {};
 }
 
 async function GroupContent({ params }: Pick<PageProps<"/occupations/isco/[code]">, "params">) {

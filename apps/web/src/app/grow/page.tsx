@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { BookOpen, Quote, Sparkles } from "lucide-react";
 import { allProfessionals } from "@careerproof/reference-data";
@@ -6,10 +7,10 @@ import { Container } from "@/components/container";
 import { PageBand } from "@/components/page-band";
 import { graph } from "@/lib/careers";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/grow", {
   title: "Grow your career: habits and real career stories",
   description: "Habits that help careers grow, and real stories from professionals who share how they got where they are.",
-};
+});
 
 /** In our own words, adapted from CASE's list (credited below); grouped into ten themes. */
 const HABITS: { title: string; body: string }[] = [

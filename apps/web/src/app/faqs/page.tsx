@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { Container } from "@/components/container";
 import { PageBand } from "@/components/page-band";
 import { FAQ_CHECKED, faqSource, faqTopics, type Faq } from "@/lib/faqs";
 import { OPERATOR, SITE_URL } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/faqs", {
   title: "Frequently asked questions",
   description: "Answers on choosing subjects, university entry and cut-off points, recognition abroad, pay figures and changing career, each citing the official source it relies on.",
-  alternates: { canonical: "/faqs" },
-};
+});
 
 /** Plain-text answer for structured data: sourced facts, then our guidance. */
 const answerText = (f: Faq) => [...f.facts, ...(f.guidance ? [`CareerProof guidance: ${f.guidance}`] : [])].join(" ");

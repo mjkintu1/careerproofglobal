@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { LegalPage } from "@/components/legal-page";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/cookies", {
   title: "Cookies",
   description: "CareerProof Global sets no cookies and uses no tracking.",
-  alternates: { canonical: "/cookies" },
-};
+});
 
 export default function Page() {
   return (

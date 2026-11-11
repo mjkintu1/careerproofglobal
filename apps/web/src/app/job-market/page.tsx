@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { CitedFact, Guidance } from "@/components/cited";
 import { Container } from "@/components/container";
 import { PageBand } from "@/components/page-band";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/job-market", {
   title: "Finding work safely: the job market guide",
   description: "Official rules on recruitment fees and job scams, official job services, and checking recruitment agencies before you work abroad, with guides for a first job, a career change and working abroad.",
-  alternates: { canonical: "/job-market" },
-};
+});
 
 const noFees = [
   { where: "Worldwide (ILO)", facts: [{ text: "The ILO Private Employment Agencies Convention, 1997 (No. 181), Article 7(1), says private employment agencies shall not charge workers any fees or related costs, directly or indirectly. Countries that ratify it may allow limited exceptions.", source: "ilo-recruitment-fees" }] },

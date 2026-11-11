@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
 import { careerGraphData } from "@careerproof/sample-data";
@@ -14,11 +15,10 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps<"/paths/[country]">): Promise<Metadata> {
   const { country } = await params;
   const c = find(country);
-  return {
+  return seo(c ? `/paths/${c.code.toLowerCase()}` : "/paths", {
     title: c ? `Career path planner: ${c.name}` : "Career path planner",
     description: c ? `Plan a route to any career in ${c.name}, with official pay by occupation group and the qualifications in between.` : undefined,
-    alternates: { canonical: c ? `/paths/${c.code.toLowerCase()}` : "/paths" },
-  };
+  });
 }
 
 async function Content({ params }: Pick<PageProps<"/paths/[country]">, "params">) {

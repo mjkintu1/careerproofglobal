@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
@@ -19,11 +20,10 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps<"/careers/[location]">): Promise<Metadata> {
   const { location } = await params;
   const where = findLocation(location);
-  return {
+  return seo(`/careers/${canonicalLocation(location)}`, {
     title: where ? `Career paths in ${where.name}` : "Career paths",
     description: `Explore ${careerGraphData.occupations.length} careers, the ways into them and how people move between them${where ? ` in ${where.name}` : ""}.`,
-    alternates: { canonical: `/careers/${canonicalLocation(location)}` },
-  };
+  });
 }
 
 async function CareersContent({ params }: Pick<PageProps<"/careers/[location]">, "params">) {

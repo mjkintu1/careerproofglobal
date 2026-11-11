@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
@@ -14,7 +15,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps<"/subjects/[slug]">): Promise<Metadata> {
   const s = findSubject((await params).slug);
-  return s ? { title: `Careers with ${s.name}`, description: s.about } : {};
+  return s ? seo(`/subjects/${s.slug}`, { title: `Careers with ${s.name}`, description: s.about }) : {};
 }
 
 function CareerGrid({ uses }: { uses: SubjectUse[] }) {

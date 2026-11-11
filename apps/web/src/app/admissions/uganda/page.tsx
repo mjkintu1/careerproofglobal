@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { educationStructure, nche, uisMeta, ugandaAdmissionSources, ugandaCutoffNotes, ugandaCutoffs, ugandaProgrammes } from "@careerproof/reference-data";
 import { Container } from "@/components/container";
@@ -6,10 +7,10 @@ import { PageBand } from "@/components/page-band";
 import { CutoffTable, InstitutionTable } from "@/components/admissions/uganda-tables";
 import { EducationStructureCard } from "@/components/admissions/education-structure";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/admissions/uganda", {
   title: "Uganda university admission: cut-off points and accredited programmes",
   description: "Official cut-off points for six Ugandan public universities (2023/24 to 2025/26), the national weighting system, and every programme accredited by the National Council for Higher Education.",
-};
+});
 
 export default function UgandaAdmissionsPage() {
   const active = nche.programmes.filter((p) => p.s === "Active");

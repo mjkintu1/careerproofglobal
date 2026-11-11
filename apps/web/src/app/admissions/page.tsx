@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { Globe2, GraduationCap, Layers } from "lucide-react";
 import { admissionSystemsFor, educationStructure, higherEducationRegulators, iscedCountryCount, iscedMapping, iscedMeta, institutionCounts, uisMeta } from "@careerproof/reference-data";
@@ -8,10 +9,10 @@ import { PageBand } from "@/components/page-band";
 import { CountryTable, type CountryRow } from "@/components/admissions/country-table";
 import { stage } from "@/components/admissions/education-structure";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/admissions", {
   title: "Admission standards worldwide",
   description: "How university admission works across countries: the ISCED 2011 levels, international recognition of qualifications, and each country's regulator and institutions.",
-};
+});
 
 const ISCED = [
   ["0", "Early childhood education"], ["1", "Primary education"], ["2", "Lower secondary education"],

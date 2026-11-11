@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
@@ -15,7 +16,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps<"/institutions/[country]">): Promise<Metadata> {
   const loc = findLocation((await params).country);
-  return loc ? { title: `Universities and colleges in ${loc.name}`, description: `Education institutions in ${loc.name}, with websites and the national regulator.` } : {};
+  return loc ? seo(`/institutions/${loc.code.toLowerCase()}`, { title: `Universities and colleges in ${loc.name}`, description: `Education institutions in ${loc.name}, with websites and the national regulator.` }) : {};
 }
 
 async function CountryContent({ params }: Pick<PageProps<"/institutions/[country]">, "params">) {

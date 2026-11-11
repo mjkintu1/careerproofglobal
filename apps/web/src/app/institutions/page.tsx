@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import { institutionAttribution, institutionCounts, institutionTotal } from "@careerproof/reference-data";
 import { careerGraphData } from "@careerproof/sample-data";
 import { Container } from "@/components/container";
 import { PageBand } from "@/components/page-band";
 import { CountryGrid } from "@/components/catalogue/country-grid";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/institutions", {
   title: "Where to study: universities and colleges worldwide",
   description: `${institutionTotal.toLocaleString("en")} universities, colleges and education institutions in every country, from the Research Organization Registry.`,
-};
+});
 
 export default function InstitutionsPage() {
   const countries = careerGraphData.locations

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
@@ -20,7 +21,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps<"/occupations/[code]">): Promise<Metadata> {
   const o = escoOccupation(decodeURIComponent((await params).code));
-  return o ? { title: `${cap(o.title)}: skills and career information`, description: o.description.slice(0, 160) } : {};
+  return o ? seo(`/occupations/${o.code}`, { title: `${cap(o.title)}: skills and career information`, description: o.description.slice(0, 160) }) : {};
 }
 
 async function OccupationContent({ params }: Pick<PageProps<"/occupations/[code]">, "params">) {

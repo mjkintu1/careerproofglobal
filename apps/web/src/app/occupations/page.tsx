@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { catalogueCounts, escoCountUnder, iscoChildren, majorGroups, occupationSearchItems } from "@careerproof/reference-data";
 import { CatalogueAttribution } from "@/components/catalogue/attribution";
@@ -6,10 +7,10 @@ import { CareerSearch } from "@/components/careers/career-search";
 import { Container } from "@/components/container";
 import { PageBand } from "@/components/page-band";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/occupations", {
   title: "Occupation directory: every occupation, international standard",
   description: `Browse ${catalogueCounts.escoOccupations.toLocaleString("en")} occupations organised by the ILO's ISCO-08 classification, with skills and tasks.`,
-};
+});
 
 export default function OccupationsPage() {
   return (

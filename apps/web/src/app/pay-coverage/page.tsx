@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import { detailedPayCountries, payCoverage } from "@careerproof/reference-data";
 import { careerGraphData } from "@careerproof/sample-data";
 import { Container } from "@/components/container";
 import { PageBand } from "@/components/page-band";
 import { CoverageTable, type CoverageRow } from "@/components/pay/coverage-table";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/pay-coverage", {
   title: "Pay data coverage by country",
   description: "Which official pay sources CareerProof Global has for each country: pay by occupation, public-sector entry scales, legal minimum wages, ILOSTAT group averages, and World Bank and UN scales.",
-  alternates: { canonical: "/pay-coverage" },
-};
+});
 
 export default function Page() {
   const rows: CoverageRow[] = careerGraphData.locations.map((l) => {

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { CitedFact, Guidance } from "@/components/cited";
 import { Container } from "@/components/container";
@@ -6,11 +7,10 @@ import { CvBuilderLoader } from "@/components/cv/cv-builder-loader";
 import { PageBand } from "@/components/page-band";
 import { cvCareers } from "@/lib/cv-careers";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/cv-builder", {
   title: "Free CV and résumé builder",
   description: "Build a clear CV or US-style résumé in your browser, with skills suggested for your target career. Nothing is uploaded: print it, save it as PDF or download it for Word.",
-  alternates: { canonical: "/cv-builder" },
-};
+});
 
 const ukFacts = [
   { text: "A CV should have your contact details, a short introduction, your education, your work history and, if you want, a references section.", source: "ncs-cv" },

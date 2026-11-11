@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import { dataSources, type DataSource } from "@careerproof/reference-data";
 import { Container } from "@/components/container";
 import { PageBand } from "@/components/page-band";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/data-licences", {
   title: "Copyright and data licences",
   description: "Copyright in CareerProof Global's content, and every official data source the site uses, with its licence and required attribution.",
-  alternates: { canonical: "/data-licences" },
-};
+});
 
 const link = (href: string | null, text: string) => (href ? <a href={href} rel="noopener">{text}</a> : <>{text}</>);
 

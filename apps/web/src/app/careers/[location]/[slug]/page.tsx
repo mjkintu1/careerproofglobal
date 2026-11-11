@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import { notFound } from "next/navigation";
 import { Fragment, Suspense } from "react";
 import { careerGraphData } from "@careerproof/sample-data";
 import { CareerJsonLd } from "@/components/careers/career-jsonld";
+import { QuickAnswers } from "@/components/careers/quick-answers";
+import { careerAnswers } from "@/lib/career-answers";
 import { CareerHero } from "@/components/careers/career-hero";
 import { RelatedCareers, TagList, WaysIn } from "@/components/careers/career-sections";
 import { CareerSidebar } from "@/components/careers/career-sidebar";
@@ -24,11 +27,10 @@ export async function generateMetadata({ params }: PageProps<"/careers/[location
   const { location, slug } = await params;
   const o = graph.get(slug);
   if (!o || !isLocationCode(location)) return {};
-  return {
+  return seo(careerHref(canonicalLocation(location), slug), {
     title: careerPageTitle(o, location),
     description: o.summary,
-    alternates: { canonical: careerHref(canonicalLocation(location), slug) },
-  };
+  });
 }
 
 const tabs = [
@@ -49,6 +51,7 @@ async function CareerContent({ params }: Pick<PageProps<"/careers/[location]/[sl
   const isco = o.isco ?? ev?.isco ?? null;
   const next = graph.nextMoves(slug);
   const previous = graph.previousMoves(slug);
+  const answers = careerAnswers(o, local);
 
   const panels = [
     <Fragment key="overview">
@@ -83,10 +86,11 @@ async function CareerContent({ params }: Pick<PageProps<"/careers/[location]/[sl
 
   return (
     <article>
-      <CareerJsonLd o={o} location={location} local={local} />
+      <CareerJsonLd o={o} location={location} local={local} answers={answers} />
       <CareerHero o={o} location={location} isco={isco} />
       <Container className="grid gap-8 py-10 lg:grid-cols-[minmax(0,1fr)_320px]">
         <div className="space-y-6">
+          <QuickAnswers answers={answers} />
           <Tabs label={`About ${o.title}`} tabs={tabs} panels={panels} />
         </div>
         <CareerSidebar location={location} local={local} current={slug} isco={isco} />

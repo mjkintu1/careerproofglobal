@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { Container } from "@/components/container";
 import { PageBand } from "@/components/page-band";
 import { CitedFact } from "@/components/cited";
 import { curricula, curriculaMeta, curriculumSubjects, recognitionRoutes, type Curriculum } from "@careerproof/reference-data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/curricula", {
   title: "School curricula: Cambridge, Pearson Edexcel, IB, AP and national exams",
   description: "How Cambridge IGCSE and A Levels, Pearson Edexcel International, the IB Diploma, AP and the SAT, UACE, KCSE, WASSCE and the NSC are graded, how universities use them, and how countries recognise foreign results.",
-  alternates: { canonical: "/curricula" },
-};
+});
 
 function CurriculumCard({ c }: { c: Curriculum }) {
   const n = curriculumSubjects(c).length;

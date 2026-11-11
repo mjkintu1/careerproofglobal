@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import { Suspense } from "react";
 import { admissionMeta, admissionSystems, admissionSystemsPending, admissionTiers, educationStructure, higherEducationRegulators, institutionCounts, uisMeta, type AdmissionTier } from "@careerproof/reference-data";
 import { careerGraphData } from "@careerproof/sample-data";
@@ -7,10 +8,10 @@ import { PageBand } from "@/components/page-band";
 import { CalculatorFinder, type CountryInfo } from "@/components/admissions/calculator-finder";
 import { SystemCard } from "@/components/admissions/system-card";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/admissions/calculators", {
   title: "Admission calculators by country",
   description: "Points calculators where an admissions body publishes its formula, such as the UCAS Tariff, and plain explanations where admission has no formula.",
-};
+});
 
 const TIER_TITLES: Record<Exclude<AdmissionTier, "eligibility">, string> = {
   points: "Points calculators",

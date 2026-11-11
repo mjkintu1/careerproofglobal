@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { Container } from "@/components/container";
 import { PageBand } from "@/components/page-band";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/disclaimer", {
   title: "Disclaimer",
   description: "What CareerProof Global's information is, and is not: guidance built on cited official data, not professional advice or an official decision.",
-  alternates: { canonical: "/disclaimer" },
-};
+});
 
 const UPDATED = "11 November 2026";
 

@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { LegalPage } from "@/components/legal-page";
 import { OPERATOR } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/privacy", {
   title: "Privacy policy",
   description: "What CareerProof Global collects (very little), why, who processes it, how long it is kept, and your rights.",
-  alternates: { canonical: "/privacy" },
-};
+});
 
 export default function Page() {
   return (

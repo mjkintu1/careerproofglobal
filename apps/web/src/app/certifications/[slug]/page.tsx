@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
@@ -14,7 +15,7 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps<"/certifications/[slug]">): Promise<Metadata> {
   const c = certification((await params).slug);
-  return c ? { title: `${c.name}: what it is and who it is for`, description: c.summary } : {};
+  return c ? seo(`/certifications/${c.slug}`, { title: `${c.name}: what it is and who it is for`, description: c.summary }) : {};
 }
 
 async function CertContent({ params }: Pick<PageProps<"/certifications/[slug]">, "params">) {

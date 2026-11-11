@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { educationStructure, higherEducationRegulators, institutionCounts, kenya, uisMeta } from "@careerproof/reference-data";
 import { Container } from "@/components/container";
@@ -6,10 +7,10 @@ import { PageBand } from "@/components/page-band";
 import { EducationStructureCard } from "@/components/admissions/education-structure";
 import { RegulatorList } from "@/components/admissions/regulator-list";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/admissions/kenya", {
   title: "Kenya university admission: KCSE, KUCCPS and the education system",
   description: "How Kenya's education system and university placement work, from UNESCO IICBA's country brief and the official bodies (KNEC, KUCCPS, CUE).",
-};
+});
 
 const sourceOf = (id: string) => kenya.meta.sources.find((s) => s.id === id)!;
 

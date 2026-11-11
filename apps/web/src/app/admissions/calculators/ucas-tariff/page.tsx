@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { ucasTariff } from "@careerproof/reference-data";
 import { Container } from "@/components/container";
 import { PageBand } from "@/components/page-band";
 import { TariffCalculator } from "@/components/admissions/tariff-calculator";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/admissions/calculators/ucas-tariff", {
   title: "UCAS Tariff points calculator (2027 entry)",
   description: "Work out your UCAS Tariff points for A levels, AS, the EPQ, IB Diploma components, Scottish Highers and the Irish Leaving Certificate, using UCAS's published tables.",
-};
+});
 
 export default function UcasTariffPage() {
   return (

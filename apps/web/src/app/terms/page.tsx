@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { LegalPage } from "@/components/legal-page";
 import { GOVERNING_LAW, OPERATOR } from "@/lib/site";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/terms", {
   title: "Terms of use",
   description: "The terms for using CareerProof Global: a free information service, used fairly, with sourced data under its own licences.",
-  alternates: { canonical: "/terms" },
-};
+});
 
 export default function Page() {
   return (

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { Container } from "@/components/container";
 import { SectionHeading } from "@/components/home/section-heading";
@@ -8,10 +9,10 @@ import { searchItems } from "@/lib/careers";
 import { subjectGroups, subjectStandards } from "@careerproof/reference-data";
 import { subjects, subjectsForCareer } from "@/lib/subjects";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = seo("/subjects", {
   title: "School subjects and the careers they lead to",
   description: "See which careers each school subject keeps open, or pick a dream career to see the subjects to take.",
-};
+});
 
 export default function SubjectsPage() {
   const subjectsByCareer = Object.fromEntries(searchItems.map((c) => [c.slug, subjectsForCareer(c.slug)]));

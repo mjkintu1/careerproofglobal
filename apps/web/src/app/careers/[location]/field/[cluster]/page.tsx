@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { seo } from "@/lib/seo";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
@@ -21,7 +22,7 @@ export async function generateMetadata({ params }: PageProps<"/careers/[location
   const c = findCluster(cluster);
   const where = findLocation(location);
   if (!c) return {};
-  return { title: `${c.name} careers${where ? ` in ${where.name}` : ""}`, description: c.description, alternates: { canonical: `/careers/${canonicalLocation(location)}/field/${cluster}` } };
+  return seo(`/careers/${canonicalLocation(location)}/field/${cluster}`, { title: `${c.name} careers${where ? ` in ${where.name}` : ""}`, description: c.description });
 }
 
 async function FieldContent({ params }: Pick<PageProps<"/careers/[location]/field/[cluster]">, "params">) {

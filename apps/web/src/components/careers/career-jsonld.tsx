@@ -1,9 +1,10 @@
 import type { Localised, Occupation } from "@careerproof/career-graph";
 import { careerHref, careerPageTitle, clusterName, graph, levelLabel } from "@/lib/careers";
+import type { Answer } from "@/lib/career-answers";
 import { SITE_URL as SITE } from "@/lib/site";
 
 /** schema.org Occupation + BreadcrumbList, so search engines get machine-readable career facts. */
-export function CareerJsonLd({ o, location, local }: { o: Occupation; location: string; local: Localised }) {
+export function CareerJsonLd({ o, location, local, answers = [] }: { o: Occupation; location: string; local: Localised; answers?: Answer[] }) {
   const url = `${SITE}${careerHref(location, o.slug)}`;
   const data = [
     {
@@ -29,6 +30,13 @@ export function CareerJsonLd({ o, location, local }: { o: Occupation; location: 
         { "@type": "ListItem", position: 4, name: careerPageTitle(o, location), item: url },
       ],
     },
+    ...(answers.length
+      ? [{
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: answers.map((x) => ({ "@type": "Question", name: x.question, acceptedAnswer: { "@type": "Answer", text: x.answer } })),
+        }]
+      : []),
   ];
   // Escape "<" so the JSON can never close the script tag.
   const json = JSON.stringify(data).replace(/</g, String.fromCharCode(92) + "u003c");
