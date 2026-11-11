@@ -64,6 +64,7 @@ export function onetFor(escoOrIscoCode: string): OnetOccupation[] {
   return (xmap[escoOrIscoCode] ?? []).map((c) => onet[c]).filter((o): o is OnetOccupation => Boolean(o));
 }
 export const onetOccupation = (soc: string) => onet[soc];
+export const allOnetOccupations = (): OnetOccupation[] => Object.values(onet);
 
 /** A few everyday words O*NET titles phrase differently ("doctor" -> "physician"). */
 const SYNONYMS: Record<string, string> = { doctor: "physician", medical: "medicine", lawyer: "attorney", programmer: "developer" };

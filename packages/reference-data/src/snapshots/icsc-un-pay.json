@@ -1,0 +1,1797 @@
+{
+ "meta": {
+  "source": "International Civil Service Commission (ICSC): salary scale for the Professional and higher categories, and post adjustment classifications",
+  "attribution": "Source: International Civil Service Commission, United Nations common system.",
+  "url": "https://icsc.un.org/Home/DataSalaryScales",
+  "postAdjustmentUrl": "https://icsc.un.org/Home/DataPostAdjustment",
+  "scaleEffective": "2026-01",
+  "unit": "USD per year; net = after staff assessment",
+  "formula": "Net pay at a duty station = net base salary x (1 + post adjustment multiplier / 100)",
+  "note": "Post adjustment is for each country's main duty station (ICSC code ending 001). Professional staff are paid this worldwide scale plus post adjustment; General Service staff have local scales (not included).",
+  "unmatched": []
+ },
+ "grades": [
+  {
+   "grade": "P-1",
+   "steps": 13,
+   "first": {
+    "step": 1,
+    "gross": 53071,
+    "net": 43834
+   },
+   "last": {
+    "step": 13,
+    "gross": 73838,
+    "net": 59617
+   },
+   "specialSteps": [
+    "PP1"
+   ]
+  },
+  {
+   "grade": "P-2",
+   "steps": 13,
+   "first": {
+    "step": 1,
+    "gross": 69139,
+    "net": 56046
+   },
+   "last": {
+    "step": 13,
+    "gross": 93605,
+    "net": 74640
+   },
+   "specialSteps": [
+    "PP1"
+   ]
+  },
+  {
+   "grade": "P-3",
+   "steps": 13,
+   "first": {
+    "step": 1,
+    "gross": 89257,
+    "net": 71335
+   },
+   "last": {
+    "step": 13,
+    "gross": 118039,
+    "net": 92127
+   },
+   "specialSteps": [
+    "PP1",
+    "PP2"
+   ]
+  },
+  {
+   "grade": "P-4",
+   "steps": 13,
+   "first": {
+    "step": 1,
+    "gross": 109324,
+    "net": 86027
+   },
+   "last": {
+    "step": 13,
+    "gross": 141407,
+    "net": 108485
+   },
+   "specialSteps": [
+    "PP1",
+    "PP2"
+   ]
+  },
+  {
+   "grade": "P-5",
+   "steps": 13,
+   "first": {
+    "step": 1,
+    "gross": 133807,
+    "net": 103165
+   },
+   "last": {
+    "step": 13,
+    "gross": 168092,
+    "net": 126441
+   }
+  },
+  {
+   "grade": "D-1",
+   "steps": 13,
+   "first": {
+    "step": 1,
+    "gross": 155232,
+    "net": 117953
+   },
+   "last": {
+    "step": 13,
+    "gross": 196682,
+    "net": 145310
+   }
+  },
+  {
+   "grade": "D-2",
+   "steps": 10,
+   "first": {
+    "step": 1,
+    "gross": 174208,
+    "net": 130477
+   },
+   "last": {
+    "step": 10,
+    "gross": 209614,
+    "net": 153845
+   }
+  },
+  {
+   "grade": "ASG",
+   "steps": 1,
+   "first": {
+    "step": 1,
+    "gross": 217448,
+    "net": 159016
+   },
+   "last": {
+    "step": 1,
+    "gross": 217448,
+    "net": 159016
+   }
+  },
+  {
+   "grade": "USG",
+   "steps": 1,
+   "first": {
+    "step": 1,
+    "gross": 239200,
+    "net": 173372
+   },
+   "last": {
+    "step": 1,
+    "gross": 239200,
+    "net": 173372
+   }
+  }
+ ],
+ "postAdjustment": {
+  "AE": {
+   "dsid": "UAE001",
+   "name": "United Arab Emirates",
+   "multiplier": 55.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jan/2024",
+   "exchangeRate": 3.673
+  },
+  "AF": {
+   "dsid": "AFG001",
+   "name": "Afghanistan",
+   "multiplier": 37.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Nov/2025",
+   "exchangeRate": 64.807
+  },
+  "AG": {
+   "dsid": "ANT001",
+   "name": "Antigua",
+   "multiplier": 47.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 2.7
+  },
+  "AI": {
+   "dsid": "ANL003",
+   "name": "Anguilla",
+   "multiplier": 47.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 2.7
+  },
+  "AL": {
+   "dsid": "ALB001",
+   "name": "Albania",
+   "multiplier": 33.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jun/2026",
+   "exchangeRate": 81.31
+  },
+  "AM": {
+   "dsid": "ARM001",
+   "name": "Armenia",
+   "multiplier": 32.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Sep/2026",
+   "exchangeRate": 361.13
+  },
+  "AO": {
+   "dsid": "ANG001",
+   "name": "Angola",
+   "multiplier": 55.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Mar/2026",
+   "exchangeRate": 913
+  },
+  "AR": {
+   "dsid": "ARG001",
+   "name": "Argentina",
+   "multiplier": 40.2,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1518
+  },
+  "AT": {
+   "dsid": "AUS001",
+   "name": "Austria",
+   "multiplier": 48.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "AU": {
+   "dsid": "AUL003",
+   "name": "Australia",
+   "multiplier": 38.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 1.433
+  },
+  "AW": {
+   "dsid": "ARU001",
+   "name": "Aruba",
+   "multiplier": 60,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1.79
+  },
+  "AZ": {
+   "dsid": "AZE001",
+   "name": "Azerbaijan",
+   "multiplier": 34,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1.698
+  },
+  "BA": {
+   "dsid": "BIH001",
+   "name": "Bosnia-Herzegovina",
+   "multiplier": 22.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Sep/2026",
+   "exchangeRate": 1.748
+  },
+  "BB": {
+   "dsid": "BAR001",
+   "name": "Barbados",
+   "multiplier": 59.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2024",
+   "exchangeRate": 2
+  },
+  "BD": {
+   "dsid": "BGD001",
+   "name": "Bangladesh",
+   "multiplier": 42.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 122.965
+  },
+  "BE": {
+   "dsid": "BEL001",
+   "name": "Belgium",
+   "multiplier": 42.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "BF": {
+   "dsid": "BKF001",
+   "name": "Burkina Faso",
+   "multiplier": 38.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 586.199
+  },
+  "BG": {
+   "dsid": "BUL001",
+   "name": "Bulgaria",
+   "multiplier": 32.8,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "BH": {
+   "dsid": "BAH001",
+   "name": "Bahrain",
+   "multiplier": 32.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Sep/2024",
+   "exchangeRate": 0.377
+  },
+  "BI": {
+   "dsid": "BDI001",
+   "name": "Burundi",
+   "multiplier": 42.8,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 2979
+  },
+  "BJ": {
+   "dsid": "BEN001",
+   "name": "Benin",
+   "multiplier": 33.2,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 586.199
+  },
+  "BM": {
+   "dsid": "BER001",
+   "name": "Bermuda",
+   "multiplier": 79.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1
+  },
+  "BO": {
+   "dsid": "BOL001",
+   "name": "Bolivia",
+   "multiplier": 30.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 11.7
+  },
+  "BQ": {
+   "dsid": "BES001",
+   "name": "Bonaire",
+   "multiplier": 47.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1
+  },
+  "BR": {
+   "dsid": "BRA001",
+   "name": "Brazil",
+   "multiplier": 29.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 5.025
+  },
+  "BS": {
+   "dsid": "BHA001",
+   "name": "Bahamas",
+   "multiplier": 65.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1
+  },
+  "BT": {
+   "dsid": "BHU001",
+   "name": "Bhutan",
+   "multiplier": 35.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 95.278
+  },
+  "BW": {
+   "dsid": "BOT001",
+   "name": "Botswana",
+   "multiplier": 22.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 13.624
+  },
+  "BY": {
+   "dsid": "BYE001",
+   "name": "Belarus",
+   "multiplier": 46.2,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 3.074
+  },
+  "BZ": {
+   "dsid": "BZE001",
+   "name": "Belize",
+   "multiplier": 46.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 2
+  },
+  "CA": {
+   "dsid": "CAN001",
+   "name": "Canada",
+   "multiplier": 41.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 1.424
+  },
+  "CD": {
+   "dsid": "ZAI001",
+   "name": "Congo, Dem. Rep. of",
+   "multiplier": 52,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Nov/2025",
+   "exchangeRate": 2307.015
+  },
+  "CF": {
+   "dsid": "CAF001",
+   "name": "Central African Rep.",
+   "multiplier": 46.2,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Mar/2026",
+   "exchangeRate": 586.199
+  },
+  "CG": {
+   "dsid": "PRC001",
+   "name": "Congo",
+   "multiplier": 45.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 586.199
+  },
+  "CH": {
+   "dsid": "SWI001",
+   "name": "Switzerland",
+   "multiplier": 80.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.832
+  },
+  "CI": {
+   "dsid": "IVC001",
+   "name": "Côte D'Ivoire",
+   "multiplier": 64.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 586.199
+  },
+  "CK": {
+   "dsid": "CKI001",
+   "name": "Cook Islands",
+   "multiplier": 38.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Sep/2026",
+   "exchangeRate": 1.783
+  },
+  "CL": {
+   "dsid": "CHI001",
+   "name": "Chile",
+   "multiplier": 32.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 982.05
+  },
+  "CM": {
+   "dsid": "CMR001",
+   "name": "Cameroon",
+   "multiplier": 39.8,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 586.199
+  },
+  "CN": {
+   "dsid": "CPR001",
+   "name": "China",
+   "multiplier": 54.2,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 6.692
+  },
+  "CO": {
+   "dsid": "COL001",
+   "name": "Colombia",
+   "multiplier": 54.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 3193.15
+  },
+  "CR": {
+   "dsid": "COS002",
+   "name": "Costa Rica",
+   "multiplier": 33.2,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Aug/2026",
+   "exchangeRate": 450.32
+  },
+  "CU": {
+   "dsid": "CUB001",
+   "name": "Cuba",
+   "multiplier": 50.2,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Aug/2025",
+   "exchangeRate": 24
+  },
+  "CV": {
+   "dsid": "CVI001",
+   "name": "Cape Verde",
+   "multiplier": 38,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 98.539
+  },
+  "CY": {
+   "dsid": "CYP005",
+   "name": "Cyprus",
+   "multiplier": 29.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "CZ": {
+   "dsid": "CEH011",
+   "name": "Czech Republic",
+   "multiplier": 47,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 21.775
+  },
+  "DE": {
+   "dsid": "GER001",
+   "name": "Germany",
+   "multiplier": 40.2,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "DJ": {
+   "dsid": "DJI001",
+   "name": "Djibouti",
+   "multiplier": 40,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Nov/2025",
+   "exchangeRate": 177
+  },
+  "DK": {
+   "dsid": "DEN001",
+   "name": "Denmark",
+   "multiplier": 69.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 6.68
+  },
+  "DM": {
+   "dsid": "DMI001",
+   "name": "Dominica",
+   "multiplier": 47.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 2.7
+  },
+  "DO": {
+   "dsid": "DOM002",
+   "name": "Dominican Republic",
+   "multiplier": 30.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 60.8
+  },
+  "DZ": {
+   "dsid": "ALG001",
+   "name": "Algeria",
+   "multiplier": 44.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 134.149
+  },
+  "EC": {
+   "dsid": "ECU001",
+   "name": "Ecuador",
+   "multiplier": 23.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1
+  },
+  "EE": {
+   "dsid": "EST001",
+   "name": "Estonia",
+   "multiplier": 46.8,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 0.894
+  },
+  "EG": {
+   "dsid": "EGY001",
+   "name": "Egypt",
+   "multiplier": 28.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 52.77
+  },
+  "ER": {
+   "dsid": "ERI001",
+   "name": "Eritrea",
+   "multiplier": 43.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 15
+  },
+  "ES": {
+   "dsid": "SPA001",
+   "name": "Spain",
+   "multiplier": 27.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "ET": {
+   "dsid": "ETH001",
+   "name": "Ethiopia",
+   "multiplier": 43.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 160.988
+  },
+  "FI": {
+   "dsid": "FIN001",
+   "name": "Finland",
+   "multiplier": 40.8,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "FJ": {
+   "dsid": "FIJ001",
+   "name": "Fiji",
+   "multiplier": 34.6,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 2.237
+  },
+  "FM": {
+   "dsid": "MIC004",
+   "name": "Micronesia",
+   "multiplier": 58.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Mar/2026",
+   "exchangeRate": 1
+  },
+  "FR": {
+   "dsid": "FRA001",
+   "name": "France",
+   "multiplier": 50.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "GA": {
+   "dsid": "GAB002",
+   "name": "Gabon",
+   "multiplier": 45.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 586.199
+  },
+  "GB": {
+   "dsid": "U.K001",
+   "name": "United Kingdom",
+   "multiplier": 76.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.755
+  },
+  "GD": {
+   "dsid": "GRN001",
+   "name": "Grenada",
+   "multiplier": 47.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 2.7
+  },
+  "GE": {
+   "dsid": "GEO001",
+   "name": "Georgia",
+   "multiplier": 27.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 2.57
+  },
+  "GF": {
+   "dsid": "FGU001",
+   "name": "French Guiana",
+   "multiplier": 34.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "GH": {
+   "dsid": "GHA001",
+   "name": "Ghana",
+   "multiplier": 39.2,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 11.69
+  },
+  "GI": {
+   "dsid": "GIB002",
+   "name": "Gibraltar",
+   "multiplier": 76.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.755
+  },
+  "GM": {
+   "dsid": "GAM001",
+   "name": "Gambia",
+   "multiplier": 37.6,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 72.963
+  },
+  "GN": {
+   "dsid": "GUI001",
+   "name": "Guinea",
+   "multiplier": 44,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Mar/2026",
+   "exchangeRate": 8765.39
+  },
+  "GQ": {
+   "dsid": "EQG001",
+   "name": "Equatorial Guinea",
+   "multiplier": 36.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 586.199
+  },
+  "GR": {
+   "dsid": "GRE001",
+   "name": "Greece",
+   "multiplier": 33.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "GT": {
+   "dsid": "GUA001",
+   "name": "Guatemala",
+   "multiplier": 30.8,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 7.642
+  },
+  "GW": {
+   "dsid": "GBS001",
+   "name": "Guinea-Bissau",
+   "multiplier": 48.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 586.199
+  },
+  "GY": {
+   "dsid": "GUY001",
+   "name": "Guyana",
+   "multiplier": 49.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 208
+  },
+  "HK": {
+   "dsid": "HOK001",
+   "name": "Hong Kong, China (SAR)",
+   "multiplier": 94.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 7.848
+  },
+  "HN": {
+   "dsid": "HON001",
+   "name": "Honduras",
+   "multiplier": 29.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 26.821
+  },
+  "HR": {
+   "dsid": "CRO001",
+   "name": "Croatia, Republic of",
+   "multiplier": 37.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "HT": {
+   "dsid": "HAI001",
+   "name": "Haiti",
+   "multiplier": 53.8,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 130.453
+  },
+  "HU": {
+   "dsid": "HUN003",
+   "name": "Hungary",
+   "multiplier": 54.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 325.4
+  },
+  "ID": {
+   "dsid": "INS001",
+   "name": "Indonesia",
+   "multiplier": 27.8,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 17892
+  },
+  "IE": {
+   "dsid": "IRE001",
+   "name": "Ireland",
+   "multiplier": 49.6,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "IL": {
+   "dsid": "ISR001",
+   "name": "Israel",
+   "multiplier": 70,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 3.07
+  },
+  "IN": {
+   "dsid": "IND001",
+   "name": "India",
+   "multiplier": 28.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 95.278
+  },
+  "IQ": {
+   "dsid": "IRQ001",
+   "name": "Iraq",
+   "multiplier": 30.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1310
+  },
+  "IR": {
+   "dsid": "IRA001",
+   "name": "Iran",
+   "multiplier": 29,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 2022252.246
+  },
+  "IS": {
+   "dsid": "ICE001",
+   "name": "Iceland",
+   "multiplier": 45.8,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 121.45
+  },
+  "IT": {
+   "dsid": "ITA001",
+   "name": "Italy",
+   "multiplier": 24.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "JM": {
+   "dsid": "JAM001",
+   "name": "Jamaica",
+   "multiplier": 42,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 158.582
+  },
+  "JO": {
+   "dsid": "JOR001",
+   "name": "Jordan",
+   "multiplier": 35.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 0.708
+  },
+  "JP": {
+   "dsid": "JPN001",
+   "name": "Japan",
+   "multiplier": 45.2,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 158.29
+  },
+  "KE": {
+   "dsid": "KEN001",
+   "name": "Kenya",
+   "multiplier": 40.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 129.6
+  },
+  "KG": {
+   "dsid": "KYR001",
+   "name": "Kyrgyzstan",
+   "multiplier": 28.6,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 87.448
+  },
+  "KH": {
+   "dsid": "CMB001",
+   "name": "Cambodia",
+   "multiplier": 26.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Mar/2024",
+   "exchangeRate": 4059
+  },
+  "KI": {
+   "dsid": "KIR001",
+   "name": "Kiribati",
+   "multiplier": 48.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1.433
+  },
+  "KM": {
+   "dsid": "COI001",
+   "name": "Comoros",
+   "multiplier": 37.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 439.649
+  },
+  "KN": {
+   "dsid": "STK001",
+   "name": "St. Kitts and Nevis",
+   "multiplier": 47.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 2.7
+  },
+  "KP": {
+   "dsid": "DRK001",
+   "name": "Korea, Dem. Peo. of",
+   "multiplier": 47.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Nov/2025",
+   "exchangeRate": 110
+  },
+  "KR": {
+   "dsid": "ROK001",
+   "name": "Korea, Republic of",
+   "multiplier": 42.6,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1341.7
+  },
+  "KW": {
+   "dsid": "KUW001",
+   "name": "Kuwait",
+   "multiplier": 53,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 0.305
+  },
+  "KY": {
+   "dsid": "CAY001",
+   "name": "Cayman Islands",
+   "multiplier": 43.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 0.82
+  },
+  "KZ": {
+   "dsid": "KAZ004",
+   "name": "Kazakhstan",
+   "multiplier": 38.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 449
+  },
+  "LA": {
+   "dsid": "LAO001",
+   "name": "Lao Peo. Dem. Rep.",
+   "multiplier": 34.8,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 22392
+  },
+  "LB": {
+   "dsid": "LEB001",
+   "name": "Lebanon",
+   "multiplier": 54.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 89500
+  },
+  "LC": {
+   "dsid": "STL001",
+   "name": "Saint Lucia",
+   "multiplier": 42.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2024",
+   "exchangeRate": 2.7
+  },
+  "LK": {
+   "dsid": "SRL001",
+   "name": "Sri Lanka",
+   "multiplier": 28.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 330.87
+  },
+  "LR": {
+   "dsid": "LIR001",
+   "name": "Liberia",
+   "multiplier": 48.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Nov/2025",
+   "exchangeRate": 180.757
+  },
+  "LS": {
+   "dsid": "LES001",
+   "name": "Lesotho",
+   "multiplier": 29.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Aug/2026",
+   "exchangeRate": 16.509
+  },
+  "LT": {
+   "dsid": "LIT001",
+   "name": "Lithuania",
+   "multiplier": 36.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 0.894
+  },
+  "LU": {
+   "dsid": "LUX001",
+   "name": "Luxembourg",
+   "multiplier": 45.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "LV": {
+   "dsid": "LAT001",
+   "name": "Latvia",
+   "multiplier": 41.6,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "LY": {
+   "dsid": "LIB001",
+   "name": "Libyan Arab Jamahiriya",
+   "multiplier": 32.6,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 6.408
+  },
+  "MA": {
+   "dsid": "MOR001",
+   "name": "Morocco",
+   "multiplier": 31.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 9.776
+  },
+  "MC": {
+   "dsid": "MNC001",
+   "name": "Monaco",
+   "multiplier": 50.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "MD": {
+   "dsid": "MOL001",
+   "name": "Moldova",
+   "multiplier": 33.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 17.85
+  },
+  "ME": {
+   "dsid": "MNE001",
+   "name": "Montenegro",
+   "multiplier": 24.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Sep/2026",
+   "exchangeRate": 0.894
+  },
+  "MG": {
+   "dsid": "MAG001",
+   "name": "Madagascar",
+   "multiplier": 29.2,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 4445.55
+  },
+  "MH": {
+   "dsid": "MAS001",
+   "name": "Marshall Islands",
+   "multiplier": 41.6,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1
+  },
+  "MK": {
+   "dsid": "MCD001",
+   "name": "Macedonia (fyrom)",
+   "multiplier": 29.6,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 54.823
+  },
+  "ML": {
+   "dsid": "MLI001",
+   "name": "Mali",
+   "multiplier": 46.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 586.199
+  },
+  "MM": {
+   "dsid": "MYA001",
+   "name": "Myanmar",
+   "multiplier": 33.8,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 4180
+  },
+  "MN": {
+   "dsid": "MON001",
+   "name": "Mongolia",
+   "multiplier": 34.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Mar/2026",
+   "exchangeRate": 3588
+  },
+  "MO": {
+   "dsid": "MAC001",
+   "name": "Macao, China (SAR)",
+   "multiplier": 46.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 8.083
+  },
+  "MR": {
+   "dsid": "MAU001",
+   "name": "Mauritania",
+   "multiplier": 31.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 39.883
+  },
+  "MT": {
+   "dsid": "MAT004",
+   "name": "Malta",
+   "multiplier": 32.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "MU": {
+   "dsid": "MAR003",
+   "name": "Mauritius",
+   "multiplier": 29,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 47.502
+  },
+  "MV": {
+   "dsid": "MDV001",
+   "name": "Maldives",
+   "multiplier": 37.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 15
+  },
+  "MW": {
+   "dsid": "MLW001",
+   "name": "Malawi",
+   "multiplier": 43.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1724
+  },
+  "MX": {
+   "dsid": "MEX001",
+   "name": "Mexico",
+   "multiplier": 54.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 18.389
+  },
+  "MY": {
+   "dsid": "MAL001",
+   "name": "Malaysia",
+   "multiplier": 50.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 4.084
+  },
+  "MZ": {
+   "dsid": "MOZ001",
+   "name": "Mozambique",
+   "multiplier": 30.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 63.595
+  },
+  "NA": {
+   "dsid": "NAM001",
+   "name": "Namibia",
+   "multiplier": 34.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 16.509
+  },
+  "NC": {
+   "dsid": "NCA001",
+   "name": "New Caledonia",
+   "multiplier": 36,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 106.642
+  },
+  "NE": {
+   "dsid": "NER001",
+   "name": "Niger",
+   "multiplier": 46.8,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 586.199
+  },
+  "NG": {
+   "dsid": "NIR075",
+   "name": "Nigeria",
+   "multiplier": 55.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1331.16
+  },
+  "NI": {
+   "dsid": "NIC001",
+   "name": "Nicaragua",
+   "multiplier": 30.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 36.367
+  },
+  "NL": {
+   "dsid": "NET003",
+   "name": "Netherlands",
+   "multiplier": 42.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "NO": {
+   "dsid": "NOR001",
+   "name": "Norway",
+   "multiplier": 52.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 9.532
+  },
+  "NP": {
+   "dsid": "NEP001",
+   "name": "Nepal",
+   "multiplier": 23.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Aug/2026",
+   "exchangeRate": 152.584
+  },
+  "NR": {
+   "dsid": "NRO001",
+   "name": "Naoero, Republic of",
+   "multiplier": 38.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Sep/2026",
+   "exchangeRate": 1.433
+  },
+  "NZ": {
+   "dsid": "NZE001",
+   "name": "New Zealand",
+   "multiplier": 38.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1.783
+  },
+  "OM": {
+   "dsid": "OMA001",
+   "name": "Oman",
+   "multiplier": 28,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 0.385
+  },
+  "PA": {
+   "dsid": "PAN001",
+   "name": "Panama",
+   "multiplier": 31.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Nov/2024",
+   "exchangeRate": 1
+  },
+  "PE": {
+   "dsid": "PER001",
+   "name": "Peru",
+   "multiplier": 33.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 3.44
+  },
+  "PG": {
+   "dsid": "PNG001",
+   "name": "Papua New Guinea",
+   "multiplier": 46.2,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 4.415
+  },
+  "PH": {
+   "dsid": "PHI001",
+   "name": "Philippines",
+   "multiplier": 27.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Sep/2026",
+   "exchangeRate": 62.792
+  },
+  "PK": {
+   "dsid": "PAK001",
+   "name": "Pakistan",
+   "multiplier": 34.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 277.013
+  },
+  "PL": {
+   "dsid": "POL005",
+   "name": "Poland",
+   "multiplier": 32.6,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 3.91
+  },
+  "PR": {
+   "dsid": "PUE001",
+   "name": "Puerto Rico",
+   "multiplier": 30.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1
+  },
+  "PS": {
+   "dsid": "OCT006",
+   "name": "West Bank & the Gaza Strip,The",
+   "multiplier": 61.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 3.07
+  },
+  "PT": {
+   "dsid": "POR001",
+   "name": "Portugal",
+   "multiplier": 30.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "PW": {
+   "dsid": "PAL001",
+   "name": "Palau",
+   "multiplier": 38.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Sep/2026",
+   "exchangeRate": 1
+  },
+  "PY": {
+   "dsid": "PAR001",
+   "name": "Paraguay",
+   "multiplier": 29.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 5697.5
+  },
+  "QA": {
+   "dsid": "QAT001",
+   "name": "Qatar",
+   "multiplier": 46,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 3.641
+  },
+  "RO": {
+   "dsid": "ROU001",
+   "name": "Romania",
+   "multiplier": 23,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 4.765
+  },
+  "RS": {
+   "dsid": "SRB001",
+   "name": "Serbia",
+   "multiplier": 29.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 104.84
+  },
+  "RU": {
+   "dsid": "RUS001",
+   "name": "Russian Federation, The",
+   "multiplier": 63.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 83.575
+  },
+  "RW": {
+   "dsid": "RWA001",
+   "name": "Rwanda",
+   "multiplier": 34.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1466.48
+  },
+  "SA": {
+   "dsid": "SAU001",
+   "name": "Saudi Arabia",
+   "multiplier": 49.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 3.755
+  },
+  "SB": {
+   "dsid": "SOI001",
+   "name": "Solomon Islands",
+   "multiplier": 48.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 7.955
+  },
+  "SC": {
+   "dsid": "SEY005",
+   "name": "Seychelles",
+   "multiplier": 34.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Aug/2026",
+   "exchangeRate": 13.876
+  },
+  "SD": {
+   "dsid": "SUD001",
+   "name": "Sudan",
+   "multiplier": 42.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 7800
+  },
+  "SE": {
+   "dsid": "SWE001",
+   "name": "Sweden",
+   "multiplier": 37.6,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 9.977
+  },
+  "SG": {
+   "dsid": "SIN001",
+   "name": "Singapore",
+   "multiplier": 66.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1.28
+  },
+  "SH": {
+   "dsid": "STH001",
+   "name": "Saint Helena",
+   "multiplier": 57.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 0.755
+  },
+  "SI": {
+   "dsid": "SVN005",
+   "name": "Slovenia",
+   "multiplier": 41.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "SK": {
+   "dsid": "SLO002",
+   "name": "Slovak Republic",
+   "multiplier": 35.8,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Oct/2026",
+   "exchangeRate": 0.894
+  },
+  "SL": {
+   "dsid": "SIL001",
+   "name": "Sierra Leone",
+   "multiplier": 46.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 24.22
+  },
+  "SN": {
+   "dsid": "SEN001",
+   "name": "Senegal",
+   "multiplier": 45.8,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 586.199
+  },
+  "SO": {
+   "dsid": "SOM001",
+   "name": "Somalia",
+   "multiplier": 42.2,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 24300
+  },
+  "SR": {
+   "dsid": "SUR001",
+   "name": "Suriname",
+   "multiplier": 32.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Mar/2026",
+   "exchangeRate": 37.36
+  },
+  "SS": {
+   "dsid": "SSD001",
+   "name": "South Sudan",
+   "multiplier": 42.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 5753.341
+  },
+  "ST": {
+   "dsid": "STP001",
+   "name": "Sao Tome and Principe",
+   "multiplier": 49.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 21.384
+  },
+  "SV": {
+   "dsid": "ELS001",
+   "name": "El Salvador",
+   "multiplier": 30.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jan/2026",
+   "exchangeRate": 1
+  },
+  "SX": {
+   "dsid": "SXM005",
+   "name": "Sint Maarten",
+   "multiplier": 47.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1.79
+  },
+  "SY": {
+   "dsid": "SYR001",
+   "name": "Syrian Arab Republic",
+   "multiplier": 30.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 122
+  },
+  "SZ": {
+   "dsid": "SWA001",
+   "name": "Eswatini",
+   "multiplier": 19.8,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 16.509
+  },
+  "TD": {
+   "dsid": "CHD001",
+   "name": "Chad",
+   "multiplier": 42.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 586.199
+  },
+  "TG": {
+   "dsid": "TOG001",
+   "name": "Togo",
+   "multiplier": 43.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 586.199
+  },
+  "TH": {
+   "dsid": "THA001",
+   "name": "Thailand",
+   "multiplier": 32.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 33.59
+  },
+  "TJ": {
+   "dsid": "TAJ001",
+   "name": "Tajikistan",
+   "multiplier": 34.4,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 9.181
+  },
+  "TL": {
+   "dsid": "TIM001",
+   "name": "Timor-Leste",
+   "multiplier": 39,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Nov/2025",
+   "exchangeRate": 1
+  },
+  "TM": {
+   "dsid": "TUK001",
+   "name": "Turkmenistan",
+   "multiplier": 74,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Nov/2025",
+   "exchangeRate": 3.5
+  },
+  "TN": {
+   "dsid": "TUN001",
+   "name": "Tunisia",
+   "multiplier": 24.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 3.002
+  },
+  "TO": {
+   "dsid": "TON001",
+   "name": "Tonga",
+   "multiplier": 38,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 2.334
+  },
+  "TR": {
+   "dsid": "TUR001",
+   "name": "Turkey",
+   "multiplier": 37,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 49.366
+  },
+  "TT": {
+   "dsid": "TRI001",
+   "name": "Trinidad/Tobago",
+   "multiplier": 35.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 6.762
+  },
+  "TV": {
+   "dsid": "TUV001",
+   "name": "Tuvalu",
+   "multiplier": 42.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1.433
+  },
+  "TZ": {
+   "dsid": "URT001",
+   "name": "Tanzania, U. Republic",
+   "multiplier": 32.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 2625
+  },
+  "UA": {
+   "dsid": "UKR001",
+   "name": "Ukraine",
+   "multiplier": 28.1,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 45.06
+  },
+  "UG": {
+   "dsid": "UGA001",
+   "name": "Uganda",
+   "multiplier": 34.6,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 4130
+  },
+  "US": {
+   "dsid": "USA001",
+   "name": "USA",
+   "multiplier": 54.6,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Feb/2026",
+   "exchangeRate": 1
+  },
+  "UY": {
+   "dsid": "URU001",
+   "name": "Uruguay",
+   "multiplier": 42.2,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 40.183
+  },
+  "UZ": {
+   "dsid": "UZB001",
+   "name": "Uzbekistan",
+   "multiplier": 36.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 11900.22
+  },
+  "VC": {
+   "dsid": "STV001",
+   "name": "St.Vincent-Grenadines",
+   "multiplier": 47.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 2.7
+  },
+  "VE": {
+   "dsid": "VEN001",
+   "name": "Venezuela",
+   "multiplier": 42.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Mar/2018",
+   "exchangeRate": 874.73
+  },
+  "VG": {
+   "dsid": "BVI004",
+   "name": "British Virgin Islands",
+   "multiplier": 45.7,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 1
+  },
+  "VN": {
+   "dsid": "VIE001",
+   "name": "Vietnam",
+   "multiplier": 24.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 25909
+  },
+  "VU": {
+   "dsid": "VAN001",
+   "name": "Vanuatu",
+   "multiplier": 45.2,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 120.1
+  },
+  "WS": {
+   "dsid": "SAM001",
+   "name": "Samoa",
+   "multiplier": 37.3,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 2.711
+  },
+  "YE": {
+   "dsid": "YEM001",
+   "name": "Yemen",
+   "multiplier": 21.9,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 527
+  },
+  "ZA": {
+   "dsid": "SAF001",
+   "name": "South Africa",
+   "multiplier": 28.5,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 16.509
+  },
+  "ZM": {
+   "dsid": "ZAM001",
+   "name": "Zambia",
+   "multiplier": 43,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 19.885
+  },
+  "ZW": {
+   "dsid": "ZIM001",
+   "name": "Zimbabwe",
+   "multiplier": 39,
+   "asOf": "1/Oct/2026",
+   "effective": "1/Jul/2026",
+   "exchangeRate": 25.729
+  }
+ }
+}

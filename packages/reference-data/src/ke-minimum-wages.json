@@ -1,0 +1,496 @@
+{
+ "meta": {
+  "country": "KE",
+  "source": "Regulation of Wages (General) (Amendment) Order, 2026, Legal Notice No. 108 (Kenya Gazette Supplement No. 160, 26 June 2026), made under section 46 of the Labour Institutions Act",
+  "attribution": "Source: Regulation of Wages (General) (Amendment) Order, 2026 (Legal Notice No. 108 of 2026), Republic of Kenya.",
+  "url": "https://kenyalaw.org/akn/ke/act/ln/2026/108/eng@2026-06-26",
+  "inForceFrom": "2026-05-01",
+  "currency": "KES",
+  "unit": "Basic minimum monthly wage, exclusive of housing allowance; daily and hourly rates inclusive of housing allowance",
+  "mapping": "ISCO-08 codes and career links are CareerProof Global's reading of the occupations named in the Schedule.",
+  "transcription": "Values read from the text layer of the official PDF supplied by the project owner; printed figures kept as published."
+ },
+ "rows": [
+  {
+   "no": 1,
+   "occupation": "General labourer, including cleaner, sweeper, gardener, children's ayah, house servant, day watchman, messenger",
+   "isco": [
+    "9112",
+    "9111",
+    "9214",
+    "5311",
+    "9621",
+    "5414"
+   ],
+   "careers": [],
+   "areas": [
+    {
+     "area": "Nairobi, Mombasa, Kisumu, Nakuru and Eldoret cities",
+     "monthly": 18047.4,
+     "daily": 868.44,
+     "hourly": 161.34
+    },
+    {
+     "area": "Former municipalities and town councils of Mavoko, Ruiru and Limuru",
+     "monthly": 16650.95,
+     "daily": 797.8,
+     "hourly": 147.45
+    },
+    {
+     "area": "All other areas",
+     "monthly": 9628.07,
+     "daily": 487.94,
+     "hourly": 90.17
+    }
+   ]
+  },
+  {
+   "no": 2,
+   "occupation": "Miner, stone cutter, turnboy, waiter, cook, logger, line cutter",
+   "isco": [
+    "8111",
+    "7113",
+    "5131",
+    "5120",
+    "6210"
+   ],
+   "careers": [
+    "chef"
+   ],
+   "areas": [
+    {
+     "area": "Nairobi, Mombasa, Kisumu, Nakuru and Eldoret cities",
+     "monthly": 19491.33,
+     "daily": 936.88,
+     "hourly": 175.46
+    },
+    {
+     "area": "Former municipalities and town councils of Mavoko, Ruiru and Limuru",
+     "monthly": 17046.83,
+     "daily": 828.55,
+     "hourly": 149.47
+    },
+    {
+     "area": "All other areas",
+     "monthly": 11124.42,
+     "daily": 549.91,
+     "hourly": 100.56
+    }
+   ]
+  },
+  {
+   "no": 3,
+   "occupation": "Night watchman",
+   "isco": [
+    "5414"
+   ],
+   "careers": [],
+   "areas": [
+    {
+     "area": "Nairobi, Mombasa, Kisumu, Nakuru and Eldoret cities",
+     "monthly": 20133.72,
+     "daily": 966.02,
+     "hourly": 181.64
+    },
+    {
+     "area": "Former municipalities and town councils of Mavoko, Ruiru and Limuru",
+     "monthly": 18665.88,
+     "daily": 900.31,
+     "hourly": 165.26
+    },
+    {
+     "area": "All other areas",
+     "monthly": 11483.43,
+     "daily": 554.07,
+     "hourly": 105.9
+    }
+   ]
+  },
+  {
+   "no": 4,
+   "occupation": "Machine attendant, sawmill sawyer, machine assistant, mass production machinist, shoe cutter, bakery worker, bakery assistant, tailor's assistant",
+   "isco": [
+    "8172",
+    "8153",
+    "8160",
+    "7536"
+   ],
+   "careers": [],
+   "areas": [
+    {
+     "area": "Nairobi, Mombasa, Kisumu, Nakuru and Eldoret cities",
+     "monthly": 20454.86,
+     "daily": 982.7,
+     "hourly": 188.47
+    },
+    {
+     "area": "Former municipalities and town councils of Mavoko, Ruiru and Limuru",
+     "monthly": 19034.56,
+     "daily": 920.44,
+     "hourly": 166.86
+    },
+    {
+     "area": "All other areas",
+     "monthly": 15427.97,
+     "daily": 745.15,
+     "hourly": 138.66
+    }
+   ]
+  },
+  {
+   "no": 5,
+   "occupation": "Machinist (made to measure), shoe upper preparer, chaplis maker, vehicle service worker (petrol and service stations), bakery plant hand, laundry operator, junior clerk, wheel tractor driver (light)",
+   "isco": [
+    "7536",
+    "8157",
+    "4110",
+    "8341"
+   ],
+   "careers": [],
+   "areas": [
+    {
+     "area": "Nairobi, Mombasa, Kisumu, Nakuru and Eldoret cities",
+     "monthly": 23350.21,
+     "daily": 1125.23,
+     "hourly": 209.54
+    },
+    {
+     "area": "Former municipalities and town councils of Mavoko, Ruiru and Limuru",
+     "monthly": 21844.12,
+     "daily": 1051.62,
+     "hourly": 175.65
+    },
+    {
+     "area": "All other areas",
+     "monthly": 17859.17,
+     "daily": 863.75,
+     "hourly": 161.34
+    }
+   ]
+  },
+  {
+   "no": 6,
+   "occupation": "Printing machine operator, bakery machine operator, plywood machine operator, sawmill dresser, shop assistant, machine tool operator, dough maker, table hand baker or confectioner, copy typist, driver (cars and light vans)",
+   "isco": [
+    "7322",
+    "5223",
+    "7223",
+    "7512",
+    "4131",
+    "8322"
+   ],
+   "careers": [],
+   "areas": [
+    {
+     "area": "Nairobi, Mombasa, Kisumu, Nakuru and Eldoret cities",
+     "monthly": 24358.73,
+     "daily": 1170.46,
+     "hourly": 219.28
+    },
+    {
+     "area": "Former municipalities and town councils of Mavoko, Ruiru and Limuru",
+     "monthly": 22481.83,
+     "daily": 1080.47,
+     "hourly": 199.98
+    },
+    {
+     "area": "All other areas",
+     "monthly": 18582.41,
+     "daily": 892.89,
+     "hourly": 165.14
+    }
+   ]
+  },
+  {
+   "no": 7,
+   "occupation": "Pattern designer (draughtsman), garment and dress cutter, single hand oven man, charge-hand baker, general clerk, telephone operator, receptionist, storekeeper",
+   "isco": [
+    "7532",
+    "4110",
+    "4223",
+    "4226",
+    "4321"
+   ],
+   "careers": [],
+   "areas": [
+    {
+     "area": "Nairobi, Mombasa, Kisumu, Nakuru and Eldoret cities",
+     "monthly": 27796.51,
+     "daily": 1336.43,
+     "hourly": 250.38
+    },
+    {
+     "area": "Former municipalities and town councils of Mavoko, Ruiru and Limuru",
+     "monthly": 25412.61,
+     "daily": 1222.22,
+     "hourly": 201.35
+    },
+    {
+     "area": "All other areas",
+     "monthly": 21668.18,
+     "daily": 1038.68,
+     "hourly": 194.58
+    }
+   ]
+  },
+  {
+   "no": 8,
+   "occupation": "Tailor, driver (medium sized vehicle)",
+   "isco": [
+    "7531",
+    "8332"
+   ],
+   "careers": [],
+   "areas": [
+    {
+     "area": "Nairobi, Mombasa, Kisumu, Nakuru and Eldoret cities",
+     "monthly": 30634.69,
+     "daily": 1474.32,
+     "hourly": 272.7
+    },
+    {
+     "area": "Former municipalities and town councils of Mavoko, Ruiru and Limuru",
+     "monthly": 28155.87,
+     "daily": 1356.02,
+     "hourly": 250.74
+    },
+    {
+     "area": "All other areas",
+     "monthly": 25105.72,
+     "daily": 1225.84,
+     "hourly": 225.03
+    }
+   ]
+  },
+  {
+   "no": 9,
+   "occupation": "Dyer, crawler tractor driver, salesman",
+   "isco": [
+    "8342",
+    "5243"
+   ],
+   "careers": [],
+   "areas": [
+    {
+     "area": "Nairobi, Mombasa, Kisumu, Nakuru and Eldoret cities",
+     "monthly": 33820.24,
+     "daily": 1621.95,
+     "hourly": 303.92
+    },
+    {
+     "area": "Former municipalities and town councils of Mavoko, Ruiru and Limuru",
+     "monthly": 31555.31,
+     "daily": 1518.43,
+     "hourly": 282.67
+    },
+    {
+     "area": "All other areas",
+     "monthly": 28479.38,
+     "daily": 1367.54,
+     "hourly": 251.09
+    }
+   ]
+  },
+  {
+   "no": 10,
+   "occupation": "Saw doctor, caretaker (buildings)",
+   "isco": [
+    "5153"
+   ],
+   "careers": [],
+   "areas": [
+    {
+     "area": "Nairobi, Mombasa, Kisumu, Nakuru and Eldoret cities",
+     "monthly": 37426.84,
+     "daily": 1802.29,
+     "hourly": 336.69
+    },
+    {
+     "area": "Former municipalities and town councils of Mavoko, Ruiru and Limuru",
+     "monthly": 34947.96,
+     "daily": 1682.74,
+     "hourly": 313.54
+    },
+    {
+     "area": "All other areas",
+     "monthly": 32556.94,
+     "daily": 1564.97,
+     "hourly": 291.1
+    }
+   ]
+  },
+  {
+   "no": 11,
+   "occupation": "Cashier, driver (heavy commercial vehicles), salesman driver",
+   "isco": [
+    "5230",
+    "8332"
+   ],
+   "careers": [],
+   "areas": [
+    {
+     "area": "Nairobi, Mombasa, Kisumu, Nakuru and Eldoret cities",
+     "monthly": 40724.23,
+     "daily": 1960.6,
+     "hourly": 366.96
+    },
+    {
+     "area": "Former municipalities and town councils of Mavoko, Ruiru and Limuru",
+     "monthly": 38323.71,
+     "daily": 1844.79,
+     "hourly": 346.42
+    },
+    {
+     "area": "All other areas",
+     "monthly": 35932.75,
+     "daily": 1727.26,
+     "hourly": 323.16
+    }
+   ]
+  },
+  {
+   "no": 12,
+   "occupation": "Ungraded artisan",
+   "isco": [
+    "7411",
+    "7126",
+    "7115",
+    "7212"
+   ],
+   "careers": [
+    "electrician",
+    "plumber",
+    "carpenter",
+    "welder"
+   ],
+   "areas": [
+    {
+     "area": "Nairobi, Mombasa, Kisumu, Nakuru and Eldoret cities",
+     "monthly": 24358.79,
+     "daily": 1171.35,
+     "hourly": 219.28
+    },
+    {
+     "area": "Former municipalities and town councils of Mavoko, Ruiru and Limuru",
+     "monthly": 22481.83,
+     "daily": 1080.47,
+     "hourly": 199.98
+    },
+    {
+     "area": "All other areas",
+     "monthly": 18582.77,
+     "daily": 892.89,
+     "hourly": 166.15
+    }
+   ]
+  },
+  {
+   "no": 13,
+   "occupation": "Artisan Grade III",
+   "isco": [
+    "7411",
+    "7126",
+    "7115",
+    "7212"
+   ],
+   "careers": [
+    "electrician",
+    "plumber",
+    "carpenter",
+    "welder"
+   ],
+   "areas": [
+    {
+     "area": "Nairobi, Mombasa, Kisumu, Nakuru and Eldoret cities",
+     "monthly": 30634.74,
+     "daily": 1474.32,
+     "hourly": 272.64
+    },
+    {
+     "area": "Former municipalities and town councils of Mavoko, Ruiru and Limuru",
+     "monthly": 28155.87,
+     "daily": 1356.02,
+     "hourly": 250.74
+    },
+    {
+     "area": "All other areas",
+     "monthly": 25058.23,
+     "daily": 1225.9,
+     "hourly": 225.15
+    }
+   ]
+  },
+  {
+   "no": 14,
+   "occupation": "Artisan Grade II",
+   "isco": [
+    "7411",
+    "7126",
+    "7115",
+    "7212"
+   ],
+   "careers": [
+    "electrician",
+    "plumber",
+    "carpenter",
+    "welder"
+   ],
+   "areas": [
+    {
+     "area": "Nairobi, Mombasa, Kisumu, Nakuru and Eldoret cities",
+     "monthly": 33087.44,
+     "daily": 1592.27,
+     "hourly": 303.92
+    },
+    {
+     "area": "Former municipalities and town councils of Mavoko, Ruiru and Limuru",
+     "monthly": 31555.31,
+     "daily": 1518.54,
+     "hourly": 282.67
+    },
+    {
+     "area": "All other areas",
+     "monthly": 28479.38,
+     "daily": 1367.06,
+     "hourly": 251.39
+    }
+   ]
+  },
+  {
+   "no": 15,
+   "occupation": "Artisan Grade I",
+   "isco": [
+    "7411",
+    "7126",
+    "7115",
+    "7212"
+   ],
+   "careers": [
+    "electrician",
+    "plumber",
+    "carpenter",
+    "welder"
+   ],
+   "areas": [
+    {
+     "area": "Nairobi, Mombasa, Kisumu, Nakuru and Eldoret cities",
+     "monthly": 40724.23,
+     "daily": 1960.6,
+     "hourly": 366.96
+    },
+    {
+     "area": "Former municipalities and town councils of Mavoko, Ruiru and Limuru",
+     "monthly": 38323.71,
+     "daily": 1844.79,
+     "hourly": 346.42
+    },
+    {
+     "area": "All other areas",
+     "monthly": 35932.86,
+     "daily": 1727.14,
+     "hourly": 323.27
+    }
+   ]
+  }
+ ]
+}

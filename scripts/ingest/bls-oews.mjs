@@ -20,7 +20,8 @@ const KEY = loadKey();
 const ALL = process.argv.includes("--all");
 const API = KEY ? "https://api.bls.gov/publicAPI/v2/timeseries/data/" : "https://api.bls.gov/publicAPI/v1/timeseries/data/";
 const PER = KEY ? 50 : 25;
-const DATATYPES = { "01": "employment", "13": "medianAnnual" };
+/** OEWS data types: employment, annual mean, and annual wage percentiles (10th, 25th, median, 75th, 90th). */
+const DATATYPES = { "01": "employment", "04": "meanAnnual", "11": "p10Annual", "12": "p25Annual", "13": "medianAnnual", "14": "p75Annual", "15": "p90Annual" };
 
 // Curated careers -> ISCO unit group -> O*NET-SOC (official crosswalk), first match per career.
 const xwalk = JSON.parse(readFileSync(join(SNAP, "esco-onet-crosswalk.json"), "utf8")).map;
@@ -37,7 +38,8 @@ if (ALL) {
 console.log(`Mode: ${ALL ? "all O*NET occupations" : "curated careers"}; API ${KEY ? "v2 (key loaded)" : "v1 (no key)"}`);
 
 const existing = existsSync(OUT) ? JSON.parse(readFileSync(OUT, "utf8")) : { bySoc: {} };
-const series = [...socs].filter((s) => !existing.bySoc[s]).flatMap((s) => Object.keys(DATATYPES).map((d) => `OEUN0000000000000${s}${d}`));
+// Fetch only the fields not yet stored (a field BLS suppresses is retried on the next run).
+const series = [...socs].flatMap((s) => Object.entries(DATATYPES).filter(([, f]) => existing.bySoc[s]?.[f] === undefined).map(([d]) => `OEUN0000000000000${s}${d}`));
 console.log(`${socs.size} SOC codes; ${series.length} series to fetch in ${Math.ceil(series.length / PER)} requests`);
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -47,6 +49,7 @@ for (let i = 0; i < series.length; i += PER) {
   const res = await fetch(API, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
   const json = await res.json();
   if (json.status !== "REQUEST_SUCCEEDED") { console.error("BLS:", json.status, json.message); break; }
+  if (i % (PER * 10) === 0) console.log(`  ${i}/${series.length}`);
   for (const s of json.Results.series) {
     const soc = s.seriesID.slice(17, 23);
     const field = DATATYPES[s.seriesID.slice(23)];
@@ -54,7 +57,9 @@ for (let i = 0; i < series.length; i += PER) {
     if (!d || !field) continue;
     const value = Number(String(d.value).replace(/,/g, ""));
     if (!Number.isFinite(value)) continue; // "-" or "*" = suppressed
-    (bySoc[soc] ??= { year: d.year })[field] = value;
+    const row = (bySoc[soc] ??= { year: d.year });
+    if (row.year !== d.year && field !== "employment") row.year = d.year;
+    row[field] = value;
   }
   await sleep(1000);
 }

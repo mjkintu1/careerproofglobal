@@ -5,7 +5,7 @@ import { careerGraphData } from "@careerproof/sample-data";
 import { ClusterIcon } from "@/components/cluster-icon";
 import { careerHref, findLocation, graph } from "@/lib/careers";
 import { LocalDetail } from "./career-sections";
-import { UsPayBenchmark } from "./provenance";
+import { CareerPayCard } from "./provenance";
 import { certificationsForCareer } from "@careerproof/reference-data";
 import { Award } from "lucide-react";
 import { LinkedInCard } from "./linkedin-links";
@@ -16,9 +16,7 @@ export function CareerSidebar({ location, local, current, isco }: { location: st
   return (
     <aside className="space-y-5" aria-label="More careers">
       <LocalDetail local={local} isco={isco} />
-      {(location === "global" || location === "us") && (
-        <UsPayBenchmark isco={isco} label={location === "us" ? "Pay in the United States" : "Pay benchmark: United States"} />
-      )}
+      <CareerPayCard career={current} title={graph.get(current)?.title ?? current} isco={isco} location={location} countryName={findLocation(location)?.name ?? null} />
       {certificationsForCareer(current).length > 0 && (
         <div className="card p-5">
           <h2 className="mb-3 flex items-center gap-2 font-display text-lg font-bold"><Award aria-hidden="true" size={18} className="text-teal-700" /> Certifications that help</h2>
@@ -52,7 +50,7 @@ export function CareerSidebar({ location, local, current, isco }: { location: st
       <div className="rounded-[var(--radius-card)] bg-navy-900 p-5 text-white">
         <p className="font-display text-lg font-bold">Confused about your future?</p>
         <p className="mt-1 text-sm text-slate-300">Find the quickest known route from where you are to where you want to be.</p>
-        <Link href={`/careers/${location}#path-finder-heading`} className="mt-4 inline-flex min-h-11 items-center gap-2 rounded-full bg-gold-400 px-4 font-bold text-ink no-underline hover:bg-white hover:text-ink">
+        <Link href={`/paths${location === "global" ? "" : `/${location}`}?from=start&to=${current}`} className="mt-4 inline-flex min-h-11 items-center gap-2 rounded-full bg-gold-400 px-4 font-bold text-ink no-underline hover:bg-white hover:text-ink">
           <Route aria-hidden="true" size={18} /> Plan my path
         </Link>
       </div>

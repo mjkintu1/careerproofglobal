@@ -17,6 +17,12 @@ interface Props {
   /** Hide the visible label (it stays available to screen readers). */
   hideLabel?: boolean;
   placeholder?: string;
+  /** What the options are, for the list label and "no match" text (default "country"). */
+  noun?: string;
+  /** Show option codes on the right of the list (default true). */
+  showCodes?: boolean;
+  /** Most options rendered at once; typing narrows the list (default: all). */
+  maxShown?: number;
   /** "dark" for navy hero bands. */
   tone?: "light" | "dark";
   /** "inline" puts the label beside the field so it lines up with other inputs in a row. */
@@ -34,7 +40,7 @@ export function matchesCountry(o: CountryOption, query: string) {
 }
 
 /** Searchable country picker (ARIA combobox). Matches on name or ISO code. */
-export function CountrySearch({ options, onSelect, current, label = "Country", hideLabel, placeholder, tone = "light", labelPosition = "above", className }: Props) {
+export function CountrySearch({ options, onSelect, current, label = "Country", hideLabel, placeholder, tone = "light", labelPosition = "above", className, noun = "country", showCodes = true, maxShown }: Props) {
   const id = useId();
   
   const [query, setQuery] = useState("");
@@ -45,10 +51,11 @@ export function CountrySearch({ options, onSelect, current, label = "Country", h
 
   const matches = useMemo(() => {
     const q = normCountry(query.trim());
-    if (!q) return options;
+    if (!q) return maxShown ? options.slice(0, maxShown) : options;
     const rank = (o: CountryOption) => (o.code.toLowerCase() === q ? 0 : normCountry(o.name).startsWith(q) ? 1 : 2);
-    return options.filter((o) => matchesCountry(o, q)).sort((a, b) => rank(a) - rank(b));
-  }, [options, query]);
+    const all = options.filter((o) => matchesCountry(o, q)).sort((a, b) => rank(a) - rank(b));
+    return maxShown ? all.slice(0, maxShown) : all;
+  }, [options, query, maxShown]);
 
   const show = open && matches.length > 0;
 
@@ -91,7 +98,7 @@ export function CountrySearch({ options, onSelect, current, label = "Country", h
             aria-activedescendant={show ? `${id}-opt-${active}` : undefined}
             autoComplete="off"
             spellCheck={false}
-            placeholder={placeholder ?? (currentName ? `${currentName} (type to change)` : "Search countries")}
+            placeholder={placeholder ?? (currentName ? `${currentName} (type to change)` : `Search ${noun === "country" ? "countries" : `${noun}s`}`)}
             value={query}
             onChange={(e) => { setQuery(e.target.value); setOpen(true); setActive(0); }}
             onFocus={() => setOpen(true)}
@@ -100,7 +107,7 @@ export function CountrySearch({ options, onSelect, current, label = "Country", h
             className="w-full min-w-0 bg-transparent text-ink outline-none placeholder:text-ink-muted"
           />
         </div>
-        <ul id={`${id}-list`} role="listbox" aria-label="Countries"
+        <ul id={`${id}-list`} role="listbox" aria-label={noun === "country" ? "Countries" : `${noun[0]!.toUpperCase()}${noun.slice(1)}s`}
           className={`card absolute inset-x-0 top-full z-30 mt-2 max-h-72 overflow-auto p-1 ${show ? "" : "hidden"}`}>
           {matches.map((m, i) => (
             <li key={m.code} id={`${id}-opt-${i}`} role="option" aria-selected={i === active}
@@ -108,12 +115,12 @@ export function CountrySearch({ options, onSelect, current, label = "Country", h
               onMouseEnter={() => setActive(i)}
               className={`flex cursor-pointer items-center justify-between gap-3 rounded-lg px-3 py-2 ${i === active ? "bg-teal-50 text-teal-800" : "text-ink"}`}>
               <span className="font-semibold">{m.name}</span>
-              {m.code === current ? <Check aria-label="Selected" size={16} className="text-teal-700" /> : <span className="text-xs uppercase text-ink-muted">{m.code === "global" ? "" : m.code}</span>}
+              {m.code === current ? <Check aria-label="Selected" size={16} className="text-teal-700" /> : showCodes ? <span className="text-xs uppercase text-ink-muted">{m.code === "global" ? "" : m.code}</span> : null}
             </li>
           ))}
         </ul>
         {open && query.trim() !== "" && matches.length === 0 && (
-          <p className="card absolute inset-x-0 top-full z-30 mt-2 px-4 py-3 text-sm text-ink-muted" role="status">No country matches that search.</p>
+          <p className="card absolute inset-x-0 top-full z-30 mt-2 px-4 py-3 text-sm text-ink-muted" role="status">No {noun} matches that search.</p>
         )}
       </div>
     </div>

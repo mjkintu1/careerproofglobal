@@ -5,7 +5,7 @@ import { Suspense } from "react";
 import { Container } from "@/components/container";
 import { PageBand } from "@/components/page-band";
 import { careerHref, clusterName, GLOBAL } from "@/lib/careers";
-import { iscedFieldLabel, importanceLabel, occupationsForSubject, onetEvidenceAttribution, subjectGroups } from "@careerproof/reference-data";
+import { curriculaForSubject, iscedFieldLabel, importanceLabel, occupationsForSubject, onetEvidenceAttribution, subjectGroups } from "@careerproof/reference-data";
 import { findSubject, subjects, type SubjectUse } from "@/lib/subjects";
 
 export function generateStaticParams() {
@@ -51,8 +51,10 @@ async function SubjectContent({ params }: Pick<PageProps<"/subjects/[slug]">, "p
             {s.isced.length ? s.isced.map((c) => <p key={c} className="font-semibold">{c} {iscedFieldLabel(c)}</p>) : <p className="text-ink-muted">Not classified yet</p>}
           </div>
           <div>
-            <p className="text-sm text-ink-muted">Exam names</p>
-            {Object.keys(s.exams).length ? Object.entries(s.exams).map(([k, v]) => <p key={k} className="font-semibold">{k === "UG-UACE" ? "Uganda (UACE)" : k}: {v.join(", ")}</p>) : <p className="text-ink-muted">Being added country by country</p>}
+            <p className="text-sm text-ink-muted">Offered in (<Link href="/curricula">curricula</Link>)</p>
+            {curriculaForSubject(s.slug).length ? curriculaForSubject(s.slug).map(({ curriculum: c, names }) => (
+              <p key={c.slug}><Link href={`/curricula/${c.slug}`} className="font-semibold">{c.name}</Link>: {names.map((n) => (n.code ? `${n.name} (${n.code})` : n.name)).join(", ")}</p>
+            )) : <p className="text-ink-muted">Being added country by country</p>}
           </div>
         </section>
         {needed.length > 0 && (

@@ -63,6 +63,7 @@ export default function AdmissionsPage() {
           <h2 id="recognition" className="flex items-center gap-2 text-2xl font-extrabold"><Globe2 aria-hidden="true" size={24} className="text-teal-700" /> Recognition across borders</h2>
           <p>The <strong>Global Convention on the Recognition of Qualifications concerning Higher Education</strong> was adopted by UNESCO in November 2019 and entered into force on 5 March 2023. It had 42 States Parties as of July 2026. It sets principles for fair, transparent and non-discriminatory recognition of qualifications, including recognition of refugees&apos; qualifications when documents are missing. Five UNESCO regional conventions complement it.</p>
           <p className="text-xs text-ink-muted">Source: <a href="https://www.unesco.org/en/higher-education/global-convention">UNESCO, Global Convention on Higher Education</a>.</p>
+          <p>Studied Cambridge, Pearson Edexcel, the IB or AP? See <Link href="/curricula">school curricula</Link> for how each is graded and <Link href="/curricula#recognition">how Uganda, Kenya, South Africa, Nigeria and the UK recognise foreign results</Link>.</p>
         </section>
         <section aria-labelledby="countries" className="space-y-4">
           <h2 id="countries" className="flex items-center gap-2 text-2xl font-extrabold"><GraduationCap aria-hidden="true" size={24} className="text-teal-700" /> Country by country</h2>

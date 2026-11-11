@@ -20,7 +20,7 @@
    "STEM programmes at Makerere publish separate female and male cut-offs; other programmes publish one figure.",
    "Rows that could not be read unambiguously from the PDFs were left out rather than guessed."
   ],
-  "skippedRows": 82
+  "skippedRows": 83
  },
  "threeYear": [
   {
@@ -2260,25 +2260,6 @@
     {
      "year": "2023/2024",
      "all": 39.3
-    }
-   ]
-  },
-  {
-   "university": "Lira University",
-   "programme": "Years KEP 3 Years i) Biological (Agriculture)",
-   "scheme": "government",
-   "cutoffs": [
-    {
-     "year": "2025/2026",
-     "all": 44.3
-    },
-    {
-     "year": "2024/2025",
-     "all": 43.6
-    },
-    {
-     "year": "2023/2024",
-     "all": 33.5
     }
    ]
   },

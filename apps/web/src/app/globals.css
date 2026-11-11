@@ -153,3 +153,18 @@ a:focus-visible {
   color: var(--color-ink);
   text-decoration: none;
 }
+
+/* CV builder preview and print: the same simple, single-column layout as the Word download. */
+.cv-doc { font-family: Calibri, Arial, sans-serif; font-size: 11pt; color: #111; line-height: 1.35; }
+.cv-doc h1 { font-size: 20pt; font-weight: 700; margin: 0; }
+.cv-doc h2 { font-size: 12.5pt; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; border-bottom: 1px solid #999; margin: 14pt 0 4pt; }
+.cv-doc h3 { font-size: 11pt; font-weight: 700; margin: 8pt 0 0; }
+.cv-doc p { margin: 2pt 0; }
+.cv-doc .headline { font-size: 12pt; }
+.cv-doc .contact, .cv-doc .when { color: #444; font-size: 10pt; }
+.cv-doc ul { list-style: disc; margin: 2pt 0 0 16pt; padding: 0; }
+@media print {
+  body:has(#cv-document) * { visibility: hidden; }
+  body:has(#cv-document) #cv-document, body:has(#cv-document) #cv-document * { visibility: visible; }
+  body:has(#cv-document) #cv-document { position: absolute; inset: 0 auto auto 0; width: 100%; border: 0; box-shadow: none; padding: 0; }
+}

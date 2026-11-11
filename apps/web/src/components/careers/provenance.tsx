@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { BookOpenCheck, DollarSign } from "lucide-react";
-import { attributions, iscoGroup, usPayForIsco } from "@careerproof/reference-data";
+import { attributions, careerEvidence, iscoGroup, payBenchmarks, ukPayBenchmark, usPayBenchmark, type PayBenchmark } from "@careerproof/reference-data";
+import { PayBenchmarks } from "@/components/pay/pay-benchmarks";
 
 /** Small label saying where a section's content comes from. */
 export function Provenance({ children }: { children: React.ReactNode }) {
@@ -27,19 +28,24 @@ export function OfficialDefinition({ isco }: { isco: string | null }) {
   );
 }
 
-/** US pay benchmark from BLS OEWS (public domain), linked via the O*NET crosswalk. */
-export function UsPayBenchmark({ isco, label }: { isco: string | null; label: string }) {
-  const pay = usPayForIsco(isco);
-  if (!pay?.medianAnnual) return null;
+/**
+ * Pay for one career: the location's own benchmarks (most specific first), or for the
+ * global page, the US and UK ranges as clearly labelled international references.
+ */
+export function CareerPayCard({ career, title, isco, location, countryName }: { career: string; title: string; isco: string | null; location: string; countryName: string | null }) {
+  const soc = careerEvidence(career, title)?.onet?.code ?? null;
+  const global = location === "global";
+  const items = global
+    ? [usPayBenchmark({ soc, isco, title }), ukPayBenchmark(isco)].filter((b): b is PayBenchmark => Boolean(b))
+    : payBenchmarks({ country: location, isco, soc, career, title });
+  if (!items.length) return null;
   return (
-    <div className="card space-y-2 p-5">
-      <p className="flex items-center gap-2 font-display font-bold"><DollarSign aria-hidden="true" size={18} className="text-teal-700" /> {label}</p>
-      <p>
-        <span className="font-display text-2xl font-extrabold text-teal-800">US${pay.medianAnnual.toLocaleString("en")}</span>{" "}
-        <span className="text-sm text-ink-muted">median annual pay ({pay.year})</span>
-      </p>
-      {pay.employment && <p className="text-sm text-ink-muted">{pay.employment.toLocaleString("en")} people employed in the United States</p>}
-      <Provenance>SOC {pay.soc.slice(0, 2)}-{pay.soc.slice(2)}. <a href={pay.sourceUrl}>{pay.attribution}</a></Provenance>
-    </div>
+    <section aria-labelledby="pay-heading" className="card space-y-3 p-5">
+      <h2 id="pay-heading" className="flex items-center gap-2 font-display text-lg font-bold">
+        <DollarSign aria-hidden="true" size={18} className="text-teal-700" /> {global ? "Pay benchmarks (US and UK)" : `Pay in ${countryName ?? location.toUpperCase()}`}
+      </h2>
+      {global && <p className="text-sm text-ink-muted">Pick a country for local figures. These are the two countries with official pay ranges by occupation.</p>}
+      <PayBenchmarks items={items} />
+    </section>
   );
 }

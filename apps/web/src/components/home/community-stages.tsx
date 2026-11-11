@@ -33,7 +33,7 @@ export function Community() {
 const stages = [
   { Icon: School, title: "At school", body: "Choose subjects that keep your dream careers open, then the courses that lead to them.", href: "/subjects", cta: "Explore subjects" },
   { Icon: GraduationCap, title: "After school", body: "Compare every way in: degrees, diplomas, apprenticeships and certifications.", href: `/careers/${GLOBAL}`, cta: "Explore careers" },
-  { Icon: Briefcase, title: "At work", body: "See where your career can lead next, including moves into a new field.", href: `/careers/${GLOBAL}#path-finder-heading`, cta: "Find a path" },
+  { Icon: Briefcase, title: "At work", body: "See where your career can lead next, including moves into a new field.", href: "/paths", cta: "Find a path" },
 ];
 
 export function Stages() {

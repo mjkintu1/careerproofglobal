@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { BrandLogo } from "./brand-logo";
 import { Container } from "./container";
-import { audiences, mainNav } from "@/lib/site-nav";
+import { audiences, legalLinks, mainNav } from "@/lib/site-nav";
 
 export function SiteFooter() {
   const columns = [
@@ -30,7 +30,16 @@ export function SiteFooter() {
         ))}
       </Container>
       <div className="border-t border-navy-800">
-        <Container className="py-4 text-sm">© 2026 CareerProof Global</Container>
+        <Container className="flex flex-col gap-3 py-4 text-sm sm:flex-row sm:items-center sm:justify-between">
+          <span>© 2026 CareerProof Global</span>
+          <nav aria-label="Footer: legal and company">
+            <ul className="flex flex-wrap gap-x-5 gap-y-1">
+              {legalLinks.filter((l) => l.ready).map((l) => (
+                <li key={l.href}><Link href={l.href} className="text-slate-300 hover:text-white">{l.label}</Link></li>
+              ))}
+            </ul>
+          </nav>
+        </Container>
       </div>
     </footer>
   );

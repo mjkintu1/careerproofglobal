@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 import "./globals.css";
+import { OrganizationJsonLd } from "@/components/organization-jsonld";
 
 const display = Plus_Jakarta_Sans({
   variable: "--font-display-face",
@@ -40,6 +41,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${inter.variable} ${display.variable}`}>
       <body className="flex min-h-screen flex-col">
+        <OrganizationJsonLd />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:left-2 focus:top-2 focus:z-50 focus:rounded-lg focus:p-2"

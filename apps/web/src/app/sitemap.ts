@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { certifications, educationStructure, escoOccupations, iscedMapping, iscoGroups, institutionCounts } from "@careerproof/reference-data";
+import { certifications, curricula, educationStructure, escoOccupations, iscedMapping, iscoGroups, institutionCounts } from "@careerproof/reference-data";
 import { careerGraphData } from "@careerproof/sample-data";
 import { canonicalLocation, GLOBAL, locationCodes } from "@/lib/careers";
 import { SITE_URL } from "@/lib/site";
@@ -18,6 +18,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url("/institutions", 0.8),
     url("/admissions", 0.8),
     url("/admissions/calculators", 0.8),
+    url("/paths", 0.9),
+    url("/pay-coverage", 0.6),
+    url("/disclaimer", 0.3),
+    url("/privacy", 0.3),
+    url("/terms", 0.3),
+    url("/cookies", 0.3),
+    url("/faqs", 0.6),
+    url("/curricula", 0.8),
+    url("/cv-builder", 0.8),
+    url("/negotiate-salary", 0.8),
+    url("/job-market", 0.7),
+    url("/data-licences", 0.3),
     url("/admissions/calculators/ucas-tariff", 0.7),
     url("/admissions/uganda", 0.8),
     url("/admissions/kenya", 0.7),
@@ -32,6 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...escoOccupations.map((o) => url(`/occupations/${o.code}`, 0.5)),
     ...Object.keys(institutionCounts).map((cc) => url(`/institutions/${cc.toLowerCase()}`, 0.5)),
     ...certifications.map((c) => url(`/certifications/${c.slug}`, 0.6)),
+    ...curricula.map((c) => url(`/curricula/${c.slug}`, 0.7)),
     ...careerGraphData.locations
       .filter((l) => !["UG", "KE"].includes(l.code) && (iscedMapping(l.code) || educationStructure(l.code)))
       .map((l) => url(`/admissions/${l.code.toLowerCase()}`, 0.6)),

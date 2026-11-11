@@ -7,7 +7,7 @@ import { Container } from "@/components/container";
 import { Community, Stages } from "@/components/home/community-stages";
 import { Fields, Popular } from "@/components/home/fields-popular";
 import { Hero } from "@/components/home/hero";
-import { GLOBAL } from "@/lib/careers";
+
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -52,7 +52,7 @@ export default function HomePage() {
               <h2 id="cta-heading" className="text-2xl font-extrabold sm:text-3xl">Don&apos;t let your career dreams wait</h2>
               <p className="mt-2 text-teal-50">Pick where you are and where you want to be. We&apos;ll show the quickest known path.</p>
             </div>
-            <Link href={`/careers/${GLOBAL}#path-finder-heading`}
+            <Link href="/paths"
               className="inline-flex min-h-12 items-center gap-2 rounded-full bg-gold-400 px-6 font-bold text-ink no-underline hover:bg-white hover:text-ink">
               <Route aria-hidden="true" size={20} /> Plan my path
             </Link>

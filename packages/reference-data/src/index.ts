@@ -269,3 +269,15 @@ export const professionalsMeta = professionalsSnap.meta;
 export const professionalsFor = (career: string): Professional[] =>
   (professionalsSnap.professionals as Professional[]).filter((p) => p.career === career && p.consentRecordedAt && p.linkedin.startsWith("https://www.linkedin.com/in/"));
 export * from "./subjects";
+export * from "./earnings";
+export * from "./pay";
+
+import sourcesJson from "./data-sources.json";
+export interface DataSource {
+  slug: string; name: string; publisher: string; url: string | null; licence: string; licence_url: string | null;
+  access_method: string; update_frequency: string; status: "active" | "planned" | "retired"; attribution: string; notes?: string;
+}
+/** Every data source the site uses, plans to use, or reviewed and dropped, with licence and attribution. */
+export const dataSources = sourcesJson as unknown as DataSource[];
+export * from "./curricula";
+export * from "./pay-range";

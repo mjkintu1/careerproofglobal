@@ -10,15 +10,16 @@
     "typecheck": "next typegen && tsc --noEmit"
   },
   "dependencies": {
+    "@careerproof/career-graph": "*",
     "@careerproof/db": "*",
+    "@careerproof/reference-data": "*",
     "@careerproof/rules-engine": "*",
     "@careerproof/sample-data": "*",
+    "@xyflow/react": "^12.12.1",
     "lucide-react": "^1.70.0",
     "next": "16.4.5",
     "react": "19.3.0",
-    "react-dom": "19.3.0",
-    "@careerproof/career-graph": "*",
-    "@careerproof/reference-data": "*"
+    "react-dom": "19.3.0"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",

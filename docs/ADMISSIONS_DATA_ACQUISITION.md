@@ -16,7 +16,7 @@ Live data that does exist (application portals, results) is behind logins and be
 |---|---|---|---|---|
 | Weighting rules | Ministry of Education & Sports, *Notes to Schools* (via Makerere) | PDF, yearly (Oct) | Downloaded; rules transcribed and tested | Yearly |
 | Programme subject requirements | Same PDF, per university | PDF tables | Hand-transcribed (13 Makerere programmes so far) | Yearly |
-| Cut-off points, 3 years | Same PDF, "Other information" tables | PDF tables | Parsed (`scripts/ingest/ug_cutoffs_build.py`); 114 rows from 6 universities; 82 ambiguous rows skipped, not guessed | Yearly |
+| Cut-off points, 3 years | Same PDF, "Other information" tables | PDF tables | Parsed (`scripts/ingest/ug_cutoffs_build.py`); 113 rows from 6 universities; 83 ambiguous rows skipped, not guessed | Yearly |
 | Latest cut-offs | Makerere Academic Registrar (government and private lists) | PDF, Apr and Jul | Parsed, cross-checked against the Notes (values match) | Each admission round |
 | Accredited institutions and programmes | NCHE (unche.or.ug) | Data embedded in the web page | Parsed (`scripts/ingest/nche_build.py`): 156 institutions, 3,736 programmes with accreditation and expiry dates | Monthly check |
 

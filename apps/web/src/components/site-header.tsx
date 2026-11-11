@@ -20,7 +20,7 @@ export function SiteHeader() {
           </Link>
           <div className="flex items-center gap-2">
             <MainNav />
-            <Link href="/careers/global#path-finder-heading" className="btn-primary hidden sm:inline-flex">
+            <Link href="/paths" className="btn-primary hidden sm:inline-flex">
               <Route aria-hidden="true" size={18} /> Plan my path
             </Link>
           </div>

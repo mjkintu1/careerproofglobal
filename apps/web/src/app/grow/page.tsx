@@ -91,7 +91,7 @@ export default function GrowPage() {
             <h2 id="next" className="text-lg font-bold">Certifications that move careers</h2>
             <p className="text-ink-muted">How to judge one, and issuer-checked facts on ACCA, CFA, PMP and more.</p>
           </Link>
-          <Link href="/careers/global#path-finder-heading" className="card card-link p-5 text-ink no-underline hover:text-ink">
+          <Link href="/paths" className="card card-link p-5 text-ink no-underline hover:text-ink">
             <h2 className="text-lg font-bold">Plan your next move</h2>
             <p className="text-ink-muted">Find the quickest known route from your career today to the one you want.</p>
           </Link>

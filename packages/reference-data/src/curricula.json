@@ -1,0 +1,776 @@
+{
+  "meta": {
+    "checkedAt": "2026-11-11",
+    "method": "Facts come only from the awarding body's own pages and documents, or from official admission and recognition bodies, read on the date shown and written in our own words. Subjects are mapped to our global subject structure only where the match is clear. Where an official page could not be reached or did not state a fact, we leave it out and say so."
+  },
+  "curricula": [
+    {
+      "slug": "cambridge-igcse",
+      "name": "Cambridge IGCSE",
+      "body": "Cambridge International (Cambridge University Press & Assessment)",
+      "family": "international",
+      "level": "Upper secondary (ISCED 3 entry stage)",
+      "ages": "14 to 16",
+      "length": "Typically two years",
+      "grading": "Eight grades, A* (highest) to G. Some syllabuses are also offered graded 9 (highest) to 1, in Cambridge's administrative zone 3 only.",
+      "series": "June and November; results in August and January.",
+      "facts": [
+        {
+          "text": "Over 70 subjects can be taken in any combination; assessment can include written, oral, coursework and practical work.",
+          "source": "cambridge-international"
+        },
+        {
+          "text": "Cambridge says its standards are aligned with the GCSE taken in England.",
+          "source": "cambridge-international"
+        },
+        {
+          "text": "First examined in June 1988.",
+          "source": "cambridge-international"
+        }
+      ],
+      "universityUse": [],
+      "subjects": [
+        {
+          "name": "Accounting",
+          "code": "0452",
+          "subject": "accounting"
+        },
+        {
+          "name": "Agriculture",
+          "code": "0600",
+          "subject": "agriculture"
+        },
+        {
+          "name": "Art & Design",
+          "code": "0400",
+          "subject": "fine-art"
+        },
+        {
+          "name": "Biology",
+          "code": "0610",
+          "subject": "biology"
+        },
+        {
+          "name": "Business Studies",
+          "code": "0450",
+          "subject": "business-studies"
+        },
+        {
+          "name": "Chemistry",
+          "code": "0620",
+          "subject": "chemistry"
+        },
+        {
+          "name": "Computer Science",
+          "code": "0478",
+          "subject": "computer-studies"
+        },
+        {
+          "name": "Design & Technology",
+          "code": "0445",
+          "subject": "design-and-technology"
+        },
+        {
+          "name": "Drama",
+          "code": "0411",
+          "subject": "drama"
+        },
+        {
+          "name": "Economics",
+          "code": "0455",
+          "subject": "economics"
+        },
+        {
+          "name": "English - First Language",
+          "code": "0500",
+          "subject": "english"
+        },
+        {
+          "name": "English - Literature in English",
+          "code": "0475",
+          "subject": "literature-in-english"
+        },
+        {
+          "name": "Enterprise",
+          "code": "0454",
+          "subject": "entrepreneurship"
+        },
+        {
+          "name": "Environmental Management",
+          "code": "0680",
+          "subject": "environmental-science"
+        },
+        {
+          "name": "Food & Nutrition",
+          "code": "0648",
+          "subject": "foods-and-nutrition"
+        },
+        {
+          "name": "French - Foreign Language",
+          "code": "0520",
+          "subject": "foreign-language"
+        },
+        {
+          "name": "Geography",
+          "code": "0460",
+          "subject": "geography"
+        },
+        {
+          "name": "History",
+          "code": "0470",
+          "subject": "history"
+        },
+        {
+          "name": "Information and Communication Technology",
+          "code": "0417",
+          "subject": "computer-studies"
+        },
+        {
+          "name": "Mathematics",
+          "code": "0580",
+          "subject": "mathematics"
+        },
+        {
+          "name": "Mathematics - Additional",
+          "code": "0606",
+          "subject": "mathematics"
+        },
+        {
+          "name": "Music",
+          "code": "0410",
+          "subject": "music"
+        },
+        {
+          "name": "Physical Education",
+          "code": "0413",
+          "subject": "physical-education"
+        },
+        {
+          "name": "Physics",
+          "code": "0625",
+          "subject": "physics"
+        },
+        {
+          "name": "Psychology",
+          "code": "0266",
+          "subject": "psychology"
+        },
+        {
+          "name": "Religious Studies",
+          "code": "0490",
+          "subject": "divinity"
+        },
+        {
+          "name": "Sociology",
+          "code": "0495",
+          "subject": "sociology"
+        },
+        {
+          "name": "Statistics",
+          "code": "0479",
+          "subject": "statistics"
+        }
+      ],
+      "subjectsNote": "A selection of the A*-G syllabuses, with Cambridge's syllabus codes. The full list, including languages and 9-1 versions, is on Cambridge's subject page.",
+      "url": "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-upper-secondary/cambridge-igcse/",
+      "next": [
+        "cambridge-as-a-level",
+        "pearson-international-a-level",
+        "ib-diploma"
+      ],
+      "guidance": "IGCSE results are usually not enough on their own for university entry; universities look at the qualification taken after it (such as AS & A Levels), and use IGCSE grades for specific requirements, for example a minimum grade in English or Mathematics."
+    },
+    {
+      "slug": "cambridge-as-a-level",
+      "name": "Cambridge International AS & A Level",
+      "body": "Cambridge International (Cambridge University Press & Assessment)",
+      "family": "international",
+      "level": "Upper secondary, final stage (university entry)",
+      "ages": "Typically 16 to 19",
+      "length": "A Level typically two years; AS Level typically one year",
+      "grading": "A Level: A* (highest) to E. AS Level: A to E (no A*). Each subject is graded separately.",
+      "series": "June and November; results in August and January.",
+      "facts": [
+        {
+          "text": "Schools choose from 55 subjects, in almost any combination.",
+          "source": "cambridge-international"
+        },
+        {
+          "text": "An AS Level has half the content of the matching A Level. It can be a qualification on its own or the first half of the A Level; AS marks can be carried forward to the full A Level.",
+          "source": "cambridge-international"
+        }
+      ],
+      "universityUse": [
+        {
+          "text": "Cambridge International AS & A Levels are not on the UCAS Tariff, but Cambridge states that UK universities accept them grade for grade as equivalent to UK A Levels. Many UK courses make offers in grades rather than Tariff points.",
+          "source": "cambridge-international"
+        },
+        {
+          "text": "In the United States, Cambridge lists over 200 university statements recognising AS Levels, many with course-credit policies; the most competitive universities expect at least three A Levels.",
+          "source": "cambridge-international"
+        },
+        {
+          "text": "In Canada, many universities treat two AS Level passes as equal to one A Level.",
+          "source": "cambridge-international"
+        },
+        {
+          "text": "In South Africa, students with Cambridge qualifications need a certificate of exemption from the Universities South Africa Matriculation Board for first-degree study.",
+          "source": "usaf-matriculation-board"
+        }
+      ],
+      "subjects": [
+        {
+          "name": "Accounting",
+          "code": "9706",
+          "subject": "accounting"
+        },
+        {
+          "name": "Art & Design",
+          "code": "9479",
+          "subject": "fine-art"
+        },
+        {
+          "name": "Biology",
+          "code": "9700",
+          "subject": "biology"
+        },
+        {
+          "name": "Business",
+          "code": "9609",
+          "subject": "business-studies"
+        },
+        {
+          "name": "Chemistry",
+          "code": "9701",
+          "subject": "chemistry"
+        },
+        {
+          "name": "Computer Science",
+          "code": "9618",
+          "subject": "computer-studies"
+        },
+        {
+          "name": "Design & Technology",
+          "code": "9705",
+          "subject": "design-and-technology"
+        },
+        {
+          "name": "Drama",
+          "code": "9482",
+          "subject": "drama"
+        },
+        {
+          "name": "Economics",
+          "code": "9708",
+          "subject": "economics"
+        },
+        {
+          "name": "English Language",
+          "code": "9093",
+          "subject": "english"
+        },
+        {
+          "name": "English General Paper (AS Level only)",
+          "code": "8021",
+          "subject": "english"
+        },
+        {
+          "name": "English - Literature",
+          "code": "9695",
+          "subject": "literature-in-english"
+        },
+        {
+          "name": "Environmental Management (AS Level only)",
+          "code": "8291",
+          "subject": "environmental-science"
+        },
+        {
+          "name": "French Language (AS Level only)",
+          "code": "8028",
+          "subject": "foreign-language"
+        },
+        {
+          "name": "Geography",
+          "code": "9696",
+          "subject": "geography"
+        },
+        {
+          "name": "History",
+          "code": "9489",
+          "subject": "history"
+        },
+        {
+          "name": "Information Technology",
+          "code": "9626",
+          "subject": "computer-studies"
+        },
+        {
+          "name": "Islamic Studies",
+          "code": "9488",
+          "subject": "divinity"
+        },
+        {
+          "name": "Biblical Studies",
+          "code": "9484",
+          "subject": "divinity"
+        },
+        {
+          "name": "Mathematics",
+          "code": "9709",
+          "subject": "mathematics"
+        },
+        {
+          "name": "Mathematics - Further",
+          "code": "9231",
+          "subject": "mathematics"
+        },
+        {
+          "name": "Media Studies",
+          "code": "9607",
+          "subject": "media-studies"
+        },
+        {
+          "name": "Music",
+          "code": "9483",
+          "subject": "music"
+        },
+        {
+          "name": "Physics",
+          "code": "9702",
+          "subject": "physics"
+        },
+        {
+          "name": "Psychology",
+          "code": "9990",
+          "subject": "psychology"
+        },
+        {
+          "name": "Sociology",
+          "code": "9699",
+          "subject": "sociology"
+        },
+        {
+          "name": "Sport & Physical Education (AS Level only)",
+          "code": "8386",
+          "subject": "physical-education"
+        },
+        {
+          "name": "US Government & Politics",
+          "code": "8293",
+          "subject": "government-and-politics"
+        }
+      ],
+      "subjectsNote": "A selection, with Cambridge's syllabus codes. Law, Thinking Skills, Global Perspectives & Research, Marine Science, Travel & Tourism and many languages are also offered.",
+      "url": "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-advanced/cambridge-international-as-and-a-levels/",
+      "calculator": {
+        "href": "/admissions/calculators/ucas-tariff",
+        "label": "UCAS Tariff calculator (UK A Level values, for comparison)"
+      },
+      "guidance": "If you take Cambridge A Levels outside the UK, check how your own country's admissions body or recognition body converts them before you apply; in Uganda that is UNEB's equating service."
+    },
+    {
+      "slug": "pearson-international-gcse",
+      "name": "Pearson Edexcel International GCSE",
+      "body": "Pearson Edexcel",
+      "family": "international",
+      "level": "Upper secondary (ISCED 3 entry stage)",
+      "ages": null,
+      "length": null,
+      "grading": "Graded 9 (highest) to 1 for the current (9-1) specifications.",
+      "series": "May-June (summer) and November.",
+      "facts": [
+        {
+          "text": "Designed for international learners; many subjects can be taken with linear or modular assessment.",
+          "source": "pearson-edexcel-international"
+        }
+      ],
+      "universityUse": [],
+      "subjects": [],
+      "url": "https://qualifications.pearson.com/en/qualifications/edexcel-international-gcses.html",
+      "next": [
+        "pearson-international-a-level",
+        "cambridge-as-a-level",
+        "ib-diploma"
+      ],
+      "guidance": null
+    },
+    {
+      "slug": "pearson-international-a-level",
+      "name": "Pearson Edexcel International AS and A Level (IAL)",
+      "body": "Pearson Edexcel",
+      "family": "international",
+      "level": "Upper secondary, final stage (university entry)",
+      "ages": null,
+      "length": null,
+      "grading": "International A Level: A* (highest) to E. International AS: A to E. Below E is unclassified (U).",
+      "series": "January, May-June (summer) and October; some units are only offered in some series.",
+      "facts": [
+        {
+          "text": "Available in 21 subjects, with a modular structure: units can be taken and resat in different exam series.",
+          "source": "pearson-edexcel-international"
+        },
+        {
+          "text": "The International AS can be a qualification on its own, and its result can count towards the full International A Level.",
+          "source": "pearson-edexcel-international"
+        }
+      ],
+      "universityUse": [
+        {
+          "text": "Pearson states that International A Levels are benchmarked grade for grade against UK A Levels.",
+          "source": "pearson-edexcel-international"
+        }
+      ],
+      "subjects": [],
+      "url": "https://qualifications.pearson.com/en/qualifications/edexcel-international-advanced-levels.html",
+      "guidance": null
+    },
+    {
+      "slug": "ib-diploma",
+      "name": "International Baccalaureate Diploma Programme",
+      "body": "International Baccalaureate Organization (IBO)",
+      "family": "international",
+      "level": "Upper secondary, final stage (university entry)",
+      "ages": null,
+      "length": null,
+      "grading": "Higher Level and Standard Level subjects are graded 7 (highest) to 1. The Extended Essay and Theory of Knowledge are graded A to E.",
+      "series": null,
+      "facts": [
+        {
+          "text": "The Diploma combines subjects at Higher Level and Standard Level with an Extended Essay, Theory of Knowledge, and Creativity, Activity, Service (CAS).",
+          "source": "ucas-tariff"
+        }
+      ],
+      "universityUse": [
+        {
+          "text": "In the UCAS Tariff the Diploma as a whole has no points; its Higher Level, Standard Level, Extended Essay and Theory of Knowledge components do. CAS has none.",
+          "source": "ucas-tariff"
+        }
+      ],
+      "subjects": [],
+      "url": "https://www.ibo.org/programmes/diploma-programme/",
+      "sourceNote": "The IBO website refused automated access when we checked it, so these facts come from UCAS's Tariff tables. See the IBO website for the full programme.",
+      "calculator": {
+        "href": "/admissions/calculators/ucas-tariff",
+        "label": "UCAS Tariff calculator (includes IB components)"
+      },
+      "guidance": null
+    },
+    {
+      "slug": "us-ap-sat",
+      "name": "US high school: Advanced Placement (AP) and the SAT",
+      "body": "College Board",
+      "family": "international",
+      "level": "Upper secondary (alongside a US high school diploma)",
+      "ages": null,
+      "length": null,
+      "grading": "AP exams: 1 to 5. SAT: total 400 to 1600, the sum of two section scores (Reading and Writing; Math), each 200 to 800.",
+      "series": "AP exams are held each May (2027: 3 to 7 and 10 to 14 May).",
+      "facts": [
+        {
+          "text": "The SAT has two sections: Reading and Writing (64 minutes) and Math (70 minutes), 2 hours 14 minutes in total. It is adaptive: each section has two modules, and the second gets harder or easier depending on the first.",
+          "source": "college-board-ap-sat"
+        }
+      ],
+      "universityUse": [
+        {
+          "text": "Many US colleges give credit or advanced placement for AP scores of 3 and above, but each college sets its own policy.",
+          "source": "college-board-ap-sat"
+        }
+      ],
+      "subjects": [],
+      "url": "https://apstudents.collegeboard.org/about-ap-scores",
+      "guidance": null
+    },
+    {
+      "slug": "uganda-uce-uace",
+      "name": "Uganda: UCE and UACE",
+      "body": "Uganda National Examinations Board (UNEB)",
+      "family": "national",
+      "countries": [
+        "UG"
+      ],
+      "level": "Lower secondary (UCE) and upper secondary (UACE)",
+      "ages": null,
+      "length": null,
+      "grading": "UACE principal subjects: A, B, C, D, E, O, F (worth 6 to 0 weighted points for public university entry). Subsidiary subjects such as General Paper count 1 point for a distinction or credit.",
+      "series": null,
+      "facts": [
+        {
+          "text": "UNEB sets the Uganda Certificate of Education (UCE) and Uganda Advanced Certificate of Education (UACE). The new lower secondary curriculum (competency-based) is examined at UCE, with UNEB publishing separate UCE timetables for it from 2024.",
+          "source": "uneb"
+        },
+        {
+          "text": "For public university entry, A-level subjects are weighed by relevance to the programme, and O-level (UCE) results add 0.3, 0.2 or 0.1 points per distinction, credit or pass.",
+          "source": "ug-notes-to-schools"
+        },
+        {
+          "text": "Applicants need at least two UACE principal passes at the same sitting.",
+          "source": "ug-notes-to-schools"
+        }
+      ],
+      "universityUse": [],
+      "subjectsFrom": "UG-UACE",
+      "url": "https://uneb.ac.ug/",
+      "calculator": {
+        "href": "/admissions/uganda",
+        "label": "Uganda weighted points and cut-offs"
+      },
+      "guidance": null
+    },
+    {
+      "slug": "kenya-kcse-cbc",
+      "name": "Kenya: KCSE and the competency-based curriculum",
+      "body": "Kenya National Examinations Council (KNEC)",
+      "family": "national",
+      "countries": [
+        "KE"
+      ],
+      "level": "Secondary",
+      "ages": null,
+      "length": null,
+      "grading": null,
+      "series": null,
+      "facts": [
+        {
+          "text": "Kenya is moving to a 2-6-3-3-3 structure under the competency-based curriculum: six years of secondary, three in junior school and three in senior school.",
+          "source": "iicba-country-briefs"
+        },
+        {
+          "text": "KNEC's 2026 notices cover both the Kenya Certificate of Secondary Education (KCSE) and the new assessments: the Kenya Junior School Education Assessment (KJSEA) at Grade 9 and competency-based assessment in senior school, starting with Grade 10.",
+          "source": "knec"
+        },
+        {
+          "text": "KUCCPS places students on government-sponsored degree programmes using KCSE cluster subjects and published cut-offs.",
+          "source": "kuccps-portal"
+        }
+      ],
+      "universityUse": [],
+      "subjects": [],
+      "pending": "KCSE grade scale and cluster-point formula: not yet confirmed from a KNEC or KUCCPS document.",
+      "url": "https://www.knec.ac.ke/",
+      "calculator": {
+        "href": "/admissions/kenya",
+        "label": "How admission works in Kenya"
+      },
+      "guidance": null
+    },
+    {
+      "slug": "wassce",
+      "name": "West Africa: WASSCE",
+      "body": "West African Examinations Council (WAEC)",
+      "family": "national",
+      "countries": [
+        "GH",
+        "NG",
+        "SL",
+        "LR",
+        "GM"
+      ],
+      "level": "Upper secondary, final stage (university entry)",
+      "ages": null,
+      "length": null,
+      "grading": null,
+      "series": null,
+      "facts": [
+        {
+          "text": "In Ghana, school candidates take four core subjects: English Language, Integrated Science, Mathematics (Core) and Social Studies, plus elective subjects from one option of a programme (for example Agricultural, Business, Technical or Vocational).",
+          "source": "waec-ghana"
+        }
+      ],
+      "universityUse": [],
+      "subjects": [
+        {
+          "name": "English Language (core)",
+          "code": null,
+          "subject": "english"
+        },
+        {
+          "name": "Mathematics (Core)",
+          "code": null,
+          "subject": "mathematics"
+        },
+        {
+          "name": "Mathematics (Elective)",
+          "code": null,
+          "subject": "mathematics"
+        },
+        {
+          "name": "Economics",
+          "code": null,
+          "subject": "economics"
+        },
+        {
+          "name": "Geography",
+          "code": null,
+          "subject": "geography"
+        },
+        {
+          "name": "Literature in English",
+          "code": null,
+          "subject": "literature-in-english"
+        },
+        {
+          "name": "Financial Accounting",
+          "code": null,
+          "subject": "accounting"
+        },
+        {
+          "name": "Business Management",
+          "code": null,
+          "subject": "business-studies"
+        },
+        {
+          "name": "ICT (Elective)",
+          "code": null,
+          "subject": "computer-studies"
+        },
+        {
+          "name": "General Agriculture",
+          "code": null,
+          "subject": "agriculture"
+        },
+        {
+          "name": "Technical Drawing",
+          "code": null,
+          "subject": "technical-drawing"
+        },
+        {
+          "name": "Metalwork",
+          "code": null,
+          "subject": "metalwork"
+        },
+        {
+          "name": "Chemistry",
+          "code": null,
+          "subject": "chemistry"
+        },
+        {
+          "name": "Foods and Nutrition",
+          "code": null,
+          "subject": "foods-and-nutrition"
+        },
+        {
+          "name": "Music",
+          "code": null,
+          "subject": "music"
+        },
+        {
+          "name": "French",
+          "code": null,
+          "subject": "foreign-language"
+        }
+      ],
+      "subjectsNote": "Subjects listed on WAEC Ghana's page for school candidates; the full list is longer.",
+      "pending": "Grade scale: not stated on a WAEC page we could reach, so not shown.",
+      "url": "https://waecgh.org/home/wassce-school/",
+      "guidance": null
+    },
+    {
+      "slug": "south-africa-nsc",
+      "name": "South Africa: National Senior Certificate (NSC)",
+      "body": "Department of Basic Education (DBE)",
+      "family": "national",
+      "countries": [
+        "ZA"
+      ],
+      "level": "Upper secondary, final stage (Grade 12)",
+      "ages": null,
+      "length": null,
+      "grading": "Achievement ratings, for example rating 3 is Moderate Achievement (40-49%) and rating 4 is Adequate Achievement (50-59%).",
+      "series": null,
+      "facts": [
+        {
+          "text": "To pass, a candidate needs 40% in three subjects, one of them an official language at Home Language level, and 30% in three other subjects, as the policy sets out.",
+          "source": "dbe-nsc"
+        }
+      ],
+      "universityUse": [
+        {
+          "text": "Higher Certificate: an NSC with at least 30% in the institution's language of learning and teaching.",
+          "source": "dbe-nsc"
+        },
+        {
+          "text": "Diploma: as above, plus a rating of 3 (40-49%) or better in four recognised 20-credit subjects.",
+          "source": "dbe-nsc"
+        },
+        {
+          "text": "Bachelor's degree: as above, plus a rating of 4 (50-59%) or better in four recognised 20-credit subjects. Institutions and programmes can ask for more.",
+          "source": "dbe-nsc"
+        }
+      ],
+      "subjects": [],
+      "url": "https://www.education.gov.za/Curriculum/NationalSeniorCertificate(NSC)Examinations.aspx",
+      "guidance": null
+    }
+  ],
+  "recognition": [
+    {
+      "country": "UG",
+      "name": "Uganda",
+      "body": "Uganda National Examinations Board (UNEB): equating of foreign results",
+      "facts": [
+        {
+          "text": "UNEB equates foreign school results (for example IGCSE, A Levels or the IB) to their Ugandan equivalents. You apply online, and the exam body that issued your results must send UNEB a verified copy by email.",
+          "source": "uneb"
+        },
+        {
+          "text": "The fee is UGX 200,000 per document from East Africa and UGX 250,000 from outside East Africa. Documents not in English are translated at UNEB for UGX 70,000 per results page. Fees are not refunded.",
+          "source": "uneb"
+        }
+      ],
+      "url": "https://eservices.uneb.ac.ug/es/equating/app"
+    },
+    {
+      "country": "KE",
+      "name": "Kenya",
+      "body": "Kenya National Qualifications Authority (KNQA): alignment and validation",
+      "facts": [
+        {
+          "text": "KNQA aligns qualifications, including foreign ones, to the Kenya National Qualifications Framework, and takes applications online through its alignment and validation portal.",
+          "source": "knqa"
+        }
+      ],
+      "url": "https://knqa.go.ke/"
+    },
+    {
+      "country": "ZA",
+      "name": "South Africa",
+      "body": "Universities South Africa (USAf) Matriculation Board: exemption certificates",
+      "facts": [
+        {
+          "text": "A matriculation exemption is a legal requirement for first-degree study at a South African university. Students with foreign school-leaving qualifications have them evaluated by the Matriculation Board, which issues a certificate of exemption to those who qualify.",
+          "source": "usaf-matriculation-board"
+        }
+      ],
+      "url": "https://mb.usaf.ac.za/faqs/"
+    },
+    {
+      "country": "NG",
+      "name": "Nigeria",
+      "body": "Federal Ministry of Education",
+      "facts": [
+        {
+          "text": "WAEC does not accredit foreign certificates; in Nigeria accreditation is carried out by the Federal Ministry of Education alone.",
+          "source": "waec-nigeria-faq"
+        }
+      ],
+      "url": "https://www.waecnigeria.org/faq?page=1"
+    },
+    {
+      "country": "GB",
+      "name": "United Kingdom",
+      "body": "Universities, through UCAS",
+      "facts": [
+        {
+          "text": "UK universities set their own entry requirements; not every course uses UCAS Tariff points, and many make offers in grades.",
+          "source": "ucas-tariff"
+        },
+        {
+          "text": "Cambridge states that UK universities accept Cambridge International A Levels grade for grade as equivalent to UK A Levels, and Pearson states the same benchmarking for its International A Levels.",
+          "source": "cambridge-international"
+        }
+      ],
+      "url": "https://www.ucas.com/"
+    }
+  ]
+}

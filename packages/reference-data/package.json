@@ -6,7 +6,8 @@
   "type": "module",
   "exports": {
     ".": "./src/index.ts",
-    "./uganda": "./src/uganda.ts"
+    "./uganda": "./src/uganda.ts",
+    "./pay-range": "./src/pay-range.ts"
   },
   "scripts": {
     "typecheck": "tsc --noEmit",

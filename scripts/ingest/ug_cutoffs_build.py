@@ -88,7 +88,7 @@ def other_universities(raw_text):
                     parent = f"{parent} {text}"
                 continue
             title = re.sub(r"\s+", " ", title).strip()
-            if re.search(r"Years?|KEP", title):
+            if re.search(r"\bYears?\b|\bKEP\b", title):
                 skipped.append(f"{uni}: {line}")
                 continue
             rows.append({"university": uni, "programme": title, "scheme": "government",
