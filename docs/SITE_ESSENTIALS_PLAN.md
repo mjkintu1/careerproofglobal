@@ -53,6 +53,22 @@ nothing that needs an account or personal data unless it has to.
     CareerOneStop (US DOL) disallows Claude in robots.txt, so it was not read.
   - career.io and gecd.co.uk: used as feature references only; not linked (owner's call).
 
+- Navigation and tab icon (branch fix/navigation, 11 Nov 2026):
+  - Mobile menu: full-height scrollable panel, one group open at a time (current section first), "Plan my path"
+    button, focus moves in, page behind does not scroll. Previously the menu was 1,419 px tall in an 812 px
+    viewport and the lower groups could not be reached.
+  - Desktop dropdowns: hover with a short delay as well as click; fade and slide in and out (opacity, translate and
+    visibility, 200 ms; none with reduced motion); close on Escape (focus returns), outside click or tabbing away.
+  - Less crowded: groups rebalanced to 6, 6 and 4 links (Certifications moved to Where to Study); two-column panels;
+    one-line descriptions. Panels went from about 450 px to 190 to 256 px tall and fit a 1024 px window.
+  - Current page marked (aria-current) and its section highlighted. In-page links land below the sticky header
+    (scroll-padding-top) with smooth scrolling; only the main bar is sticky (73 px instead of 109 px).
+  - Tab icon: a bolder tab-size mark (public/brand/careerproof-global-icon-small.svg) for icon.svg and favicon.ico
+    (16/32/48 px); the detailed mark stays for Apple and manifest icons. Regenerate with node scripts/brand-icons.mjs.
+  - Not yet tested on a physical phone.
+- Next: About and Contact (phase 2), social accounts (phase 5, owner), security headers and a custom 404 page
+  (see CRITICAL_REVIEW.md), and the gaps listed under phases 3 and 4.
+
 ## Phase 1: trust and legal pages (1 to 2 days, needs your decisions)
 
 | Page | Content | Basis |

@@ -4,6 +4,12 @@ Companion to `master_strategy_technical_blueprint.md`. This turns the blueprint 
 
 **v0.2 (2026-11-08):** aligned with the PDF *Global Master Strategy & Blueprint* (same content as the markdown blueprint, plus scholarships, verified internships, Lucide/Heroicons and no heavy shadows). Decisions from that review are in §2.
 
+**Status (11 Nov 2026):** the product direction has moved on from this plan. The live site is career-paths-first and
+global (path planner, pay by country, curricula, CV and salary tools, cited admission data for Uganda and the UK),
+not simulator-first. Scholarships, verified internships, Venturer profiles and accounts below are still **not built**.
+Current status lives in `SITE_ESSENTIALS_PLAN.md`, `CRITICAL_REVIEW.md`, `CAREER_PATH_PLANNER.md` and `PAY_BENCHMARKS.md`;
+this document is kept for the original reasoning.
+
 ---
 
 ## 1. MVP scope (agreed)

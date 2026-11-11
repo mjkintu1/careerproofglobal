@@ -1,0 +1,237 @@
+<!doctype html>
+<!-- CareerProof Global pitch deck (HBS ABC NVC 2027). Edit here, then rebuild the PDF:
+     "C:\Program Files\Google\Chrome\Application\chrome.exe" --headless=new --no-pdf-header-footer --print-to-pdf=CareerProof-Global-pitch-deck.pdf deck.html
+     Images in img/ are screenshots of the live product (11 Nov 2026). -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CareerProof Global: pitch deck</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  @page { size: 1280px 720px; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { font-family: Inter, Arial, sans-serif; color: #0f172a; background: #cbd5e1; }
+  .slide { width: 1280px; height: 720px; position: relative; overflow: hidden; background: #fff; padding: 56px 72px; page-break-after: always; break-after: page; display: flex; flex-direction: column; }
+  .slide:last-child { page-break-after: auto; break-after: auto; }
+  .dark { background: linear-gradient(135deg, #0b1f33, #12304d); color: #fff; }
+  h1, h2, .big { font-family: "Plus Jakarta Sans", Arial, sans-serif; font-weight: 800; letter-spacing: -0.02em; }
+  h1 { font-size: 64px; line-height: 1.05; }
+  h2 { font-size: 40px; line-height: 1.1; margin-bottom: 28px; }
+  .kicker { display: inline-block; font-size: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: #0077b6; margin-bottom: 12px; }
+  .dark .kicker { color: #00b4d8; }
+  p, li { font-size: 21px; line-height: 1.45; }
+  .muted { color: #475569; }
+  .dark .muted { color: #cbd5e1; }
+  ul.clean { list-style: none; }
+  ul.clean li { padding-left: 30px; position: relative; margin-bottom: 12px; }
+  ul.clean[style*="19px"] li { font-size: 19px; }
+  ul.clean li::before { content: ""; position: absolute; left: 0; top: 11px; width: 12px; height: 12px; border-radius: 50%; background: #00b4d8; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; flex: 1; min-height: 0; }
+  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .card { border: 1px solid #e2e8f0; border-radius: 18px; padding: 22px 24px; background: #fff; }
+  .card h3 { font-family: "Plus Jakarta Sans", Arial, sans-serif; font-size: 22px; margin-bottom: 8px; }
+  .card p { font-size: 17px; }
+  .dark .card { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.15); }
+  .stat .big { font-size: 46px; color: #0077b6; line-height: 1; }
+  .dark .stat .big { color: #fdc500; }
+  .stat p { font-size: 16px; margin-top: 8px; }
+  .shot { border-radius: 14px; border: 1px solid #e2e8f0; box-shadow: 0 10px 30px rgba(15,23,42,.12); width: 100%; height: 100%; object-fit: cover; object-position: top left; }
+  .shotwrap { min-height: 0; display: flex; }
+  .foot { position: absolute; left: 72px; right: 72px; bottom: 22px; display: flex; justify-content: space-between; font-size: 13px; color: #64748b; }
+  .dark .foot { color: #94a3b8; }
+  .src { font-size: 12px; color: #64748b; margin-top: auto; padding-top: 14px; }
+  .dark .src { color: #94a3b8; }
+  table { width: 100%; border-collapse: collapse; font-size: 17px; }
+  th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
+  th { font-size: 14px; text-transform: uppercase; letter-spacing: .05em; color: #475569; }
+  td.us { background: #e6f6fa; font-weight: 600; color: #005a8c; }
+  .pill { display: inline-block; padding: 6px 14px; border-radius: 999px; background: #e6f6fa; color: #005a8c; font-weight: 600; font-size: 15px; margin: 0 8px 8px 0; }
+  .gold { color: #fdc500; }
+  .logo { height: 64px; }
+</style>
+</head>
+<body>
+
+<!-- 1. Title -->
+<section class="slide dark" style="justify-content:center;background:#0b1f33">
+  <img src="img/logo-dark.svg" alt="CareerProof Global" class="logo" style="height:96px;align-self:flex-start;margin:-10px 0 34px -20px">
+  <h1>Every route to any career,<br>with <span class="gold">official</span> pay and admission rules,<br>for every African student.</h1>
+  <p class="muted" style="margin-top:28px;font-size:24px">Free, on any smartphone, no sign-up. Live today; piloting in Uganda.</p>
+  <p style="margin-top:40px;font-size:19px">Kambugu Abdallah &middot; Kintu Moses &middot; Gutabingi Jamilah &nbsp;|&nbsp; careerproofglobal.vercel.app &nbsp;|&nbsp; careerproofglobal@gmail.com</p>
+  <div class="foot"><span>HBS Africa Business Club New Venture Competition 2027</span><span>Kampala, Uganda</span></div>
+</section>
+
+<!-- 2. Problem -->
+<section class="slide">
+  <span class="kicker">The problem</span>
+  <h2>Young Africans make life-shaping choices<br>with almost no reliable information</h2>
+  <div class="grid2" style="grid-template-columns:1.15fr 1fr">
+    <ul class="clean" style="font-size:19px">
+      <li><b>Careers are invisible.</b> Students know a handful of professions; thousands of real jobs, and the routes into them, are never explained.</li>
+      <li><b>Subject choices close doors silently.</b> The wrong A-level combination at 16 can rule out medicine or engineering, and students find out when they apply.</li>
+      <li><b>Admission rules are scattered</b> in PDFs and on social media.</li>
+      <li><b>Career sites are not built for Africa.</b> They quote American pay and ignore African exams, regulators and institutions.</li>
+      <li><b>Job seekers are targeted by fake recruiters</b> charging fees for jobs that do not exist.</li>
+    </ul>
+    <div style="display:flex;flex-direction:column;gap:18px;justify-content:center">
+      <div class="card stat"><div class="big">104.7M</div><p>secondary-school students in Africa (2024), each choosing subjects and courses</p></div>
+      <div class="card stat"><div class="big">3,629</div><p>accredited programmes in Uganda alone to choose between</p></div>
+    </div>
+  </div>
+  <p class="src">Enrolment: UNESCO Institute for Statistics, secondary enrolment, African Union region, 2024 (UIS indicator 20082, February 2026 release).</p>
+</section>
+
+<!-- 3. Solution: path planner -->
+<section class="slide">
+  <span class="kicker">The solution</span>
+  <h2 style="margin-bottom:10px">Every route from where you are to the career you want</h2>
+  <p class="muted" style="margin-bottom:18px">Start from school or any job. See every route, forwards or backwards, with the qualifications in between and pay in your country.</p>
+  <div class="grid2" style="grid-template-columns:1.55fr 1fr;gap:28px">
+    <div class="shotwrap"><img class="shot" src="img/planner-canvas.png" alt="Path planner canvas showing 12 routes to Accountant in Uganda"></div>
+    <ul class="clean" style="align-self:center">
+      <li><b>938 careers, 6,682 links</b> from career guides, O*NET related occupations and EU (ESCO) shared skills</li>
+      <li><b>No limit on steps</b>; routes ranked by published time</li>
+      <li><b>Honest:</b> moves based only on shared skills are marked as less certain</li>
+      <li>Example: 12 routes from school to Accountant in Uganda</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 4. Official data -->
+<section class="slide">
+  <span class="kicker">What makes it trustworthy</span>
+  <h2 style="margin-bottom:18px">Official pay and admission rules, never guesses</h2>
+  <div class="grid2" style="grid-template-columns:0.62fr 1fr;gap:32px">
+    <div class="shotwrap" style="justify-content:center"><img class="shot" src="img/career-pay.png" alt="Pay in Uganda for an accountant: public-service entry scale and ILO group average" style="object-fit:contain;width:auto;max-width:100%;border:0;box-shadow:none"></div>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div class="card"><h3>Pay by country, from the publisher</h3><p>Public-service salary scales (Uganda, South Africa), national pay statistics (US, UK, Canada, Australia), Kenya's legal minimum wages, World Bank and UN scales, ILO data for 170 countries. In the publisher's currency, with source and year.</p></div>
+      <div class="card"><h3>Uganda admissions from official sources</h3><p>The 2026/2027 weighting system in a points calculator, 3 years of cut-offs for 113 programmes, 3,629 active accredited programmes. We show the rules and past cut-offs; we never predict a "chance".</p></div>
+      <div class="card"><h3>72 sources, each with its licence</h3><p>ILO, UNESCO, EU ESCO, O*NET, national statistics offices, ministries, exam boards.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Product breadth -->
+<section class="slide">
+  <span class="kicker">Live today</span>
+  <h2>Built in November 2026, free, no sign-up</h2>
+  <div class="grid4" style="margin-bottom:26px">
+    <div class="card stat"><div class="big">938</div><p>careers in the route network</p></div>
+    <div class="card stat"><div class="big">170</div><p>countries with official pay or minimum wages</p></div>
+    <div class="card stat"><div class="big">30,326</div><p>universities and colleges in 223 countries</p></div>
+    <div class="card stat"><div class="big">10</div><p>school curricula: Cambridge, IB, AP, UACE, KCSE, WASSCE, NSC and more</p></div>
+  </div>
+  <div class="grid3">
+    <div class="card"><h3>CV builder</h3><p>A clear CV or résumé, with skills suggested for the target career. Stays on the user's device.</p></div>
+    <div class="card"><h3>Salary check</h3><p>Places a posted pay range against official pay for the same job and country.</p></div>
+    <div class="card"><h3>Finding work safely</h3><p>Official rules on recruitment fees, licensed recruiters in Uganda, scam warnings.</p></div>
+  </div>
+  <p class="src">Also: 68 in-depth career guides, 2,909 occupations on the ILO ISCO-08 standard, 32 school subjects linked to careers, UCAS Tariff calculator, FAQs with cited answers.</p>
+</section>
+
+<!-- 6. Market -->
+<section class="slide dark">
+  <span class="kicker">Market</span>
+  <h2>Every secondary student in Africa has to choose</h2>
+  <div class="grid2" style="grid-template-columns:1fr 1.1fr">
+    <div style="display:flex;flex-direction:column;gap:18px">
+      <div class="card stat"><div class="big">104.7M</div><p>secondary students in Africa, 2024 (78.1M in sub-Saharan Africa)</p></div>
+      <div class="card stat"><div class="big">US$209M</div><p>a year at a US$2 per-student school licence, before university, employer and data revenue</p></div>
+    </div>
+    <div>
+      <table style="color:#fff">
+        <tr><th style="color:#94a3b8">Next markets</th><th style="color:#94a3b8">Secondary students</th></tr>
+        <tr><td>Nigeria</td><td>15.2M (2023)</td></tr>
+        <tr><td>Kenya</td><td>6.7M (2023)</td></tr>
+        <tr><td>Ghana</td><td>3.3M (2024)</td></tr>
+        <tr><td>Rwanda</td><td>0.9M (2024)</td></tr>
+      </table>
+      <p class="muted" style="margin-top:20px;font-size:18px">Built on ILO and UNESCO standards, so every country already has a basic version. Going deep means adding a country's exams, admission rules and pay scales as data, not new software.</p>
+    </div>
+  </div>
+  <p class="src">Enrolment: UNESCO Institute for Statistics (UIS indicator 20082), February 2026 release. Licence price is our assumption.</p>
+</section>
+
+<!-- 7. Business model -->
+<section class="slide">
+  <span class="kicker">Business model</span>
+  <h2>Free for students, always. Paid by those who serve them.</h2>
+  <div class="grid2" style="grid-template-columns:1.4fr 1fr">
+    <table>
+      <tr><th>Customer</th><th>What they pay for</th></tr>
+      <tr><td><b>Secondary schools</b> (first)</td><td>Counsellor dashboard and class reports; termly subscription priced per student</td></tr>
+      <tr><td><b>Universities and colleges</b></td><td>Verified programme listings; anonymised insight into student interest</td></tr>
+      <tr><td><b>Employers and scholarship providers</b></td><td>Reaching eligible students; internship and graduate-job postings</td></tr>
+      <tr><td><b>Governments, NGOs, researchers</b></td><td>Anonymised, aggregated data on subject choices and career interest</td></tr>
+    </table>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div class="card"><h3>Low cost to serve</h3><p>Core data comes from official open sources we cite rather than buy; a lightweight web app on basic smartphones.</p></div>
+      <div class="card"><h3>Cheap to expand</h3><p>A new country is data (exams, rules, pay, institutions), not new software.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. Go-to-market and milestones -->
+<section class="slide">
+  <span class="kicker">Go-to-market</span>
+  <h2>Uganda pilot, then East Africa</h2>
+  <div class="grid3" style="margin-bottom:24px">
+    <div class="card"><h3>1. School pilot</h3><p>3 to 5 Ugandan secondary schools, through careers teachers and S4 to S6 classes, timed to subject choice and admissions.</p></div>
+    <div class="card"><h3>2. Paid schools</h3><p>Convert pilots to a termly subscription; grow through head-teacher and careers-teacher networks.</p></div>
+    <div class="card"><h3>3. East Africa</h3><p>Kenya (KUCCPS), Rwanda and Tanzania on the same platform.</p></div>
+  </div>
+  <table>
+    <tr><th style="width:20%">When</th><th>Milestone</th></tr>
+    <tr><td class="us">Nov 2026</td><td>Live: path planner, pay by country, Uganda admissions, curricula, CV and salary tools</td></tr>
+    <tr><td>Dec 2026 to Mar 2027</td><td>Uganda school pilot; data partnerships with NCHE, PUJAB and universities</td></tr>
+    <tr><td>Feb 2027</td><td>Kenya admission data; first paying school</td></tr>
+    <tr><td>Mid 2027</td><td>Accounts and counsellor dashboard, after data-protection registration</td></tr>
+  </table>
+  <p class="src">Growth channels: search (thousands of pages built on official data), WhatsApp-shareable route maps, results-season campaigns.</p>
+</section>
+
+<!-- 9. Competition -->
+<section class="slide">
+  <span class="kicker">Competition</span>
+  <h2>Others list careers. We map routes, on official data.</h2>
+  <table>
+    <tr><th></th><th>Routes from any start</th><th>Official local pay</th><th>African exams and admissions</th><th>Free for students</th></tr>
+    <tr><td><b>CareerProof Global</b></td><td class="us">Yes</td><td class="us">Yes, 170 countries</td><td class="us">Yes, cited</td><td class="us">Yes</td></tr>
+    <tr><td>Official portals (KUCCPS, universities)</td><td>No</td><td>No</td><td>One system each</td><td>Yes</td></tr>
+    <tr><td>Global career and salary sites</td><td>No</td><td>Often user-reported estimates</td><td>No</td><td>Mostly</td></tr>
+    <tr><td>Cut-off lists on social media</td><td>No</td><td>No</td><td>Unverified</td><td>Yes</td></tr>
+    <tr><td>Careers teachers</td><td>Limited time</td><td>Rarely</td><td>Local knowledge</td><td>Few and overstretched</td></tr>
+  </table>
+  <p style="margin-top:26px"><b>Hard to copy:</b> an assembled, licence-checked dataset of 72 sources, crosswalks between national and international codes, and admission rules stored as tested, versioned data. The lead grows with each country.</p>
+</section>
+
+<!-- 10. Team and ask -->
+<section class="slide dark">
+  <span class="kicker">Team and ask</span>
+  <h2>Three co-founders in Kampala</h2>
+  <div class="grid3" style="margin-bottom:28px">
+    <div class="card"><h3>Kambugu Abdallah</h3><p>Co-founder</p></div>
+    <div class="card"><h3>Kintu Moses</h3><p>Co-founder</p></div>
+    <div class="card"><h3>Gutabingi Jamilah</h3><p>Co-founder</p></div>
+  </div>
+  <div class="grid2" style="grid-template-columns:1fr 1fr;flex:0">
+    <div>
+      <p style="font-size:22px"><b>The ask:</b> prize funding to run the Uganda school pilot and add Kenya.</p>
+      <p class="muted" style="margin-top:14px;font-size:18px">Free for students, always. Official data only. Built for Africa.</p>
+    </div>
+    <table style="color:#fff;font-size:16px">
+      <tr><td>Data partnerships (Uganda, Kenya)</td><td>30%</td></tr>
+      <tr><td>School pilot</td><td>25%</td></tr>
+      <tr><td>Product: accounts, counsellor tools, languages</td><td>25%</td></tr>
+      <tr><td>Legal and data protection</td><td>10%</td></tr>
+      <tr><td>Hosting and tools</td><td>10%</td></tr>
+    </table>
+  </div>
+  <div class="foot"><span>careerproofglobal.vercel.app &middot; careerproofglobal@gmail.com &middot; +256 702 700746</span><span>CareerProof Global</span></div>
+</section>
+
+</body>
+</html>

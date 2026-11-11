@@ -42,7 +42,7 @@ export default function Page() {
           <h2 id="national" className="text-2xl font-extrabold">National exams</h2>
           <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">{national.map((c) => <CurriculumCard key={c.slug} c={c} />)}</ul>
         </section>
-        <section id="recognition" aria-labelledby="recog" className="scroll-mt-24 space-y-4">
+        <section id="recognition" aria-labelledby="recog" className="space-y-4">
           <h2 id="recog" className="text-2xl font-extrabold">Using foreign results at home: recognition by country</h2>
           <p className="max-w-3xl text-ink-muted">If you studied one curriculum and apply to university in another country, that country decides how your results count. These are the official routes we have confirmed so far.</p>
           <div className="grid gap-4 lg:grid-cols-2">

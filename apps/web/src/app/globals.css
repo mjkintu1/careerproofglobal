@@ -58,6 +58,15 @@
     font-family: var(--font-sans);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    /* In-page links (#section) land below the sticky header, not under it. */
+    scroll-padding-top: 5.5rem;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+  }
+  /* Page behind the open mobile menu does not scroll (set by MainNav). */
+  @media (max-width: 1023.98px) {
+    html.mobile-nav-open, html.mobile-nav-open body { overflow: hidden; }
   }
 
   h1, h2, h3 {

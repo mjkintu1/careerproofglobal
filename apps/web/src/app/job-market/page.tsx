@@ -79,13 +79,13 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="fees" aria-labelledby="fees-h" className="scroll-mt-24 space-y-4">
+        <section id="fees" aria-labelledby="fees-h" className="space-y-4">
           <h2 id="fees-h" className="text-2xl font-extrabold">Never pay to get a job</h2>
           <FactCards items={noFees} />
           <Guidance>Warning signs of a fake job: a fee for the job, training, a medical or a visa paid to a recruiter; an offer without an interview; pressure to decide fast; contact only through a messaging app; or a request for your ID or bank details before any offer. Check the company with the official body in your country, and talk it over with someone you trust before you pay or travel.</Guidance>
         </section>
 
-        <section id="services" aria-labelledby="services-h" className="scroll-mt-24 space-y-4">
+        <section id="services" aria-labelledby="services-h" className="space-y-4">
           <h2 id="services-h" className="text-2xl font-extrabold">Official job services and recruiter checks</h2>
           <FactCards items={services} />
           <p className="text-sm text-ink-muted">Kenya: we could not read the National Employment Authority&apos;s website when we checked (11 November 2026), so we have not added its services yet.</p>

@@ -8,6 +8,31 @@ Every finding below was checked against the code, the hosted database (read-only
 - **P1:** fix before a pilot.
 - **P2:** improvements.
 
+## Status update (11 Nov 2026)
+
+Checked against the code on branch `fix/navigation` (from `main` at `a756819`).
+
+| # | Finding | Status |
+|---|---|---|
+| 1 | HBS draft overclaims | Rewritten 10 Nov and updated 11 Nov to match the live product and the competition criteria |
+| 2 | Guided careers weakly linked to standards | Open |
+| 3 | Career moves have no source | Partly fixed: the path planner now also uses O*NET related occupations and ESCO shared skills, labelled as less certain; the authored moves still carry "typical" years |
+| 4 | US pay shown outside the US | Fixed: pay is now per country (public scales, national surveys, ILOSTAT group averages, legal minimums); the global view shows US and UK figures labelled as references |
+| 5 | Duplicate country pages | Fixed: country pages without local detail canonicalise to the global page; the sitemap lists canonical URLs only |
+| 6 | No robots, sitemap, metadataBase, Open Graph | Fixed |
+| 7 | Brand mismatch in titles | Fixed (title template uses "CareerProof Global") |
+| 8 | No security headers beyond HSTS | Open |
+| 9 | Migrations ship straight from `main` | Open (owner check, intel B1) |
+| 10 | Anonymous feedback insert without rate limit | Open: the web app no longer writes to `page_feedback`; drop the anon grant |
+| 11 | No privacy notice or terms | Fixed as drafts (/privacy, /terms, /cookies, /disclaimer, /data-licences); lawyer review pending |
+| 12 | Database unused | Unchanged: data ships as versioned snapshots |
+| 13 | No freshness schedule | Open |
+| 14 | UCAS reuse terms | Open |
+| P2 | Analytics | Decided: none for now (moving off Vercel); choose a cookieless tool on the new host |
+| P2 | Error pages | Open: no custom not-found or error page yet |
+| A1 | Uganda and Kenya admission rules | Uganda done from the official Notes to Schools; Kenya still pending (KUCCPS) |
+| A3 | Local pay | Done for 170 countries (ILOSTAT) with occupation-level data for the US, UK, Canada, Australia and public scales for Uganda, South Africa and international employers |
+
 ## What is solid
 
 - **Security model:** row-level security is on for all 36 hosted tables. Admin rights come from `app_metadata` (server-set only). Secrets are git-ignored, and a secret scan of the commit was clean. HSTS is on.

@@ -78,7 +78,7 @@ export default function Page() {
         </nav>
         <div className="max-w-3xl space-y-10">
           {faqTopics.map((t) => (
-            <section key={t.id} id={t.id} aria-labelledby={`${t.id}-h`} className="scroll-mt-24 space-y-3">
+            <section key={t.id} id={t.id} aria-labelledby={`${t.id}-h`} className="space-y-3">
               <h2 id={`${t.id}-h`} className="font-display text-2xl font-bold text-ink">{t.title}</h2>
               {t.faqs.map((f) => <FaqItem key={f.id} f={f} />)}
             </section>
