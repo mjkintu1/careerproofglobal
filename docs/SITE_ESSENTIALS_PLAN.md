@@ -63,7 +63,7 @@ nothing that needs an account or personal data unless it has to.
     one-line descriptions. Panels went from about 450 px to 190 to 256 px tall and fit a 1024 px window.
   - Current page marked (aria-current) and its section highlighted. In-page links land below the sticky header
     (scroll-padding-top) with smooth scrolling; only the main bar is sticky (73 px instead of 109 px).
-  - Tab icon: a bolder tab-size mark (public/brand/careerproof-global-icon-small.svg) for icon.svg and favicon.ico
+  - Tab icon: the official mark redrawn on 16 and 32 px grids (public/brand/careerproof-global-icon-16.svg, -32.svg) for icon.svg and favicon.ico, so it is sharp and identical in design to the app icon
     (16/32/48 px); the detailed mark stays for Apple and manifest icons. Regenerate with node scripts/brand-icons.mjs.
   - Not yet tested on a physical phone.
 - Next: About and Contact (phase 2), social accounts (phase 5, owner), security headers and a custom 404 page

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" role="img" aria-labelledby="cpg-title-16">
+  <title id="cpg-title-16">CareerProof Global</title>
+  <!-- The official mark redrawn on a 16 px grid for favicon.ico: same path, three nodes and white rings,
+       with larger coloured centres and thin rings so the two teal nodes and the gold node read clearly at tab size. -->
+  <defs><linearGradient id="cpg-tile-16" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1257D1"/><stop offset="1" stop-color="#0A3D8F"/></linearGradient></defs>
+  <rect width="16" height="16" rx="3.5" fill="url(#cpg-tile-16)"/>
+  <polyline points="3.5,8.5 7,12 12.5,4.5" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="3.5" cy="8.5" r="1.75" fill="#00B4D8" stroke="#FFFFFF" stroke-width="0.5"/>
+  <circle cx="7" cy="12" r="1.75" fill="#00B4D8" stroke="#FFFFFF" stroke-width="0.5"/>
+  <circle cx="12.5" cy="4.5" r="2.3" fill="#FDC500" stroke="#FFFFFF" stroke-width="0.5"/>
+</svg>

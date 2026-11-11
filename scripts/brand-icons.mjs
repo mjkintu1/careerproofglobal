@@ -1,9 +1,10 @@
 // Generate browser-tab and device icons from the brand mark.
-// Tab icons (icon.svg, favicon.ico) use the bolder tab-size mark (careerproof-global-icon-small.svg) so they stay
-// crisp at 16 and 32 px; home-screen and manifest icons use the detailed mark (careerproof-global-icon.svg).
+// Tab icons use the official mark redrawn on pixel grids (careerproof-global-icon-16.svg, -32.svg): same design,
+// with edges on whole pixels so it is sharp at tab size. Home-screen and manifest icons use the official mark
+// (careerproof-global-icon.svg).
 // Outputs (Next.js picks up app/ files automatically):
-//   apps/web/src/app/icon.svg        modern browsers (scalable)
-//   apps/web/src/app/favicon.ico     16, 32 and 48 px PNGs in one ICO (tabs, older browsers)
+//   apps/web/src/app/favicon.ico     16, 32 and 48 px PNGs in one ICO; browsers pick the frame for the screen
+//   (No icon.svg on purpose: browsers prefer an SVG and scale it themselves, which blurs it at 16 px.)
 //   apps/web/src/app/apple-icon.png  180 px (iOS home screen)
 //   apps/web/public/icon-192.png, icon-512.png (web app manifest)
 // Usage: node scripts/brand-icons.mjs
@@ -14,17 +15,19 @@ import sharp from "sharp";
 const ROOT = join(import.meta.dirname, "..");
 const WEB = join(ROOT, "apps", "web");
 const svg = readFileSync(join(WEB, "public", "brand", "careerproof-global-icon.svg"));
-const small = readFileSync(join(WEB, "public", "brand", "careerproof-global-icon-small.svg"));
+const g16 = readFileSync(join(WEB, "public", "brand", "careerproof-global-icon-16.svg"));
+const g32 = readFileSync(join(WEB, "public", "brand", "careerproof-global-icon-32.svg"));
 const png = (size, src = svg) => sharp(src, { density: Math.max(72, (size / 120) * 72 * 4) }).resize(size, size).png().toBuffer();
+/** Render a pixel-grid master at exactly its own size (no resampling), so edges stay on whole pixels. */
+const exact = (src, size) => sharp(src, { density: 72 }).resize(size, size).png().toBuffer();
 
-writeFileSync(join(WEB, "src", "app", "icon.svg"), small);
 writeFileSync(join(WEB, "src", "app", "apple-icon.png"), await png(180));
 writeFileSync(join(WEB, "public", "icon-192.png"), await png(192));
 writeFileSync(join(WEB, "public", "icon-512.png"), await png(512));
 
 // ICO container holding PNG images (supported by all current browsers).
 const sizes = [16, 32, 48];
-const images = await Promise.all(sizes.map((s) => png(s, small)));
+const images = await Promise.all([exact(g16, 16), exact(g32, 32), png(48)]);
 const header = Buffer.alloc(6);
 header.writeUInt16LE(0, 0); header.writeUInt16LE(1, 2); header.writeUInt16LE(sizes.length, 4);
 const dir = Buffer.alloc(16 * sizes.length);
@@ -37,4 +40,4 @@ sizes.forEach((s, i) => {
   offset += images[i].length;
 });
 writeFileSync(join(WEB, "src", "app", "favicon.ico"), Buffer.concat([header, dir, ...images]));
-console.log("Icons written: icon.svg, favicon.ico (16/32/48), apple-icon.png (180), icon-192.png, icon-512.png");
+console.log("Icons written: favicon.ico (16/32/48), apple-icon.png (180), icon-192.png, icon-512.png");
