@@ -1,236 +1,334 @@
 <!doctype html>
-<!-- CareerProof Global pitch deck (HBS ABC NVC 2027). Edit here, then rebuild the PDF:
+<!-- CareerProof Global pitch deck. Edit here, then rebuild the PDF from this folder:
      "C:\Program Files\Google\Chrome\Application\chrome.exe" --headless=new --no-pdf-header-footer --print-to-pdf=CareerProof-Global-pitch-deck.pdf deck.html
-     Images in img/ are screenshots of the live product (11 Nov 2026). -->
+     Team photo img/team-kintu-moses.jpg supplied by the founder. Product screenshots in img/ are from the live site (11 Nov 2026).
+     Photos: Pexels (free to use, no attribution required), all taken in Africa; https://www.pexels.com/photo/<id>/ :
+       px-title 19348206 (students, Uganda), px-problem 17314968 (lecture, Lagos), px-solution 14210063 (Accra),
+       px-career-change 19805876 (office, Nairobi), px-payment 4212951 (Ghana), px-classroom 3766706 (classroom, Ghana),
+       px-close 30575961 (graduation, Winneba, Ghana)
+     Market figures: UNESCO UIS indicators 20082 + 25053 (World, 2024); ITU Facts and Figures 2025 (youth Internet use);
+       World Bank Global Findex 2025. Chart img/enrolment-chart.svg is drawn from the UIS series 2010-2024. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <title>CareerProof Global: pitch deck</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Plus+Jakarta+Sans:wght@300;600;700;800&display=swap" rel="stylesheet">
 <style>
   @page { size: 1280px 720px; margin: 0; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  body { font-family: Inter, Arial, sans-serif; color: #0f172a; background: #cbd5e1; }
-  .slide { width: 1280px; height: 720px; position: relative; overflow: hidden; background: #fff; padding: 56px 72px; page-break-after: always; break-after: page; display: flex; flex-direction: column; }
+  body { font-family: Inter, Arial, sans-serif; color: #1e293b; background: #cbd5e1; }
+  :root { --navy: #0b1f33; --blue: #0A3D8F; --teal: #0077b6; --cyan: #00B4D8; --gold: #FDC500; --muted: #64748b; --line: #e2e8f0; }
+  .slide { width: 1280px; height: 720px; position: relative; overflow: hidden; background: #fff; page-break-after: always; break-after: page; }
   .slide:last-child { page-break-after: auto; break-after: auto; }
-  .dark { background: linear-gradient(135deg, #0b1f33, #12304d); color: #fff; }
-  h1, h2, .big { font-family: "Plus Jakarta Sans", Arial, sans-serif; font-weight: 800; letter-spacing: -0.02em; }
-  h1 { font-size: 64px; line-height: 1.05; }
-  h2 { font-size: 40px; line-height: 1.1; margin-bottom: 28px; }
-  .kicker { display: inline-block; font-size: 15px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; color: #0077b6; margin-bottom: 12px; }
-  .dark .kicker { color: #00b4d8; }
-  p, li { font-size: 21px; line-height: 1.45; }
-  .muted { color: #475569; }
-  .dark .muted { color: #cbd5e1; }
-  ul.clean { list-style: none; }
-  ul.clean li { padding-left: 30px; position: relative; margin-bottom: 12px; }
-  ul.clean[style*="19px"] li { font-size: 19px; }
-  ul.clean li::before { content: ""; position: absolute; left: 0; top: 11px; width: 12px; height: 12px; border-radius: 50%; background: #00b4d8; }
-  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; flex: 1; min-height: 0; }
-  .grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-  .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
-  .card { border: 1px solid #e2e8f0; border-radius: 18px; padding: 22px 24px; background: #fff; }
-  .card h3 { font-family: "Plus Jakarta Sans", Arial, sans-serif; font-size: 22px; margin-bottom: 8px; }
-  .card p { font-size: 17px; }
-  .dark .card { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.15); }
-  .stat .big { font-size: 46px; color: #0077b6; line-height: 1; }
-  .dark .stat .big { color: #fdc500; }
-  .stat p { font-size: 16px; margin-top: 8px; }
-  .shot { border-radius: 14px; border: 1px solid #e2e8f0; box-shadow: 0 10px 30px rgba(15,23,42,.12); width: 100%; height: 100%; object-fit: cover; object-position: top left; }
-  .shotwrap { min-height: 0; display: flex; }
-  .foot { position: absolute; left: 72px; right: 72px; bottom: 22px; display: flex; justify-content: space-between; font-size: 13px; color: #64748b; }
-  .dark .foot { color: #94a3b8; }
-  .src { font-size: 12px; color: #64748b; margin-top: auto; padding-top: 14px; }
-  .dark .src { color: #94a3b8; }
-  table { width: 100%; border-collapse: collapse; font-size: 17px; }
-  th, td { text-align: left; padding: 11px 14px; border-bottom: 1px solid #e2e8f0; vertical-align: top; }
-  th { font-size: 14px; text-transform: uppercase; letter-spacing: .05em; color: #475569; }
-  td.us { background: #e6f6fa; font-weight: 600; color: #005a8c; }
-  .pill { display: inline-block; padding: 6px 14px; border-radius: 999px; background: #e6f6fa; color: #005a8c; font-weight: 600; font-size: 15px; margin: 0 8px 8px 0; }
-  .gold { color: #fdc500; }
-  .logo { height: 64px; }
+  .pad { position: absolute; top: 64px; left: 80px; bottom: 70px; display: flex; flex-direction: column; }
+  .t { font-family: "Plus Jakarta Sans", Arial, sans-serif; font-weight: 700; font-size: 34px; color: var(--teal); padding-bottom: 12px; border-bottom: 2px solid var(--cyan); margin-bottom: 30px; letter-spacing: -0.01em; }
+  .h { font-family: "Plus Jakarta Sans", Arial, sans-serif; font-weight: 800; letter-spacing: -0.02em; color: var(--navy); }
+  .dark { background: var(--navy); color: #fff; }
+  p { font-size: 18px; line-height: 1.5; }
+  .muted { color: var(--muted); }
+  .photo { position: absolute; top: 0; bottom: 0; background-size: cover; background-position: center; }
+  .ic { width: 40px; height: 40px; fill: none; stroke: var(--teal); stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+  .row { display: flex; gap: 22px; align-items: flex-start; }
+  .row b { color: var(--teal); font-weight: 600; }
+  .row p { font-size: 17px; }
+  .big { font-family: "Plus Jakarta Sans", Arial, sans-serif; font-weight: 300; font-size: 50px; line-height: 1; color: var(--teal); letter-spacing: -0.02em; }
+  .lab { font-size: 15px; color: var(--muted); margin-top: 8px; line-height: 1.4; }
+  .src { position: absolute; left: 80px; right: 80px; bottom: 44px; font-size: 11.5px; color: #94a3b8; line-height: 1.4; }
+  .foot { position: absolute; left: 80px; bottom: 18px; display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--teal); font-weight: 600; }
+  .foot img { height: 16px; }
+  .num { position: absolute; right: 40px; bottom: 18px; font-size: 12px; color: #94a3b8; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  th { text-align: left; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); padding: 0 12px 10px; border-bottom: 2px solid var(--cyan); vertical-align: bottom; }
+  td { padding: 11px 12px; border-bottom: 1px solid var(--line); vertical-align: top; line-height: 1.35; }
+  tr.us td { background: #e6f6fa; color: #004f7a; font-weight: 600; }
+  .ph { background: #fff3b0; color: #7a5b00; padding: 1px 6px; border-radius: 4px; font-weight: 600; }
+  .shot { border-radius: 12px; border: 1px solid var(--line); box-shadow: 0 14px 34px rgba(15,23,42,.14); display: block; }
+  .tag { position: absolute; left: 18px; bottom: 16px; background: #fff; color: var(--navy); font-weight: 600; font-size: 14px; padding: 6px 12px; border-radius: 6px; }
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></symbol>
+  <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 0 0 4H8"/><path d="M12 18V6"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 4 10 15 15 0 0 1-4 10 15 15 0 0 1-4-10 15 15 0 0 1 4-10z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+  <symbol id="i-calc" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 19h8"/></symbol>
+  <symbol id="i-cv" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><circle cx="12" cy="9" r="3"/><path d="M7 18a5 5 0 0 1 10 0"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M8 17v-4M13 17V7M18 17v-8"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="m21.7 18-8-14a2 2 0 0 0-3.5 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.7-3z"/><path d="M12 9v4M12 17h.01"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></symbol>
+  <symbol id="i-school" viewBox="0 0 24 24"><path d="M3 21h18M5 21V10l7-5 7 5v11"/><path d="M10 21v-5h4v5"/><circle cx="12" cy="11" r="1.5"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24"><path d="M16 11V5a2 2 0 0 0-4 0M12 10V4a2 2 0 0 0-4 0v2M8 10.5V6a2 2 0 0 0-4 0v8a8 8 0 0 0 16 0v-3a2 2 0 0 0-4 0"/></symbol>
+  <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="m8 12 3 3 5-6"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+</svg>
 
 <!-- 1. Title -->
-<section class="slide dark" style="justify-content:center;background:#0b1f33">
-  <img src="img/logo-dark.svg" alt="CareerProof Global" class="logo" style="height:96px;align-self:flex-start;margin:-10px 0 34px -20px">
-  <h1>Every route to any career,<br>with <span class="gold">official</span> pay and admission rules,<br>for every African student.</h1>
-  <p class="muted" style="margin-top:28px;font-size:24px">Free, on any smartphone, no sign-up. Live today; piloting in Uganda.</p>
-  <p style="margin-top:40px;font-size:19px">Kambugu Abdallah &middot; Kintu Moses &middot; Gutabingi Jamilah &nbsp;|&nbsp; careerproofglobal.vercel.app &nbsp;|&nbsp; careerproofglobal@gmail.com</p>
-  <div class="foot"><span>HBS Africa Business Club New Venture Competition 2027</span><span>Kampala, Uganda</span></div>
+<section class="slide dark">
+  <div class="photo" style="left:0;right:0;background-image:url(img/px-title.jpg);background-position:center 30%"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(11,31,51,.96) 0%,rgba(11,31,51,.88) 42%,rgba(11,31,51,.15) 75%)"></div>
+  <div style="position:absolute;left:80px;top:0;bottom:0;width:640px;display:flex;flex-direction:column;justify-content:center">
+    <img src="img/logo-dark.svg" alt="CareerProof Global" style="height:84px;align-self:flex-start;margin:0 0 44px -16px">
+    <h1 class="h" style="color:#fff;font-size:60px;line-height:1.05">Every route to<br>any career.</h1>
+    <div style="width:72px;height:4px;background:var(--gold);margin:28px 0"></div>
+    <p style="font-size:23px;color:#e2e8f0;max-width:560px">Official pay and admission rules for every student, on any device.</p>
+  </div>
+  <div class="foot" style="bottom:26px;font-weight:500;color:#cbd5e1">careerproofglobal.com</div>
 </section>
 
 <!-- 2. Problem -->
 <section class="slide">
-  <span class="kicker">The problem</span>
-  <h2>Young Africans make life-shaping choices<br>with almost no reliable information</h2>
-  <div class="grid2" style="grid-template-columns:1.15fr 1fr">
-    <ul class="clean" style="font-size:19px">
-      <li><b>Careers are invisible.</b> Students know a handful of professions; thousands of real jobs, and the routes into them, are never explained.</li>
-      <li><b>Subject choices close doors silently.</b> The wrong A-level combination at 16 can rule out medicine or engineering, and students find out when they apply.</li>
-      <li><b>Admission rules are scattered</b> in PDFs and on social media.</li>
-      <li><b>Career sites are not built for Africa.</b> They quote American pay and ignore African exams, regulators and institutions.</li>
-      <li><b>Job seekers are targeted by fake recruiters</b> charging fees for jobs that do not exist.</li>
-    </ul>
-    <div style="display:flex;flex-direction:column;gap:18px;justify-content:center">
-      <div class="card stat"><div class="big">104.7M</div><p>secondary-school students in Africa (2024), each choosing subjects and courses</p></div>
-      <div class="card stat"><div class="big">3,629</div><p>accredited programmes in Uganda alone to choose between</p></div>
+  <div class="pad" style="width:620px">
+    <div class="t">Problem</div>
+    <div style="display:flex;flex-direction:column;gap:26px">
+      <div class="row"><svg class="ic"><use href="#i-help"/></svg><p><b>Careers are invisible.</b> Students know a handful of jobs. Thousands of real careers, and the routes into them, are never explained.</p></div>
+      <div class="row"><svg class="ic"><use href="#i-lock"/></svg><p><b>Subject choices close doors silently.</b> The wrong combination at 16 can rule out medicine or engineering, and students find out when they apply.</p></div>
+      <div class="row"><svg class="ic"><use href="#i-doc"/></svg><p><b>The rules are scattered.</b> Entry requirements and past cut-offs sit in PDFs, portals and social-media posts.</p></div>
+      <div class="row"><svg class="ic"><use href="#i-coin"/></svg><p><b>Pay is guesswork.</b> Salary sites show user-reported estimates, often from another country.</p></div>
     </div>
   </div>
-  <p class="src">Enrolment: UNESCO Institute for Statistics, secondary enrolment, African Union region, 2024 (UIS indicator 20082, February 2026 release).</p>
-</section>
-
-<!-- 3. Solution: path planner -->
-<section class="slide">
-  <span class="kicker">The solution</span>
-  <h2 style="margin-bottom:10px">Every route from where you are to the career you want</h2>
-  <p class="muted" style="margin-bottom:18px">Start from school or any job. See every route, forwards or backwards, with the qualifications in between and pay in your country.</p>
-  <div class="grid2" style="grid-template-columns:1.55fr 1fr;gap:28px">
-    <div class="shotwrap"><img class="shot" src="img/planner-canvas.png" alt="Path planner canvas showing 12 routes to Accountant in Uganda"></div>
-    <ul class="clean" style="align-self:center">
-      <li><b>938 careers, 6,682 links</b> from career guides, O*NET related occupations and EU (ESCO) shared skills</li>
-      <li><b>No limit on steps</b>; routes ranked by published time</li>
-      <li><b>Honest:</b> moves based only on shared skills are marked as less certain</li>
-      <li>Example: 12 routes from school to Accountant in Uganda</li>
-    </ul>
+  <div class="photo" style="left:780px;right:0;background-image:url(img/px-problem.jpg);background-position:center 35%"></div>
+  <div style="position:absolute;left:700px;bottom:110px;background:#fff;padding:22px 26px;border-radius:4px;box-shadow:0 16px 40px rgba(15,23,42,.18);width:300px">
+    <div class="big">920M</div>
+    <div class="lab">students in secondary and tertiary education worldwide, each choosing subjects, courses and careers</div>
   </div>
+  <div class="src" style="right:560px">Enrolment: UNESCO Institute for Statistics, indicators 20082 and 25053, world, 2024.</div>
+  <div class="foot"><img src="img/icon.svg" alt="">CareerProof Global</div><div class="num" style="color:#fff">2</div>
 </section>
 
-<!-- 4. Official data -->
+<!-- 3. Solution -->
 <section class="slide">
-  <span class="kicker">What makes it trustworthy</span>
-  <h2 style="margin-bottom:18px">Official pay and admission rules, never guesses</h2>
-  <div class="grid2" style="grid-template-columns:0.62fr 1fr;gap:32px">
-    <div class="shotwrap" style="justify-content:center"><img class="shot" src="img/career-pay.png" alt="Pay in Uganda for an accountant: public-service entry scale and ILO group average" style="object-fit:contain;width:auto;max-width:100%;border:0;box-shadow:none"></div>
-    <div style="display:flex;flex-direction:column;gap:16px">
-      <div class="card"><h3>Pay by country, from the publisher</h3><p>Public-service salary scales (Uganda, South Africa), national pay statistics (US, UK, Canada, Australia), Kenya's legal minimum wages, World Bank and UN scales, ILO data for 170 countries. In the publisher's currency, with source and year.</p></div>
-      <div class="card"><h3>Uganda admissions from official sources</h3><p>The 2026/2027 weighting system in a points calculator, 3 years of cut-offs for 113 programmes, 3,629 active accredited programmes. We show the rules and past cut-offs; we never predict a "chance".</p></div>
-      <div class="card"><h3>72 sources, each with its licence</h3><p>ILO, UNESCO, EU ESCO, O*NET, national statistics offices, ministries, exam boards.</p></div>
+  <div class="pad" style="right:80px">
+    <div class="t">Solution</div>
+    <h2 class="h" style="font-size:38px;line-height:1.1">Every route to the career you want</h2>
+    <p class="muted" style="font-size:21px;margin:10px 0 26px">Start from school or at any point in your career.</p>
+    <div style="display:grid;grid-template-columns:250px 250px 1fr;gap:22px;flex:1;min-height:0">
+      <div style="position:relative;border-radius:10px;overflow:hidden;background:url(img/px-solution.jpg) center 30%/cover"><span class="tag">From school</span></div>
+      <div style="position:relative;border-radius:10px;overflow:hidden;background:url(img/px-career-change.jpg) 92% center/cover"><span class="tag">Mid-career</span></div>
+      <div style="display:flex;flex-direction:column;gap:16px;min-height:0">
+        <img class="shot" src="img/planner-canvas.png" alt="Path planner showing routes to Accountant" style="width:100%;height:230px;object-fit:cover;object-position:top left">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px">
+          <div><svg class="ic" style="width:30px;height:30px"><use href="#i-route"/></svg><p style="font-size:14.5px;margin-top:6px"><b style="color:var(--teal)">Forwards or backwards</b><br>from where you are, or from the goal</p></div>
+          <div><svg class="ic" style="width:30px;height:30px"><use href="#i-layers"/></svg><p style="font-size:14.5px;margin-top:6px"><b style="color:var(--teal)">Every step shown</b><br>qualifications, time and pay in between</p></div>
+          <div><svg class="ic" style="width:30px;height:30px"><use href="#i-shield"/></svg><p style="font-size:14.5px;margin-top:6px"><b style="color:var(--teal)">Honest</b><br>less-certain moves are marked as such</p></div>
+        </div>
+      </div>
     </div>
   </div>
+  <div class="foot"><img src="img/icon.svg" alt="">CareerProof Global</div><div class="num">3</div>
 </section>
 
-<!-- 5. Product breadth -->
+<!-- 4. Product -->
 <section class="slide">
-  <span class="kicker">Live today</span>
-  <h2>Built in November 2026, free, no sign-up</h2>
-  <div class="grid4" style="margin-bottom:26px">
-    <div class="card stat"><div class="big">938</div><p>careers in the route network</p></div>
-    <div class="card stat"><div class="big">170</div><p>countries with official pay or minimum wages</p></div>
-    <div class="card stat"><div class="big">30,326</div><p>universities and colleges in 223 countries</p></div>
-    <div class="card stat"><div class="big">10</div><p>school curricula: Cambridge, IB, AP, UACE, KCSE, WASSCE, NSC and more</p></div>
-  </div>
-  <div class="grid3">
-    <div class="card"><h3>CV builder</h3><p>A clear CV or résumé, with skills suggested for the target career. Stays on the user's device.</p></div>
-    <div class="card"><h3>Salary check</h3><p>Places a posted pay range against official pay for the same job and country.</p></div>
-    <div class="card"><h3>Finding work safely</h3><p>Official rules on recruitment fees, licensed recruiters in Uganda, scam warnings.</p></div>
-  </div>
-  <p class="src">Also: 68 in-depth career guides, 2,909 occupations on the ILO ISCO-08 standard, 32 school subjects linked to careers, UCAS Tariff calculator, FAQs with cited answers.</p>
-</section>
-
-<!-- 6. Market -->
-<section class="slide dark">
-  <span class="kicker">Market</span>
-  <h2>Every secondary student in Africa has to choose</h2>
-  <div class="grid2" style="grid-template-columns:1fr 1.1fr">
-    <div style="display:flex;flex-direction:column;gap:18px">
-      <div class="card stat"><div class="big">104.7M</div><p>secondary students in Africa, 2024 (78.1M in sub-Saharan Africa)</p></div>
-      <div class="card stat"><div class="big">US$209M</div><p>a year at a US$2 per-student school licence, before university, employer and data revenue</p></div>
+  <div class="pad" style="right:80px">
+    <div class="t">Product</div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-bottom:44px">
+      <div><div class="big">938</div><div class="lab">careers in a route network of 6,682 links</div></div>
+      <div><div class="big">170</div><div class="lab">countries with official pay or minimum-wage data</div></div>
+      <div><div class="big">30,326</div><div class="lab">universities and colleges in 223 countries</div></div>
+      <div><div class="big">10</div><div class="lab">school curricula: Cambridge, IB, AP, A level, national exams</div></div>
     </div>
-    <div>
-      <table style="color:#fff">
-        <tr><th style="color:#94a3b8">Next markets</th><th style="color:#94a3b8">Secondary students</th></tr>
-        <tr><td>Nigeria</td><td>15.2M (2023)</td></tr>
-        <tr><td>Kenya</td><td>6.7M (2023)</td></tr>
-        <tr><td>Ghana</td><td>3.3M (2024)</td></tr>
-        <tr><td>Rwanda</td><td>0.9M (2024)</td></tr>
-      </table>
-      <p class="muted" style="margin-top:20px;font-size:18px">Built on ILO and UNESCO standards, so every country already has a basic version. Going deep means adding a country's exams, admission rules and pay scales as data, not new software.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:30px 44px">
+      <div class="row"><svg class="ic"><use href="#i-route"/></svg><p><b>Path planner</b><br><span class="muted" style="font-size:15px">Every route between two points, ranked by time</span></p></div>
+      <div class="row"><svg class="ic"><use href="#i-check"/></svg><p><b>Subject selector</b><br><span class="muted" style="font-size:15px">Which subjects keep which careers open</span></p></div>
+      <div class="row"><svg class="ic"><use href="#i-calc"/></svg><p><b>Admission calculators</b><br><span class="muted" style="font-size:15px">Official weighting rules and past cut-offs</span></p></div>
+      <div class="row"><svg class="ic"><use href="#i-cv"/></svg><p><b>CV builder</b><br><span class="muted" style="font-size:15px">Skills suggested for the target career</span></p></div>
+      <div class="row"><svg class="ic"><use href="#i-chart"/></svg><p><b>Salary check</b><br><span class="muted" style="font-size:15px">A job offer compared with official pay</span></p></div>
+      <div class="row"><svg class="ic"><use href="#i-alert"/></svg><p><b>Finding work safely</b><br><span class="muted" style="font-size:15px">Recruitment-fee rules and scam warnings</span></p></div>
     </div>
   </div>
-  <p class="src">Enrolment: UNESCO Institute for Statistics (UIS indicator 20082), February 2026 release. Licence price is our assumption.</p>
+  <div class="src">Also: 68 in-depth career guides, 2,909 occupations on the ILO ISCO-08 standard, 32 school subjects linked to careers, FAQs with cited answers.</div>
+  <div class="foot"><img src="img/icon.svg" alt="">CareerProof Global</div><div class="num">4</div>
 </section>
 
-<!-- 7. Business model -->
+<!-- 5. Trust -->
 <section class="slide">
-  <span class="kicker">Business model</span>
-  <h2>Free for students, always. Paid by those who serve them.</h2>
-  <div class="grid2" style="grid-template-columns:1.4fr 1fr">
+  <div class="pad" style="right:80px">
+    <div class="t">Official data, never guesses</div>
+    <div style="display:grid;grid-template-columns:380px 1fr;gap:56px;flex:1;min-height:0">
+      <div style="display:flex;align-items:flex-start;justify-content:center;min-height:0"><img src="img/career-pay.png" alt="Pay card for an accountant from official sources" style="max-width:100%;max-height:100%;object-fit:contain"></div>
+      <div style="display:flex;flex-direction:column;gap:30px;padding-top:6px">
+        <div class="row"><svg class="ic"><use href="#i-coin"/></svg><p><b>Pay by country, from the publisher.</b> National pay statistics, public-service salary scales, legal minimum wages and ILO data for 170 countries, in the publisher's currency with source and year.</p></div>
+        <div class="row"><svg class="ic"><use href="#i-cap"/></svg><p><b>Admission rules from official sources.</b> Weighting systems, UCAS Tariff points and three years of past cut-offs. We show the rules; we never predict a "chance".</p></div>
+        <div class="row"><svg class="ic"><use href="#i-db"/></svg><p><b>72 sources, each with its licence.</b> ILO, UNESCO, EU ESCO, O*NET, national statistics offices, ministries and exam boards.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><img src="img/icon.svg" alt="">CareerProof Global</div><div class="num">5</div>
+</section>
+
+<!-- 6. Market size -->
+<section class="slide">
+  <div class="pad" style="width:1120px">
+    <div class="t">Market size</div>
+    <div style="display:grid;grid-template-columns:400px 1fr;gap:50px">
+      <div style="position:relative;height:400px">
+        <div style="position:absolute;left:0;top:0;width:400px;height:400px;border-radius:50%;background:#e6f6fa"></div>
+        <div style="position:absolute;left:60px;top:90px;width:280px;height:280px;border-radius:50%;background:#99e1f0"></div>
+        <div style="position:absolute;left:125px;top:220px;width:150px;height:150px;border-radius:50%;background:var(--blue)"></div>
+        <div style="position:absolute;left:0;right:0;top:26px;text-align:center"><div style="font-size:13px;font-weight:600;color:var(--teal)">TAM</div><div class="h" style="font-size:30px">920.3M</div></div>
+        <div style="position:absolute;left:0;right:0;top:118px;text-align:center"><div style="font-size:13px;font-weight:600;color:#005a8c">SAM</div><div class="h" style="font-size:30px">596.1M</div></div>
+        <div style="position:absolute;left:125px;width:150px;top:262px;text-align:center"><div style="font-size:13px;font-weight:600;color:var(--gold)">SOM</div><div class="h" style="font-size:28px;color:#fff">6.0M</div></div>
+      </div>
+      <div>
+        <table style="font-size:15.5px">
+          <tr><th style="width:46%">Step</th><th>Rate</th><th>Students</th><th>At US$1, once</th></tr>
+          <tr><td><b>TAM</b>: students in secondary and tertiary education worldwide</td><td></td><td>920.3M</td><td>US$920M</td></tr>
+          <tr><td>who use the Internet (ages 15 to 24)</td><td>82%</td><td>754.6M</td><td></td></tr>
+          <tr style="background:#f0fbfd"><td><b>SAM</b>: online and able to pay US$1 digitally (adults with an account)</td><td>79%</td><td>596.1M</td><td>US$596M</td></tr>
+          <tr class="us"><td><b>SOM</b>: our five-year target share of SAM</td><td>1%</td><td>6.0M</td><td>US$6.0M</td></tr>
+        </table>
+        <p class="muted" style="font-size:14px;margin-top:20px;line-height:1.5">Pricing: a one-time US$1 fee for lifetime access. Rates are applied in sequence and assumed independent; youth Internet use and adult account ownership are proxies for students' access and ability to pay. The 1% share is our assumption (scenarios on slide 10).</p>
+      </div>
+    </div>
+  </div>
+  <div class="src">Sources: UNESCO Institute for Statistics, enrolment, world, 2024 (indicators 20082, 25053); ITU, Facts and Figures 2025, Internet use ages 15 to 24; World Bank, Global Findex 2025, account ownership, adults worldwide.</div>
+  <div class="foot"><img src="img/icon.svg" alt="">CareerProof Global</div><div class="num">6</div>
+</section>
+
+<!-- 7. Market growth -->
+<section class="slide">
+  <div class="pad" style="right:80px">
+    <div class="t">The market is growing</div>
+    <div style="display:grid;grid-template-columns:660px 1fr;gap:50px">
+      <div>
+        <p style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:8px">Students in secondary and tertiary education, world, 2010 to 2024</p>
+        <img src="img/enrolment-chart.svg" alt="Stacked area chart: 728.6 million students in 2010 to 920.3 million in 2024" style="width:640px">
+      </div>
+      <div style="display:flex;flex-direction:column;gap:26px;padding-top:6px">
+        <div><div class="big" style="font-size:40px">+26%</div><div class="lab">students since 2010: 728.6M to 920.3M. Growth of 1.5% a year over 2014 to 2024; tertiary 2.3% a year.</div></div>
+        <div><div class="big" style="font-size:40px">79% &rarr; 82%</div><div class="lab">of 15 to 24 year-olds online, 2024 to 2025</div></div>
+        <div><div class="big" style="font-size:40px">51% &rarr; 79%</div><div class="lab">of adults with an account they can pay from, 2011 to 2024</div></div>
+        <div style="border-left:3px solid var(--gold);padding-left:14px"><p style="font-size:15px"><b>About 1 billion students by 2030</b> if the 2014 to 2024 trend continues. This is an extrapolation, not a forecast.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="src">Sources: UNESCO Institute for Statistics (indicators 20082, 25053); ITU Facts and Figures 2024 and 2025; World Bank Global Findex 2011 and 2025.</div>
+  <div class="foot"><img src="img/icon.svg" alt="">CareerProof Global</div><div class="num">7</div>
+</section>
+
+<!-- 8. Business model -->
+<section class="slide">
+  <div class="pad" style="width:640px">
+    <div class="t">Business model</div>
+    <h2 class="h" style="font-size:40px;line-height:1.1;margin-bottom:8px">US$1, once. <span style="color:var(--teal)">Lifetime access.</span></h2>
+    <p class="muted" style="margin-bottom:30px">Priced so almost any student who is online can pay.</p>
+    <div style="display:flex;flex-direction:column;gap:22px">
+      <div class="row"><svg class="ic"><use href="#i-users"/></svg><p><b>Students:</b> a one-time US$1 fee for lifetime access, from school through every career move.</p></div>
+      <div class="row"><svg class="ic"><use href="#i-school"/></svg><p><b>Schools and counsellors:</b> class dashboards and reports, priced per student.</p></div>
+      <div class="row"><svg class="ic"><use href="#i-building"/></svg><p><b>Universities, employers, governments:</b> verified listings, reaching eligible students, anonymised aggregate insight.</p></div>
+    </div>
+  </div>
+  <div class="photo" style="left:800px;right:0;background-image:url(img/px-payment.jpg);background-position:40% center"></div>
+  <div style="position:absolute;left:720px;bottom:100px;background:var(--navy);color:#fff;padding:22px 26px;border-radius:4px;width:300px">
+    <p style="font-size:15px;line-height:1.5"><b style="color:var(--gold)">Low cost to serve.</b> Core data comes from official open sources we cite, not buy. A lightweight web app that runs on basic smartphones.</p>
+  </div>
+  <div class="foot"><img src="img/icon.svg" alt="">CareerProof Global</div><div class="num" style="color:#fff">8</div>
+</section>
+
+<!-- 9. Go-to-market -->
+<section class="slide">
+  <div class="photo" style="left:0;width:440px;background-image:url(img/px-classroom.jpg);background-position:78% center"></div>
+  <div class="pad" style="left:520px;right:80px">
+    <div class="t">Go-to-market</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:34px 40px">
+      <div><svg class="ic"><use href="#i-search"/></svg><p style="margin-top:10px"><b style="color:var(--teal)">Search</b><br><span style="font-size:16px">Thousands of career, pay and admission pages on official data, found when students search.</span></p></div>
+      <div><svg class="ic"><use href="#i-share"/></svg><p style="margin-top:10px"><b style="color:var(--teal)">Sharing</b><br><span style="font-size:16px">Route maps students send to friends and parents on WhatsApp and social media.</span></p></div>
+      <div><svg class="ic"><use href="#i-school"/></svg><p style="margin-top:10px"><b style="color:var(--teal)">Schools and counsellors</b><br><span style="font-size:16px">Whole classes at once, timed to subject choice and admission seasons.</span></p></div>
+      <div><svg class="ic"><use href="#i-hand"/></svg><p style="margin-top:10px"><b style="color:var(--teal)">Partners</b><br><span style="font-size:16px">Universities, exam boards, NGOs and ministries that need students to choose well.</span></p></div>
+    </div>
+    <div style="margin-top:34px;border-left:3px solid var(--gold);padding-left:16px"><p style="font-size:16px"><b>Every country is covered from day one</b> on ILO and UNESCO standards. Going deeper means adding a country's exams, admission rules and pay scales as data, not new software.</p></div>
+  </div>
+  <div class="foot" style="left:520px"><img src="img/icon.svg" alt="">CareerProof Global</div><div class="num">9</div>
+</section>
+
+<!-- 10. Five-year outlook -->
+<section class="slide">
+  <div class="pad" style="right:80px">
+    <div class="t">Five-year outlook</div>
+    <p class="muted" style="margin:-8px 0 70px">Share of the serviceable market (596.1M students) paying US$1 within five years.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:40px;text-align:center">
+      <div style="padding-top:26px"><svg class="ic" style="width:56px;height:56px;stroke:#94a3b8"><use href="#i-chart"/></svg><div style="font-weight:600;color:var(--muted);margin:14px 0 6px">Cautious</div><div class="big" style="color:#64748b">0.25%</div><p style="margin-top:14px;font-size:17px"><b>1.5M</b> students<br><b>US$1.5M</b> in student fees</p></div>
+      <div style="background:#e6f6fa;border-radius:12px;padding:26px 10px 30px"><svg class="ic" style="width:56px;height:56px"><use href="#i-chart"/></svg><div style="font-weight:600;color:var(--teal);margin:14px 0 6px">Realistic (our target)</div><div class="big">1%</div><p style="margin-top:14px;font-size:17px"><b>6.0M</b> students<br><b>US$6.0M</b> in student fees</p></div>
+      <div style="padding-top:26px"><svg class="ic" style="width:56px;height:56px;stroke:var(--blue)"><use href="#i-chart"/></svg><div style="font-weight:600;color:var(--blue);margin:14px 0 6px">Strong</div><div class="big" style="color:var(--blue)">3%</div><p style="margin-top:14px;font-size:17px"><b>17.9M</b> students<br><b>US$17.9M</b> in student fees</p></div>
+    </div>
+    <p class="muted" style="font-size:15px;text-align:center;margin-top:36px">Cumulative over five years, from student fees only: before school, university, employer and data revenue. Shares are our assumptions.</p>
+  </div>
+  <div class="foot"><img src="img/icon.svg" alt="">CareerProof Global</div><div class="num">10</div>
+</section>
+
+<!-- 11. Competition -->
+<section class="slide">
+  <div class="pad" style="right:80px">
+    <div class="t">Competition</div>
     <table>
-      <tr><th>Customer</th><th>What they pay for</th></tr>
-      <tr><td><b>Secondary schools</b> (first)</td><td>Counsellor dashboard and class reports; termly subscription priced per student</td></tr>
-      <tr><td><b>Universities and colleges</b></td><td>Verified programme listings; anonymised insight into student interest</td></tr>
-      <tr><td><b>Employers and scholarship providers</b></td><td>Reaching eligible students; internship and graduate-job postings</td></tr>
-      <tr><td><b>Governments, NGOs, researchers</b></td><td>Anonymised, aggregated data on subject choices and career interest</td></tr>
+      <tr><th style="width:21%"></th><th style="width:22%">Routes from school or any job</th><th style="width:24%">Where pay data comes from</th><th style="width:18%">Subjects and admission rules</th><th>Built for</th></tr>
+      <tr class="us"><td>CareerProof Global</td><td>Yes: 938 careers, 6,682 links</td><td>Official publishers, 170 countries</td><td>Yes, cited by country</td><td>Students and career changers, any country</td></tr>
+      <tr><td><b>Glassdoor</b></td><td>No</td><td>Employee-submitted reports</td><td>No</td><td>Job seekers; company reviews</td></tr>
+      <tr><td><b>Indeed</b></td><td>No</td><td>Job adverts and user reports</td><td>No</td><td>Job seekers</td></tr>
+      <tr><td><b>PayScale</b></td><td>No</td><td>Salary surveys</td><td>No</td><td>Salary benchmarking</td></tr>
+      <tr><td><b>LinkedIn</b></td><td>No</td><td>Member-submitted</td><td>No</td><td>Professional networking and hiring</td></tr>
+      <tr><td><b>O*NET / CareerOneStop</b></td><td>Related careers, US only</td><td>US official statistics</td><td>No</td><td>US job seekers and students</td></tr>
     </table>
-    <div style="display:flex;flex-direction:column;gap:16px">
-      <div class="card"><h3>Low cost to serve</h3><p>Core data comes from official open sources we cite rather than buy; a lightweight web app on basic smartphones.</p></div>
-      <div class="card"><h3>Cheap to expand</h3><p>A new country is data (exams, rules, pay, institutions), not new software.</p></div>
+    <p style="margin-top:24px;font-size:16px">Others answer <i>"what does this job pay?"</i> for people already in the job market. We answer <b style="color:var(--teal)">"how do I get there from here?"</b>, starting at school.</p>
+  </div>
+  <div class="foot"><img src="img/icon.svg" alt="">CareerProof Global</div><div class="num">11</div>
+</section>
+
+<!-- 12. Competitive advantage -->
+<section class="slide">
+  <div class="pad" style="right:80px">
+    <div class="t">Competitive advantage</div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:40px;text-align:center;margin-top:40px">
+      <div><svg class="ic" style="width:64px;height:64px"><use href="#i-db"/></svg><p style="margin-top:18px"><b style="color:var(--teal)">Cited official data</b><br><span class="muted" style="font-size:15px">72 licence-checked sources, assembled and cross-coded</span></p></div>
+      <div><svg class="ic" style="width:64px;height:64px"><use href="#i-route"/></svg><p style="margin-top:18px"><b style="color:var(--teal)">Route network</b><br><span class="muted" style="font-size:15px">938 careers and 6,682 links from guides, O*NET and EU ESCO</span></p></div>
+      <div><svg class="ic" style="width:64px;height:64px"><use href="#i-check"/></svg><p style="margin-top:18px"><b style="color:var(--teal)">Rules as tested data</b><br><span class="muted" style="font-size:15px">Admission rules stored as versioned, tested data, not text</span></p></div>
+      <div><svg class="ic" style="width:64px;height:64px"><use href="#i-globe"/></svg><p style="margin-top:18px"><b style="color:var(--teal)">Built to scale</b><br><span class="muted" style="font-size:15px">International standards; a new country is data, not code</span></p></div>
+    </div>
+    <p style="text-align:center;margin-top:60px;font-size:19px">The lead grows with every country we add.</p>
+  </div>
+  <div class="foot"><img src="img/icon.svg" alt="">CareerProof Global</div><div class="num">12</div>
+</section>
+
+<!-- 13. Team: roles and contributions to be filled in by the founders -->
+<section class="slide">
+  <div class="pad" style="right:80px">
+    <div class="t">Team</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:44px;margin-top:20px">
+      <div style="text-align:center"><div class="h" style="width:120px;height:120px;border-radius:50%;margin:0 auto 18px;background:var(--blue);display:flex;align-items:center;justify-content:center;color:#fff;font-size:40px">KA</div><div class="h" style="font-size:22px">Kambugu Abdallah</div><div style="margin:8px 0 12px"><span class="ph">[Role]</span></div><p class="muted" style="font-size:15px"><span class="ph">[Contributions: what they built or lead, and relevant experience]</span></p></div>
+      <div style="text-align:center"><img src="img/team-kintu-moses.jpg" alt="Kintu Moses" style="width:120px;height:120px;border-radius:50%;margin:0 auto 18px;display:block;object-fit:cover"><div class="h" style="font-size:22px">Kintu Moses</div><div style="margin:8px 0 12px"><span class="ph">[Role]</span></div><p class="muted" style="font-size:15px"><span class="ph">[Contributions: what they built or lead, and relevant experience]</span></p></div>
+      <div style="text-align:center"><div class="h" style="width:120px;height:120px;border-radius:50%;margin:0 auto 18px;background:var(--cyan);display:flex;align-items:center;justify-content:center;color:#fff;font-size:40px">GJ</div><div class="h" style="font-size:22px">Gutabingi Jamilah</div><div style="margin:8px 0 12px"><span class="ph">[Role]</span></div><p class="muted" style="font-size:15px"><span class="ph">[Contributions: what they built or lead, and relevant experience]</span></p></div>
+    </div>
+    <div style="margin-top:auto;background:#f0fbfd;border-radius:12px;padding:24px 34px;display:grid;grid-template-columns:auto repeat(4,1fr);gap:34px;align-items:center">
+      <div style="font-weight:600;color:var(--navy);font-size:16px;line-height:1.35">Built by<br>the team</div>
+      <div><div class="big" style="font-size:34px">938</div><div class="lab" style="margin-top:4px">careers in the route network</div></div>
+      <div><div class="big" style="font-size:34px">72</div><div class="lab" style="margin-top:4px">official sources, licence-checked</div></div>
+      <div><div class="big" style="font-size:34px">170</div><div class="lab" style="margin-top:4px">countries with official pay</div></div>
+      <div><div class="big" style="font-size:34px">30,326</div><div class="lab" style="margin-top:4px">institutions in 223 countries</div></div>
     </div>
   </div>
+  <div class="foot"><img src="img/icon.svg" alt="">CareerProof Global</div><div class="num">13</div>
 </section>
 
-<!-- 8. Go-to-market and milestones -->
-<section class="slide">
-  <span class="kicker">Go-to-market</span>
-  <h2>Uganda pilot, then East Africa</h2>
-  <div class="grid3" style="margin-bottom:24px">
-    <div class="card"><h3>1. School pilot</h3><p>3 to 5 Ugandan secondary schools, through careers teachers and S4 to S6 classes, timed to subject choice and admissions.</p></div>
-    <div class="card"><h3>2. Paid schools</h3><p>Convert pilots to a termly subscription; grow through head-teacher and careers-teacher networks.</p></div>
-    <div class="card"><h3>3. East Africa</h3><p>Kenya (KUCCPS), Rwanda and Tanzania on the same platform.</p></div>
-  </div>
-  <table>
-    <tr><th style="width:20%">When</th><th>Milestone</th></tr>
-    <tr><td class="us">Nov 2026</td><td>Live: path planner, pay by country, Uganda admissions, curricula, CV and salary tools</td></tr>
-    <tr><td>Dec 2026 to Mar 2027</td><td>Uganda school pilot; data partnerships with NCHE, PUJAB and universities</td></tr>
-    <tr><td>Feb 2027</td><td>Kenya admission data; first paying school</td></tr>
-    <tr><td>Mid 2027</td><td>Accounts and counsellor dashboard, after data-protection registration</td></tr>
-  </table>
-  <p class="src">Growth channels: search (thousands of pages built on official data), WhatsApp-shareable route maps, results-season campaigns.</p>
-</section>
-
-<!-- 9. Competition -->
-<section class="slide">
-  <span class="kicker">Competition</span>
-  <h2>Others list careers. We map routes, on official data.</h2>
-  <table>
-    <tr><th></th><th>Routes from any start</th><th>Official local pay</th><th>African exams and admissions</th><th>Free for students</th></tr>
-    <tr><td><b>CareerProof Global</b></td><td class="us">Yes</td><td class="us">Yes, 170 countries</td><td class="us">Yes, cited</td><td class="us">Yes</td></tr>
-    <tr><td>Official portals (KUCCPS, universities)</td><td>No</td><td>No</td><td>One system each</td><td>Yes</td></tr>
-    <tr><td>Global career and salary sites</td><td>No</td><td>Often user-reported estimates</td><td>No</td><td>Mostly</td></tr>
-    <tr><td>Cut-off lists on social media</td><td>No</td><td>No</td><td>Unverified</td><td>Yes</td></tr>
-    <tr><td>Careers teachers</td><td>Limited time</td><td>Rarely</td><td>Local knowledge</td><td>Few and overstretched</td></tr>
-  </table>
-  <p style="margin-top:26px"><b>Hard to copy:</b> an assembled, licence-checked dataset of 72 sources, crosswalks between national and international codes, and admission rules stored as tested, versioned data. The lead grows with each country.</p>
-</section>
-
-<!-- 10. Team and ask -->
+<!-- 14. Close -->
 <section class="slide dark">
-  <span class="kicker">Team and ask</span>
-  <h2>Three co-founders in Kampala</h2>
-  <div class="grid3" style="margin-bottom:28px">
-    <div class="card"><h3>Kambugu Abdallah</h3><p>Co-founder</p></div>
-    <div class="card"><h3>Kintu Moses</h3><p>Co-founder</p></div>
-    <div class="card"><h3>Gutabingi Jamilah</h3><p>Co-founder</p></div>
+  <div class="photo" style="left:0;right:0;background-image:url(img/px-close.jpg);background-position:center 30%"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(11,31,51,.97) 0%,rgba(11,31,51,.8) 45%,rgba(11,31,51,.2) 100%)"></div>
+  <div style="position:absolute;left:80px;right:80px;bottom:80px">
+    <img src="img/logo-dark.svg" alt="CareerProof Global" style="height:64px;margin:0 0 26px -12px">
+    <h2 class="h" style="color:#fff;font-size:48px;line-height:1.1">Every route to any career,<br>for every student.</h2>
+    <p style="margin-top:24px;font-size:19px;color:#cbd5e1">careerproofglobal.com &nbsp;&middot;&nbsp; careerproofglobal@gmail.com</p>
   </div>
-  <div class="grid2" style="grid-template-columns:1fr 1fr;flex:0">
-    <div>
-      <p style="font-size:22px"><b>The ask:</b> prize funding to run the Uganda school pilot and add Kenya.</p>
-      <p class="muted" style="margin-top:14px;font-size:18px">Free for students, always. Official data only. Built for Africa.</p>
-    </div>
-    <table style="color:#fff;font-size:16px">
-      <tr><td>Data partnerships (Uganda, Kenya)</td><td>30%</td></tr>
-      <tr><td>School pilot</td><td>25%</td></tr>
-      <tr><td>Product: accounts, counsellor tools, languages</td><td>25%</td></tr>
-      <tr><td>Legal and data protection</td><td>10%</td></tr>
-      <tr><td>Hosting and tools</td><td>10%</td></tr>
-    </table>
-  </div>
-  <div class="foot"><span>careerproofglobal.vercel.app &middot; careerproofglobal@gmail.com &middot; +256 702 700746</span><span>CareerProof Global</span></div>
 </section>
 
 </body>

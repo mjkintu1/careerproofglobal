@@ -1,7 +1,6 @@
 import type { Localised, Occupation } from "@careerproof/career-graph";
 import { careerHref, careerPageTitle, clusterName, graph, levelLabel } from "@/lib/careers";
-
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://careerproofglobal.vercel.app";
+import { SITE_URL as SITE } from "@/lib/site";
 
 /** schema.org Occupation + BreadcrumbList, so search engines get machine-readable career facts. */
 export function CareerJsonLd({ o, location, local }: { o: Occupation; location: string; local: Localised }) {
