@@ -24,7 +24,7 @@ export function CoverageTable({ rows }: { rows: CoverageRow[] }) {
         <div className="min-w-0 flex-1"><CountryFilterInput value={q} onChange={setQ} label="Find a country" count={shown.length} total={rows.length} /></div>
         <label className="flex items-center gap-2 text-sm"><input type="checkbox" checked={onlyGaps} onChange={(e) => setOnlyGaps(e.target.checked)} /> Only countries with two sources or fewer</label>
       </div>
-      <div className="card overflow-x-auto p-0">
+      <div className="card relative overflow-x-auto p-0">
         <table className="w-full min-w-[860px] text-sm">
           <thead className="bg-slate-50 text-left">
             <tr>

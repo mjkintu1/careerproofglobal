@@ -68,6 +68,8 @@
   @media (max-width: 1023.98px) {
     html.mobile-nav-open, html.mobile-nav-open body { overflow: hidden; }
   }
+  /* Page behind the full-screen route map does not scroll (set by PathCanvas). */
+  html.canvas-full, html.canvas-full body { overflow: hidden; }
 
   h1, h2, h3 {
     font-family: var(--font-display);

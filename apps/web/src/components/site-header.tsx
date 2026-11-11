@@ -13,7 +13,7 @@ export function SiteHeader() {
           <p className="hidden sm:block">Career guidance for every country, aligned to <span className="font-semibold text-white">ILO ISCO-08</span></p>
         </Container>
       </div>
-      <header className="sticky top-0 z-40 border-b border-line bg-white/95 backdrop-blur">
+      <header className="sticky top-0 z-40 border-b border-line bg-white">
         <Container className="flex min-h-[4.5rem] items-center justify-between gap-3 py-2">
           <Link href="/" className="shrink-0 no-underline" aria-label="CareerProof Global home">
             <BrandLogo className="h-10 w-auto sm:h-11" />

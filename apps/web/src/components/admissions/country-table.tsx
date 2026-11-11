@@ -29,7 +29,7 @@ export function CountryTable({ rows }: { rows: CountryRow[] }) {
   return (
     <div className="space-y-4">
       <CountryFilterInput label="Find a country" value={query} onChange={setQuery} count={shown.length} total={rows.length} />
-      <div className="card overflow-x-auto">
+      <div className="card relative overflow-x-auto">
         <table className="w-full text-left text-sm">
           <caption className="sr-only">Admission information by country</caption>
           <thead className="bg-surface-muted">

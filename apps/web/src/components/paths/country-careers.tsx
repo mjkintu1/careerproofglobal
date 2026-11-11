@@ -67,7 +67,7 @@ export function CountryCareers({ cards, countryName, basePath }: { cards: Career
           National minimum wage: <strong>{national.period === "hour" ? `${national.currency} ${national.scaleMin!.toFixed(2)}` : money(national.scaleMin!, national.currency, false)}</strong> {national.period === "hour" ? "an hour" : "a month"} ({national.year}). {national.note} <a href={national.url} rel="noopener">{national.attribution}</a>
         </p>
       )}
-      <div className="card overflow-x-auto p-0">
+      <div className="card relative overflow-x-auto p-0">
         <table className="w-full min-w-[720px] text-sm">
           <thead className="bg-slate-50">
             <tr>{th("title", "Career")}{th("entry", "Quickest way in")}<th scope="col" className="px-3 py-2 text-left">Usual education</th>{th("pay", "Pay a month (most specific figure)")}<th className="px-3 py-2"><span className="sr-only">Plan</span></th></tr>

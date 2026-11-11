@@ -31,7 +31,7 @@ export function Tabs({ label, tabs, panels }: Props) {
   return (
     <div>
       <div role="tablist" aria-label={label} onKeyDown={onKeyDown}
-        className="flex gap-1 overflow-x-auto rounded-2xl border border-line bg-white p-1 shadow-sm">
+        className="relative flex gap-1 overflow-x-auto rounded-2xl border border-line bg-white p-1 shadow-sm">
         {tabs.map((t, i) => (
           <button key={t.id} ref={(el) => { refs.current[i] = el; }} type="button" role="tab"
             id={`${base}-tab-${t.id}`} aria-selected={i === active} aria-controls={`${base}-panel-${t.id}`}

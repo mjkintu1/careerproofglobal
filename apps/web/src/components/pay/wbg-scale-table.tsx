@@ -12,7 +12,7 @@ function WbgTable({ country, countryName }: { country: string; countryName: stri
     <div className="space-y-2">
       <h3 className="font-display text-lg font-bold">World Bank Group</h3>
       <p className="text-sm text-ink-muted">Salary range by grade for staff based in {countryName}, per year ({s.currency}). G1 or GA is the lowest grade.</p>
-      <div className="card overflow-x-auto p-0">
+      <div className="card relative overflow-x-auto p-0">
         <table className="w-full min-w-[440px] text-sm">
           <thead className="bg-slate-50"><tr><th scope="col" className="px-3 py-2 text-left">Grade</th><th scope="col" className={th}>Minimum</th><th scope="col" className={th}>Midpoint</th><th scope="col" className={th}>Maximum</th></tr></thead>
           <tbody>
@@ -38,7 +38,7 @@ function UnTable({ country, countryName }: { country: string; countryName: strin
         Net pay per year in US dollars at the main UN duty station in {countryName}: the worldwide base salary (scale from {monthName(u.scaleEffective)}) plus post adjustment
         of {u.multiplier}% (as of {u.asOf}), using ICSC&rsquo;s formula. Ranges run from step 1 to the top regular step. General Service staff, hired locally, have separate local scales.
       </p>
-      <div className="card overflow-x-auto p-0">
+      <div className="card relative overflow-x-auto p-0">
         <table className="w-full min-w-[440px] text-sm">
           <thead className="bg-slate-50"><tr><th scope="col" className="px-3 py-2 text-left">Grade</th><th scope="col" className={th}>Net pay here, USD</th><th scope="col" className={th}>Base salary, USD</th></tr></thead>
           <tbody>

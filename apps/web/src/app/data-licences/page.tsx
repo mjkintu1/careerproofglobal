@@ -13,7 +13,7 @@ const link = (href: string | null, text: string) => (href ? <a href={href} rel="
 
 function SourceTable({ rows }: { rows: DataSource[] }) {
   return (
-    <div className="card overflow-x-auto p-0">
+    <div className="card relative overflow-x-auto p-0">
       <table className="w-full min-w-[760px] text-sm">
         <thead className="bg-slate-50 text-left">
           <tr><th scope="col" className="px-3 py-2">Source</th><th scope="col" className="px-3 py-2">Licence</th><th scope="col" className="px-3 py-2">Attribution</th></tr>

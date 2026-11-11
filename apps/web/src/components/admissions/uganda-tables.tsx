@@ -45,7 +45,7 @@ export function CutoffTable({ rows }: { rows: CutoffRow[] }) {
   return (
     <div className="space-y-4">
       <Filter label="Find a programme or university" value={q} onChange={setQ} count={shown.length} total={rows.length} placeholder="e.g. medicine, Kyambogo, CSC" />
-      <div className="card overflow-x-auto">
+      <div className="card relative overflow-x-auto">
         <table className="w-full text-left text-sm">
           <caption className="sr-only">Government-sponsorship cut-off points by programme</caption>
           <thead className="bg-surface-muted">

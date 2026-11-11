@@ -1,8 +1,9 @@
 "use client";
 
 import "@xyflow/react/dist/style.css";
-import { Background, Controls, MarkerType, MiniMap, ReactFlow, useEdgesState, useNodesState, useReactFlow, useStore, type Edge, type Node } from "@xyflow/react";
-import { useEffect, useMemo, useRef } from "react";
+import { Background, Controls, MarkerType, MiniMap, Panel, ReactFlow, useEdgesState, useNodesState, useReactFlow, useStore, type Edge, type Node } from "@xyflow/react";
+import { Maximize2, Minimize2 } from "lucide-react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import type { NetworkEdge, NetworkRoute } from "@careerproof/career-graph";
 import type { CareerCard } from "@/lib/path-network";
 import { nodeTypes, type CareerNodeRole } from "./flow-nodes";
@@ -105,6 +106,17 @@ function AutoFit({ layout }: { layout: string }) {
   return null;
 }
 
+/** Refit when the canvas switches in or out of full screen (its size changes, the layout does not). */
+function RefitOnResize({ full }: { full: boolean }) {
+  const { fitView } = useReactFlow();
+  const first = useRef(true);
+  useEffect(() => {
+    if (first.current) { first.current = false; return; }
+    const id = requestAnimationFrame(() => void fitView({ padding: 0.12, duration: 200 }));
+    return () => cancelAnimationFrame(id);
+  }, [full, fitView]);
+  return null;
+}
 
 export interface PathCanvasProps {
   routes: NetworkRoute[];
@@ -121,8 +133,22 @@ export interface PathCanvasProps {
   className?: string;
 }
 
-/** The node-and-wire route canvas, shared by the planner and the career pages. */
-export function PathCanvas({ routes, cards, from, to, active, selected, direction, layoutKey, onSelectNode, onSelectRoute, className = "h-[620px]" }: PathCanvasProps) {
+/**
+ * The node-and-wire route canvas, shared by the planner and the career pages.
+ * On phones it is about 70% of the screen tall; "Full screen" expands it over the whole page (Escape or the button exits).
+ */
+export function PathCanvas({ routes, cards, from, to, active, selected, direction, layoutKey, onSelectNode, onSelectRoute, className = "h-[70svh] min-h-[420px] sm:h-[620px]" }: PathCanvasProps) {
+  const [full, setFull] = useState(false);
+  useEffect(() => {
+    if (!full) return;
+    document.documentElement.classList.add("canvas-full");
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setFull(false); };
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.documentElement.classList.remove("canvas-full");
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [full]);
   const flow = useMemo(() => layout(routes, cards, from, to, active, selected, direction), [routes, cards, from, to, active, selected, direction]);
   // React Flow records measured sizes (needed for fitting and the minimap) through onNodesChange.
   const [nodes, setNodes, onNodesChange] = useNodesState<Node>([]);
@@ -143,7 +169,8 @@ export function PathCanvas({ routes, cards, from, to, active, selected, directio
   }, [flow, key, setNodes, setFlowEdges]);
 
   return (
-    <div className={`card overflow-hidden p-0 ${className}`}>
+    <div role={full ? "dialog" : undefined} aria-modal={full || undefined} aria-label={full ? "Route map, full screen" : undefined}
+      className={full ? "fixed inset-0 z-50 overflow-hidden bg-white" : `card overflow-hidden p-0 ${className}`}>
       <ReactFlow
         nodes={nodes} edges={flowEdges} onNodesChange={onNodesChange} onEdgesChange={onEdgesChange} nodeTypes={nodeTypes}
         fitView fitViewOptions={{ padding: 0.15 }} minZoom={0.2} maxZoom={1.5} nodesConnectable={false}
@@ -151,10 +178,19 @@ export function PathCanvas({ routes, cards, from, to, active, selected, directio
         onEdgeClick={(_, e) => { const m = /^e:(\d+):/.exec(e.id); if (m) onSelectRoute?.(Number(m[1])); }}
       >
         <Background gap={22} size={1.2} color="#cbd5e1" />
-        <MiniMap pannable zoomable ariaLabel="Overview of the route canvas" maskColor="rgba(15, 23, 42, 0.08)"
+        {/* Hidden on narrow screens, where it would cover much of the map; zoom controls stay. */}
+        <MiniMap pannable zoomable ariaLabel="Overview of the route canvas" maskColor="rgba(15, 23, 42, 0.08)" className="max-sm:!hidden"
           nodeColor={(n) => (n.type === "credential" ? "#c4b5fd" : n.id === "n:target" ? "#f59e0b" : n.id === "n:start" ? "#10b981" : "#94a3b8")} />
         <Controls position="bottom-right" showInteractive={false} />
         <AutoFit layout={key} />
+        <RefitOnResize full={full} />
+        <Panel position="top-right">
+          <button type="button" onClick={() => setFull((f) => !f)} aria-pressed={full}
+            className="inline-flex min-h-11 items-center gap-2 rounded-full border border-line bg-white px-4 text-sm font-semibold text-ink shadow-sm hover:bg-teal-50">
+            {full ? <Minimize2 aria-hidden="true" size={16} /> : <Maximize2 aria-hidden="true" size={16} />}
+            {full ? "Exit full screen" : "Full screen"}
+          </button>
+        </Panel>
       </ReactFlow>
     </div>
   );

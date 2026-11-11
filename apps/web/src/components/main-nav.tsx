@@ -6,6 +6,7 @@ import { ChevronDown, Menu, Route, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { mainNav, type NavGroup } from "@/lib/site-nav";
+import { BrandLogo } from "./brand-logo";
 
 /** A link is current when its path (without #hash) is the page, or a parent of it (not the home page). */
 function isCurrent(href: string, pathname: string) {
@@ -18,17 +19,19 @@ const panelId = (g: NavGroup, prefix: string) => `${prefix}-${g.label.replace(/\
 
 /**
  * Main navigation (disclosure pattern).
- * Desktop: one dropdown at a time; opens on click, on hover for mouse users, closes on Escape, outside click or focus leaving.
- * Mobile: a full-height scrollable panel with collapsible groups and the "Plan my path" button.
+ * Desktop: one dropdown at a time; opens on click, on hover for mouse users, closes on Escape, outside click, focus
+ * leaving or the page scrolling (so an open panel never rides along with the sticky header).
+ * Mobile: a full-screen layer with its own top bar, collapsible groups and the "Plan my path" button. It covers the
+ * page, so nothing behind it can move or show through when the page or the browser toolbar shifts.
  */
 export function MainNav() {
   const pathname = usePathname();
   const [open, setOpen] = useState<string | null>(null);
   const [mobile, setMobile] = useState(false);
-  const [mobileTop, setMobileTop] = useState(0);
   const [expanded, setExpanded] = useState<string | null>(() => mainNav.find((g) => groupHasCurrent(g, pathname))?.label ?? null);
   const navRef = useRef<HTMLElement>(null);
   const hoverTimer = useRef<number | undefined>(undefined);
+  const menuButton = useRef<HTMLButtonElement>(null);
 
   // Close everything when the route changes.
   const [lastPath, setLastPath] = useState(pathname);
@@ -45,18 +48,27 @@ export function MainNav() {
       const btn = navRef.current?.querySelector<HTMLButtonElement>("[data-open='true']");
       setOpen(null);
       setMobile(false);
-      btn?.focus();
+      btn?.focus({ preventScroll: true });
     };
     const onClick = (e: MouseEvent) => { if (navRef.current && !navRef.current.contains(e.target as Node)) setOpen(null); };
     // Leaving the mobile layout (rotate, resize) closes the mobile panel so desktop menus are not stuck open.
     const wide = window.matchMedia("(min-width: 1024px)");
     const onWide = () => { if (wide.matches || window.innerWidth >= 1024) setMobile(false); };
+    // Scrolling closes an open dropdown. Passive, and it only sets state when a panel is open.
+    let lastY = window.scrollY;
+    const onScroll = () => {
+      if (Math.abs(window.scrollY - lastY) < 8) return;
+      lastY = window.scrollY;
+      setOpen((o) => (o === null ? o : null));
+    };
     document.addEventListener("keydown", onKey);
     document.addEventListener("mousedown", onClick);
+    window.addEventListener("scroll", onScroll, { passive: true });
     wide.addEventListener("change", onWide);
     window.addEventListener("resize", onWide);
     return () => {
       window.removeEventListener("resize", onWide);
+      window.removeEventListener("scroll", onScroll);
       document.removeEventListener("keydown", onKey);
       document.removeEventListener("mousedown", onClick);
       wide.removeEventListener("change", onWide);
@@ -68,15 +80,18 @@ export function MainNav() {
   useEffect(() => {
     if (!mobile) return;
     // The lock is a class whose CSS only applies below desktop width, so a desktop page can never stay locked.
+    const toggle = menuButton.current;
     document.documentElement.classList.add("mobile-nav-open");
-    document.querySelector<HTMLElement>("#mobile-nav button")?.focus();
-    return () => document.documentElement.classList.remove("mobile-nav-open");
+    document.querySelector<HTMLElement>("#mobile-nav ul button")?.focus({ preventScroll: true });
+    return () => {
+      document.documentElement.classList.remove("mobile-nav-open");
+      // The layer (and the focused Close button) is gone: hand focus back to the Menu button.
+      const a = document.activeElement;
+      if (!a || a === document.body || !a.isConnected || document.getElementById("mobile-nav")?.contains(a)) toggle?.focus({ preventScroll: true });
+    };
   }, [mobile]);
 
-  const toggleMobile = () => {
-    if (!mobile) setMobileTop(navRef.current?.closest("header")?.getBoundingClientRect().bottom ?? 0);
-    setMobile((m) => !m);
-  };
+  const toggleMobile = () => setMobile((m) => !m);
   const hover = (label: string | null) => {
     window.clearTimeout(hoverTimer.current);
     hoverTimer.current = window.setTimeout(() => setOpen(label), label ? 80 : 220);
@@ -114,14 +129,25 @@ export function MainNav() {
       </ul>
 
       {/* Mobile */}
-      <button type="button" aria-expanded={mobile} aria-controls="mobile-nav" data-open={mobile} onClick={toggleMobile}
+      <button type="button" ref={menuButton} aria-expanded={mobile} aria-controls="mobile-nav" data-open={mobile} onClick={toggleMobile}
         className="inline-flex min-h-11 items-center gap-2 rounded-full px-3 font-semibold text-ink hover:bg-teal-50 lg:hidden">
         {mobile ? <X aria-hidden="true" size={20} /> : <Menu aria-hidden="true" size={20} />} Menu
       </button>
-      {/* Rendered into <body>: the header's backdrop blur would otherwise trap this fixed panel inside the header. */}
+      {/* Rendered into <body> so it sits above the sticky header and every page layer. */}
       {mobile && createPortal(
-        <div id="mobile-nav" style={{ top: mobileTop }}
-          className="fixed inset-x-0 bottom-0 z-50 overflow-y-auto overscroll-contain border-t border-line bg-white lg:hidden">
+        <div id="mobile-nav" role="dialog" aria-modal="true" aria-label="Menu"
+          className="fixed inset-0 z-50 flex flex-col bg-white lg:hidden">
+          <div className="flex min-h-[4.5rem] shrink-0 items-center justify-between gap-3 border-b border-line px-4 py-2 sm:px-6">
+            <Link href="/" onClick={close} className="shrink-0 no-underline" aria-label="CareerProof Global home">
+              <BrandLogo className="h-10 w-auto sm:h-11" />
+            </Link>
+            <button type="button" onClick={close}
+              className="inline-flex min-h-11 items-center gap-2 rounded-full px-3 font-semibold text-ink hover:bg-teal-50">
+              <X aria-hidden="true" size={20} /> Close
+            </button>
+          </div>
+          {/* Only this area scrolls; overscroll-contain stops the gesture reaching the page behind. */}
+          <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain">
           <ul className="mx-auto max-w-xl space-y-1 p-3">
             {mainNav.map((g) => {
               const isOpen = expanded === g.label;
@@ -143,6 +169,7 @@ export function MainNav() {
             <Link href="/paths" onClick={close} className="btn-primary flex w-full justify-center">
               <Route aria-hidden="true" size={18} /> Plan my path
             </Link>
+          </div>
           </div>
         </div>,
         document.body,
