@@ -31,6 +31,7 @@ export default function Page() {
         <h2>What is collected, and why</h2>
         <ul>
           <li><strong>Server logs.</strong> Like any website, our hosting provider receives technical information needed to deliver pages and keep the service secure, such as IP address, time of request and browser type. These logs are used for operations and security, not profiling.</li>
+          <li><strong>AI career search.</strong> When you use &ldquo;Ask AI&rdquo; in the path planner (or the planner cannot match the career you typed), the words you type and the country you chose are sent to our AI provider to write a career path. Do not include your name or other personal details. We store the question and the answer so the same question can be answered again without the AI, but not who asked it; visitors&rsquo; IP addresses are used briefly to limit how many questions can be asked in a short time.</li>
           <li><strong>Messages you send us.</strong> If you email us, we receive your email address and what you write, and use them only to reply and act on your request (for example, correcting data). We keep messages for up to 24 months, unless we need them longer to handle a request or meet a legal duty.</li>
         </ul>
       </section>
@@ -38,7 +39,8 @@ export default function Page() {
       <section>
         <h2>Who processes the information</h2>
         <ul>
-          <li><strong>Our hosting provider</strong>: delivers the website and keeps the server logs described above. We will name the provider here once hosting is finalised.</li>
+          <li><strong>Vercel</strong> (our hosting provider): delivers the website and keeps the server logs described above.</li>
+          <li><strong>Anthropic</strong> (Claude API): writes the AI career paths from the question you type. It receives the question and country only, not your identity.</li>
           <li><strong>Supabase</strong>: our database of career and education reference data. It holds no information about visitors.</li>
           <li><strong>Google</strong> (Gmail): our email, if you write to us.</li>
         </ul>

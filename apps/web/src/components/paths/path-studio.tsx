@@ -3,6 +3,8 @@
 import { useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { Sparkles } from "lucide-react";
+import type { AiPathResult } from "@/lib/ai-path";
+import { AiPathTree } from "./ai-path-tree";
 import { parsePrompt } from "@/lib/path-prompt";
 import { CountrySearch } from "@/components/country-search";
 import { isLong, PathCanvas, type PathDirection } from "./path-canvas";
@@ -34,6 +36,20 @@ export function PathStudio({ nodes: options, countries, country, countryName }: 
   const [selected, setSelected] = useState<string | null>(null);
   const [prompt, setPrompt] = useState("");
   const [promptNote, setPromptNote] = useState<string | null>(null);
+  const [ai, setAi] = useState<{ loading: boolean; error: string | null; result: AiPathResult | null }>({ loading: false, error: null, result: null });
+
+  async function askAi() {
+    const q = prompt.trim();
+    if (q.length < 3) { setPromptNote("Write a little more, for example \"I want to become an investment banker\"."); return; }
+    setAi({ loading: true, error: null, result: null });
+    try {
+      const res = await fetch("/api/ai-path", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ q, country }) });
+      const data = await res.json();
+      setAi(res.ok ? { loading: false, error: null, result: data as AiPathResult } : { loading: false, error: data.error ?? "Something went wrong.", result: null });
+    } catch {
+      setAi({ loading: false, error: "Could not reach the AI career search. Check your connection.", result: null });
+    }
+  }
   const [direction, setDirection] = useState<PathDirection>("forward");
   // Links elsewhere on the page (e.g. the careers table) change the query string:
   // adopt the new values during render (React's pattern for state derived from props).
@@ -68,10 +84,13 @@ export function PathStudio({ nodes: options, countries, country, countryName }: 
     ev.preventDefault();
     const p = parsePrompt(prompt, options.map((c) => ({ slug: c.code, title: c.name })), countries);
     reset();
-    if (!p.from && !p.to) {
-      setPromptNote("No occupation matched. Name one, for example \"nurse to data scientist\", or use the pickers below.");
+    if (!p.to) {
+      // Not a career we list (or no goal named): ask the AI for a step-by-step path instead.
+      setPromptNote(null);
+      void askAi();
       return;
     }
+    setAi({ loading: false, error: null, result: null });
     const name = (id: string) => (id === START ? "starting out" : options.find((o) => o.code === id)?.name);
     const parts = [p.from && `from ${name(p.from)}`, p.to && `to ${name(p.to)}`].filter(Boolean);
     const switching = p.country && p.country !== country ? countries.find((c) => c.code === p.country)?.name : null;
@@ -96,9 +115,20 @@ export function PathStudio({ nodes: options, countries, country, countryName }: 
           <span className="flex items-center gap-1.5 text-sm font-semibold"><Sparkles aria-hidden className="h-4 w-4 text-teal-700" /> Describe where you are and where you want to go</span>
           <input value={prompt} onChange={(e) => setPrompt(e.target.value)} className="field" placeholder="e.g. I'm a nurse in Uganda and want to become a data scientist" />
         </label>
-        <button type="submit" className="btn-primary justify-center">Plan my path</button>
+        <div className="flex gap-2">
+          <button type="submit" className="btn-primary flex-1 justify-center">Plan my path</button>
+          <button type="button" onClick={() => void askAi()} disabled={ai.loading}
+            className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-xl border border-teal-300 bg-white px-4 font-semibold text-teal-800 hover:bg-teal-50 disabled:opacity-60">
+            <Sparkles aria-hidden className="h-4 w-4" /> Ask AI
+          </button>
+        </div>
       </form>
       {promptNote && <p role="status" className="text-sm text-ink-muted">{promptNote}</p>}
+      <div aria-live="polite">
+        {ai.loading && <p className="card p-4 text-ink-muted">Writing your career path… this takes a few seconds.</p>}
+        {ai.error && <p className="card p-4 text-red-700">{ai.error}</p>}
+        {ai.result && <AiPathTree result={ai.result} onPlanRoutes={(slug) => { setTo(slug); reset(); }} />}
+      </div>
 
       <div className="card flex flex-col gap-3 p-4 lg:flex-row lg:items-end">
         {picker("Where you are now", from, setFrom, fromOptions)}

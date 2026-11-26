@@ -25,4 +25,4 @@ export const OPERATOR = {
 /** Law governing the terms of use (a single national law is needed; the operator is based in Uganda). */
 export const GOVERNING_LAW = "the laws of the Republic of Uganda";
 /** Date the legal pages were last changed. */
-export const LEGAL_UPDATED = "11 November 2026";
+export const LEGAL_UPDATED = "26 November 2026";
