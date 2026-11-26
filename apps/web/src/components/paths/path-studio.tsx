@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter, useSearchParams } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Sparkles } from "lucide-react";
 import type { AiPathResult } from "@/lib/ai-path";
 import { AiPathTree } from "./ai-path-tree";
@@ -34,12 +34,14 @@ export function PathStudio({ nodes: options, countries, country, countryName }: 
   const [showLong, setShowLong] = useState(false);
   const [active, setActive] = useState<number | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
-  const [prompt, setPrompt] = useState("");
+  // Arriving from a search box with ?ask=…: the question fills the box and is sent to the AI once.
+  const askParam = params.get("ask");
+  const [prompt, setPrompt] = useState(askParam ?? "");
   const [promptNote, setPromptNote] = useState<string | null>(null);
   const [ai, setAi] = useState<{ loading: boolean; error: string | null; result: AiPathResult | null }>({ loading: false, error: null, result: null });
 
-  async function askAi() {
-    const q = prompt.trim();
+  async function askAi(text?: string) {
+    const q = (text ?? prompt).trim();
     if (q.length < 3) { setPromptNote("Write a little more, for example \"I want to become an investment banker\"."); return; }
     setAi({ loading: true, error: null, result: null });
     try {
@@ -59,6 +61,13 @@ export function PathStudio({ nodes: options, countries, country, countryName }: 
     if (valid(qFrom, true) && qFrom !== from) setFrom(qFrom);
     if (valid(qTo, false) && qTo !== to) setTo(qTo);
   }
+
+  const asked = useRef<string | null>(null);
+  useEffect(() => {
+    if (!askParam || asked.current === askParam) return;
+    asked.current = askParam;
+    void askAi(askParam);
+  }, [askParam]); // eslint-disable-line react-hooks/exhaustive-deps -- once per question
 
   useEffect(() => {
     window.history.replaceState(null, "", `${window.location.pathname}?${new URLSearchParams({ from, to })}`);
