@@ -18,7 +18,7 @@ Given what a person writes (for example "I want to become an investment banker")
 Rules:
 - Use the education system, qualifications, exams, licences and job titles of the given country. Name real bodies (regulators, professional institutes, exam boards) only when you are confident they exist.
 - 4 to 8 stages, in order. For each: typical years, what to study, experience to gain, certifications or licences.
-- payEstimate: typical pay at that stage in the country's own currency, prefixed with "about". It is shown to students as an AI estimate, so stay conservative. If you are not reasonably confident, use an empty string.
+- payEstimate: always give typical pay for every stage, as a range in the country's own currency with the period, prefixed with "about" (for example "about UGX 2.5M-4M a month"). For study stages, say "Unpaid (student)" or give the usual internship or stipend range. Students see it labelled as an AI estimate, so keep ranges realistic and conservative for that country, not figures from New York or London.
 - If official figures are supplied in the request, treat them as correct and keep your estimates consistent with them. Never claim a figure is official.
 - branches: other common ways into the career (with the stage they join at) and common moves out of it.
 - bodiesToCheck: the official bodies a student should confirm requirements with.

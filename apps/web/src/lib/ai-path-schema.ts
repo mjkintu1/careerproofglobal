@@ -8,7 +8,7 @@ const Stage = z.object({
   study: z.array(z.string()).describe("What to study or learn at this stage"),
   experience: z.array(z.string()).describe("Experience to gain at this stage"),
   certifications: z.array(z.string()).describe("Certifications, licences or exams at this stage, with the awarding body"),
-  payEstimate: z.string().describe("Typical pay at this stage in the country's currency, e.g. 'about UGX 1.5M-2.5M a month'. Empty string if unknown"),
+  payEstimate: z.string().describe("Typical pay range at this stage in the country's currency and period, e.g. 'about UGX 1.5M-2.5M a month', or 'Unpaid (student)'"),
 });
 
 /** A side branch of the tree: another way in, or a common move out. */
