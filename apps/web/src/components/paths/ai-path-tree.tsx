@@ -39,6 +39,9 @@ export function AiPathTree({ result, onPlanRoutes }: { result: AiPathResult; onP
         <p className="text-ink-muted">{path.summary}</p>
       </div>
 
+      {path.stages.some((s) => s.payEstimate) && (
+        <p className="text-sm text-ink-muted">Pay ranges are typical estimates for this country{official ? "; official figures are below" : ""}.</p>
+      )}
       <ol className="relative space-y-4 border-l-2 border-teal-100 pl-6">
         {path.stages.map((s, i) => {
           const ins = path.branches.filter((b) => b.afterStage === i && b.kind === "alternative-entry");
@@ -56,7 +59,7 @@ export function AiPathTree({ result, onPlanRoutes }: { result: AiPathResult; onP
                   <List label="Experience" items={s.experience} />
                   <List label="Certifications" items={s.certifications} />
                 </div>
-                {s.payEstimate && <p className="mt-3 text-sm"><span className="font-semibold">Pay:</span> {s.payEstimate} <span className="text-xs text-amber-800">(AI estimate)</span></p>}
+                {s.payEstimate && <p className="mt-3 text-sm"><span className="font-semibold">Pay:</span> {s.payEstimate}</p>}
               </div>
               {(ins.length > 0 || outs.length > 0) && (
                 <ul className="mt-2 flex flex-wrap gap-2">
